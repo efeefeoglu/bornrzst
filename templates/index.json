@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "main": {
+      "type": "resistance-home",
+      "settings": {
+        "hero_eyebrow": "Born Resistance is not a Choice, It's Our Story",
+        "hero_title": "Born Resistance",
+        "hero_subtitle": "Purpose-driven apparel for those who carry the flame of liberation.",
+        "hero_cta_label": "Shop the Movement",
+        "hero_cta_link": "shopify://collections/all",
+        "hero_image": null,
+        "hero_overlay_opacity": 85,
+        "roots_eyebrow": "OUR ROOTS RUN DEEP",
+        "roots_title": "Culture, craft, and courage woven together.",
+        "roots_copy": "Born Resistance celebrates the unbreakable spirit of our communities. Every design honors heritage, resistance, and the voices that carried us here. This is apparel for the fearless – stories stitched into every seam.",
+        "roots_image": null,
+        "timeless_eyebrow": "TIMELESS PIECES FOR A FEARLESS GENERATION",
+        "timeless_title": "Signature drops that honor legacy and ignite the future.",
+        "callout_eyebrow": "JOIN THE RESISTANCE",
+        "callout_title": "Drop updates, exclusive releases, and stories from the frontlines.",
+        "callout_copy": "Get first access to our next release and learn more about the movements we stand with. This is more than merch – it is a message.",
+        "callout_cta_label": "Join the Movement",
+        "callout_placeholder": "Enter your email",
+        "callout_success_message": "Thanks for joining the movement!",
+        "callout_image": null,
+        "callout_image_style": "collage",
+        "callout_badge": "Born<br>Resistance",
+        "voices_eyebrow": "VOICES OF TRUTH",
+        "voices_title": "Wearing the message. Sharing the mission.",
+        "footer_cta_eyebrow": "DECADES OF RESISTANCE. ONE MOVEMENT.",
+        "footer_cta_title": "Born Resistance is a call to remember, to rise, and to move together.",
+        "footer_cta_label": "Shop the Story",
+        "footer_cta_link": "shopify://collections/all"
+      },
+      "blocks": {
+        "timeless_card_1": {
+          "type": "timeless_card",
+          "settings": {
+            "title": "Legacy Capsule",
+            "copy": "Elevated essentials inspired by the ancestors who paved the way. Soft fabrics. Sharp silhouettes.",
+            "link_label": "Explore Legacy",
+            "link_url": "shopify://collections/legacy",
+            "image": null,
+            "style_class": "liberation"
+          }
+        },
+        "timeless_card_2": {
+          "type": "timeless_card",
+          "settings": {
+            "title": "Roots Reimagined",
+            "copy": "Bold prints, unapologetic color, and iconography that centers the people. Made to be worn loud.",
+            "link_label": "Shop Roots",
+            "link_url": "shopify://collections/roots",
+            "image": null,
+            "style_class": "roots"
+          }
+        },
+        "timeless_card_3": {
+          "type": "timeless_card",
+          "settings": {
+            "title": "Unity Uniform",
+            "copy": "Statement layers for those leading the march. Built with purpose, crafted for endurance.",
+            "link_label": "Lead with Unity",
+            "link_url": "shopify://collections/unity",
+            "image": null,
+            "style_class": "unity"
+          }
+        },
+        "voice_1": {
+          "type": "voice",
+          "settings": {
+            "quote": "This brand is a reminder that resistance is legacy.",
+            "attribution": "– Amara, community organizer",
+            "image": null,
+            "style_class": "portrait"
+          }
+        },
+        "voice_2": {
+          "type": "voice",
+          "settings": {
+            "quote": "Bold, unapologetic, and built for the work.",
+            "attribution": "– Malik, art activist",
+            "image": null,
+            "style_class": "street"
+          }
+        },
+        "voice_3": {
+          "type": "voice",
+          "settings": {
+            "quote": "Every drop tells a story worth wearing.",
+            "attribution": "– Nia, educator",
+            "image": null,
+            "style_class": "protest"
+          }
+        },
+        "footer_logo_1": {
+          "type": "footer_logo",
+          "settings": {
+            "text": "Born RZST"
+          }
+        },
+        "footer_logo_2": {
+          "type": "footer_logo",
+          "settings": {
+            "text": "Unshakable Roots"
+          }
+        },
+        "footer_logo_3": {
+          "type": "footer_logo",
+          "settings": {
+            "text": "Resistance"
+          }
+        }
+      },
+      "block_order": [
+        "timeless_card_1",
+        "timeless_card_2",
+        "timeless_card_3",
+        "voice_1",
+        "voice_2",
+        "voice_3",
+        "footer_logo_1",
+        "footer_logo_2",
+        "footer_logo_3"
+      ]
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
