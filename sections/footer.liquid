@@ -1,0 +1,184 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container site-footer__inner">
+    <div class="site-footer__branding">
+      <a class="site-footer__logo" href="{{ routes.root_url }}">
+        {%- if section.settings.logo != blank -%}
+          {%- assign logo_alt = section.settings.logo_alt | default: shop.name -%}
+          {{ section.settings.logo | image_url: width: 160 | image_tag: alt: logo_alt, class: 'site-footer__logo-image' }}
+        {%- else -%}
+          <span class="site-footer__logo-text">{{ section.settings.logo_text | default: shop.name }}</span>
+        {%- endif -%}
+      </a>
+      {%- if section.settings.tagline != blank -%}
+        <p class="site-footer__tagline">{{ section.settings.tagline }}</p>
+      {%- endif -%}
+    </div>
+    {%- if section.settings.menu != blank and section.settings.menu.links.size > 0 -%}
+      <div class="site-footer__menu">
+        {%- if section.settings.menu_heading != blank -%}
+          <h2 class="site-footer__heading">{{ section.settings.menu_heading }}</h2>
+        {%- endif -%}
+        {%- assign footer_nav_label = section.settings.menu_heading | default: 'Footer navigation' -%}
+        <nav class="site-footer__nav" aria-label="{{ footer_nav_label }}">
+          <ul class="site-footer__menu-list" role="list">
+            {%- for link in section.settings.menu.links -%}
+              <li class="site-footer__menu-item">
+                <a class="site-footer__menu-link" href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      </div>
+    {%- endif -%}
+    <div class="site-footer__newsletter">
+      {%- if section.settings.newsletter_heading != blank -%}
+        <h2 class="site-footer__heading">{{ section.settings.newsletter_heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.newsletter_text != blank -%}
+        <p class="site-footer__newsletter-text">{{ section.settings.newsletter_text }}</p>
+      {%- endif -%}
+      {% form 'customer', id: 'FooterNewsletter', class: 'footer-newsletter' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="footer-newsletter__fields">
+          <input
+            type="email"
+            name="contact[email]"
+            class="footer-newsletter__input"
+            value="{{ form.email }}"
+            placeholder="{{ section.settings.newsletter_placeholder }}"
+            required
+          >
+          <button type="submit" class="btn btn--dark footer-newsletter__submit">{{ section.settings.newsletter_button_label }}</button>
+        </div>
+        {%- if form.errors -%}
+          <p class="form-message form-message--error" role="alert">{{ form.errors | default_errors }}</p>
+        {%- elsif form.posted_successfully? -%}
+          <p class="form-message form-message--success" role="status">{{ section.settings.newsletter_success_message }}</p>
+        {%- endif -%}
+      {% endform %}
+    </div>
+  </div>
+  {%- if section.blocks.size > 0 -%}
+    <div class="site-footer__bottom">
+      <div class="container site-footer__logos">
+        {%- for block in section.blocks -%}
+          <div class="site-footer__logo-item" {{ block.shopify_attributes }}>
+            {{ block.settings.text }}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+  <div class="container site-footer__legal">
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}. {{ section.settings.legal_text }}</p>
+    <p class="site-footer__powered-by">{{ powered_by_link }}</p>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt",
+      "label": "Logo alt text",
+      "default": "Born Resistance logo"
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo text fallback",
+      "default": "Born RZST"
+    },
+    {
+      "type": "textarea",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Born Resistance is a call to remember, to rise, and to move together."
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Footer menu"
+    },
+    {
+      "type": "text",
+      "id": "menu_heading",
+      "label": "Menu heading",
+      "default": "Explore"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Newsletter heading",
+      "default": "Join the movement"
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_text",
+      "label": "Newsletter text",
+      "default": "Drop updates, exclusive releases, and stories from the frontlines."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_placeholder",
+      "label": "Newsletter placeholder",
+      "default": "Enter your email"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_button_label",
+      "label": "Newsletter button label",
+      "default": "Join"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_success_message",
+      "label": "Newsletter success message",
+      "default": "Thanks for subscribing!"
+    },
+    {
+      "type": "text",
+      "id": "legal_text",
+      "label": "Legal text",
+      "default": "All rights reserved."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Supporting text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Born RZST"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
