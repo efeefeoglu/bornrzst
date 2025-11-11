@@ -1,0 +1,28 @@
+<section class="account account--auth">
+  <div class="container account__inner">
+    <div class="account__panel">
+      <h1 class="account__title">{{ 'customer.activate_account.title' | t }}</h1>
+      {% form 'activate_customer_password' %}
+        {{ form.errors | default_errors }}
+        <p class="account__description">{{ 'customer.activate_account.subtext' | t }}</p>
+        <label class="account__label" for="ActivatePassword">{{ 'customer.activate_account.password' | t }}</label>
+        <input id="ActivatePassword" type="password" name="customer[password]" required class="account__input">
+        <label class="account__label" for="ActivatePasswordConfirmation">{{ 'customer.activate_account.password_confirm' | t }}</label>
+        <input id="ActivatePasswordConfirmation" type="password" name="customer[password_confirmation]" required class="account__input">
+        <div class="account__actions">
+          <button class="btn btn--light account__submit" type="submit">{{ 'customer.activate_account.submit' | t }}</button>
+          <button class="btn btn--dark account__submit" name="decline" type="submit">{{ 'customer.activate_account.decline' | t }}</button>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer activate account",
+  "tag": "section",
+  "class": "section-account",
+  "settings": []
+}
+{% endschema %}

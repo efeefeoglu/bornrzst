@@ -1,0 +1,87 @@
+<section class="account account--order">
+  <div class="container account__inner">
+    <header class="account__header">
+      <h1 class="account__title">{{ 'customer.order.title' | t: name: order.name }}</h1>
+      <a class="account__link" href="{{ routes.account_url }}">{{ 'customer.order.back' | t }}</a>
+    </header>
+    <div class="account__order-meta">
+      <p>{{ 'customer.order.date' | t }} {{ order.created_at | date: format: 'abbrev_date' }}</p>
+      <p>{{ 'customer.order.status' | t }} {{ order.fulfillment_status_label }}</p>
+    </div>
+    <div class="account__order-grid">
+      <div class="account__order-items">
+        <table class="account__table">
+          <thead>
+            <tr>
+              <th scope="col">{{ 'customer.order.product' | t }}</th>
+              <th scope="col">{{ 'customer.order.sku' | t }}</th>
+              <th scope="col">{{ 'customer.order.price' | t }}</th>
+              <th scope="col">{{ 'customer.order.quantity' | t }}</th>
+              <th scope="col">{{ 'customer.order.total' | t }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for line_item in order.line_items %}
+              <tr>
+                <td data-label="{{ 'customer.order.product' | t }}">
+                  {{ line_item.title | escape }}
+                  {% if line_item.sku != blank %}
+                    <div class="account__meta">SKU {{ line_item.sku }}</div>
+                  {% endif %}
+                </td>
+                <td data-label="{{ 'customer.order.sku' | t }}">{{ line_item.sku | default: '—' }}</td>
+                <td data-label="{{ 'customer.order.price' | t }}">{{ line_item.price | money }}</td>
+                <td data-label="{{ 'customer.order.quantity' | t }}">{{ line_item.quantity }}</td>
+                <td data-label="{{ 'customer.order.total' | t }}">{{ line_item.line_price | money }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <aside class="account__summary">
+        <h2 class="account__subtitle">{{ 'customer.order.summary' | t }}</h2>
+        <dl class="account__totals">
+          <div class="account__totals-row">
+            <dt>{{ 'customer.order.subtotal' | t }}</dt>
+            <dd>{{ order.subtotal_price | money }}</dd>
+          </div>
+          {% for shipping_method in order.shipping_methods %}
+            <div class="account__totals-row">
+              <dt>{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</dt>
+              <dd>{{ shipping_method.price | money }}</dd>
+            </div>
+          {% endfor %}
+          {% for tax_line in order.tax_lines %}
+            <div class="account__totals-row">
+              <dt>{{ tax_line.title }} {{ 'customer.order.tax' | t }}</dt>
+              <dd>{{ tax_line.price | money }}</dd>
+            </div>
+          {% endfor %}
+          <div class="account__totals-row account__totals-row--total">
+            <dt>{{ 'customer.order.total' | t }}</dt>
+            <dd>{{ order.total_price | money }}</dd>
+          </div>
+        </dl>
+        <div class="account__addresses">
+          <div>
+            <h3 class="account__subtitle">{{ 'customer.order.billing_address' | t }}</h3>
+            <div class="account__address-body">{{ order.billing_address | format_address }}</div>
+          </div>
+          <div>
+            <h3 class="account__subtitle">{{ 'customer.order.shipping_address' | t }}</h3>
+            <div class="account__address-body">{{ order.shipping_address | format_address }}</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer order",
+  "tag": "section",
+  "class": "section-account",
+  "settings": []
+}
+{% endschema %}
