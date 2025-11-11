@@ -2,6 +2,12 @@
   assign timeless_blocks = section.blocks | where: 'type', 'timeless_card'
   assign voice_blocks = section.blocks | where: 'type', 'voice'
   assign footer_logo_blocks = section.blocks | where: 'type', 'footer_logo'
+  assign hero_image = section.settings.hero_image
+  assign hero_image_url = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80'
+  if hero_image != blank
+    assign hero_image_url = hero_image | image_url: width: 1600
+  endif
+  assign hero_overlay_opacity = section.settings.hero_overlay_opacity | default: 85 | times: 0.01 | round: 2
 {% endliquid %}
 
 <section class="hero">
@@ -22,9 +28,7 @@
   <div
     class="hero__image"
     role="presentation"
-    {%- if section.settings.hero_image != blank -%}
-      style="--hero-image: url({{ section.settings.hero_image | image_url: width: 1600 }});"
-    {%- endif -%}
+    style="background: linear-gradient(135deg, rgba(101, 0, 11, {{ hero_overlay_opacity }}), rgba(5, 5, 5, {{ hero_overlay_opacity }})), url({{ hero_image_url }}) center/cover;"
   ></div>
 </section>
 
@@ -61,29 +65,27 @@
     {%- endif -%}
     {%- if timeless_blocks.size > 0 -%}
       <div class="timeless__grid">
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'timeless_card' -%}
-            <article class="timeless__card" {{ block.shopify_attributes }}>
-              <div
-                class="timeless__image{% if block.settings.style_class != blank %} timeless__image--{{ block.settings.style_class }}{% endif %}"
-                role="presentation"
-                {%- if block.settings.image != blank -%}
-                  style="background-image: url({{ block.settings.image | image_url: width: 900 }});"
-                {%- endif -%}
-              ></div>
-              <div class="timeless__body">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title }}</h3>
-                {%- endif -%}
-                {%- if block.settings.copy != blank -%}
-                  <p>{{ block.settings.copy }}</p>
-                {%- endif -%}
-                {%- if block.settings.link_label != blank and block.settings.link_url != blank -%}
-                  <a class="card-link" href="{{ block.settings.link_url }}">{{ block.settings.link_label }}</a>
-                {%- endif -%}
-              </div>
-            </article>
-          {%- endif -%}
+        {%- for block in timeless_blocks -%}
+          <article class="timeless__card" {{ block.shopify_attributes }}>
+            <div
+              class="timeless__image{% if block.settings.style_class != blank %} timeless__image--{{ block.settings.style_class }}{% endif %}"
+              role="presentation"
+              {%- if block.settings.image != blank -%}
+                style="background-image: url({{ block.settings.image | image_url: width: 900 }});"
+              {%- endif -%}
+            ></div>
+            <div class="timeless__body">
+              {%- if block.settings.title != blank -%}
+                <h3>{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.copy != blank -%}
+                <p>{{ block.settings.copy }}</p>
+              {%- endif -%}
+              {%- if block.settings.link_label != blank and block.settings.link_url != blank -%}
+                <a class="card-link" href="{{ block.settings.link_url }}">{{ block.settings.link_label }}</a>
+              {%- endif -%}
+            </div>
+          </article>
         {%- endfor -%}
       </div>
     {%- endif -%}
@@ -147,26 +149,24 @@
     {%- endif -%}
     {%- if voice_blocks.size > 0 -%}
       <div class="voices__grid">
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'voice' -%}
-            <article class="voices__card" {{ block.shopify_attributes }}>
-              <div
-                class="voices__image{% if block.settings.style_class != blank %} voices__image--{{ block.settings.style_class }}{% endif %}"
-                role="presentation"
-                {%- if block.settings.image != blank -%}
-                  style="background-image: url({{ block.settings.image | image_url: width: 900 }});"
-                {%- endif -%}
-              ></div>
-              <div class="voices__body">
-                {%- if block.settings.quote != blank -%}
-                  <h3>"{{ block.settings.quote }}"</h3>
-                {%- endif -%}
-                {%- if block.settings.attribution != blank -%}
-                  <p>{{ block.settings.attribution }}</p>
-                {%- endif -%}
-              </div>
-            </article>
-          {%- endif -%}
+        {%- for block in voice_blocks -%}
+          <article class="voices__card" {{ block.shopify_attributes }}>
+            <div
+              class="voices__image{% if block.settings.style_class != blank %} voices__image--{{ block.settings.style_class }}{% endif %}"
+              role="presentation"
+              {%- if block.settings.image != blank -%}
+                style="background-image: url({{ block.settings.image | image_url: width: 900 }});"
+              {%- endif -%}
+            ></div>
+            <div class="voices__body">
+              {%- if block.settings.quote != blank -%}
+                <h3>"{{ block.settings.quote }}"</h3>
+              {%- endif -%}
+              {%- if block.settings.attribution != blank -%}
+                <p>{{ block.settings.attribution }}</p>
+              {%- endif -%}
+            </div>
+          </article>
         {%- endfor -%}
       </div>
     {%- endif -%}
@@ -191,10 +191,8 @@
   </div>
   {%- if footer_logo_blocks.size > 0 -%}
     <div class="footer-logos">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'footer_logo' -%}
-          <div class="footer-logo" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-        {%- endif -%}
+      {%- for block in footer_logo_blocks -%}
+        <div class="footer-logo" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
       {%- endfor -%}
     </div>
   {%- endif -%}
@@ -240,6 +238,16 @@
       "type": "image_picker",
       "id": "hero_image",
       "label": "Hero image"
+    },
+    {
+      "type": "range",
+      "id": "hero_overlay_opacity",
+      "label": "Hero overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 85
     },
     {
       "type": "text",

@@ -23,6 +23,7 @@
         }
       </style>
     {%- endif -%}
+    <meta name="theme-color" content="{{ settings.accent_color | default: '#65000b' }}">
     {{ content_for_header }}
   </head>
   <body class="template-{{ template.name | handle }}">
