@@ -1,0 +1,65 @@
+<section class="article">
+  <div class="container article__inner">
+    <article class="article__content">
+      <header class="article__header">
+        <h1 class="article__title">{{ article.title | escape }}</h1>
+        <p class="article__meta">
+          {{ article.published_at | date: format: 'abbrev_date' }}
+          {% if article.tags.size > 0 %}
+            ·
+            {% for tag in article.tags %}
+              <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article__tag">#{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </p>
+      </header>
+      {% if article.image %}
+        <div class="article__media">
+          {{ article.image | image_url: width: 1400 | image_tag: loading: 'lazy', class: 'article__image' }}
+        </div>
+      {% endif %}
+      <div class="article__body rte">
+        {{ article.content }}
+      </div>
+    </article>
+    {% if article.comments_enabled? %}
+      <section class="article__comments">
+        <h2 class="article__comments-title">{{ 'article.comments.title' | t: count: article.comments_count }}</h2>
+        {% if article.comments_count > 0 %}
+          <ul class="article__comments-list" role="list">
+            {% for comment in article.comments %}
+              <li class="article__comment">
+                <p class="article__comment-meta">{{ comment.author | escape }} · {{ comment.created_at | date: format: 'abbrev_date' }}</p>
+                <div class="article__comment-body rte">{{ comment.content }}</div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% form 'new_comment', article %}
+          {{ form.errors | default_errors }}
+          {% if form.posted_successfully? %}
+            <p class="form-message form-message--success" role="status">{{ 'article.comments.success' | t }}</p>
+          {% endif %}
+          <div class="article__comment-form">
+            <label class="article__comment-label" for="CommentAuthor">{{ 'article.comments.name' | t }}</label>
+            <input id="CommentAuthor" type="text" name="comment[author]" value="{{ form.author }}" required class="article__comment-input">
+            <label class="article__comment-label" for="CommentEmail">{{ 'article.comments.email' | t }}</label>
+            <input id="CommentEmail" type="email" name="comment[email]" value="{{ form.email }}" required class="article__comment-input">
+            <label class="article__comment-label" for="CommentBody">{{ 'article.comments.message' | t }}</label>
+            <textarea id="CommentBody" name="comment[body]" rows="4" required class="article__comment-textarea">{{ form.body }}</textarea>
+            <button type="submit" class="btn btn--light article__comment-submit">{{ 'article.comments.submit' | t }}</button>
+          </div>
+        {% endform %}
+      </section>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Article",
+  "tag": "section",
+  "class": "section-article",
+  "settings": []
+}
+{% endschema %}

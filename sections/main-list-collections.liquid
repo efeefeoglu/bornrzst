@@ -1,0 +1,50 @@
+<section class="list-collections">
+  <div class="container list-collections__inner">
+    <header class="list-collections__header">
+      <h1 class="list-collections__title">{{ 'list_collections.title' | t }}</h1>
+      {% if section.settings.intro_text != blank %}
+        <p class="list-collections__intro">{{ section.settings.intro_text }}</p>
+      {% endif %}
+    </header>
+    {% if collections.size > 0 %}
+      <div class="list-collections__grid">
+        {% for collection in collections %}
+          <article class="collection-card">
+            <a class="collection-card__link" href="{{ collection.url }}">
+              <div class="collection-card__media">
+                {% if collection.featured_image %}
+                  {{ collection.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', class: 'collection-card__image' }}
+                {% else %}
+                  <div class="collection-card__placeholder" role="presentation">{{ 'collection.product_card.no_image' | t }}</div>
+                {% endif %}
+              </div>
+              <div class="collection-card__content">
+                <h2 class="collection-card__title">{{ collection.title | escape }}</h2>
+                {% if collection.description != blank %}
+                  <p class="collection-card__excerpt">{{ collection.description | strip_html | truncate: 120 }}</p>
+                {% endif %}
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="list-collections__empty">{{ 'list_collections.empty' | t }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "All collections",
+  "tag": "section",
+  "class": "section-list-collections",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro text"
+    }
+  ]
+}
+{% endschema %}
