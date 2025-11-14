@@ -11,16 +11,66 @@
   assign button_label = section.settings.button_label
   assign button_link = section.settings.button_link
   assign button_style_secondary = section.settings.button_style_secondary
+  assign heading_font_family = section.settings.heading_font_family | default: 'var(--font-heading-family)'
+  assign body_font_family = section.settings.body_font_family | default: 'var(--font-body-family)'
+  assign heading_google_font = section.settings.heading_google_font | strip
+  assign body_google_font = section.settings.body_google_font | strip
+  assign heading_google_font_weights = section.settings.heading_google_font_weights | default: '400;500;600'
+  assign body_google_font_weights = section.settings.body_google_font_weights | default: '400;500'
+  assign heading_font_query = ''
+  assign body_font_query = ''
+  assign google_font_links = ''
+  if heading_google_font != blank
+    assign heading_font_family = heading_google_font
+    assign heading_font_query = heading_google_font | replace: ' ', '+'
+    assign heading_google_font_weights = heading_google_font_weights | replace: ' ', '' | replace: ',', ';'
+    capture google_font_links
+      {{- google_font_links -}}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ heading_font_query }}:wght@{{ heading_google_font_weights }}&display=swap">
+    endcapture
+  endif
+  if body_google_font != blank
+    assign body_font_family = body_google_font
+    assign body_font_query = body_google_font | replace: ' ', '+'
+    assign body_google_font_weights = body_google_font_weights | replace: ' ', '' | replace: ',', ';'
+    unless body_font_query == heading_font_query and body_google_font_weights == heading_google_font_weights and heading_google_font != blank
+      capture google_font_links
+        {{- google_font_links -}}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ body_font_query }}:wght@{{ body_google_font_weights }}&display=swap">
+      endcapture
+    endunless
+  endif
+  assign heading_font_family = heading_font_family | strip
+  assign body_font_family = body_font_family | strip
   assign button_class = 'button button--primary'
   if button_style_secondary
     assign button_class = 'button button--secondary'
   endif
 -%}
+-%}
+-%}
+
+{%- assign heading_font_style_value = heading_font_family -%}
+{%- assign body_font_style_value = body_font_family -%}
+{%- if heading_font_style_value == '' -%}
+  {%- assign heading_font_style_value = 'var(--font-heading-family)' -%}
+{%- elsif heading_font_style_value contains 'var(' -%}
+{%- elsif heading_font_style_value contains ',' -%}
+{%- else -%}
+  {%- assign heading_font_style_value = '"' | append: heading_font_style_value | append: '"' -%}
+{%- endif -%}
+{%- if body_font_style_value == '' -%}
+  {%- assign body_font_style_value = 'var(--font-body-family)' -%}
+{%- elsif body_font_style_value contains 'var(' -%}
+{%- elsif body_font_style_value contains ',' -%}
+{%- else -%}
+  {%- assign body_font_style_value = '"' | append: body_font_style_value | append: '"' -%}
+{%- endif -%}
+
+{{- google_font_links -}}
 
 <section
   id="section-{{ section.id }}"
   class="hero-section color-{{ section.settings.color_scheme }} gradient"
-  style="--hero-section-overlay: {%- if overlay_enabled -%}{{ overlay_opacity }}{%- else -%}0{%- endif -%}; padding-top: {{ section.settings.padding_top | default: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | default: 0 }}px; --hero-heading-font-size: {{ section.settings.heading_font_size | default: 64 }}px; --hero-body-font-size: {{ section.settings.body_font_size | default: 18 }}px; --hero-heading-font-family: {{ section.settings.heading_font_family | default: 'var(--font-heading-family)' }}; --hero-body-font-family: {{ section.settings.body_font_family | default: 'var(--font-body-family)' }};"
+  style="--hero-section-overlay: {%- if overlay_enabled -%}{{ overlay_opacity }}{%- else -%}0{%- endif -%}; padding-top: {{ section.settings.padding_top | default: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | default: 0 }}px; --hero-heading-font-size: {{ section.settings.heading_font_size | default: 64 }}px; --hero-body-font-size: {{ section.settings.body_font_size | default: 18 }}px; --hero-heading-font-family: {{ heading_font_style_value }}; --hero-body-font-family: {{ body_font_style_value }}; --hero-heading-color: {{ section.settings.heading_color | default: '#ffffff' }};"
 >
   <div
     class="hero-section__media"
@@ -38,7 +88,7 @@
         {%- endif -%}
       </div>
       {%- if first_text != blank -%}
-        <h1 class="hero-section__heading">{{ first_text | newline_to_br }}</h1>
+        <div class="hero-section__heading rte" role="heading" aria-level="1">{{ first_text }}</div>
       {%- endif -%}
       {%- if second_text != blank -%}
         <div class="hero-section__body rte">{{ second_text }}</div>
@@ -70,10 +120,10 @@
         "label": "Logo"
       },
       {
-        "type": "textarea",
+        "type": "richtext",
         "id": "first_text",
         "label": "First text",
-        "default": "Resistance is not a choice  It’s Our Heritage"
+        "default": "<p>Resistance is not a choice  It’s Our Heritage</p>"
       },
       {
         "type": "richtext",
@@ -82,10 +132,29 @@
         "default": "<p>Every  purchase  funds humanitarian aid for  Palestine<br/>Wear  your convictions<br/>Become  the  voice  of  resistance</p>"
       },
       {
+        "type": "color",
+        "id": "heading_color",
+        "label": "First text color",
+        "default": "#ffffff"
+      },
+      {
         "type": "text",
         "id": "heading_font_family",
         "label": "First text font family",
         "default": "var(--font-heading-family)"
+      },
+      {
+        "type": "text",
+        "id": "heading_google_font",
+        "label": "Heading Google font name",
+        "info": "Enter a Google Font family name (e.g. 'Playfair Display') to load it automatically."
+      },
+      {
+        "type": "text",
+        "id": "heading_google_font_weights",
+        "label": "Heading Google font weights",
+        "default": "400;500;600",
+        "info": "Use semicolon separated weights as supported by the font (e.g. 400;600;700)."
       },
       {
         "type": "range",
@@ -102,6 +171,19 @@
         "id": "body_font_family",
         "label": "Second text font family",
         "default": "var(--font-body-family)"
+      },
+      {
+        "type": "text",
+        "id": "body_google_font",
+        "label": "Body Google font name",
+        "info": "Enter a Google Font family name (e.g. 'Roboto') to load it automatically."
+      },
+      {
+        "type": "text",
+        "id": "body_google_font_weights",
+        "label": "Body Google font weights",
+        "default": "400;500",
+        "info": "Use semicolon separated weights as supported by the font (e.g. 400;500)."
       },
       {
         "type": "range",

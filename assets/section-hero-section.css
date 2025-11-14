@@ -72,11 +72,20 @@
   font-weight: 600;
   font-family: var(--hero-heading-font-family, var(--font-heading-family));
   margin-bottom: 1rem;
-  max-width:60%;
+  max-width: 60%;
+  color: var(--hero-heading-color, currentColor);
 }
 
 .hero-section__heading span {
   display: block;
+}
+
+.hero-section__heading p {
+  margin: 0 0 0.35rem;
+}
+
+.hero-section__heading p:last-child {
+  margin-bottom: 0;
 }
 
 .hero-section__body {
@@ -84,7 +93,7 @@
   line-height: 1.6;
   margin-bottom: 2rem;
   font-family: var(--hero-body-font-family, var(--font-body-family));
-  max-width:60%;
+  max-width: 60%;
 }
 
 .hero-section__body p {
