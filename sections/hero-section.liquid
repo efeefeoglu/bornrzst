@@ -2,7 +2,6 @@
 
 {%- liquid
   assign background_image = section.settings.background_image
-  assign logo_image = section.settings.logo_image
   assign overlay_enabled = section.settings.enable_overlay
   assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
   assign alignment = section.settings.text_alignment
@@ -80,13 +79,6 @@
   ></div>
   <div class="hero-section__content-wrapper page-width">
     <div class="hero-section__content hero-section__content--{{ alignment }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <div class="hero-section__logo">
-        {%- if logo_image != blank -%}
-          {{ logo_image | image_url: width: 500 | image_tag: loading: 'lazy', class: 'hero-section__logo-image' }}
-        {%- else -%}
-          <img src="{{ 'bornrzst-logo.png' | asset_url }}" alt="{{ 'general.accessibility.logo' | t }}" loading="lazy" width="150" height="200" />
-        {%- endif -%}
-      </div>
       {%- if first_text != blank -%}
         <div class="hero-section__heading rte" role="heading" aria-level="1">{{ first_text }}</div>
       {%- endif -%}
@@ -113,11 +105,6 @@
         "type": "image_picker",
         "id": "background_image",
         "label": "Background image"
-      },
-      {
-        "type": "image_picker",
-        "id": "logo_image",
-        "label": "Logo"
       },
       {
         "type": "richtext",
