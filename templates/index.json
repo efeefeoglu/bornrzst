@@ -23,7 +23,7 @@
         "button_label": "Join the movement",
         "button_link": "shopify://collections/all",
         "button_style_secondary": false,
-        "enable_overlay": true,
+        "enable_overlay": false,
         "overlay_opacity": 0,
         "text_alignment": "left",
         "color_scheme": "scheme-1",
