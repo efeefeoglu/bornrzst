@@ -6,10 +6,7 @@
   assign overlay_enabled = section.settings.enable_overlay
   assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
   assign alignment = section.settings.text_alignment
-  assign first_text = section.settings.first_text_richtext
-  if first_text == blank
-    assign first_text = section.settings.first_text
-  endif
+  assign first_text = section.settings.first_text
   assign second_text = section.settings.second_text
   assign button_label = section.settings.button_label
   assign button_link = section.settings.button_link
@@ -124,7 +121,7 @@
       },
       {
         "type": "richtext",
-        "id": "first_text_richtext",
+        "id": "first_text",
         "label": "First text",
         "default": "<p>Resistance is not a choice  It’s Our Heritage</p>",
         "info": "Supports headings, bold, italics, links, and line breaks."
