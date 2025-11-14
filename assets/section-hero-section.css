@@ -1,0 +1,118 @@
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero-section__media {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.01);
+}
+
+.hero-section__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.3) 100%);
+  opacity: var(--hero-section-overlay, 0.6);
+}
+
+.hero-section__content-wrapper {
+  position: relative;
+  z-index: 2;
+  min-height: clamp(28rem, 70vh, 52rem);
+  padding-block: clamp(4rem, 10vw, 8rem);
+  display: flex;
+  align-items: center;
+}
+
+.hero-section__content {
+  max-width: 38rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section__content.hero-section__content--center {
+  margin-inline: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-section__content.hero-section__content--left {
+  margin-inline-end: auto;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.hero-section__logo {
+  margin-bottom: 1.5rem;
+}
+
+.hero-section__logo img {
+  max-width: 7rem;
+  height: auto;
+}
+
+.hero-section__eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.hero-section__heading {
+  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  line-height: 1.05;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-section__heading span {
+  display: block;
+}
+
+.hero-section__heading .hero-section__emphasis {
+  color: #8a1c14;
+  font-family: inherit;
+}
+
+.hero-section__body {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-section__body p {
+  margin: 0 0 0.35rem;
+}
+
+.hero-section__actions .button {
+  min-width: 14rem;
+  padding-inline: 2.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .hero-section__content-wrapper {
+    min-height: auto;
+    padding-block: clamp(3rem, 12vw, 5rem);
+  }
+
+  .hero-section__content {
+    max-width: none;
+  }
+
+  .hero-section__heading {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
+  }
+
+  .hero-section__body {
+    font-size: 0.95rem;
+  }
+}
