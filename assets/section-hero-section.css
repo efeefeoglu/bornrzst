@@ -11,7 +11,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transform: scale(1.01);
+  --hero-parallax-x: 0px;
+  --hero-parallax-y: 0px;
+  transform: translate3d(var(--hero-parallax-x), var(--hero-parallax-y), 0) scale(1.05);
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-section[data-parallax-ready] .hero-section__media {
+  will-change: transform;
 }
 
 .hero-section__media::after {
@@ -115,6 +122,13 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-section__media {
+    transition: none;
+    transform: scale(1.02);
+  }
 }
 
 @media screen and (max-width: 750px) {
