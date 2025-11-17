@@ -13,7 +13,7 @@
       "type": "hero-section",
       "settings": {
         "background_image": "shopify://shop_images/photorealistic-kid-refugee-camp_1_ca6c95ab-bfbd-41b5-966b-c5764408ab7f.jpg",
-        "first_text": "Resistance is not a choice  It’s Our Heritage",
+        "first_text": "Resistance is not a choice  It’s Our <strong>Heritage</strong>",
         "second_text": "<p>Every  purchase  funds humanitarian aid for  Palestine<br/>Wear  your convictions<br/>Become  the  voice  of  <strong>resistance</strong></p>",
         "heading_font_family": "Noto Serif Display Extra Condensed",
         "heading_font_size": 100,
