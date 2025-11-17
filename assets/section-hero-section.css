@@ -232,10 +232,9 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-section__media {
     transition: none;
-    transform: scale(1);
+    transform: scale(1.02);
     animation: none;
     opacity: 1;
-    filter: none;
   }
 
   .hero-section__heading,
