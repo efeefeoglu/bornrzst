@@ -19,6 +19,10 @@
   animation: hero-background-fade 1.5s ease-out forwards;
 }
 
+.hero-section__logo {
+  display: none !important;
+}
+
 .hero-section[data-parallax-ready] .hero-section__media {
   will-change: transform;
 }
