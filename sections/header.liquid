@@ -22,11 +22,15 @@
     margin-left: -1.2rem;
   }
 
-  {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
-    .scrolled-past-header .header__heading-logo-wrapper {
-      width: 75%;
-    }
-  {%- endif -%}
+  .header__heading-logo-wrapper {
+    display: inline-flex;
+    transition: transform 300ms ease;
+    transform-origin: center;
+  }
+
+  .section-header.scrolled-past-header .header__heading-logo-wrapper {
+    transform: scale(0.5);
+  }
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
     @media screen and (min-width: 990px) {
