@@ -101,7 +101,6 @@
 
 .hero-section__body {
   font-size: var(--hero-body-font-size, 1rem);
-  line-height: 1.6;
   margin-bottom: 2rem;
   font-family: var(--hero-body-font-family, var(--font-body-family));
   max-width: 60%;
