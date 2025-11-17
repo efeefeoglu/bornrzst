@@ -200,13 +200,13 @@
       },
       "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8": {
         "settings": {
-          "background": "#ffffff",
-          "background_gradient": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
+          "background": "#780000",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#780000",
+          "button_label": "#121212",
           "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "shadow": "#780000"
         }
       }
     }
