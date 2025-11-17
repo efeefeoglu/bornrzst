@@ -51,6 +51,7 @@
 .hero-section__content h1{
   letter-spacing: -0.075em;
   line-height:1.2;
+  font-weight:400;
 }
 
 .hero-section__content.hero-section__content--center {
