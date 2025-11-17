@@ -30,37 +30,116 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "image_with_text_xgVYmC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fe49Nc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Roots Run Deep",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_KNPNzg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Born from generations of struggle and resilience,<br/>BØRN RZST™ carries the heritage of those who<br/>never gave up.</p><p>Like the olive tree, we stand unshaken rooted in<br/>history, reaching for freedom.</p><p>Every design tells a story of resistance, hope, and<br/>unwavering strength.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_a3wh4E": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE OUR STORY",
+            "button_link": "shopify://pages/who-we-are",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fe49Nc",
+        "text_KNPNzg",
+        "button_a3wh4E"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "image": "shopify://shop_images/mouqawama.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_h8DKGd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YeBQfj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mockup_20250921-155646_candid_popsicle_1.png",
+            "title": "Wanted  Hoodie",
+            "text": "<p>Defiant design honoring voices silenced yet never forgotten. <br/>Standbold. Wearresistance</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3MNNGy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/sunlit-urban-hoodie-mockup-male-model-walking-away-on-modern-architectural-structure-scenery-0787_1_1.png",
+            "title": "Martyrs  Hoodie",
+            "text": "<p>They killed the dreamers, but not the dream.<br/>Carry their legacy everywhere you go</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XiDXfp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mockup_20250921-160817_shadowy_popsicle.png",
+            "title": "Exile Hoodie",
+            "text": "<p>Born in displacement, unshaken in identity. <br/>A piece that speaks louder than words.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YeBQfj",
+        "column_3MNNGy",
+        "column_XiDXfp"
+      ],
+      "custom_css": [],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Timeless  Pieces  for a  Fearless  Generation",
+        "heading_size": "h0",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
+        "button_label": "EXPLORE THE COLLECTION",
+        "button_link": "shopify://collections",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-5",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 44,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "hero_section",
-    "featured_collection"
+    "image_with_text_xgVYmC",
+    "multicolumn_h8DKGd"
   ]
 }
