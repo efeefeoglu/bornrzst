@@ -2342,7 +2342,7 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: fixed;
-  background-color: transparent;
+  background-color: transparent !important;
   width: 100%;
 }
 
