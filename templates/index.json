@@ -24,7 +24,7 @@
         "button_style_secondary": false,
         "enable_overlay": false,
         "overlay_opacity": 0,
-        "text_alignment": "left",
+        "text_alignment": "center",
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 0
