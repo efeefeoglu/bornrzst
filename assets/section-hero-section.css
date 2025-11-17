@@ -44,6 +44,7 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  letter-spacing: -0.075em;
 }
 
 .hero-section__content.hero-section__content--center {
