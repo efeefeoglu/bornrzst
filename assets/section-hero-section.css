@@ -24,13 +24,13 @@
 }
 
 .header__heading-logo-wrapper img{
-  animation-name: header-logo-focus;
   filter: blur(18px);
   animation-name: hero-background-fade;
   animation-duration: 1.5s, 1s;
   animation-timing-function: ease-out, ease;
   animation-delay: 0s, 1.2s;
   animation-fill-mode: forwards, forwards;
+  animation-name: header-logo-focus;
 }
 
 .hero-section[data-parallax-ready] .hero-section__media {
