@@ -99,7 +99,8 @@
             "title": "Wanted  Hoodie",
             "text": "<p>Defiant design honoring voices silenced yet never forgotten. <br/>Standbold. Wearresistance</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "column_class": "homeFearlessCollection"
           }
         },
         "column_3MNNGy": {
@@ -109,7 +110,8 @@
             "title": "Martyrs  Hoodie",
             "text": "<p>They killed the dreamers, but not the dream.<br/>Carry their legacy everywhere you go</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "column_class": ""
           }
         },
         "column_XiDXfp": {
@@ -119,7 +121,8 @@
             "title": "Exile Hoodie",
             "text": "<p>Born in displacement, unshaken in identity. <br/>A piece that speaks louder than words.</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "column_class": ""
           }
         }
       },
@@ -132,11 +135,13 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Timeless  Pieces  for a  Fearless  Generation",
+        "heading_class": "whiteTitle54 textAlignCenter",
         "heading_size": "h0",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "EXPLORE THE COLLECTION",
         "button_link": "shopify://collections",
+        "button_class": "",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
