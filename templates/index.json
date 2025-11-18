@@ -281,7 +281,8 @@
         "text_ieAKtL"
       ],
       "custom_css": [
-        "p{text-align: center;}"
+        "p {text-align: center; font-size:1.2em; color:#000;}",
+        "p strong {font-size: 4em; color: #000; letter-spacing: -0.075em; line-height: 0.9; margin: 20px 0;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
