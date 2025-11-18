@@ -3626,3 +3626,5 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.redTitle54{font-size: 5.4em;color: #780000;letter-spacing: -0.075em;line-height: 0.8;}
