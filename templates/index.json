@@ -308,6 +308,65 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_6haLRb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yeXer8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Decades of Resistance One Movement",
+            "heading_size": "h1",
+            "custom_class": "whiteTitle54"
+          }
+        },
+        "text_DbTRXN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From 1948 to today, our people have carried stories of exile, resilience, and defiance.</p><p>BØRN RZST™ was created to turn those stories into wearable activism a brand born of struggle, heritage, and an unbreakable will.</p><p>This is more than fashion. This is history stitched into every piece.</p>",
+            "text_style": "body",
+            "custom_class": "whiteText18"
+          }
+        },
+        "button_yhtEQw": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ MORE",
+            "button_link": "",
+            "button_style_secondary": false,
+            "custom_class": "whiteButton18"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yeXer8",
+        "text_DbTRXN",
+        "button_yhtEQw"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Reminder.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_custom_class": "",
+        "page_width_custom_class": "",
+        "wrapper_custom_class": "",
+        "grid_custom_class": "",
+        "media_item_custom_class": "",
+        "media_custom_class": "",
+        "text_item_custom_class": "",
+        "content_custom_class": "",
+        "section_color_scheme": "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8",
+        "color_scheme": "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -317,6 +376,7 @@
     "pagefly-home",
     "image_banner_GmzjbB",
     "image_with_text_4akVQM",
-    "image_with_text_wQ9CxK"
+    "image_with_text_wQ9CxK",
+    "image_with_text_6haLRb"
   ]
 }
