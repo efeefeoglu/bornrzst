@@ -3632,6 +3632,6 @@ details-disclosure > details {
 .textAlignCenter{text-align:center}
 
 .blackText18{font-size: 1.8em;color:#000;line-height: 1.2;}
-.homeFearlessCollection image{border-radius:%50 %50 0 0}
+.homeFearlessCollection img{border-radius:50% 50% 0 0}
 
 .redButton18{font-size: 1.8em;color:#780000;line-height: 2.5;background:transparent;border:solid 1px #780000;}
