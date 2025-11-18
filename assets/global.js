@@ -1436,7 +1436,7 @@ if (window.Shopify && Shopify.designMode) {
 const TARGET_ELEMENT_SELECTOR = '.scroll-trigger'; // The parent element to watch
 const SUBELEMENT_CLASS = 'animate-item'; // Class of subelements to animate
 const ANIMATION_CLASS = 'animate-in'; // Class that applies the animation
-const THRESHOLD = 0.2; // How much of the element should be visible (0-1)
+const THRESHOLD = 0.3; // How much of the element should be visible (0-1)
 
 // Create Intersection Observer
 const observer = new IntersectionObserver((entries) => {
@@ -1456,7 +1456,7 @@ const observer = new IntersectionObserver((entries) => {
           delaySeconds = parseFloat(delayMatch.split('-').pop());
         } else {
           // Use stagger delay if no custom delay specified (convert to seconds)
-          delaySeconds = (index * 100) / 1000;
+          delaySeconds = ((index/2) * 100) / 1000;
         }
         
         // Set the animation delay dynamically via inline style
@@ -1472,7 +1472,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, {
   threshold: THRESHOLD,
-  rootMargin: '-200px'
+  rootMargin: '0px'
 });
 
 // Observe all target elements
