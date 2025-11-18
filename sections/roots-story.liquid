@@ -81,7 +81,7 @@
 <section id="roots-story-{{ section.id }}" class="scroll-trigger roots-story-section color-{{ section.settings.color_scheme }} gradient">
   <div class="roots-story__padding">
     <div class="page-width roots-story__layout">
-      <div class="roots-story__media" data-reveal-item>
+      <div class="roots-story__media animate-item" data-reveal-item>
         {%- if section.settings.tree_image != blank -%}
           {%- liquid
             assign alt_text = section.settings.tree_image.alt | default: section.settings.heading | strip_html
@@ -97,18 +97,18 @@
       </div>
       <div class="roots-story__content">
         {%- if section.settings.heading != blank -%}
-          <h2 class="roots-story__heading" data-reveal-item>
+          <h2 class="roots-story__heading animate-item" data-reveal-item>
             {{ section.settings.heading }}
           </h2>
         {%- endif -%}
         {%- if section.settings.body != blank -%}
-          <div class="roots-story__text rte" data-reveal-item>
+          <div class="roots-story__text rte animate-item" data-reveal-item>
             {{ section.settings.body }}
           </div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <a
-            class="button button--primary"
+            class="button button--primary animate-item"
             data-reveal-item
             {% if section.settings.button_link == blank %}
               role="link" aria-disabled="true"
