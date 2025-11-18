@@ -53,7 +53,8 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if section.settings.enable_parallax_drift %} banner--parallax-drift{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  {% if section.settings.enable_parallax_drift %}data-banner-parallax{% endif %}
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -120,14 +121,16 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
+            {%- assign heading_custom_class = block.settings.heading_custom_class | strip -%}
             <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}{% if heading_custom_class != blank %} {{ heading_custom_class | escape }}{% endif %}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            {%- assign text_custom_class = block.settings.text_custom_class | strip -%}
+            <div class="banner__text rte {{ block.settings.text_style }}{% if text_custom_class != blank %} {{ text_custom_class | escape }}{% endif %}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
@@ -135,6 +138,7 @@
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
             >
+              {%- assign button_custom_class = block.settings.button_custom_class | strip -%}
               {%- if block.settings.button_label_1 != blank -%}
                 <a
                   {% if block.settings.button_link_1 == blank %}
@@ -142,7 +146,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}{% if button_custom_class != blank %} {{ button_custom_class | escape }}{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -154,7 +158,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}{% if button_custom_class != blank %} {{ button_custom_class | escape }}{% endif %}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
@@ -242,6 +246,12 @@
       ],
       "default": "none",
       "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_parallax_drift",
+      "default": false,
+      "label": "Enable parallax drift"
     },
     {
       "type": "header",
@@ -399,6 +409,12 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "text",
+          "id": "heading_custom_class",
+          "label": "Heading custom classes",
+          "info": "Optional classes applied to the heading element"
         }
       ]
     },
@@ -432,6 +448,12 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "text",
+          "id": "text_custom_class",
+          "label": "Text custom classes",
+          "info": "Optional classes applied to the text"
         }
       ]
     },
@@ -483,6 +505,12 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "text",
+          "id": "button_custom_class",
+          "label": "Button custom classes",
+          "info": "Classes added to each button in this block"
         }
       ]
     }

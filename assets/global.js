@@ -1331,15 +1331,24 @@ class CartPerformance {
   }
 }
 
-class HeroSectionParallax {
-  constructor(section) {
+class ParallaxDrift {
+  constructor(section, options = {}) {
     this.section = section;
-    this.media = section.querySelector('.hero-section__media');
+    this.mediaSelector = options.mediaSelector;
+    this.pointerRangeX = options.pointerRangeX ?? 14;
+    this.pointerRangeY = options.pointerRangeY ?? 10;
+    this.scrollRange = options.scrollRange ?? 15;
+    this.xVar = options.xVar ?? '--parallax-x';
+    this.yVar = options.yVar ?? '--parallax-y';
     this.frame = null;
     this.pointer = { x: 0, y: 0 };
     this.scrollOffset = 0;
+    this.mediaElements = this.mediaSelector ? Array.from(section.querySelectorAll(this.mediaSelector)) : [];
+    this.active = this.mediaElements.length > 0;
 
-    if (!this.media) return;
+    if (!this.active) {
+      return;
+    }
 
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
@@ -1359,8 +1368,8 @@ class HeroSectionParallax {
     const bounds = this.section.getBoundingClientRect();
     const relativeX = (event.clientX - bounds.left) / bounds.width - 0.5;
     const relativeY = (event.clientY - bounds.top) / bounds.height - 0.5;
-    this.pointer.x = relativeX * 14;
-    this.pointer.y = relativeY * 10;
+    this.pointer.x = relativeX * this.pointerRangeX;
+    this.pointer.y = relativeY * this.pointerRangeY;
     this.requestFrame();
   }
 
@@ -1375,7 +1384,7 @@ class HeroSectionParallax {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     const centerOffset = bounds.top + bounds.height / 2 - viewportHeight / 2;
     const normalized = Math.max(Math.min(centerOffset / viewportHeight, 1), -1);
-    this.scrollOffset = normalized * -15;
+    this.scrollOffset = normalized * -this.scrollRange;
     this.requestFrame();
   }
 
@@ -1389,23 +1398,33 @@ class HeroSectionParallax {
     const translateX = this.pointer.x;
     const translateY = this.pointer.y + this.scrollOffset;
 
-    this.media.style.setProperty('--hero-parallax-x', `${translateX}px`);
-    this.media.style.setProperty('--hero-parallax-y', `${translateY}px`);
+    this.mediaElements.forEach((media) => {
+      media.style.setProperty(this.xVar, `${translateX}px`);
+      media.style.setProperty(this.yVar, `${translateY}px`);
+    });
   }
 
   destroy() {
+    if (!this.active) return;
     this.section.removeEventListener('mousemove', this.onMouseMove);
     this.section.removeEventListener('mouseleave', this.onMouseLeave);
     window.removeEventListener('scroll', this.onScroll, this.scrollListenerOptions);
     window.removeEventListener('resize', this.onScroll);
     this.section.removeAttribute('data-parallax-ready');
-    this.media?.style.removeProperty('--hero-parallax-x');
-    this.media?.style.removeProperty('--hero-parallax-y');
+    this.mediaElements.forEach((media) => {
+      media.style.removeProperty(this.xVar);
+      media.style.removeProperty(this.yVar);
+    });
+    this.active = false;
   }
 }
 
+function prefersReducedMotion() {
+  return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
 function initializeHeroSectionParallax(root = document) {
-  if (!window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  if (prefersReducedMotion()) {
     return;
   }
 
@@ -1414,20 +1433,56 @@ function initializeHeroSectionParallax(root = document) {
 
   sections.forEach((section) => {
     section.heroSectionParallax?.destroy();
-    section.heroSectionParallax = new HeroSectionParallax(section);
+    section.heroSectionParallax = new ParallaxDrift(section, {
+      mediaSelector: '.hero-section__media',
+      xVar: '--hero-parallax-x',
+      yVar: '--hero-parallax-y',
+      pointerRangeX: 14,
+      pointerRangeY: 10,
+      scrollRange: 15,
+    });
+  });
+}
+
+function initializeBannerParallax(root = document) {
+  if (prefersReducedMotion()) {
+    return;
+  }
+
+  const sections = root.querySelectorAll('[data-banner-parallax]');
+  if (!sections.length) return;
+
+  sections.forEach((section) => {
+    section.bannerParallax?.destroy();
+    section.bannerParallax = new ParallaxDrift(section, {
+      mediaSelector: '.banner__media',
+      xVar: '--banner-parallax-x',
+      yVar: '--banner-parallax-y',
+      pointerRangeX: 12,
+      pointerRangeY: 8,
+      scrollRange: 12,
+    });
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeHeroSectionParallax();
+  initializeBannerParallax();
 });
 
 if (window.Shopify && Shopify.designMode) {
-  document.addEventListener('shopify:section:load', (event) => initializeHeroSectionParallax(event.target));
+  document.addEventListener('shopify:section:load', (event) => {
+    initializeHeroSectionParallax(event.target);
+    initializeBannerParallax(event.target);
+  });
   document.addEventListener('shopify:section:unload', (event) => {
     event.target.querySelectorAll('.hero-section').forEach((section) => {
       section.heroSectionParallax?.destroy();
       section.heroSectionParallax = null;
+    });
+    event.target.querySelectorAll('[data-banner-parallax]').forEach((section) => {
+      section.bannerParallax?.destroy();
+      section.bannerParallax = null;
     });
   });
 }
