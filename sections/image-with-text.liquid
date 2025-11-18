@@ -24,13 +24,13 @@
   endif
 -%}
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} animate-in-scroll-trigger">
-  <div class="page-width">
-    <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
-        <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} animate-in-scroll-trigger{% if section.settings.section_custom_class != blank %} {{ section.settings.section_custom_class }}{% endif %}">
+  <div class="page-width{% if section.settings.page_width_custom_class != blank %} {{ section.settings.page_width_custom_class }}{% endif %}">
+    <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if section.settings.wrapper_custom_class != blank %} {{ section.settings.wrapper_custom_class }}{% endif %}">
+      <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}{% if section.settings.grid_custom_class != blank %} {{ section.settings.grid_custom_class }}{% endif %}">
+        <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item{% if section.settings.media_item_custom_class != blank %} {{ section.settings.media_item_custom_class }}{% endif %}">
           <div
-            class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} animate-item animate-item-0"
+            class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} animate-item animate-item-0{% if section.settings.media_custom_class != blank %} {{ section.settings.media_custom_class }}{% endif %}"
             {% if section.settings.height == 'adapt' and section.settings.image != blank %}
               style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
             {% endif %}
@@ -59,29 +59,29 @@
             {%- endif -%}
           </div>
         </div>
-        <div class="image-with-text__text-item grid__item">
+        <div class="image-with-text__text-item grid__item{% if section.settings.text_item_custom_class != blank %} {{ section.settings.text_item_custom_class }}{% endif %}">
           <div
             id="ImageWithText--{{ section.id }}"
-            class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+            class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.content_custom_class != blank %} {{ section.settings.content_custom_class }}{% endif %}"
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}  animate-item animate-item-1"
+                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}  animate-item animate-item-1{% if block.settings.custom_class != blank %} {{ block.settings.custom_class }}{% endif %}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'caption' -%}
                   <p
-                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }} animate-item animate-item-2"
+                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }} animate-item animate-item-2{% if block.settings.custom_class != blank %} {{ block.settings.custom_class }}{% endif %}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}
                   </p>
                 {%- when 'text' -%}
-                  <div class="image-with-text__text rte {{ block.settings.text_style }} animate-item animate-item-2" {{ block.shopify_attributes }}>
+                  <div class="image-with-text__text rte {{ block.settings.text_style }} animate-item animate-item-2{% if block.settings.custom_class != blank %} {{ block.settings.custom_class }}{% endif %}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
                 {%- when 'button' -%}
@@ -92,7 +92,7 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} animate-item animate-item-3"
+                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} animate-item animate-item-3{% if block.settings.custom_class != blank %} {{ block.settings.custom_class }}{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -282,8 +282,60 @@
     },
     {
       "type": "header",
+      "content": "Custom classes"
+    },
+    {
+      "type": "text",
+      "id": "section_custom_class",
+      "label": "Section wrapper classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "page_width_custom_class",
+      "label": "Page width wrapper classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "wrapper_custom_class",
+      "label": "Image with text wrapper classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "grid_custom_class",
+      "label": "Grid wrapper classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "media_item_custom_class",
+      "label": "Media column classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "media_custom_class",
+      "label": "Media element classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "text_item_custom_class",
+      "label": "Text column classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "text",
+      "id": "content_custom_class",
+      "label": "Content wrapper classes",
+      "info": "Separate multiple classes with spaces."
+    },
+    {
+      "type": "header",
       "content": "t:sections.image-with-text.settings.header_colors.content"
-    },        
+    },
     {
       "type": "color_scheme",
       "id": "section_color_scheme",
@@ -360,6 +412,12 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Additional CSS classes",
+          "info": "Separate multiple classes with spaces."
         }
       ]
     },
@@ -409,6 +467,12 @@
           ],
           "default": "medium",
           "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.label"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Additional CSS classes",
+          "info": "Separate multiple classes with spaces."
         }
       ]
     },
@@ -438,6 +502,12 @@
           ],
           "default": "body",
           "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Additional CSS classes",
+          "info": "Separate multiple classes with spaces."
         }
       ]
     },
@@ -463,6 +533,12 @@
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+        },
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Additional CSS classes",
+          "info": "Separate multiple classes with spaces."
         }
       ]
     }
