@@ -30,9 +30,10 @@
       data-cascade
     {% endif %}
   >
+    {%- assign heading_custom_class = section.settings.heading_class | strip -%}
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if heading_custom_class != blank %} {{ heading_custom_class }}{% endif %}">
           {{ section.settings.title }}
         </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
@@ -66,9 +67,10 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
+          {%- assign column_custom_class = block.settings.column_class | strip -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} animate-item animate-item-{{ forloop.index }}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} animate-item animate-item-{{ forloop.index }}{% if column_custom_class != blank %} {{ column_custom_class }}{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -173,10 +175,11 @@
         </div>
       {%- endif -%}
     </slider-component>
+    {%- assign button_custom_class = section.settings.button_class | strip -%}
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
-          class="button button--primary animate-item animate-item-4"
+          class="button button--primary animate-item animate-item-4{% if button_custom_class != blank %} {{ button_custom_class }}{% endif %}"
           {% if section.settings.button_link == blank %}
             role="link" aria-disabled="true"
           {% else %}
@@ -204,6 +207,11 @@
       "id": "title",
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "heading_class",
+      "label": "Heading custom class"
     },
     {
       "type": "select",
@@ -284,7 +292,7 @@
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_button.content"
-    },    
+    },
     {
       "type": "text",
       "id": "button_label",
@@ -296,7 +304,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.multicolumn.settings.button_link.label"
-    },    
+    },
+    {
+      "type": "text",
+      "id": "button_class",
+      "label": "Button custom class"
+    },
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_layout.content"
@@ -431,6 +444,11 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "text",
+          "id": "column_class",
+          "label": "Column custom class"
         }
       ]
     }
