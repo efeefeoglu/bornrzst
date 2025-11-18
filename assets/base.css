@@ -3633,7 +3633,7 @@ details-disclosure > details {
 
 .blackText18{font-size: 1.8em;color:#000;line-height: 1.2;}
 .homeFearlessCollection img{border-radius:50% 50% 0 0}
-.homeFearlessCollection h3{font-size:3em;font-family:"Noto Serif Display Extra Condensed";letter-spacing:-0.075em;}
-.homeFearlessCollection .rte{font-size:1.2em}
+.homeFearlessCollection h3{font-size:3em;font-family:"Noto Serif Display Extra Condensed";letter-spacing:-0.075em;text-align:left;}
+.homeFearlessCollection .rte{font-size:1.25em;color:#FFF;text-align:left;}
 
 .redButton18{font-size: 1.8em;color:#780000;line-height: 2.5;background:transparent;border:solid 1px #780000;}
