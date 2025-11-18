@@ -84,7 +84,7 @@
 }
 
 .animate-in {
-  animation: fadeInUp 1s ease-out 1s forwards;;
+  animation: fadeInUp 1s ease-out forwards;;
 }
 
   @media (prefers-reduced-motion: reduce) {
@@ -97,7 +97,7 @@
 <section id="roots-story-{{ section.id }}" class="scroll-trigger roots-story-section color-{{ section.settings.color_scheme }} gradient">
   <div class="roots-story__padding">
     <div class="page-width roots-story__layout">
-      <div class="roots-story__media animate-item" data-reveal-item>
+      <div class="roots-story__media animate-item animate-item-1" data-reveal-item>
         {%- if section.settings.tree_image != blank -%}
           {%- liquid
             assign alt_text = section.settings.tree_image.alt | default: section.settings.heading | strip_html
@@ -113,18 +113,18 @@
       </div>
       <div class="roots-story__content">
         {%- if section.settings.heading != blank -%}
-          <h2 class="roots-story__heading animate-item" data-reveal-item>
+          <h2 class="roots-story__heading animate-item animate-item-2" data-reveal-item>
             {{ section.settings.heading }}
           </h2>
         {%- endif -%}
         {%- if section.settings.body != blank -%}
-          <div class="roots-story__text rte animate-item" data-reveal-item>
+          <div class="roots-story__text rte animate-item animate-item-3" data-reveal-item>
             {{ section.settings.body }}
           </div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <a
-            class="button button--primary animate-item"
+            class="button button--primary animate-item animate-item-4"
             data-reveal-item
             {% if section.settings.button_link == blank %}
               role="link" aria-disabled="true"
@@ -156,11 +156,25 @@ const observer = new IntersectionObserver((entries) => {
       // Find all subelements with the specific class
       const subelements = entry.target.querySelectorAll(`.${SUBELEMENT_CLASS}`);
       
-      // Add animation class to each subelement with a stagger delay
+      // Add animation class to each subelement with dynamic delay
       subelements.forEach((el, index) => {
-        setTimeout(() => {
-          el.classList.add(ANIMATION_CLASS);
-        }, index * 100); // 100ms delay between each element
+        // Check for delay classes like 'animate-item-2' (2 second delay)
+        const delayMatch = Array.from(el.classList).find(cls => cls.match(/animate-item-\d+(\.\d+)?/));
+        let delaySeconds = 0;
+        
+        if (delayMatch) {
+          // Extract the number from class like 'animate-item-2'
+          delaySeconds = parseFloat(delayMatch.split('-').pop());
+        } else {
+          // Use stagger delay if no custom delay specified (convert to seconds)
+          delaySeconds = (index * 100) / 1000;
+        }
+        
+        // Set the animation delay dynamically via inline style
+        el.style.animationDelay = `${delaySeconds}s`;
+        
+        // Add the animation class
+        el.classList.add(ANIMATION_CLASS);
       });
       
       // Stop observing this element (animation only happens once)
