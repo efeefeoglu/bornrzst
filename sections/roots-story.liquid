@@ -89,6 +89,10 @@
       opacity: 1;
       transform: none;
     }
+    
+    #roots-story-{{ section.id }} .roots-story__heading::after {
+      width: 100%;
+    }
   }
 {%- endstyle -%}
 
@@ -139,76 +143,73 @@
 </section>
 
 {%- javascript -%}
-(() => {
-  const sectionId = 'roots-story-{{ section.id }}';
+  (() => {
+    const sectionId = 'roots-story-{{ section.id }}';
+    
+    const init = () => {
+      const sectionEl = document.getElementById(sectionId);
+      if (!sectionEl) return;
+      
+      const revealItems = sectionEl.querySelectorAll('[data-reveal-item]');
+      if (!revealItems.length) return;
 
-  const init = () => {
-    const sectionEl = document.getElementById(sectionId);
-    if (!sectionEl) return;
+      // Set stagger delays
+      revealItems.forEach((item, index) => {
+        item.style.setProperty('--roots-story-delay', `${index * 80}ms`);
+      });
 
-    const revealItems = sectionEl.querySelectorAll('[data-reveal-item]');
-    if (!revealItems.length) return;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const isDesignMode = Boolean(window.Shopify && Shopify.designMode);
 
-    // set stagger delays
-    revealItems.forEach((item, index) => {
-      item.style.setProperty('--roots-story-delay', `${index * 80}ms`);
-    });
+      // Show immediately if reduced motion or in design mode
+      if (prefersReducedMotion || isDesignMode) {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
+        return;
+      }
 
-    const showItems = () => {
-      revealItems.forEach((item) => item.classList.add('is-visible'));
+      // Prevent double initialization
+      if (sectionEl.dataset.revealInitialized === 'true') return;
+      sectionEl.dataset.revealInitialized = 'true';
+
+      // Set up intersection observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          root: null,
+          rootMargin: '0px 0px -10% 0px',
+          threshold: 0.1
+        }
+      );
+
+      // Observe each item
+      revealItems.forEach((item) => {
+        observer.observe(item);
+      });
     };
 
-    const prefersReducedMotion =
-      window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const isDesignMode = !!(window.Shopify && Shopify.designMode);
-
-    // If user prefers reduced motion, in theme editor, or IO not supported → just show
-    if (prefersReducedMotion || isDesignMode || !('IntersectionObserver' in window)) {
-      showItems();
-      return;
+    // Initialize on load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init, { once: true });
+    } else {
+      // DOM already loaded, wait a tick for section to be in DOM
+      setTimeout(init, 0);
     }
 
-    if (sectionEl.dataset.revealInitialized === 'true') return;
-    sectionEl.dataset.revealInitialized = 'true';
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-
-          // when section hits 15% viewport → reveal all items (with stagger)
-          showItems();
-          observer.unobserve(entry.target);
-        });
-      },
-      {
-        threshold: 0.15
-        // you can drop rootMargin for now; simpler to debug
-        // rootMargin: '0px 0px -15% 0px',
+    // Handle Shopify theme editor
+    document.addEventListener('shopify:section:load', (event) => {
+      if (event.target && event.target.id === sectionId) {
+        setTimeout(init, 0);
       }
-    );
-
-    // observe the whole section, not each item
-    observer.observe(sectionEl);
-  };
-
-  const onSectionLoad = (event) => {
-    if (event.target && event.target.querySelector(`#${sectionId}`)) {
-      init();
-    }
-  };
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init, { once: true });
-  } else {
-    init();
-  }
-
-  document.addEventListener('shopify:section:load', onSectionLoad);
-})();
+    });
+  })();
 {%- endjavascript -%}
-
 
 {% schema %}
 {
