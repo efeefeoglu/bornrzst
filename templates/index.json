@@ -180,7 +180,7 @@
             "button_label_1": "Wear it. Live it. Resist.",
             "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -214,7 +214,7 @@
           "settings": {
             "heading": "Join the Resistance Club",
             "heading_size": "h1",
-            "custom_class": ""
+            "custom_class": "redTitle54"
           }
         },
         "text_Ni7bQt": {
@@ -222,7 +222,7 @@
           "settings": {
             "text": "<p>Step inside the movement.</p><p>As a member, you’ll get early access to drops,<br/>exclusive designs, and behind-the-scenes updates.</p><p>More than perks  it’s a way to stay connected,<br/>united, and always one step ahead.</p>",
             "text_style": "body",
-            "custom_class": ""
+            "custom_class": "blackText18"
           }
         },
         "button_XLaEjz": {
@@ -231,7 +231,7 @@
             "button_label": "BECOME A MEMBER",
             "button_link": "",
             "button_style_secondary": false,
-            "custom_class": ""
+            "custom_class": "redButton18"
           }
         }
       },
