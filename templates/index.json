@@ -95,7 +95,7 @@
         "column_YeBQfj": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/mockup_20250921-155646_candid_popsicle_1.png",
+            "image": "shopify://shop_images/wanted-hoodie.jpg",
             "title": "Wanted  Hoodie",
             "text": "<p>Defiant design honoring voices silenced yet never forgotten. <br/>Standbold. Wearresistance</p>",
             "link_label": "",
@@ -106,7 +106,7 @@
         "column_3MNNGy": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/sunlit-urban-hoodie-mockup-male-model-walking-away-on-modern-architectural-structure-scenery-0787_1_1.png",
+            "image": "shopify://shop_images/martyrs-hoodie.jpg",
             "title": "Martyrs  Hoodie",
             "text": "<p>They killed the dreamers, but not the dream.<br/>Carry their legacy everywhere you go</p>",
             "link_label": "",
@@ -117,7 +117,7 @@
         "column_XiDXfp": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/mockup_20250921-160817_shadowy_popsicle.png",
+            "image": "shopify://shop_images/exile-hoodie.jpg",
             "title": "Exile Hoodie",
             "text": "<p>Born in displacement, unshaken in identity. <br/>A piece that speaks louder than words.</p>",
             "link_label": "",
@@ -164,14 +164,16 @@
           "type": "heading",
           "settings": {
             "heading": "More Than Clothing A movement",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "heading_custom_class": ""
           }
         },
         "text_W9jNtP": {
           "type": "text",
           "settings": {
             "text": "BØRN RZST™ is not just a streetwear brand.It’s a statement, a protest, and a community bound by resilience.Every design is rooted in truth, crafted to amplify the voiceshistory tried to silence.",
-            "text_style": "body"
+            "text_style": "body",
+            "text_custom_class": ""
           }
         },
         "buttons_jP6mXU": {
@@ -182,7 +184,8 @@
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_custom_class": ""
           }
         }
       },
@@ -197,6 +200,7 @@
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
+        "enable_parallax_drift": false,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
@@ -242,7 +246,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1.jpg",
+        "image": "shopify://shop_images/Join_the_Resistance_Club.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -286,7 +290,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/2.jpg",
+        "image": "shopify://shop_images/Voices_of_Truth.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -347,7 +351,7 @@
       "settings": {
         "image": "shopify://shop_images/Reminder.jpg",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
