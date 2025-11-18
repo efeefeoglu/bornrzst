@@ -281,7 +281,8 @@
         "text_ieAKtL"
       ],
       "custom_css": [
-        "p {text-align: center; font-size: 1.2em; color: #000;}",
+        "p {text-align: center; font-size: 1.2em; color: #000; margin: 20px auto !important; max-width: 70%;}",
+        "p:nth-child(odd){margin-top:10%;}",
         "p strong {font-size: 3em; font-family: \"Noto Serif Display Extra Condensed\"; font-weight: 400; color: #000; letter-spacing: -0.075em; line-height: 0.9; margin: 20px 0;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
