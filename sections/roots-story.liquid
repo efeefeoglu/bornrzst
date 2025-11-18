@@ -71,6 +71,21 @@
     margin-bottom: 2rem;
   }
 
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
   @media (prefers-reduced-motion: reduce) {
     #roots-story-{{ section.id }} .roots-story__heading::after {
       width: 100%;
