@@ -37,14 +37,16 @@
           "type": "heading",
           "settings": {
             "heading": "Our Roots Run Deep",
-            "heading_size": "hxxl"
+            "heading_size": "hxxl",
+            "custom_class": "redTitle54"
           }
         },
         "text_KNPNzg": {
           "type": "text",
           "settings": {
             "text": "<p>Born from generations of struggle and resilience,<br/>BØRN RZST™ carries the heritage of those who<br/>never gave up.</p><p>Like the olive tree, we stand unshaken rooted in<br/>history, reaching for freedom.</p><p>Every design tells a story of resistance, hope, and<br/>unwavering strength.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "custom_class": ""
           }
         },
         "button_a3wh4E": {
@@ -52,7 +54,8 @@
           "settings": {
             "button_label": "EXPLORE OUR STORY",
             "button_link": "shopify://pages/who-we-are",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "custom_class": ""
           }
         }
       },
@@ -72,6 +75,14 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
+        "section_custom_class": "",
+        "page_width_custom_class": "",
+        "wrapper_custom_class": "",
+        "grid_custom_class": "",
+        "media_item_custom_class": "",
+        "media_custom_class": "",
+        "text_item_custom_class": "",
+        "content_custom_class": "",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 100,
@@ -197,14 +208,16 @@
           "type": "heading",
           "settings": {
             "heading": "Join the Resistance Club",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "custom_class": ""
           }
         },
         "text_Ni7bQt": {
           "type": "text",
           "settings": {
             "text": "<p>Step inside the movement.</p><p>As a member, you’ll get early access to drops,<br/>exclusive designs, and behind-the-scenes updates.</p><p>More than perks  it’s a way to stay connected,<br/>united, and always one step ahead.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "custom_class": ""
           }
         },
         "button_XLaEjz": {
@@ -212,7 +225,8 @@
           "settings": {
             "button_label": "BECOME A MEMBER",
             "button_link": "",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "custom_class": ""
           }
         }
       },
@@ -232,6 +246,14 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
+        "section_custom_class": "",
+        "page_width_custom_class": "",
+        "wrapper_custom_class": "",
+        "grid_custom_class": "",
+        "media_item_custom_class": "",
+        "media_custom_class": "",
+        "text_item_custom_class": "",
+        "content_custom_class": "",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
