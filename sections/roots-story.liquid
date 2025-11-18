@@ -113,18 +113,18 @@
       </div>
       <div class="roots-story__content">
         {%- if section.settings.heading != blank -%}
-          <h2 class="roots-story__heading animate-item animate-item-0.5" data-reveal-item>
+          <h2 class="roots-story__heading animate-item animate-item-1" data-reveal-item>
             {{ section.settings.heading }}
           </h2>
         {%- endif -%}
         {%- if section.settings.body != blank -%}
-          <div class="roots-story__text rte animate-item animate-item-1" data-reveal-item>
+          <div class="roots-story__text rte animate-item animate-item-2" data-reveal-item>
             {{ section.settings.body }}
           </div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <a
-            class="button button--primary animate-item animate-item-1.5"
+            class="button button--primary animate-item animate-item-3"
             data-reveal-item
             {% if section.settings.button_link == blank %}
               role="link" aria-disabled="true"
