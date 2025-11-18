@@ -68,20 +68,20 @@
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}  animate-item animate-item-0.5"
+                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}  animate-item animate-item-1"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'caption' -%}
                   <p
-                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }} animate-item animate-item-1"
+                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }} animate-item animate-item-2"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}
                   </p>
                 {%- when 'text' -%}
-                  <div class="image-with-text__text rte {{ block.settings.text_style }} animate-item animate-item-1" {{ block.shopify_attributes }}>
+                  <div class="image-with-text__text rte {{ block.settings.text_style }} animate-item animate-item-2" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
                 {%- when 'button' -%}
@@ -92,7 +92,7 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} animate-item animate-item-1.5"
+                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} animate-item animate-item-3"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
