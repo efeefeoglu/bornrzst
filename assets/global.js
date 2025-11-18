@@ -1433,7 +1433,7 @@ if (window.Shopify && Shopify.designMode) {
 }
 
 // Configuration
-const TARGET_ELEMENT_SELECTOR = '.scroll-trigger'; // The parent element to watch
+const TARGET_ELEMENT_SELECTOR = '.animate-in-scroll-trigger'; // The parent element to watch
 const SUBELEMENT_CLASS = 'animate-item'; // Class of subelements to animate
 const ANIMATION_CLASS = 'animate-in'; // Class that applies the animation
 const THRESHOLD = 0.3; // How much of the element should be visible (0-1)
