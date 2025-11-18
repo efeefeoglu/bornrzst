@@ -1,0 +1,137 @@
+.unshakable-roots {
+  background: #050505;
+  color: #f7f7f2;
+  padding: clamp(56px, 8vw, 128px) 0;
+}
+
+.unshakable-roots__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(32px, 4vw, 72px);
+  align-items: center;
+}
+
+.unshakable-roots__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.unshakable-roots__logo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.unshakable-roots__logo-text {
+  font-family: "Noto Serif Display Extra Condensed", var(--font-heading-family);
+  font-size: clamp(52px, 8vw, 96px);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+.unshakable-roots__logo-image img {
+  max-width: 260px;
+  height: auto;
+}
+
+.unshakable-roots__tagline {
+  font-size: 18px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.unshakable-roots__meta-label {
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  color: #f9f4d4;
+}
+
+.unshakable-roots__meta-body {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.unshakable-roots__meta-body p {
+  margin: 0;
+}
+
+.unshakable-roots__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.unshakable-roots__social-link {
+  font-size: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+.unshakable-roots__social-link:hover,
+.unshakable-roots__social-link:focus-visible {
+  text-decoration: underline;
+}
+
+.unshakable-roots__badge {
+  display: flex;
+  justify-content: center;
+}
+
+.unshakable-roots__badge svg,
+.unshakable-roots__badge img {
+  width: min(520px, 100%);
+  height: auto;
+}
+
+.unshakable-roots__badge-text {
+  fill: #fefefe;
+  font-family: "Noto Serif Display Extra Condensed", var(--font-heading-family);
+  font-size: 40px;
+  letter-spacing: 0.35em;
+}
+
+.unshakable-roots__badge-tree path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.unshakable-roots__badge-tree path:last-child {
+  fill: #ffffff;
+  stroke: none;
+}
+
+.unshakable-roots__badge-script {
+  fill: #ffffff;
+  font-size: 32px;
+  font-family: "Crimson Pro", var(--font-body-family);
+}
+
+.unshakable-roots__badge-sparkle {
+  fill: #ffffff;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 600px) {
+  .unshakable-roots__logo-text {
+    font-size: 48px;
+  }
+
+  .unshakable-roots__meta-body,
+  .unshakable-roots__social-link {
+    letter-spacing: 0.2em;
+  }
+}
