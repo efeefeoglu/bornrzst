@@ -1431,3 +1431,51 @@ if (window.Shopify && Shopify.designMode) {
     });
   });
 }
+
+// Configuration
+const TARGET_ELEMENT_SELECTOR = '.scroll-trigger'; // The parent element to watch
+const SUBELEMENT_CLASS = 'animate-item'; // Class of subelements to animate
+const ANIMATION_CLASS = 'animate-in'; // Class that applies the animation
+const THRESHOLD = 0.2; // How much of the element should be visible (0-1)
+
+// Create Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Find all subelements with the specific class
+      const subelements = entry.target.querySelectorAll(`.${SUBELEMENT_CLASS}`);
+      
+      // Add animation class to each subelement with dynamic delay
+      subelements.forEach((el, index) => {
+        // Check for delay classes like 'animate-item-2' (2 second delay)
+        const delayMatch = Array.from(el.classList).find(cls => cls.match(/animate-item-\d+(\.\d+)?/));
+        let delaySeconds = 0;
+        
+        if (delayMatch) {
+          // Extract the number from class like 'animate-item-2'
+          delaySeconds = parseFloat(delayMatch.split('-').pop());
+        } else {
+          // Use stagger delay if no custom delay specified (convert to seconds)
+          delaySeconds = (index * 100) / 1000;
+        }
+        
+        // Set the animation delay dynamically via inline style
+        el.style.animationDelay = `${delaySeconds}s`;
+        
+        // Add the animation class
+        el.classList.add(ANIMATION_CLASS);
+      });
+      
+      // Stop observing this element (animation only happens once)
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: THRESHOLD,
+  rootMargin: '-200px'
+});
+
+// Observe all target elements
+document.querySelectorAll(TARGET_ELEMENT_SELECTOR).forEach((el) => {
+  observer.observe(el);
+});
