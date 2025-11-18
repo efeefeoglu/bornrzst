@@ -189,6 +189,54 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "image_with_text_4akVQM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bHnkhB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Resistance Club",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ni7bQt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step inside the movement.</p><p>As a member, you’ll get early access to drops,<br/>exclusive designs, and behind-the-scenes updates.</p><p>More than perks  it’s a way to stay connected,<br/>united, and always one step ahead.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XLaEjz": {
+          "type": "button",
+          "settings": {
+            "button_label": "BECOME A MEMBER",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bHnkhB",
+        "text_Ni7bQt",
+        "button_XLaEjz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -196,6 +244,7 @@
     "image_with_text_xgVYmC",
     "multicolumn_h8DKGd",
     "pagefly-home",
-    "image_banner_GmzjbB"
+    "image_banner_GmzjbB",
+    "image_with_text_4akVQM"
   ]
 }
