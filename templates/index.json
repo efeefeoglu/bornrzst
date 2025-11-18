@@ -148,12 +148,26 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "roots_story_section": {
+      "type": "roots-story",
+      "settings": {
+        "tree_image": "shopify://shop_images/olive-tree_381c7406-1b18-4a47-897c-4b8a79f6e38c.png",
+        "heading": "Our Roots Run Deep",
+        "body": "<p>Born from generations of struggle and resilience, BØRN RZST™ carries the heritage of those who never gave up.</p><p>Like the olive tree, we stand unshaken rooted in history, reaching for freedom.</p><p>Every design tells a story of resistance, hope, and unwavering strength.</p>",
+        "button_label": "EXPLORE OUR STORY",
+        "button_link": "shopify://pages/who-we-are",
+        "color_scheme": "scheme-1",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
     }
   },
   "order": [
     "hero_section",
     "roots_story_section",
     "image_with_text_xgVYmC",
-    "multicolumn_h8DKGd"
+    "multicolumn_h8DKGd",
+    "roots_story_section"
   ]
 }
