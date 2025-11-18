@@ -46,7 +46,7 @@
           "settings": {
             "text": "<p>Born from generations of struggle and resilience,<br/>BØRN RZST™ carries the heritage of those who<br/>never gave up.</p><p>Like the olive tree, we stand unshaken rooted in<br/>history, reaching for freedom.</p><p>Every design tells a story of resistance, hope, and<br/>unwavering strength.</p>",
             "text_style": "body",
-            "custom_class": ""
+            "custom_class": "blackText18"
           }
         },
         "button_a3wh4E": {
@@ -55,7 +55,7 @@
             "button_label": "EXPLORE OUR STORY",
             "button_link": "shopify://pages/who-we-are",
             "button_style_secondary": false,
-            "custom_class": ""
+            "custom_class": "redButton18"
           }
         }
       },
