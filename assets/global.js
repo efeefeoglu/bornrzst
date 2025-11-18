@@ -1453,10 +1453,10 @@ const observer = new IntersectionObserver((entries) => {
         
         if (delayMatch) {
           // Extract the number from class like 'animate-item-2'
-          delaySeconds = parseFloat(delayMatch.split('-').pop());
+          delaySeconds = parseFloat(delayMatch.split('-').pop()) / 2;
         } else {
           // Use stagger delay if no custom delay specified (convert to seconds)
-          delaySeconds = (index * 100) / 1000;
+          delaySeconds = (index * 50) / 1000;
         }
         
         // Set the animation delay dynamically via inline style
