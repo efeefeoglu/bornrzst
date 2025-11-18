@@ -61,20 +61,8 @@
     transition: width 400ms ease;
   }
 
-  #roots-story-{{ section.id }} .roots-story__heading.is-visible::after {
+  #roots-story-{{ section.id }} .roots-story__heading.reveal-visible::after {
     width: 100%;
-  }
-
-  #roots-story-{{ section.id }} [data-reveal-item] {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 600ms ease, transform 600ms ease;
-    transition-delay: var(--roots-story-delay, 0ms);
-  }
-
-  #roots-story-{{ section.id }} [data-reveal-item].is-visible {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   #roots-story-{{ section.id }} .roots-story__text {
@@ -84,12 +72,6 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    #roots-story-{{ section.id }} [data-reveal-item] {
-      transition: none;
-      opacity: 1;
-      transform: none;
-    }
-    
     #roots-story-{{ section.id }} .roots-story__heading::after {
       width: 100%;
     }
@@ -145,67 +127,65 @@
 {%- javascript -%}
   (() => {
     const sectionId = 'roots-story-{{ section.id }}';
-    
+
     const init = () => {
       const sectionEl = document.getElementById(sectionId);
       if (!sectionEl) return;
-      
-      const revealItems = sectionEl.querySelectorAll('[data-reveal-item]');
+
+      const revealItems = Array.from(sectionEl.querySelectorAll('[data-reveal-item]'));
       if (!revealItems.length) return;
 
-      // Set stagger delays
-      revealItems.forEach((item, index) => {
-        item.style.setProperty('--roots-story-delay', `${index * 80}ms`);
-      });
+      if (sectionEl.dataset.revealInitialized === 'true') return;
+      sectionEl.dataset.revealInitialized = 'true';
 
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const isDesignMode = Boolean(window.Shopify && Shopify.designMode);
 
-      // Show immediately if reduced motion or in design mode
+      revealItems.forEach((item, index) => {
+        const delayIndex = Math.min(index, 9);
+        item.classList.add('reveal-on-scroll', `reveal-delay-${delayIndex}`);
+      });
+
+      const showItems = () => {
+        revealItems.forEach((item) => item.classList.add('reveal-visible'));
+      };
+
       if (prefersReducedMotion || isDesignMode) {
-        revealItems.forEach((item) => item.classList.add('is-visible'));
+        showItems();
         return;
       }
 
-      // Prevent double initialization
-      if (sectionEl.dataset.revealInitialized === 'true') return;
-      sectionEl.dataset.revealInitialized = 'true';
+      let hasRevealed = false;
 
-      // Set up intersection observer
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          root: null,
-          rootMargin: '0px 0px -10% 0px',
-          threshold: 0.1
+      const handleVisibility = () => {
+        if (hasRevealed) return;
+
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const scrollPosition = window.scrollY + windowHeight * 0.85;
+        const sectionTop = sectionEl.getBoundingClientRect().top + window.scrollY;
+
+        if (scrollPosition >= sectionTop) {
+          hasRevealed = true;
+          showItems();
+          window.removeEventListener('scroll', handleVisibility);
+          window.removeEventListener('resize', handleVisibility);
         }
-      );
+      };
 
-      // Observe each item
-      revealItems.forEach((item) => {
-        observer.observe(item);
-      });
+      window.addEventListener('scroll', handleVisibility, { passive: true });
+      window.addEventListener('resize', handleVisibility);
+      handleVisibility();
     };
 
-    // Initialize on load
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', init, { once: true });
     } else {
-      // DOM already loaded, wait a tick for section to be in DOM
-      setTimeout(init, 0);
+      init();
     }
 
-    // Handle Shopify theme editor
     document.addEventListener('shopify:section:load', (event) => {
       if (event.target && event.target.id === sectionId) {
-        setTimeout(init, 0);
+        init();
       }
     });
   })();
