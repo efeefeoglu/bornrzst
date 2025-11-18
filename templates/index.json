@@ -145,65 +145,13 @@
         "color_scheme": "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-      "padding_top": 36,
-      "padding_bottom": 36
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "fearless_collection_section": {
-      "type": "fearless-collection",
-      "blocks": {
-        "feature_wanted": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/mockup_20250921-155646_candid_popsicle_1.png",
-            "title": "Wanted Hoodie",
-            "description": "Defiant design honoring voices silenced yet never forgotten.<br/>Stand bold. Wear resistance."
-          }
-        },
-        "feature_martyrs": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/sunlit-urban-hoodie-mockup-male-model-walking-away-on-modern-architectural-structure-scenery-0787_1_1.png",
-            "title": "Martyrs Hoodie",
-            "description": "They killed the dreamers, but not the dream.<br/>Carry their legacy everywhere you go."
-          }
-        },
-        "feature_exile": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/mockup_20250921-160817_shadowy_popsicle.png",
-            "title": "Exile Hoodie",
-            "description": "Born in displacement, unshaken in identity.<br/>A piece that speaks louder than words."
-          }
-        }
-      },
-      "block_order": [
-        "feature_wanted",
-        "feature_martyrs",
-        "feature_exile"
-      ],
-      "settings": {
-        "eyebrow": "Latest drop",
-        "heading": "Timeless Pieces for a Fearless Generation",
-        "text": "<p>Defiant design honoring voices silenced yet never forgotten. Stand bold. Wear resistance.</p>",
-        "button_label": "EXPLORE THE COLLECTION",
-        "button_link": "shopify://collections/all",
-        "background_color": "#4a0000",
-        "text_color": "#f8e8dc"
-      }
-    },
-    "roots_story_section": {
-      "type": "roots-story",
-      "settings": {
-        "tree_image": "shopify://shop_images/olive-tree_381c7406-1b18-4a47-897c-4b8a79f6e38c.png",
-        "heading": "Our Roots Run Deep",
-        "body": "<p>Born from generations of struggle and resilience, BØRN RZST™ carries the heritage of those who never gave up.</p><p>Like the olive tree, we stand unshaken rooted in history, reaching for freedom.</p><p>Every design tells a story of resistance, hope, and unwavering strength.</p>",
-        "button_label": "EXPLORE OUR STORY",
-        "button_link": "shopify://pages/who-we-are",
-        "color_scheme": "scheme-1",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
+    "pagefly-home": {
+      "type": "pagefly-home",
+      "settings": {}
     }
   },
   "order": [
@@ -211,7 +159,6 @@
     "roots_story_section",
     "image_with_text_xgVYmC",
     "multicolumn_h8DKGd",
-    "fearless_collection_section",
-    "roots_story_section"
+    "pagefly-home"
   ]
 }
