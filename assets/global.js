@@ -1456,7 +1456,7 @@ const observer = new IntersectionObserver((entries) => {
           delaySeconds = parseFloat(delayMatch.split('-').pop());
         } else {
           // Use stagger delay if no custom delay specified (convert to seconds)
-          delaySeconds = (index * 5) / 1000;
+          delaySeconds = (index * 100) / 1000;
         }
         
         // Set the animation delay dynamically via inline style
