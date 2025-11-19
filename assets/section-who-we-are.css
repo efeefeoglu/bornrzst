@@ -10,6 +10,7 @@
   margin: 0 auto;
   padding: 0 20px;
   position:relative;
+  border-top:2px dashed #FFF;
 }
 .who-we-are-left {
   flex-basis: 50%;
@@ -23,7 +24,7 @@
 }
 .who-we-are-title {
   font-weight: 500;
-  margin-bottom: 20px;
+  margin: 20px 0;
   transition: font-weight 0.3s ease, letter-spacing 0.3s ease;
   font-family: 'Bebas Neue';
   color: #FFF;
