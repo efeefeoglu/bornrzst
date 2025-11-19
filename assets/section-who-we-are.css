@@ -26,17 +26,18 @@
   font-family: 'Bebas Neue';
   color: #FFF;
   font-size: 19em;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.05em;
   line-height: 0.8;
 }
 .who-we-are-title.who-we-are-animated-text:hover {
   font-weight: 700;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.075em;
 }
 .who-we-are-text {
   font-size: 2em;
   font-family: 'Bebas Neue';
   max-width: 400px;
+  line-height:1.5;
 }
 .who-we-are-logo {
   margin-bottom: 40px;
