@@ -194,6 +194,10 @@
         "text_W9jNtP",
         "buttons_jP6mXU"
       ],
+      "custom_css": [
+        "h2 {text-align: left; margin-left: -2em; width: 90%; font-size: 7.4em; color: #780000; letter-spacing: -0.075em; line-height: 0.9; margin-top: 30%;}",
+        "p{font-size: 1.8em;color:#FFF;line-height: 1.2;}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/mockup_20250917-130506_velvet_tangerine.jpg",
