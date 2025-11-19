@@ -196,7 +196,8 @@
       ],
       "custom_css": [
         "h2 {text-align: left; margin-left: -2em; width: 90%; font-size: 7.4em; color: #780000; letter-spacing: -0.075em; line-height: 0.9; margin-top: 30%;}",
-        "p{font-size: 1.8em;color:#FFF;line-height: 1.2;}"
+        "p {font-size: 2.2em; color: #fff; line-height: 1.2;}",
+        "div.banner__text {margin-top: -10%; margin-left: 30%; text-align: left; width: 100%;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
