@@ -108,8 +108,10 @@
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   animation: pulse 1.5s infinite;
+  bottom:0;
+  right:0;
 }
 
 @keyframes pulse {
