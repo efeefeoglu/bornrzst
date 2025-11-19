@@ -34,7 +34,8 @@
   letter-spacing: -0.1em;
 }
 .who-we-are-text {
-  font-size: 1.2rem;
+  font-size: 2em;
+  font-family: 'Bebas Neue';
   max-width: 400px;
 }
 .who-we-are-logo {
