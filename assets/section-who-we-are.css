@@ -1,5 +1,5 @@
 .who-we-are-section {
-  background-color: #1a1a1a;
+  background-color: #000;
   color: #ffffff;
   padding: 50px 0;
 }
@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
