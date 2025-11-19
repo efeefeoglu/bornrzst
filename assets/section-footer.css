@@ -596,11 +596,13 @@
 .bornrzst-footer__submit {
   background: #d91f2a;
   color: #fff;
-  border: 0;
-  padding: 0.85rem 1.75rem;
-  font-weight: 600;
+  border: solid 1px #FFF;
+  padding: 0.5em 2em;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: .2em;
+  font-size: 1.5em;
+  margin: 1em 0 0 1em;
 }
 
 .bornrzst-footer__submit:hover,
