@@ -895,7 +895,10 @@
 }
 
 .bornrzst-footer__impact {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5em;
+  font-family: "Noto Serif Display Extra Condensed";
+  letter-spacing: - 0.075em;
 }
 
 .bornrzst-footer__copyright {
