@@ -790,9 +790,14 @@
   gap: 1.25rem;
 }
 
-.bornrzst-footer__logo-image,
-.bornrzst-footer__social-media-image {
+.bornrzst-footer__logo-image {
   max-width: 50%;
+  height: auto;
+  display: block;
+}
+
+.bornrzst-footer__social-media-image {
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -871,7 +876,6 @@
 
 .bornrzst-footer__social-image {
   width: 100%;
-  max-width: 220px;
 }
 
 .bornrzst-footer__social-icons {
