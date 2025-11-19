@@ -206,7 +206,7 @@
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
-        "enable_parallax_drift": false,
+        "enable_parallax_drift": true,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
