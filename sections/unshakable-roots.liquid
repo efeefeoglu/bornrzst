@@ -33,11 +33,9 @@
           {%- if section.settings.follow_heading != blank -%}
             <p class="unshakable-roots__meta-label">{{ section.settings.follow_heading }}</p>
           {%- endif -%}
-          {%- if section.blocks.size > 0 -%}
-            <div class="bornrzst-footer__social-icons">
-              {%- render 'social-icons', class: 'bornrzst-footer__list-social' -%}
-            </div>
-          {%- endif -%}
+          <div class="bornrzst-footer__social-icons">
+            {%- render 'social-icons', class: 'bornrzst-footer__list-social' -%}
+          </div>
         </div>
       </div>
 
