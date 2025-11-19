@@ -1,0 +1,106 @@
+
+{% if section.settings.section_id.size > 0 %}
+  <!-- PageFlyGlobalSection -->
+  {% render 'pagefly-main-js' %}
+  {% render 'pagefly-main-css' %}
+  {% include section.settings.section_id %}
+{% else %}
+  
+    {% if request.design_mode %}
+      <style>.pf-ph{font-size:14px!important;background:#fafafa;padding:20px;text-align:center;border:1px solid #f0f0f0;border-radius:4px;margin:15px}.pf-ph span{display:block;background:#e6f7ff;padding:8px 15px;border:1px solid #91d5ff}</style>
+      <div class="pf-ph">
+        <h3>PageFly Section</h3>
+        <span>No section selected. Please select your section from the list</span>
+      </div>
+    {% endif %}
+  
+{% endif %}
+
+{% schema %}
+{
+  "name": "PageFly Section",
+  "settings": [
+    {
+      "id": "section_id",
+      "type": "select",
+      "label": "Sections",
+      "options": [
+        {
+          "label": "Select section",
+          "value": ""
+        },
+        {
+          "label": "footer",
+          "value": "pf-85435ba5"
+        },
+        {
+          "label": "Drop 1 section limited release",
+          "value": "pf-761bc401"
+        },
+        {
+          "label": "Drop 1 section timer",
+          "value": "pf-a3297c59"
+        },
+        {
+          "label": "Section 1",
+          "value": "pf-7fc48c40"
+        },
+        {
+          "label": "header section",
+          "value": "pf-8dc80de1"
+        },
+        {
+          "label": "Section 6",
+          "value": "pf-ad6ed8d2"
+        },
+        {
+          "label": "Section 5",
+          "value": "pf-42154f2d"
+        },
+        {
+          "label": "Section 4",
+          "value": "pf-2b24a03d"
+        },
+        {
+          "label": "Section 3",
+          "value": "pf-b751bc55"
+        },
+        {
+          "label": "Section 2",
+          "value": "pf-06f9022d"
+        },
+        {
+          "label": "Bestsellers section ",
+          "value": "pf-ef5c1d38"
+        },
+        {
+          "label": "voice of the truth",
+          "value": "pf-8035bc6e"
+        },
+        {
+          "label": "impact stats",
+          "value": "pf-82d3e590"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Find and edit your section on the [section listing](https://brn-rzst.myshopify.com/admin/apps/pagefly/sections)"
+    },
+    {
+      "type": "paragraph",
+      "content": "To add block to a section, please use the App Block element on PageFly section editor."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PageFly Section"
+    }
+  ]
+}
+{% endschema %}
