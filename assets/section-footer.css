@@ -839,14 +839,16 @@
 .bornrzst-footer__newsletter {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 1.5em;
+  margin-top:50px;
 }
 
 .bornrzst-footer__newsletter-heading {
-  font-size: 1rem;
+  font-size: 2.5em;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: -0.075em;
   margin: 0;
+  font-family: Crimson Pro;
 }
 
 .bornrzst-footer__newsletter-subheading {
