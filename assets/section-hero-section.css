@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.hero-section__media, .banner__media {
+.hero-section__media {
   position: absolute;
   inset: 0;
   z-index: 1;
