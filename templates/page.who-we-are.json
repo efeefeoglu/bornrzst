@@ -19,6 +19,42 @@
     },
     "who_we_are": {
       "type": "who-we-are",
+      "blocks": {
+        "menu_item_eUn6Xh": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "OUR STORY",
+            "menu_item_link": "#"
+          }
+        },
+        "menu_item_zW7ehx": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHAT WE STAND FOR",
+            "menu_item_link": "#"
+          }
+        },
+        "menu_item_bH6e8D": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHY WE EXIST",
+            "menu_item_link": "#"
+          }
+        },
+        "menu_item_kUeU7F": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHERE WE'RE GOING",
+            "menu_item_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_eUn6Xh",
+        "menu_item_zW7ehx",
+        "menu_item_bH6e8D",
+        "menu_item_kUeU7F"
+      ],
       "settings": {
         "title": "WHO WE ARE?",
         "text": "WE WERE BORN IN THE FIRE, FORGED BY LOSS, UNITED BY HOPE. WE ARE BØRN RZST™. NOT FASHION. FREEDOM.",
