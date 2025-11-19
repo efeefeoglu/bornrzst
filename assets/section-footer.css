@@ -904,7 +904,7 @@
 
 .bornrzst-footer__col--follow {
   grid-column: span 4;
-  display: flex;
+  display: block;
   justify-content: flex-end;
   align-items: flex-start;
 }
