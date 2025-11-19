@@ -3641,5 +3641,5 @@ details-disclosure > details {
 .blackButton18{font-size: 1.8em;color:#000;line-height: 2.5;background:transparent;border:solid 1px #000;}
 .whiteButton18{font-size: 1.8em;color:#FFF;line-height: 2.5;background:transparent;border:solid 1px #FFF;}
 
-.list-social__item .icon{width:4em !important;height:4em !important;}
+.list-social__item .icon{width:4em;height:4em;}
 .list-social__link .svg-wrapper{width:4em;height:4em;}

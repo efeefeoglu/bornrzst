@@ -34,19 +34,9 @@
             <p class="unshakable-roots__meta-label">{{ section.settings.follow_heading }}</p>
           {%- endif -%}
           {%- if section.blocks.size > 0 -%}
-            <ul class="unshakable-roots__social-list" role="list">
-              {%- for block in section.blocks -%}
-                <li class="unshakable-roots__social-item" {{ block.shopify_attributes }}>
-                  {%- if block.settings.link != blank -%}
-                    <a href="{{ block.settings.link }}" class="unshakable-roots__social-link" target="_blank" rel="noreferrer">
-                      {{- block.settings.label | escape -}}
-                    </a>
-                  {%- else -%}
-                    <span class="unshakable-roots__social-link">{{ block.settings.label | escape }}</span>
-                  {%- endif -%}
-                </li>
-              {%- endfor -%}
-            </ul>
+            <div class="bornrzst-footer__social-icons">
+              {%- render 'social-icons', class: 'bornrzst-footer__list-social' -%}
+            </div>
           {%- endif -%}
         </div>
       </div>
