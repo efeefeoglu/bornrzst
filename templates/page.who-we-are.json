@@ -63,10 +63,15 @@
         "button_link": "",
         "text_animation": true
       }
+    },
+    "our_story": {
+      "type": "our-story",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "who_we_are"
+    "who_we_are",
+    "our_story"
   ]
 }
