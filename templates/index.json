@@ -241,7 +241,7 @@
             "button_label": "BECOME A MEMBER",
             "button_link": "",
             "button_style_secondary": false,
-            "custom_class": "redButton18"
+            "custom_class": "redButton18 button__actions"
           }
         }
       },
