@@ -198,7 +198,7 @@
         "h2 {text-align: left; margin-left: -2em; width: 90%; font-size: 7.4em; color: #780000; letter-spacing: -0.075em; line-height: 0.9; margin-top: 30%;}",
         "p {font-size: 2.2em; color: #fff; line-height: 1.2;}",
         "div.banner__text {margin-top: -10%; margin-left: 30%; text-align: left; width: 100%;}",
-        ".button--primary{font-size:2.2em;background-color:#780000;border-radius:1.1em}"
+        ".button--primary {font-size: 2.2em; background-color: #780000; border-radius: 1.1em;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -377,6 +377,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "unshakable_roots_cnYR3M": {
+      "type": "unshakable-roots",
+      "name": "Unshakable roots",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "logo_image": "shopify://shop_images/bornrzst-logo_fadadcaa-3e39-42f8-b77a-864f7fbeb782.png",
+        "logo_text": "BØRNRZST",
+        "tagline": "",
+        "company_heading": "Company Info",
+        "company_info": "<p>BØRN RZST LLC<br/>Sheridan, Wyoming 82801<br/>USA<br/>info@bornrzst.com</p>",
+        "follow_heading": "Follow the Movement",
+        "badge_image": "shopify://shop_images/unshakeable-roots.png",
+        "badge_aria_label": "Unshakable roots resistance emblem"
+      }
     }
   },
   "order": [
@@ -387,6 +402,7 @@
     "image_banner_GmzjbB",
     "image_with_text_4akVQM",
     "image_with_text_wQ9CxK",
-    "image_with_text_6haLRb"
+    "image_with_text_6haLRb",
+    "unshakable_roots_cnYR3M"
   ]
 }
