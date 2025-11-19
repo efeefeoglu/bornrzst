@@ -60,11 +60,11 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if section.settings.enable_parallax_drift %} banner--parallax-drift{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if section.settings.enable_parallax_drift %} banner--parallax-drift{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} animate-in-scroll-trigger"
   {% if section.settings.enable_parallax_drift %}data-banner-parallax{% endif %}
 >
   {%- if section.settings.image != blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <div class="animate-item animate-item-0 banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {%- liquid
         assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
         if section.settings.image_2 != blank
@@ -130,14 +130,14 @@
           {%- when 'heading' -%}
             {%- assign heading_custom_class = block.settings.heading_custom_class | strip -%}
             <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}{% if heading_custom_class != blank %} {{ heading_custom_class | escape }}{% endif %}"
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}{% if heading_custom_class != blank %} {{ heading_custom_class | escape }}{% endif %} animate-item animate-item-1"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
             {%- assign text_custom_class = block.settings.text_custom_class | strip -%}
-            <div class="banner__text rte {{ block.settings.text_style }}{% if text_custom_class != blank %} {{ text_custom_class | escape }}{% endif %}" {{ block.shopify_attributes }}>
+            <div class="banner__text rte {{ block.settings.text_style }}{% if text_custom_class != blank %} {{ text_custom_class | escape }}{% endif %} animate-item animate-item-2" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
@@ -153,7 +153,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}{% if block.settings.enable_pulse_effect %} button--pulse{% endif %}{% if button_custom_class != blank %} {{ button_custom_class | escape }}{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}{% if block.settings.enable_pulse_effect %} button--pulse{% endif %}{% if button_custom_class != blank %} {{ button_custom_class | escape }}{% endif %} animate-item animate-item-3"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
