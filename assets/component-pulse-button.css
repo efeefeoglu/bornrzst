@@ -1,0 +1,36 @@
+.button--pulse {
+    position: relative;
+    overflow: visible;
+}
+.button--pulse::before,
+.button--pulse::after {
+  content: '';
+  position: absolute;
+  inset: -0.25rem;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  opacity: 0;
+  transform: scale(0.85);
+  pointer-events: none;
+}
+
+.button--pulse::after {
+  animation: hero-button-pulse 1s ease-out 0.5s 1 forwards;
+}
+
+.button--pulse:hover::before,
+.button--pulse:focus-visible::before {
+  animation: hero-button-pulse 1s ease-out 0s 1 forwards;
+}
+
+@keyframes hero-button-pulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
