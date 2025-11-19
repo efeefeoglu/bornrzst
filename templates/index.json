@@ -140,7 +140,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "EXPLORE THE COLLECTION",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://collections/frontpage",
         "button_class": "blackButton18",
         "columns_desktop": 3,
         "column_alignment": "center",
