@@ -160,6 +160,26 @@
   align-self: end;
   grid-column: 2 / 3;
 }
+hero-section__actions .button::before,
+.hero-section__actions .button::after {
+  content: "";
+  position: absolute;
+  inset: -0.25rem;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  opacity: 0;
+  transform: scale(0.85);
+  pointer-events: none;
+}
+
+.hero-section__actions .button::after {
+  animation: hero-button-pulse 1s ease-out 3.5s 1 forwards;
+}
+
+.hero-section__actions .button:hover::before,
+.hero-section__actions .button:focus-visible::before {
+  animation: hero-button-pulse 1s ease-out 0s 1 forwards;
+}
 
 @keyframes hero-background-fade {
   from {
