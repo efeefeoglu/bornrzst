@@ -143,7 +143,7 @@
         "button_label": "EXPLORE THE COLLECTION",
         "button_link": "shopify://collections/frontpage",
         "button_class": "blackButton18",
-        "enable_pulse_effect": false,
+        "enable_pulse_effect": true,
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
@@ -188,7 +188,7 @@
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_custom_class": "",
-            "enable_pulse_effect": false
+            "enable_pulse_effect": true
           }
         }
       },
@@ -348,7 +348,7 @@
             "button_label": "READ MORE",
             "button_link": "",
             "button_style_secondary": false,
-            "enable_pulse_effect": false,
+            "enable_pulse_effect": true,
             "custom_class": "whiteButton18"
           }
         }
