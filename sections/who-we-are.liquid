@@ -1,0 +1,144 @@
+{{ 'section-who-we-are.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign text_animation = ''
+
+  if section.settings.text_animation
+    assign text_animation = 'who-we-are-animated-text'
+  endif
+-%}
+
+<div class="who-we-are-section">
+  <div class="who-we-are-container">
+    <div class="who-we-are-left">
+      <h2 class="who-we-are-title {{ text_animation }}">{{ section.settings.title }}</h2>
+      <p class="who-we-are-text">{{ section.settings.text }}</p>
+    </div>
+    <div class="who-we-are-right">
+      {% if section.settings.logo_image %}
+        <img src="{{ section.settings.logo_image | image_url: width: 200 }}" alt="Logo" class="who-we-are-logo">
+      {% endif %}
+      <ul class="who-we-are-menu">
+        {% for block in section.blocks %}
+          <li class="who-we-are-menu-item">
+            <a href="{{ block.settings.menu_item_link }}">
+              <div class="who-we-are-menu-icon">
+                <div class="who-we-are-menu-arrow"></div>
+              </div>
+              {{ block.settings.menu_item_text }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ section.settings.button_link }}" class="who-we-are-button">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('scroll', function() {
+    const title = document.querySelector('.who-we-are-title.who-we-are-animated-text');
+    if (title) {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        title.style.letterSpacing = '2px';
+      } else {
+        title.style.letterSpacing = '0px';
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Who We Are",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "WHO WE ARE?"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "WE WERE BORN IN THE FIRE, FORGED BY LOSS, UNITED BY HOPE. WE ARE BØRN RZST™. NOT FASHION. FREEDOM."
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "JOIN THE MOVEMENT"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_animation",
+      "label": "Enable Text Animation",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu_item",
+      "name": "Menu Item",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_item_text",
+          "label": "Menu Item Text",
+          "default": "OUR STORY"
+        },
+        {
+          "type": "url",
+          "id": "menu_item_link",
+          "label": "Menu Item Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Who We Are",
+      "category": "ADVANCED LAYOUT",
+      "blocks": [
+        {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "OUR STORY"
+          }
+        },
+        {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHAT WE STAND FOR"
+          }
+        },
+        {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHY WE EXIST"
+          }
+        },
+        {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHERE WE'RE GOING"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
