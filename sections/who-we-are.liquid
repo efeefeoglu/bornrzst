@@ -13,11 +13,7 @@
     <div class="who-we-are-left">
       <h2 class="who-we-are-title {{ text_animation }}">{{ section.settings.title }}</h2>
       <p class="who-we-are-text">{{ section.settings.text }}</p>
-    </div>
-    <div class="who-we-are-right">
-      {% if section.settings.logo_image %}
-        <img src="{{ section.settings.logo_image | image_url: width: 200 }}" alt="Logo" class="who-we-are-logo">
-      {% endif %}
+      
       <ul class="who-we-are-menu">
         {% for block in section.blocks %}
           <li class="who-we-are-menu-item">
@@ -30,6 +26,11 @@
           </li>
         {% endfor %}
       </ul>
+    </div>
+    <div class="who-we-are-right">
+      {% if section.settings.logo_image %}
+        <img src="{{ section.settings.logo_image | image_url: width: 200 }}" alt="Logo" class="who-we-are-logo">
+      {% endif %}
       <a href="{{ section.settings.button_link }}" class="who-we-are-button">{{ section.settings.button_text }}</a>
     </div>
   </div>
