@@ -24,7 +24,7 @@
 }
 .who-we-are-title {
   font-weight: 500;
-  margin: 20px 0;
+  margin: 100px 0 20px;
   transition: font-weight 0.3s ease, letter-spacing 0.3s ease;
   font-family: 'Bebas Neue';
   color: #FFF;
