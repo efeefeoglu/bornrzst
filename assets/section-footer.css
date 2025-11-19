@@ -903,8 +903,9 @@
 
 .bornrzst-footer__copyright {
   margin: 0;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 3em;
+  color: #fff;
+  letter-spacing: -0.075em;
 }
 
 .bornrzst-footer__col--follow {
