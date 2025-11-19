@@ -969,14 +969,6 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .bornrzst-footer__newsletter-fields {
-    flex-direction: column;
-    border-radius: 1rem;
-  }
-
-  .bornrzst-footer__submit {
-    width: 100%;
-  }
 
   .bornrzst-footer__col--follow {
     justify-content: flex-start;
