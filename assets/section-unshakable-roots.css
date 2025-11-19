@@ -90,7 +90,6 @@
 
 .unshakable-roots__badge svg,
 .unshakable-roots__badge img {
-  width: min(520px, 100%);
   height: auto;
 }
 
