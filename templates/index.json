@@ -55,6 +55,7 @@
             "button_label": "EXPLORE OUR STORY",
             "button_link": "shopify://pages/who-we-are",
             "button_style_secondary": false,
+            "enable_pulse_effect": true,
             "custom_class": "redButton18"
           }
         }
@@ -142,6 +143,7 @@
         "button_label": "EXPLORE THE COLLECTION",
         "button_link": "shopify://collections/frontpage",
         "button_class": "blackButton18",
+        "enable_pulse_effect": false,
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
@@ -185,7 +187,8 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "button_custom_class": ""
+            "button_custom_class": "",
+            "enable_pulse_effect": false
           }
         }
       },
@@ -241,6 +244,7 @@
             "button_label": "BECOME A MEMBER",
             "button_link": "",
             "button_style_secondary": false,
+            "enable_pulse_effect": true,
             "custom_class": "redButton18 button__actions"
           }
         }
@@ -344,6 +348,7 @@
             "button_label": "READ MORE",
             "button_link": "",
             "button_style_secondary": false,
+            "enable_pulse_effect": false,
             "custom_class": "whiteButton18"
           }
         }
