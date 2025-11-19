@@ -44,6 +44,7 @@
 }
 
 .unshakable-roots__meta-label {
+  font-family: "Noto Serif Display Extra Condensed", var(--font-heading-family);
   font-size: 16px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
