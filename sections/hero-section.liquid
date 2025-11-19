@@ -1,4 +1,7 @@
 {{ 'section-hero-section.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.enable_pulse_effect -%}
+  {%- render 'component-pulse-button' -%}
+{%- endif -%}
 
 {%- liquid
   assign background_image = section.settings.background_image
@@ -88,9 +91,16 @@
       {%- if button_label != blank -%}
         <div class="hero-section__actions">
           {%- if button_link != blank -%}
-            <a class="{{ button_class }}" href="{{ button_link }}">{{ button_label }}</a>
+            <a
+              class="{{ button_class }}{% if section.settings.enable_pulse_effect %} button--pulse{% endif %}"
+              href="{{ button_link }}"
+            >
+              {{- button_label -}}
+            </a>
           {%- else -%}
-            <button class="{{ button_class }}" type="button" disabled>{{ button_label }}</button>
+            <button class="{{ button_class }}" type="button" disabled>
+              {{- button_label -}}
+            </button>
           {%- endif -%}
         </div>
       {%- endif -%}
@@ -192,6 +202,12 @@
         "type": "url",
         "id": "button_link",
         "label": "Button link"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_pulse_effect",
+        "label": "Enable pulse effect on button",
+        "default": true
       },
       {
         "type": "checkbox",

@@ -1,5 +1,8 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.enable_pulse_effect -%}
+  {%- render 'component-pulse-button' -%}
+{%- endif -%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -179,7 +182,7 @@
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
-          class="button button--primary animate-item animate-item-4{% if button_custom_class != blank %} {{ button_custom_class }}{% endif %}"
+          class="button button--primary animate-item animate-item-4{% if button_custom_class != blank %} {{ button_custom_class }}{% endif %}{% if section.settings.enable_pulse_effect %} button--pulse{% endif %}"
           {% if section.settings.button_link == blank %}
             role="link" aria-disabled="true"
           {% else %}
@@ -309,6 +312,12 @@
       "type": "text",
       "id": "button_class",
       "label": "Button custom class"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_pulse_effect",
+      "label": "Enable pulse effect on button",
+      "default": false
     },
     {
       "type": "header",
