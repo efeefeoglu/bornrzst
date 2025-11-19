@@ -29,7 +29,7 @@
     </div>
     <div class="who-we-are-right">
       {% if section.settings.logo_image %}
-        <img src="{{ section.settings.logo_image | image_url }}" alt="Logo" class="who-we-are-logo">
+        <img src="{{ section.settings.logo_image | image_url: width: 500 }}" alt="Logo" class="who-we-are-logo">
       {% endif %}
       <a href="{{ section.settings.button_link }}" class="who-we-are-button">{{ section.settings.button_text }}</a>
     </div>
