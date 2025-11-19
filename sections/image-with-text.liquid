@@ -1,5 +1,12 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
+{%- for block in section.blocks -%}
+  {%- if block.type == 'button' and block.settings.enable_pulse_effect -%}
+    {%- render 'component-pulse-button' -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -92,7 +99,7 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} animate-item animate-item-3{% if block.settings.custom_class != blank %} {{ block.settings.custom_class }}{% endif %}"
+                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}{% if block.settings.enable_pulse_effect %} button--pulse{% endif %} animate-item animate-item-3{% if block.settings.custom_class != blank %} {{ block.settings.custom_class }}{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -533,6 +540,12 @@
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_pulse_effect",
+          "label": "Enable pulse effect",
+          "default": false
         },
         {
           "type": "text",
