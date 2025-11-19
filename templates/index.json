@@ -380,18 +380,6 @@
     },
     "unshakable_roots_cnYR3M": {
       "type": "unshakable-roots",
-      "blocks": {
-        "social_link_wKUQLT": {
-          "type": "social_link",
-          "settings": {
-            "label": "Instagram",
-            "link": "shopify://collections/drop-1"
-          }
-        }
-      },
-      "block_order": [
-        "social_link_wKUQLT"
-      ],
       "name": "Unshakable roots",
       "settings": {
         "color_scheme": "scheme-1",
