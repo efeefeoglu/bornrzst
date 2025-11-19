@@ -788,13 +788,13 @@
 
 .bornrzst-footer__logo-image,
 .bornrzst-footer__social-media-image {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
 }
 
 .bornrzst-footer__brand-description {
-  font-size: 1rem;
+  font-size: 1.5em;
   line-height: 1.6;
   max-width: 38ch;
   color: rgba(255, 255, 255, 0.85);
