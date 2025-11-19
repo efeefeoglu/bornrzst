@@ -33,25 +33,26 @@
 -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  <div class="bornrzst-footer page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-    {% if settings.animations_reveal_on_scroll %}
-      data-cascade
-    {% endif %}
-  >
-    <div class="bornrzst-footer__top">
-      <div class="bornrzst-footer__brand">
-        {%- if section.settings.brand_logo_primary != blank -%}
-          <p class="bornrzst-footer__brand-mark">{{ section.settings.brand_logo_primary }}</p>
-        {%- endif -%}
-        {%- if section.settings.brand_logo_secondary != blank -%}
-          <p class="bornrzst-footer__brand-tagline">{{ section.settings.brand_logo_secondary }}</p>
+  <div class="bornrzst-footer page-width">
+    <div class="bornrzst-footer__row bornrzst-footer__row--top">
+      <div class="bornrzst-footer__col bornrzst-footer__col--brand">
+        {%- if section.settings.brand_logo_image != blank -%}
+          {{
+            section.settings.brand_logo_image
+            | image_url: width: 640
+            | image_tag:
+              loading: 'lazy',
+              width: section.settings.brand_logo_image.width,
+              height: section.settings.brand_logo_image.height,
+              class: 'bornrzst-footer__logo-image'
+          }}
         {%- endif -%}
         {%- if section.settings.brand_description != blank -%}
           <div class="bornrzst-footer__brand-description rte">{{ section.settings.brand_description }}</div>
         {%- endif -%}
       </div>
 
-      <div class="bornrzst-footer__navigation">
+      <div class="bornrzst-footer__col bornrzst-footer__col--menu">
         {%- if section.settings.about_menu != blank -%}
           <div class="bornrzst-footer__menu">
             {%- if section.settings.about_menu_heading != blank -%}
@@ -82,47 +83,10 @@
           </div>
         {%- endif -%}
 
-        <div class="bornrzst-footer__badge">
-          <div class="bornrzst-footer__badge-ring">
-            {%- if section.settings.badge_image != blank -%}
-              {{
-                section.settings.badge_image
-                | image_url: width: 320
-                | image_tag:
-                  loading: 'lazy',
-                  width: section.settings.badge_image.width,
-                  height: section.settings.badge_image.height,
-                  class: 'bornrzst-footer__badge-image'
-              }}
-            {%- else -%}
-              <img
-                src="{{ 'olive-tree.png' | asset_url }}"
-                alt="Unshakable Roots emblem"
-                loading="lazy"
-                width="160"
-                height="160"
-                class="bornrzst-footer__badge-image"
-              >
-            {%- endif -%}
-          </div>
-          <div class="bornrzst-footer__badge-text">
-            {%- if section.settings.badge_title != blank -%}
-              <p>{{ section.settings.badge_title }}</p>
-            {%- endif -%}
-            {%- if section.settings.badge_subtitle != blank -%}
-              <p>{{ section.settings.badge_subtitle }}</p>
-            {%- endif -%}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {%- if section.settings.newsletter_enable or section.settings.show_social and has_social_icons -%}
-      <div class="bornrzst-footer__middle">
         {%- if section.settings.newsletter_enable -%}
           <div class="bornrzst-footer__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
-              <p class="bornrzst-footer__newsletter-heading">{{ section.settings.newsletter_heading }}</p>
+              <h2 class="bornrzst-footer__newsletter-heading">{{ section.settings.newsletter_heading }}</h2>
             {%- endif -%}
             {%- if section.settings.newsletter_subheading != blank -%}
               <p class="bornrzst-footer__newsletter-subheading">{{ section.settings.newsletter_subheading }}</p>
@@ -130,7 +94,9 @@
             {%- form 'customer', id: 'ContactFooter', class: 'bornrzst-footer__newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="bornrzst-footer__newsletter-fields">
-                <label class="visually-hidden" for="NewsletterForm--{{ section.id }}">{{ 'newsletter.label' | t }}</label>
+                <label class="visually-hidden" for="NewsletterForm--{{ section.id }}">
+                  {{- 'newsletter.label' | t -}}
+                </label>
                 <input
                   id="NewsletterForm--{{ section.id }}"
                   type="email"
@@ -166,86 +132,16 @@
                 </small>
               {%- endif -%}
               {%- if form.posted_successfully? -%}
-                <p class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>
+                <p
+                  class="newsletter-form__message newsletter-form__message--success form__message"
+                  id="ContactFooter-success"
+                  tabindex="-1"
+                  autofocus
+                >
                   <span class="svg-wrapper">
                     {{- 'icon-success.svg' | inline_asset_content -}}
                   </span>
-                  {{- 'newsletter.success' | t }}
-                </p>
-              {%- endif -%}
-            {%- endform -%}
-          </div>
-        {%- endif -%}
-
-        {%- if section.settings.show_social and has_social_icons -%}
-          <div class="bornrzst-footer__social-icons">
-            {%- render 'social-icons', class: 'bornrzst-footer__list-social' -%}
-          </div>
-        {%- endif -%}
-      </div>
-    {%- endif -%}
-
-    <div class="bornrzst-footer__bottom">
-      <div class="bornrzst-footer__impact">
-        {%- if section.settings.impact_text != blank -%}
-          <p>{{ section.settings.impact_text }}</p>
-        {%- endif -%}
-        {%- if section.settings.future_drops_text != blank -%}
-          <p>{{ section.settings.future_drops_text }}</p>
-        {%- endif -%}
-
-        {%- if section.settings.newsletter_enable -%}
-          <div class="bornrzst-footer__newsletter">
-            {%- if section.settings.newsletter_heading != blank -%}
-              <p class="bornrzst-footer__newsletter-heading">{{ section.settings.newsletter_heading }}</p>
-            {%- endif -%}
-            {%- if section.settings.newsletter_subheading != blank -%}
-              <p class="bornrzst-footer__newsletter-subheading">{{ section.settings.newsletter_subheading }}</p>
-            {%- endif -%}
-            {%- form 'customer', id: 'ContactFooter', class: 'bornrzst-footer__newsletter-form' -%}
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <div class="bornrzst-footer__newsletter-fields">
-                <label class="visually-hidden" for="NewsletterForm--{{ section.id }}">{{ 'newsletter.label' | t }}</label>
-                <input
-                  id="NewsletterForm--{{ section.id }}"
-                  type="email"
-                  name="contact[email]"
-                  value="{{ form.email }}"
-                  class="bornrzst-footer__input"
-                  autocomplete="email"
-                  {% if form.errors %}
-                    aria-invalid="true"
-                    aria-describedby="ContactFooter-error"
-                  {% elsif form.posted_successfully? %}
-                    aria-describedby="ContactFooter-success"
-                  {% endif %}
-                  placeholder="{{ 'newsletter.label' | t }}"
-                  required
-                >
-                <button
-                  type="submit"
-                  class="bornrzst-footer__submit"
-                  name="commit"
-                  aria-label="{{ section.settings.newsletter_button_label | default: 'Submit' }}"
-                >
-                  {{ section.settings.newsletter_button_label | default: 'Submit' }}
-                </button>
-              </div>
-              {%- if form.errors -%}
-                <small class="newsletter-form__message form__message" id="ContactFooter-error">
-                  <span class="svg-wrapper">
-                    {{- 'icon-error.svg' | inline_asset_content -}}
-                  </span>
-                  {{- form.errors.translated_fields.email | capitalize }}
-                  {{ form.errors.messages.email -}}
-                </small>
-              {%- endif -%}
-              {%- if form.posted_successfully? -%}
-                <p class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>
-                  <span class="svg-wrapper">
-                    {{- 'icon-success.svg' | inline_asset_content -}}
-                  </span>
-                  {{- 'newsletter.success' | t }}
+                  {{- 'newsletter.success' | t -}}
                 </p>
               {%- endif -%}
             {%- endform -%}
@@ -254,15 +150,15 @@
       </div>
 
       <div class="bornrzst-footer__col bornrzst-footer__col--social">
-        {%- if section.settings.social_column_image != blank -%}
+        {%- if section.settings.badge_image != blank -%}
           <div class="bornrzst-footer__social-image">
             {{
-              section.settings.social_column_image
+              section.settings.badge_image
               | image_url: width: 320
               | image_tag:
                 loading: 'lazy',
-                width: section.settings.social_column_image.width,
-                height: section.settings.social_column_image.height,
+                width: section.settings.badge_image.width,
+                height: section.settings.badge_image.height,
                 class: 'bornrzst-footer__social-media-image'
             }}
           </div>
@@ -273,9 +169,25 @@
           </div>
         {%- endif -%}
       </div>
-      <div class="bornrzst-footer__movement">
+    </div>
+    <div class="bornrzst-footer__row bornrzst-footer__row--bottom">
+      <div class="bornrzst-footer__col bornrzst-footer__col--impact">
+        <div class="bornrzst-footer__impact">
+          {%- if section.settings.impact_text != blank -%}
+            <p>{{ section.settings.impact_text }}</p>
+          {%- endif -%}
+          {%- if section.settings.future_drops_text != blank -%}
+            <p>{{ section.settings.future_drops_text }}</p>
+          {%- endif -%}
+        </div>
+        <p class="bornrzst-footer__copyright">
+          &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}, All Rights Reserved.
+        </p>
+      </div>
+
+      <div class="bornrzst-footer__col bornrzst-footer__col--follow">
         {%- if section.settings.movement_caption != blank -%}
-          <p>{{ section.settings.movement_caption }}</p>
+          <p class="bornrzst-footer__follow-text">{{ section.settings.movement_caption }}</p>
         {%- endif -%}
         {%- if section.settings.social_handle != blank -%}
           <a class="bornrzst-footer__social-handle" href="{{ section.settings.social_handle_link | default: '#' }}">
@@ -283,11 +195,6 @@
           </a>
         {%- endif -%}
       </div>
-    </div>
-
-    <div class="bornrzst-footer__meta">
-      <small>&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url }}</small>
-      <small>{{ powered_by_link }}</small>
     </div>
   </div>
 </footer>
@@ -303,16 +210,9 @@
       "label": "t:sections.footer.settings.color_scheme.label"
     },
     {
-      "type": "text",
-      "id": "brand_logo_primary",
-      "default": "BØRN RZST™",
-      "label": "Primary wordmark"
-    },
-    {
-      "type": "text",
-      "id": "brand_logo_secondary",
-      "default": "BØRN OF RESISTANCE",
-      "label": "Tagline"
+      "type": "image_picker",
+      "id": "brand_logo_image",
+      "label": "Brand logo"
     },
     {
       "type": "richtext",
@@ -345,19 +245,7 @@
     {
       "type": "image_picker",
       "id": "badge_image",
-      "label": "Badge image"
-    },
-    {
-      "type": "text",
-      "id": "badge_title",
-      "default": "UNSHAKABLE ROOTS",
-      "label": "Badge title"
-    },
-    {
-      "type": "text",
-      "id": "badge_subtitle",
-      "default": "RESISTANCE",
-      "label": "Badge subtitle"
+      "label": "Social media image"
     },
     {
       "type": "checkbox",
