@@ -638,12 +638,6 @@
   text-align: right;
 }
 
-.bornrzst-footer__social-handle {
-  color: #c71f2f;
-  text-decoration: none;
-  font-weight: 700;
-}
-
 .bornrzst-footer__meta {
   display: flex;
   flex-wrap: wrap;
@@ -917,8 +911,19 @@
 
 .bornrzst-footer__follow-text {
   text-transform: uppercase;
-  letter-spacing: 0.25em;
   margin: 0;
+  color: #fff;
+  font-size: 4em;
+  font-family: "Noto Serif Display Extra Condensed";
+  letter-spacing: -.075em;
+}
+
+.bornrzst-footer__social-handle {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4em;
+  font-family: "Noto Serif Display Extra Condensed";
+  letter-spacing: -.075em;
 }
 
 @media screen and (max-width: 989px) {
