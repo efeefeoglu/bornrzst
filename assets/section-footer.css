@@ -884,14 +884,13 @@
   color: rgba(255, 255, 255, 1);
   font-size: 3.8em;
   font-family: "Bebas Neue";
-  letter-spacing: -0.075em;
+  letter-spacing: -0.02em;
 }
 
 .bornrzst-footer__copyright {
   margin: 0;
-  font-size: 3em;
+  font-size: 1.4em;
   color: #fff;
-  letter-spacing: -0.075em;
 }
 
 .bornrzst-footer__col--follow {
