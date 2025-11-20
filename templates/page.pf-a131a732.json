@@ -11,10 +11,59 @@
   "sections": {
     "pf-a131a732": {
       "type": "pf-a131a732",
+      "disabled": true,
       "settings": {}
+    },
+    "who_we_are_qKjgRa": {
+      "type": "who-we-are",
+      "blocks": {
+        "menu_item_REJzwL": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "OUR STORY",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_bWTi6H": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHAT WE STAND FOR",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_BnqVpF": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHY WE EXIST",
+            "menu_item_link": ""
+          }
+        },
+        "menu_item_8e8gRi": {
+          "type": "menu_item",
+          "settings": {
+            "menu_item_text": "WHERE WE'RE GOING",
+            "menu_item_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_REJzwL",
+        "menu_item_bWTi6H",
+        "menu_item_BnqVpF",
+        "menu_item_8e8gRi"
+      ],
+      "name": "Who We Are",
+      "settings": {
+        "title": "WHO WE ARE?",
+        "text": "WE WERE BORN IN THE FIRE, FORGED BY LOSS, UNITED BY HOPE. WE ARE BØRN RZST™. NOT FASHION. FREEDOM.",
+        "button_text": "JOIN THE MOVEMENT",
+        "button_link": "",
+        "text_animation": true
+      }
     }
   },
   "order": [
-    "pf-a131a732"
+    "pf-a131a732",
+    "who_we_are_qKjgRa"
   ]
 }
