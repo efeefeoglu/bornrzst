@@ -37,12 +37,15 @@
   background-color: #fadadd;
   color: #e02828;
   position: absolute;
-  font-size: 5em;
-  font-weight: 900;
-  background: #FFF;
-  line-height: 1;
-  height: 40px;
-  width: 50px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 91%;
+  width: 90%;
+  margin: 5%;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10% 5%;
 }
 
 .our-story-quote blockquote::before,
