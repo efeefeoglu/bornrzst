@@ -564,7 +564,7 @@
 
 .bornrzst-footer__newsletter-heading {
   margin: 0 0 0.25rem;
-  font-size: 1.2rem;
+  font-size: 2em;
   letter-spacing: 0.2em;
 }
 
@@ -837,13 +837,6 @@
   flex-direction: column;
   gap: 1.5em;
   margin-top:50px;
-}
-
-.bornrzst-footer__newsletter-heading {
-  font-size: 2.5em;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-  margin: 0;
 }
 
 .bornrzst-footer__newsletter-subheading {
