@@ -64,6 +64,18 @@
         "text_animation": true
       }
     },
+    "our_story_HFD7rU": {
+      "type": "our-story",
+      "name": "Our Story",
+      "settings": {
+        "title": "Our story",
+        "subtitle": "Every act of resistance begins with a story.",
+        "text_part1": "<p>BØRN RZST™ began not in a studio but in the rubble of silence. In a world that watched injustice unfold and did nothing, we decided to create something that could not be ignored.</p><p>It started with a single design a message printed on a shirt, worn by those who refused to look away. <br/>That message became a movement.<br/>What began as anger turned into art.<br/>What began as grief became purpose.<br/>What began with one voice became thousands, from Gaza to London, from Washington to Jakarta.<br/>We are artists, exiles, dreamers, and believers.<br/>We are the generation that wears its convictions.<br/>We don’t wait for change we wear it.</p>",
+        "text_part2": "",
+        "quote_text": "<p>I was six years old when tanks rolled into<br/>my village. I threw marbles at the metal<br/>beasts not out of hate, but out of defiance.<br/>That moment never left me. It’s the spirit<br/>of BØRN RZST™...</p>",
+        "quote_author": "Nasib Thabet, Founder."
+      }
+    },
     "what_we_stand_for": {
       "type": "what-we-stand-for",
       "blocks": {
@@ -126,18 +138,6 @@
         "note": "Your story may be featured on our site/social media.",
         "footer_title": "BØRN RZST™",
         "footer_subtitle": "BORN OF RESISTANCE"
-      }
-    },
-    "our_story_HFD7rU": {
-      "type": "our-story",
-      "name": "Our Story",
-      "settings": {
-        "title": "Our story",
-        "subtitle": "Every act of resistance begins with a story.",
-        "text_part1": "<p>BØRN RZST™ began not in a studio but in the rubble of silence. In a world that watched injustice unfold and did nothing, we decided to create something that could not be ignored.</p>",
-        "text_part2": "<p>It started with a single design a message printed on a shirt, worn by those who refused to look away. That message became a movement. What began as anger turned into art. What began as grief became purpose. What began with one voice became thousands, from Gaza to London, from Washington to Jakarta. We are artists, exiles, dreamers, and believers. We are the generation that wears its convictions. We don't wait for change we wear it.</p>",
-        "quote_text": "<p>I was six years old when tanks rolled into my village. I threw marbles at the metal beasts not out of hate, but out of defiance. That moment never left me. It's the spirit of BØRN RZST™...</p>",
-        "quote_author": "Nasib Thabet, Founder."
       }
     }
   },
