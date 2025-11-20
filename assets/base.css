@@ -3698,15 +3698,15 @@ details-disclosure > details {
 .whiteTitle54{font-size: 5.4em;font-weight:400;color:#FFF;letter-spacing: -0.02em;line-height: 0.9;margin:30px 0;margin:30px auto !important;}
 .textAlignCenter{text-align:center}
 
-.blackText18{font-size: 1.8em;color:#000;line-height: 1.2;}
-.whiteText18{font-size: 1.8em;color:#FFF;line-height: 1.2;}
+.blackText18{font-size: 1em;color:#000;line-height: 1;}
+.whiteText18{font-size: 1em;color:#FFF;line-height: 1;}
 .homeFearlessCollection img{border-radius:50% 50% 0 0}
 .homeFearlessCollection h3{font-size:3em;letter-spacing:-0.02em;text-align:left;}
-.homeFearlessCollection .rte{font-size:1.25em;color:#FFF;text-align:left;}
+.homeFearlessCollection .rte{font-size:1em;color:#FFF;text-align:left;}
 
-.redButton18{font-size: 1.8em;color:#780000;line-height: 2.5;background:transparent;border:solid 1px #780000;}
-.blackButton18{font-size: 1.8em;color:#000;line-height: 2.5;background:transparent;border:solid 1px #000;}
-.whiteButton18{font-size: 1.8em;color:#FFF;line-height: 2.5;background:transparent;border:solid 1px #FFF;}
+.redButton18{font-size: 1em;color:#780000;line-height: 2.5;background:transparent;border:solid 1px #780000;}
+.blackButton18{font-size: 1em;color:#000;line-height: 2.5;background:transparent;border:solid 1px #000;}
+.whiteButton18{font-size: 1em;color:#FFF;line-height: 2.5;background:transparent;border:solid 1px #FFF;}
 
 .list-social__item .icon{width:4em !important;height:4em !important;}
 .list-social__link .svg-wrapper{width:4em;height:4em;}
