@@ -1,0 +1,45 @@
+{{ 'component-get-involved.css' | asset_url | stylesheet_tag }}
+
+<div class="get-involved">
+  <div class="get-involved__content">
+    <h2>{{ section.settings.title }}</h2>
+    <p>{{ section.settings.text }}</p>
+    <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_label }}</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Get Involved",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "GET INVOLVED"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Ready to make a difference? Join our community and start making an impact today. Whether you're a seasoned activist or just getting started, there's a place for you here.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Join Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Get Involved"
+    }
+  ]
+}
+{% endschema %}

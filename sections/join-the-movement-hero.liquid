@@ -1,0 +1,31 @@
+{{ 'component-join-the-movement-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="join-the-movement-hero" {% if section.settings.background_image != blank %}style="background-image: url('{{ section.settings.background_image | image_url }}');"{% endif %}>
+  <div class="join-the-movement-hero__content">
+    <h1>{{ section.settings.title }}</h1>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Join the Movement Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "JOIN THE MOVEMENT"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Join the Movement Hero"
+    }
+  ]
+}
+{% endschema %}

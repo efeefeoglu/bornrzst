@@ -1,0 +1,45 @@
+{{ 'component-our-mission.css' | asset_url | stylesheet_tag }}
+
+<div class="our-mission">
+  <div class="our-mission__content">
+    <h2>{{ section.settings.title }}</h2>
+    <p>{{ section.settings.text }}</p>
+  </div>
+  <div class="our-mission__image">
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}">
+    {% else %}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Our Mission",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "OUR MISSION"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Our mission is to support and empower individuals who are working to make a positive impact in their communities. We provide resources, mentorship, and a platform for collaboration to help them bring their ideas to life.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Mission"
+    }
+  ]
+}
+{% endschema %}

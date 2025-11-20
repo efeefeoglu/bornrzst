@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "join_the_movement_hero": {
+      "type": "join-the-movement-hero",
+      "settings": {
+      }
+    },
+    "our_mission": {
+      "type": "our-mission",
+      "settings": {
+      }
+    },
+    "how_we_help": {
+      "type": "how-we-help",
+      "settings": {
+      }
+    },
+    "get_involved": {
+      "type": "get-involved",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "join_the_movement_hero",
+    "our_mission",
+    "how_we_help",
+    "get_involved"
+  ]
+}

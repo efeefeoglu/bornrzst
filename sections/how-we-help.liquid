@@ -1,0 +1,86 @@
+{{ 'component-how-we-help.css' | asset_url | stylesheet_tag }}
+
+<div class="how-we-help">
+  <div class="how-we-help__header">
+    <h2>{{ section.settings.title }}</h2>
+    <p>{{ section.settings.text }}</p>
+  </div>
+  <div class="how-we-help__columns">
+    {% for block in section.blocks %}
+      <div class="how-we-help__column">
+        <div class="how-we-help__column-image">
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}">
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+        <div class="how-we-help__column-content">
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "How We Help",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "HOW WE HELP"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>We provide a range of resources and support to help you get your ideas off the ground. From funding opportunities to mentorship programs, we're here to help you succeed.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Funding"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>We offer grants and other funding opportunities to help you get your project off the ground.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How We Help",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
