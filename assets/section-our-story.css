@@ -26,16 +26,23 @@
 }
 
 .our-story-quote {
-  width: 35%;
+  width: 23%;
   position: relative;
+  border: 5px solid #E02828;
+  border-radius: 20px;
+  margin: 100px 0 50px;
 }
 
 .our-story-quote blockquote {
-  background-color: #FADADD;
-  border: 2px solid #E02828;
-  border-radius: 20px;
-  padding: 40px;
-  position: relative;
+  background-color: #fadadd;
+  color: #e02828;
+  position: absolute;
+  font-size: 5em;
+  font-weight: 900;
+  background: #FFF;
+  line-height: 1;
+  height: 40px;
+  width: 50px;
 }
 
 .our-story-quote blockquote::before,
@@ -46,7 +53,7 @@
 }
 
 .our-story-quote blockquote::before {
-  top: -10px;
+  top: -45px;
   left: 10px;
 }
 
@@ -63,5 +70,4 @@
 .our-story-quote footer {
   font-style: italic;
   margin-top: 20px;
-  text-align: right;
 }
