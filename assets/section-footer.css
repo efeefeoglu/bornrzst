@@ -796,13 +796,6 @@
   display: block;
 }
 
-.bornrzst-footer__brand-description {
-  font-size: 1.5em;
-  line-height: 1.6;
-  max-width: 80%;
-  color: rgba(255, 255, 255, 0.85);
-}
-
 .bornrzst-footer__col--menu {
   grid-column: span 4;
   display: flex;
