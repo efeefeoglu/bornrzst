@@ -1,0 +1,17 @@
+.join-the-movement-hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  text-align: center;
+}
+
+.join-the-movement-hero__content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}

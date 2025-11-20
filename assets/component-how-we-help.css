@@ -1,0 +1,28 @@
+.how-we-help {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.how-we-help__header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.how-we-help__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.how-we-help__column-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.how-we-help__column-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
