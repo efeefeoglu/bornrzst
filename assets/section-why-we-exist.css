@@ -12,7 +12,7 @@
 }
 
 .why-we-exist-left {
-  width: 60%;
+  width: 80%;
 }
 
 .why-we-exist-title {
@@ -28,13 +28,15 @@
 }
 
 .why-we-exist-right {
-  width: 40%;
+  width: 15%;
   text-align: right;
 }
 
 .why-we-exist-right-text {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 48px;
+  font-size: 4em;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 0.8;
+  letter-spacing: -0.03em;
+  word-wrap: break-word;
 }
