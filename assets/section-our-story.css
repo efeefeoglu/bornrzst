@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
-  font-family: sans-serif;
 }
 
 .our-story-content {
@@ -10,16 +9,10 @@
 }
 
 .our-story-content h1 {
-  font-family: serif;
-  font-size: 48px;
-  color: #8B0000;
   margin-bottom: 10px;
 }
 
 .our-story-content h2 {
-  font-family: serif;
-  font-style: italic;
-  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -44,9 +37,6 @@
 .our-story-quote blockquote::before,
 .our-story-quote blockquote::after {
   content: '“';
-  font-family: serif;
-  font-size: 100px;
-  color: #8B0000;
   position: absolute;
 }
 
