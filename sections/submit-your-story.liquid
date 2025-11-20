@@ -2,32 +2,38 @@
 
 <div id="submit-your-story" class="submit-your-story-section">
   <div class="submit-your-story-container page-width">
-    <h2 class="submit-your-story-title">{{ section.settings.title }}</h2>
-    <p class="submit-your-story-text">{{ section.settings.text }}</p>
-    <div class="submit-your-story-form-container">
-      {% form 'contact' %}
-        {{ form.errors | default_errors }}
-        <div class="submit-your-story-form-group">
-          <label for="ContactFormName">{{ 'templates.contact.form.name' | t }}</label>
-          <input type="text" id="ContactFormName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+    <div class="submit-your-story-content">
+      <div class="submit-your-story-left">
+        <h2 class="submit-your-story-title">{{ section.settings.title }}</h2>
+        <p class="submit-your-story-text">{{ section.settings.text }}</p>
+        <div class="submit-your-story-image-picker">
+          <label for="ContactFormImage">{{ section.settings.image_label }}</label>
+          <input type="file" id="ContactFormImage" name="contact[image]" accept="image/*">
         </div>
-        <div class="submit-your-story-form-group">
-          <label for="ContactFormEmail">{{ 'templates.contact.form.email' | t }}</label>
-          <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+      </div>
+      <div class="submit-your-story-right">
+        <div class="submit-your-story-form-container">
+          {% form 'contact' %}
+            {{ form.errors | default_errors }}
+            <div class="submit-your-story-form-group">
+              <label for="ContactFormName">{{ 'templates.contact.form.name' | t }}</label>
+              <input type="text" id="ContactFormName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+            <div class="submit-your-story-form-group">
+              <label for="ContactFormEmail">{{ 'templates.contact.form.email' | t }}</label>
+              <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            </div>
+            <div class="submit-your-story-form-group">
+              <label for="ContactFormMessage">{{ section.settings.message_label }}</label>
+              <textarea id="ContactFormMessage" name="contact[body]" placeholder="{{ section.settings.message_label }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            </div>
+            <div class="submit-your-story-form-submit">
+              <input type="submit" class="button" value="{{ 'templates.contact.form.send' | t }}">
+            </div>
+          {% endform %}
         </div>
-        <div class="submit-your-story-form-group">
-          <label for="ContactFormMessage">{{ section.settings.message_label }}</label>
-          <textarea id="ContactFormMessage" name="contact[body]" placeholder="{{ section.settings.message_label }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
-        </div>
-        <div class="submit-your-story-form-submit">
-          <input type="submit" class="button" value="{{ 'templates.contact.form.send' | t }}">
-        </div>
-      {% endform %}
-    </div>
-    <p class="submit-your-story-note">{{ section.settings.note }}</p>
-    <div class="submit-your-story-footer">
-        <h3 class="submit-your-story-footer-title">{{ section.settings.footer_title }}</h3>
-        <p class="submit-your-story-footer-subtitle">{{ section.settings.footer_subtitle }}</p>
+        <p class="submit-your-story-note">{{ section.settings.note }}</p>
+      </div>
     </div>
   </div>
 </div>
@@ -61,16 +67,10 @@
       "default": "Your story may be featured on our site/social media."
     },
     {
-        "type": "text",
-        "id": "footer_title",
-        "label": "Footer Title",
-        "default": "BØRN RZST™"
-    },
-    {
-        "type": "text",
-        "id": "footer_subtitle",
-        "label": "Footer Subtitle",
-        "default": "BORN OF RESISTANCE"
+      "type": "text",
+      "id": "image_label",
+      "label": "Image Label",
+      "default": "Upload an image (optional)"
     }
   ],
   "presets": [
