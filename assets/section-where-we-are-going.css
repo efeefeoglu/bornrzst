@@ -6,7 +6,6 @@
 }
 
 .where-we-are-going-container {
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -18,23 +17,23 @@
 
 .where-we-are-going-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.3;
   margin-bottom: 30px;
 }
 
 .where-we-are-going-highlight {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 36px;
-  color: #a51c24;
+  font-size: 2em;
+  color: #E02828;
   margin-bottom: 30px;
 }
 
 .where-we-are-going-button {
-  background-color: #a51c24;
+  background-color: #E02828;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   padding: 15px 30px;
   text-decoration: none;
