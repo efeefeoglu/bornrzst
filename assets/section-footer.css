@@ -515,7 +515,7 @@
 
 .bornrzst-footer__menu-link:hover,
 .bornrzst-footer__menu-link:focus-visible {
-  color: #c71f2f;
+  color: #E02828;
 }
 
 .bornrzst-footer__badge {
@@ -594,7 +594,7 @@
 }
 
 .bornrzst-footer__submit {
-  background: #d91f2a;
+  background: #E02828;
   color: #fff;
   border: solid 1px #FFF;
   padding: 0.5em 2em;
@@ -607,7 +607,7 @@
 
 .bornrzst-footer__submit:hover,
 .bornrzst-footer__submit:focus-visible {
-  background: #ff2d2d;
+  background: #E02828;
 }
 
 .bornrzst-footer__social-icons {
@@ -836,7 +836,7 @@
 
 .bornrzst-footer__menu-link:hover,
 .bornrzst-footer__menu-link:focus-visible {
-  color: #ff4f4f;
+  color: #E02828;
 }
 
 .bornrzst-footer__newsletter {
@@ -891,7 +891,7 @@
 .bornrzst-footer__impact {
   color: rgba(255, 255, 255, 1);
   font-size: 3.8em;
-  font-family: "Noto Serif Display Extra Condensed";
+  font-family: "Bebas Neue";
   letter-spacing: -0.075em;
 }
 
@@ -913,7 +913,7 @@
   margin: 0;
   color: #fff;
   font-size: 2.5em;
-  font-family: "Noto Serif Display Extra Condensed";
+  font-family: "Bebas Neue";
   letter-spacing: -.075em;
 }
 
@@ -921,7 +921,7 @@
   text-decoration: none;
   color: #fff;
   font-size: 2.5em;
-  font-family: "Noto Serif Display Extra Condensed";
+  font-family: "Bebas Neue";
   letter-spacing: -.075em;
 }
 
