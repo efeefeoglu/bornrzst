@@ -1,0 +1,52 @@
+{{ 'section-why-we-exist.css' | asset_url | stylesheet_tag }}
+
+<div id="why-we-exist" class="why-we-exist-section">
+  <div class="why-we-exist-container page-width">
+    <div class="why-we-exist-left">
+      <h2 class="why-we-exist-title">{{ section.settings.title }}</h2>
+      <div class="why-we-exist-text">{{ section.settings.text }}</div>
+    </div>
+    <div class="why-we-exist-right">
+        <p class="why-we-exist-right-text">{{ section.settings.right_text_1 }}</p>
+        <p class="why-we-exist-right-text">{{ section.settings.right_text_2 }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Why We Exist",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "WHY WE EXIST"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Because silence became the norm.</p><p>Because the world watched and forgot.</p><p>Because stories of loss were buried under propaganda and politics.</p><p>We exist to remember. To resist. To rebuild what was destroyed with truth, art, and action.</p><p>BØRN RZST™ exists to prove that fashion can be more than fabric. It can be a weapon of awareness, a tool for change, and a symbol of hope.</p><p>Every piece we release funds real humanitarian aid in Gaza and supports voices that refuse to be silenced.</p><p>We are not a brand.</p><p>We are a rebellion stitched in thread.</p><p>A collective of dreamers, designers, and activists who believe that resistance can be worn and that wearing it changes everything.</p>"
+    },
+    {
+        "type": "text",
+        "id": "right_text_1",
+        "label": "Right Text 1",
+        "default": "We exist because they tried to erase us"
+    },
+    {
+        "type": "text",
+        "id": "right_text_2",
+        "label": "Right Text 2",
+        "default": "We exist because they failed"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why We Exist",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}

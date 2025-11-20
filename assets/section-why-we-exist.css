@@ -1,0 +1,40 @@
+.why-we-exist-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.why-we-exist-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.why-we-exist-left {
+  width: 60%;
+}
+
+.why-we-exist-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.why-we-exist-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.why-we-exist-right {
+  width: 40%;
+  text-align: right;
+}
+
+.why-we-exist-right-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}

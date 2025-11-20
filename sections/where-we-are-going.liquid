@@ -1,0 +1,53 @@
+{{ 'section-where-we-are-going.css' | asset_url | stylesheet_tag }}
+
+<div id="where-we-are-going" class="where-we-are-going-section">
+  <div class="where-we-are-going-container page-width">
+    <h2 class="where-we-are-going-title">{{ section.settings.title }}</h2>
+    <div class="where-we-are-going-text">{{ section.settings.text }}</div>
+    <p class="where-we-are-going-highlight">{{ section.settings.highlight_text }}</p>
+    <a href="{{ section.settings.button_link }}" class="where-we-are-going-button">{{ section.settings.button_text }}</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Where We're Going",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "WHERE WE'RE GOING"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>This is just the beginning.</p><p>Every shirt, every story, every act of resistance fuels the next wave of change.</p><p>We’re building more than a brand we’re building an ecosystem of impact: verified aid, transparent funding, and a global network of creators and activists wearing their convictions.</p><p>Together, we’re turning outrage into organized power one Drop, one story, one act of truth at a time.</p>"
+    },
+    {
+      "type": "text",
+      "id": "highlight_text",
+      "label": "Highlight Text",
+      "default": "The next chapter begins with you."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "JOIN THE MOVEMENT"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Where We're Going",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}
