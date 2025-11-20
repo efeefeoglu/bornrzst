@@ -9,11 +9,14 @@
 }
 
 .our-story-content h1 {
+  text-align: center;
   color: #E02828;
   margin-bottom: 10px;
 }
 
 .our-story-content h2 {
+  text-align: center;
+  color: #E02828;
   margin-bottom: 20px;
 }
 
