@@ -20,6 +20,7 @@
   font-size: 1em;
   line-height: 1.3;
   margin-bottom: 30px;
+  text-align:left;
 }
 
 .where-we-are-going-highlight {
@@ -27,6 +28,7 @@
   font-size: 2em;
   color: #E02828;
   margin-bottom: 30px;
+  text-align:right;
 }
 
 .where-we-are-going-button {
