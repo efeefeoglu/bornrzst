@@ -76,73 +76,13 @@
         "quote_author": "Nasib Thabet, Founder."
       }
     },
-    "multicolumn_m4BXin": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_XQtAgb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_6.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        },
-        "column_BFWjia": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        },
-        "column_BwmYKz": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_XQtAgb",
-        "column_BFWjia",
-        "column_BwmYKz"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "Multicolumn",
-        "heading_class": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "button_class": "",
-        "enable_pulse_effect": false,
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "what_we_stand_for": {
       "type": "what-we-stand-for",
       "blocks": {
         "truth": {
           "type": "item",
           "settings": {
+            "icon": "shopify://shop_images/Untitled_design_6.png",
             "title": "TRUTH",
             "text": "We expose what others try to hide. We carry the stories they tried to erase because silence is complicity, and we were never made to be silent."
           }
@@ -150,6 +90,7 @@
         "justice": {
           "type": "item",
           "settings": {
+            "icon": "shopify://shop_images/2_30dcbba3-6e8a-4360-a4dd-9911cc80ee3a.png",
             "title": "JUSTICE",
             "text": "We fight oppression not with weapons, but with words, design, and action. Every drop funds relief. Every voice becomes part of the resistance. Justice isn’t a trend it’s our duty."
           }
@@ -157,6 +98,7 @@
         "humanity": {
           "type": "item",
           "settings": {
+            "icon": "shopify://shop_images/3.png",
             "title": "HUMANITY",
             "text": "We believe freedom is not selective. When one child is caged, we are all chained. We wear our empathy as armor because love is the purest form of resistance."
           }
@@ -175,9 +117,9 @@
       "type": "why-we-exist",
       "settings": {
         "title": "WHY WE EXIST",
-        "text": "<p>Because silence became the norm.</p><p>Because the world watched and forgot.</p><p>Because stories of loss were buried under propaganda and politics.</p><p>We exist to remember. To resist. To rebuild what was destroyed with truth, art, and action.</p><p>BØRN RZST™ exists to prove that fashion can be more than fabric. It can be a weapon of awareness, a tool for change, and a symbol of hope.</p><p>Every piece we release funds real humanitarian aid in Gaza and supports voices that refuse to be silenced.</p><p>We are not a brand.</p><p>We are a rebellion stitched in thread.</p><p>A collective of dreamers, designers, and activists who believe that resistance can be worn and that wearing it changes everything.</p>",
-        "right_text_1": "We exist because they tried to erase us",
-        "right_text_2": "We exist because they failed"
+        "text": "<p>Because silence became the norm.<br/>Because the world watched and forgot.<br/>Because stories of loss were buried under propaganda and politics.<br/>We exist to remember. To resist. To rebuild what was destroyed with truth, art, and action.</p><p>BØRN RZST™ exists to prove that fashion can be more than fabric. It can be a weapon of awareness, a tool for change, and a symbol of hope.</p><p>Every piece we release funds real humanitarian aid in Gaza and supports voices that refuse to be silenced.<br/>We are not a brand.<br/>We are a rebellion stitched in thread.</p><p>A collective of dreamers, designers, and activists who believe that resistance can be worn and that wearing it changes everything.</p>",
+        "right_text_1": "We exist because they tried to erase us We exist because they failed",
+        "right_text_2": ""
       }
     },
     "where_we_are_going": {
@@ -206,7 +148,6 @@
     "main",
     "who_we_are",
     "our_story_HFD7rU",
-    "multicolumn_m4BXin",
     "what_we_stand_for",
     "why_we_exist",
     "where_we_are_going",
