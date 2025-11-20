@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -31,21 +22,21 @@
           "type": "menu_item",
           "settings": {
             "menu_item_text": "WHAT WE STAND FOR",
-            "menu_item_link": "#"
+            "menu_item_link": "#what-we-stand-for"
           }
         },
         "menu_item_bH6e8D": {
           "type": "menu_item",
           "settings": {
             "menu_item_text": "WHY WE EXIST",
-            "menu_item_link": "#"
+            "menu_item_link": "#why-we-exist"
           }
         },
         "menu_item_kUeU7F": {
           "type": "menu_item",
           "settings": {
             "menu_item_text": "WHERE WE'RE GOING",
-            "menu_item_link": "#"
+            "menu_item_link": "#where-we-are-going"
           }
         }
       },
@@ -63,10 +54,54 @@
         "button_link": "",
         "text_animation": true
       }
+    },
+    "what_we_stand_for": {
+      "type": "what-we-stand-for",
+      "blocks": {
+        "truth": {
+          "type": "item",
+          "settings": {
+            "title": "TRUTH",
+            "text": "We expose what others try to hide. We carry the stories they tried to erase because silence is complicity, and we were never made to be silent."
+          }
+        },
+        "justice": {
+          "type": "item",
+          "settings": {
+            "title": "JUSTICE",
+            "text": "We fight oppression not with weapons, but with words, design, and action. Every drop funds relief. Every voice becomes part of the resistance. Justice isn’t a trend it’s our duty."
+          }
+        },
+        "humanity": {
+          "type": "item",
+          "settings": {
+            "title": "HUMANITY",
+            "text": "We believe freedom is not selective. When one child is caged, we are all chained. We wear our empathy as armor because love is the purest form of resistance."
+          }
+        }
+      },
+      "block_order": ["truth", "justice", "humanity"],
+      "settings": {}
+    },
+    "why_we_exist": {
+      "type": "why-we-exist",
+      "settings": {}
+    },
+    "where_we_are_going": {
+      "type": "where-we-are-going",
+      "settings": {}
+    },
+    "submit_your_story": {
+      "type": "submit-your-story",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "who_we_are"
+    "who_we_are",
+    "what_we_stand_for",
+    "why_we_exist",
+    "where_we_are_going",
+    "submit_your_story"
   ]
 }

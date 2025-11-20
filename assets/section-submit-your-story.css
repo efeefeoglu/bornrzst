@@ -1,0 +1,98 @@
+.submit-your-story-section {
+  background-color: #a51c24;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.submit-your-story-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.submit-your-story-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.submit-your-story-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.submit-your-story-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.submit-your-story-form-group {
+  margin-bottom: 20px;
+}
+
+.submit-your-story-form-group label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.submit-your-story-form-group input,
+.submit-your-story-form-group textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.submit-your-story-form-group input::placeholder,
+.submit-your-story-form-group textarea::placeholder {
+  color: #cccccc;
+}
+
+.submit-your-story-form-submit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submit-your-story-form-submit .button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit-your-story-note {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.submit-your-story-footer {
+  margin-top: 50px;
+}
+
+.submit-your-story-footer-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.submit-your-story-footer-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5em;
+  margin-top: 10px;
+}

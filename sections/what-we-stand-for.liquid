@@ -1,0 +1,75 @@
+{{ 'section-what-we-stand-for.css' | asset_url | stylesheet_tag }}
+
+<div id="what-we-stand-for" class="what-we-stand-for-section">
+  <h2 class="what-we-stand-for-title">{{ section.settings.title }}</h2>
+  <div class="what-we-stand-for-container page-width">
+    {% for block in section.blocks %}
+      <div class="what-we-stand-for-item">
+        <div class="what-we-stand-for-icon">
+          {% if block.settings.icon != blank %}
+            <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="{{ block.settings.title }}" />
+          {% endif %}
+        </div>
+        <h3 class="what-we-stand-for-item-title">{{ block.settings.title }}</h3>
+        <p class="what-we-stand-for-item-text">{{ block.settings.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "What We Stand For",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "WHAT WE STAND FOR"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "TRUTH"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "We expose what others try to hide. We carry the stories they tried to erase because silence is complicity, and we were never made to be silent."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "What We Stand For",
+      "category": "ADVANCED LAYOUT",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

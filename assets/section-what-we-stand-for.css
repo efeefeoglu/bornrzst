@@ -1,0 +1,39 @@
+.what-we-stand-for-section {
+  background-color: #a51c24;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.what-we-stand-for-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.what-we-stand-for-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.what-we-stand-for-item {
+  border: 1px solid #ffffff;
+  padding: 20px;
+  width: 30%;
+}
+
+.what-we-stand-for-icon {
+  margin-bottom: 20px;
+}
+
+.what-we-stand-for-item-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.what-we-stand-for-item-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
