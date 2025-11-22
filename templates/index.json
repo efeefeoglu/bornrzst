@@ -21,7 +21,7 @@
         "body_font_family": "",
         "body_font_size": 18,
         "button_label": "JOIN THE MOVEMENT",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://pages/join-the-movement",
         "button_style_secondary": false,
         "enable_overlay": false,
         "overlay_opacity": 0,
@@ -142,7 +142,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "EXPLORE THE COLLECTION",
-        "button_link": "shopify://collections/frontpage",
+        "button_link": "shopify://collections/drop-1",
         "button_class": "blackButton18",
         "enable_pulse_effect": true,
         "columns_desktop": 3,
@@ -186,7 +186,7 @@
             "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
-            "button_link_2": "",
+            "button_link_2": "shopify://collections/drop-1",
             "button_style_secondary_2": false,
             "button_custom_class": "",
             "enable_pulse_effect": true
@@ -243,7 +243,7 @@
           "type": "button",
           "settings": {
             "button_label": "BECOME A MEMBER",
-            "button_link": "",
+            "button_link": "shopify://pages/join-the-movement",
             "button_style_secondary": false,
             "enable_pulse_effect": true,
             "custom_class": "redButton18 button__actions"
@@ -297,7 +297,7 @@
       ],
       "custom_css": [
         "p {text-align: center; font-size: 1.2em; color: #000; margin: 20px auto !important; max-width: 70%;}",
-        "p strong {font-size: 3em; font-family: \"Noto Serif Display Extra Condensed\"; font-weight: 400; color: #000; letter-spacing: -0.075em; line-height: 0.9; margin-top: 100px; display: block;}"
+        "p strong {font-size: 3em; font-weight: 400; color: #000; letter-spacing: -0.075em; line-height: 0.9; margin-top: 100px; display: block;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -347,7 +347,7 @@
           "type": "button",
           "settings": {
             "button_label": "READ MORE",
-            "button_link": "",
+            "button_link": "shopify://pages/proof-of-impact",
             "button_style_secondary": false,
             "enable_pulse_effect": true,
             "custom_class": "whiteButton18"
