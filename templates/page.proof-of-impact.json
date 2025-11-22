@@ -79,11 +79,29 @@
     "how_we_fund": {
       "type": "how-we-fund",
       "settings": {
-        "title": "How we fund impact & growth",
-        "left_column_title": "IMPACT ENGINE",
-        "left_column_text": "<p>100% OF DROP PROFITS = HUMANITARIAN RELIEF</p><p>SHOP SALES<br/>↓<br/>VERIFIED DONATION FUNDS<br/>↓</p><ul><li>All Donations are: Verified, tracked, and released as aid in Gaza.</li><li>Transparency Guarantee: Public ledger of all funds.</li><li>Advocacy & Awareness: Campaigns amplifying Palestinian voices.</li></ul>",
-        "right_column_title": "Growth Engine",
-        "right_column_text": "<p>Creative Commerce → Sustainable Operations</p><p>We build movements not by emptying our pockets but by filling our hearts. We raise capital through separate revenue streams that fund the brand itself.</p><p>Our Growth Channels</p><ul><li>Membership: Exclusive club benefits & drops.</li><li>RZST Circle Memberships: Monthly supporters ($10-$250) who sustain operations.</li><li>External Funding: Grants, private investors, and strategic partnerships.</li></ul><p>Creative Sales → Operations & Team → Automation & Growth</p>"
+        "main_header": "How we fund impact & growth",
+        "impact_engine_title": "IMPACT ENGINE",
+        "impact_engine_subheadline_1": "100% OF DROP PROFITS",
+        "impact_engine_subheadline_2": "HUMANITARIAN RELIEF",
+        "impact_engine_body": "<p>This is where activism meets art. Every shirt, hoodie, and tote sold under our Impact Drops funds <strong>verified humanitarian partners</strong> and is publicly tracked on our <strong>Transparency Dashboard.</strong></p>",
+        "section_divider_1": "SHOP SALES",
+        "section_divider_2": "VERIFIED DONATION FUNDS",
+        "flow_icon_1": "shopify://shop_images/cart.png",
+        "flow_icon_2": "shopify://shop_images/donation.png",
+        "flow_icon_3": "shopify://shop_images/proof.png",
+        "percentage_1_bold": "• 80% Humanitarian Aid:",
+        "percentage_1_text": "Medical relief, food aid, and reconstruction in Gaza.",
+        "percentage_2_bold": "• 15% Transparency & Operations:",
+        "percentage_2_text": "Verification, and public reporting.",
+        "percentage_3_bold": "• 5% Advocacy & Awareness:",
+        "percentage_3_text": "Campaigns amplifying Palestinian voices.",
+        "bridge_text": "Transparency System & Impact Ledger",
+        "growth_engine_title": "Growth Engine",
+        "growth_engine_subheadline": "Creative Commerce → Sustainable Operations",
+        "growth_engine_body": "<p>To keep the movement alive, we generate ethical revenue streams that fund our team, technology, and storytelling without touching aid funds.</p>",
+        "growth_channels_title": "Our Growth Channels:",
+        "bottom_flow_text": "Creative Sales → Operations & Team → Automation & Growth",
+        "footer_text": "We fund our activism with our art and our art funds the resistance"
       }
     },
     "membership_comparison": {
