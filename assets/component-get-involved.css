@@ -17,11 +17,11 @@
 }
 
 .section-give .give-left {
-    flex: 1 1 400px;
+    flex: 1 1 500px;
 }
 
 .section-give .give-right {
-    flex: 0 0 400px;
+    flex: 0 0 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,5 +76,4 @@
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    width: 100%;
 }
