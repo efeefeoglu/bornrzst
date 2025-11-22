@@ -24,7 +24,6 @@
 }
 
 .unshakable-roots__logo-text {
-  font-family: "Noto Serif Display Extra Condensed", var(--font-heading-family);
   font-size: clamp(52px, 8vw, 96px);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -44,7 +43,6 @@
 }
 
 .unshakable-roots__meta-label {
-  font-family: "Noto Serif Display Extra Condensed", var(--font-heading-family);
   margin: 0 0 6px;
   color: #f9f4d4;
   font-size: 2.5em;
@@ -97,7 +95,6 @@
 
 .unshakable-roots__badge-text {
   fill: #fefefe;
-  font-family: "Noto Serif Display Extra Condensed", var(--font-heading-family);
   font-size: 40px;
   letter-spacing: 0.35em;
 }
@@ -118,7 +115,6 @@
 .unshakable-roots__badge-script {
   fill: #ffffff;
   font-size: 32px;
-  font-family: "Crimson Pro", var(--font-body-family);
 }
 
 .unshakable-roots__badge-sparkle {
