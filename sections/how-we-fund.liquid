@@ -62,23 +62,25 @@
 
     <!-- Right Column: Growth Engine -->
     <div class="how-we-fund-column-right">
-      <h2 class="how-we-fund-growth-title">{{ section.settings.growth_engine_title }}</h2>
-      <div class="how-we-fund-growth-subheadline">
-        <p>{{ section.settings.growth_engine_subheadline }}</p>
-      </div>
-      <div class="how-we-fund-growth-body">
-        {{ section.settings.growth_engine_body }}
-      </div>
-      <div class="how-we-fund-growth-channels">
-        <h3>{{ section.settings.growth_channels_title }}</h3>
-        <ul>
-          {% for block in section.blocks %}
-            <li><strong>{{ block.settings.channel_title }}:</strong> {{ block.settings.channel_description }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="how-we-fund-bottom-flow">
-        <p>{{ section.settings.bottom_flow_text }}</p>
+      <div class="page-width">
+        <h2 class="how-we-fund-growth-title">{{ section.settings.growth_engine_title }}</h2>
+        <div class="how-we-fund-growth-subheadline">
+          <p>{{ section.settings.growth_engine_subheadline }}</p>
+        </div>
+        <div class="how-we-fund-growth-body">
+          {{ section.settings.growth_engine_body }}
+        </div>
+        <div class="how-we-fund-growth-channels">
+          <h3>{{ section.settings.growth_channels_title }}</h3>
+          <ul>
+            {% for block in section.blocks %}
+              <li><strong>{{ block.settings.channel_title }}:</strong> {{ block.settings.channel_description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="how-we-fund-bottom-flow">
+          <p>{{ section.settings.bottom_flow_text }}</p>
+        </div>
       </div>
     </div>
   </div>
