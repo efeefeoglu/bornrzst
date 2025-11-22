@@ -1,14 +1,14 @@
 {{ 'section-how-we-fund.css' | asset_url | stylesheet_tag }}
 
-<div class="how-we-fund-section">
+<div class="how-we-fund-section animate-in-scroll-trigger">
   <!-- Top Banner -->
-  <div class="how-we-fund-top-banner">
+  <div class="how-we-fund-top-banner animate-item animate-item-0">
     <h1 class="how-we-fund-main-header">{{ section.settings.main_header }}</h1>
   </div>
 
   <div class="how-we-fund-content-wrapper">
     <!-- Left Column: Impact Engine -->
-    <div class="how-we-fund-column-left">
+    <div class="how-we-fund-column-left animate-item animate-item-1">
         <div class="page-width">
         <h2 class="how-we-fund-impact-title">{{ section.settings.impact_engine_title }}</h2>
         <div class="how-we-fund-impact-subheadline">
@@ -54,14 +54,14 @@
     </div>
 
     <!-- Center Element: Bridge -->
-    <div class="how-we-fund-bridge">
+    <div class="how-we-fund-bridge animate-item animate-item-2">
       <div class="how-we-fund-bridge-circle">
         <p>{{ section.settings.bridge_text }}</p>
       </div>
     </div>
 
     <!-- Right Column: Growth Engine -->
-    <div class="how-we-fund-column-right">
+    <div class="how-we-fund-column-right animate-item animate-item-3">
       <div class="page-width">
         <h2 class="how-we-fund-growth-title">{{ section.settings.growth_engine_title }}</h2>
         <div class="how-we-fund-growth-subheadline">
@@ -86,7 +86,7 @@
   </div>
 
   <!-- Bottom Banner -->
-  <div class="how-we-fund-bottom-banner">
+  <div class="how-we-fund-bottom-banner animate-item animate-item-4">
     <h3>{{ section.settings.footer_text }}</h3>
   </div>
 </div>

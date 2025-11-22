@@ -8,13 +8,13 @@
   endif
 -%}
 
-<div class="who-we-are-section">
+<div class="who-we-are-section animate-in-scroll-trigger">
   <div class="who-we-are-container page-width">
     <div class="who-we-are-left">
-      <h2 class="who-we-are-title {{ text_animation }}">{{ section.settings.title }}</h2>
-      <p class="who-we-are-text">{{ section.settings.text }}</p>
+      <h2 class="who-we-are-title {{ text_animation }} animate-item animate-item-0">{{ section.settings.title }}</h2>
+      <p class="who-we-are-text animate-item animate-item-1">{{ section.settings.text }}</p>
       
-      <ul class="who-we-are-menu">
+      <ul class="who-we-are-menu animate-item animate-item-2">
         {% for block in section.blocks %}
           <li class="who-we-are-menu-item">
             <a href="{{ block.settings.menu_item_link }}">
@@ -29,9 +29,9 @@
     </div>
     <div class="who-we-are-right">
       {% if section.settings.logo_image %}
-        <img src="{{ section.settings.logo_image | image_url: width: 500 }}" alt="Logo" class="who-we-are-logo">
+        <img src="{{ section.settings.logo_image | image_url: width: 500 }}" alt="Logo" class="who-we-are-logo animate-item animate-item-3">
       {% endif %}
-      <a href="{{ section.settings.button_link }}" class="who-we-are-button">{{ section.settings.button_text }}</a>
+      <a href="{{ section.settings.button_link }}" class="who-we-are-button animate-item animate-item-4">{{ section.settings.button_text }}</a>
     </div>
   </div>
 </div>

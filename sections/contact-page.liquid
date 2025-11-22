@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="{{ 'section-contact-page.css' | asset_url }}">
 
-<div class="contact-page-section">
+<div class="contact-page-section animate-in-scroll-trigger">
   <div class="contact-page-title-container page-width">
     <diV>
-      <h1 class="contact-page-title">{{ section.settings.title }}</h1>
-      <p>{{ section.settings.subtitle }}</p>
+      <h1 class="contact-page-title animate-item animate-item-0">{{ section.settings.title }}</h1>
+      <p class="animate-item animate-item-1">{{ section.settings.subtitle }}</p>
     </diV>
-    <div class="contact-page-left">
+    <div class="contact-page-left animate-item animate-item-2">
 
       <div class="contact-page-form">
         {% form 'contact' %}
@@ -40,7 +40,7 @@
       <p>{{ section.settings.form_footer }}</p>
     </div>
 
-    <div class="contact-page-right">
+    <div class="contact-page-right animate-item animate-item-3">
       <div class="contact-page-direct-contacts">
         <h2>{{ section.settings.direct_contacts_title }}</h2>
         {% for block in section.blocks %}

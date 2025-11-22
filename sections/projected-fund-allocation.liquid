@@ -1,17 +1,17 @@
 {{ 'section-projected-fund-allocation.css' | asset_url | stylesheet_tag }}
 
-<div class="projected-fund-allocation-section">
+<div class="projected-fund-allocation-section animate-in-scroll-trigger">
   <div class=" page-width">
-    <h1 class="projected-fund-allocation-title">{{ section.settings.title }}</h1>
+    <h1 class="projected-fund-allocation-title animate-item animate-item-0">{{ section.settings.title }}</h1>
     <div class="projected-fund-allocation-content">
       <div class="projected-fund-allocation-left">
-        <div class="text-part">{{ section.settings.text_1 }}</div>
+        <div class="text-part animate-item animate-item-1">{{ section.settings.text_1 }}</div>
         <hr>
-        <div class="text-part">{{ section.settings.text_2 }}</div>
+        <div class="text-part animate-item animate-item-2">{{ section.settings.text_2 }}</div>
         <hr>
-        <div class="text-part">{{ section.settings.text_3 }}</div>
+        <div class="text-part animate-item animate-item-3">{{ section.settings.text_3 }}</div>
       </div>
-      <div class="projected-fund-allocation-right">
+      <div class="projected-fund-allocation-right animate-item animate-item-4">
         {% if section.settings.image != blank %}
           <img src="{{ section.settings.image | image_url: width: 400, height: 400 }}" alt="Fund Allocation Image">
         {% endif %}

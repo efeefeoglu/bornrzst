@@ -1,18 +1,18 @@
 {{ 'section-submit-your-story.css' | asset_url | stylesheet_tag }}
 
-<div id="submit-your-story" class="submit-your-story-section">
+<div id="submit-your-story" class="submit-your-story-section animate-in-scroll-trigger">
   <div class="submit-your-story-container page-width">
     <div class="submit-your-story-content">
       <div class="submit-your-story-left">
-        <h2 class="submit-your-story-title">{{ section.settings.title }}</h2>
-        <p class="submit-your-story-text">{{ section.settings.text }}</p>
-        <div class="submit-your-story-image-picker">
+        <h2 class="submit-your-story-title animate-item animate-item-0">{{ section.settings.title }}</h2>
+        <p class="submit-your-story-text animate-item animate-item-1">{{ section.settings.text }}</p>
+        <div class="submit-your-story-image-picker animate-item animate-item-2">
           <label for="ContactFormImage">{{ section.settings.image_label }}</label>
           <input type="file" id="ContactFormImage" name="contact[image]" accept="image/*">
         </div>
       </div>
       <div class="submit-your-story-right">
-        <div class="submit-your-story-form-container">
+        <div class="submit-your-story-form-container animate-item animate-item-3">
           {% form 'contact' %}
             {{ form.errors | default_errors }}
             <div class="submit-your-story-form-group">
@@ -32,7 +32,7 @@
             </div>
           {% endform %}
         </div>
-        <p class="submit-your-story-note">{{ section.settings.note }}</p>
+        <p class="submit-your-story-note animate-item animate-item-4">{{ section.settings.note }}</p>
       </div>
     </div>
   </div>
