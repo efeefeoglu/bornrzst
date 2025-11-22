@@ -1,0 +1,78 @@
+{{ 'section-projected-fund-allocation.css' | asset_url | stylesheet_tag }}
+
+<div class="projected-fund-allocation-section page-width">
+  <h2 class="projected-fund-allocation-title">{{ section.settings.title }}</h2>
+  <div class="projected-fund-allocation-content">
+    <div class="projected-fund-allocation-text">
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div class="projected-fund-allocation-details">
+      {% for block in section.blocks %}
+        <div class="projected-fund-allocation-item">
+          <p class="projected-fund-allocation-item-text">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="projected-fund-allocation-footer">
+    <p>{{ section.settings.footer_text }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Projected Fund Allocation",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Projected Fund Allocation Drop 1"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Before launch, we want you to know exactly how every dollar will work, because trust starts with transparency."
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "All donations will be audited and verified once NGO partnerships are finalized post-launch."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Humanitarian Aid (60%): Emergency medical relief, food aid, and reconstruction in Gaza."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Projected Fund Allocation",
+      "category": "ADVANCED LAYOUT",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

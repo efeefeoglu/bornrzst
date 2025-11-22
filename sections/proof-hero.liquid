@@ -1,0 +1,199 @@
+{{ 'section-proof-hero.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign background_image = section.settings.background_image
+  assign logo_image = section.settings.logo_image
+  assign overlay_enabled = section.settings.enable_overlay
+  assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
+  assign alignment = section.settings.text_alignment
+  assign first_text = section.settings.first_text
+  assign second_text = section.settings.second_text
+  assign button_label = section.settings.button_label
+  assign button_link = section.settings.button_link
+  assign button_style_secondary = section.settings.button_style_secondary
+  assign button_class = 'button button--primary'
+  if button_style_secondary
+    assign button_class = 'button button--secondary'
+  endif
+-%}
+
+<section
+  id="section-{{ section.id }}"
+  class="proof-hero-section color-{{ section.settings.color_scheme }} gradient"
+  style="--hero-section-overlay: {%- if overlay_enabled -%}{{ overlay_opacity }}{%- else -%}0{%- endif -%}; padding-top: {{ section.settings.padding_top | default: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | default: 0 }}px; --hero-heading-font-size: {{ section.settings.heading_font_size | default: 64 }}px; --hero-body-font-size: {{ section.settings.body_font_size | default: 18 }}px; --hero-heading-font-family: {{ section.settings.heading_font_family | default: 'var(--font-heading-family)' }}; --hero-body-font-family: {{ section.settings.body_font_family | default: 'var(--font-body-family)' }};"
+>
+  <div
+    class="proof-hero-section__media"
+    style="background-image: url({%- if background_image != blank -%}{{ background_image | image_url: width: 3840 }}{%- else -%}{{ 'hero.png' | asset_url }}{%- endif -%});"
+    role="presentation"
+    aria-hidden="true"
+  ></div>
+  <div class="proof-hero-section__content-wrapper page-width">
+    <div class="proof-hero-section__content proof-hero-section__content--{{ alignment }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="proof-hero-section__logo">
+        {%- if logo_image != blank -%}
+          {{ logo_image | image_url: width: 500 | image_tag: loading: 'lazy', class: 'proof-hero-section__logo-image' }}
+        {%- else -%}
+          <img src="{{ 'bornrzst-logo.png' | asset_url }}" alt="{{ 'general.accessibility.logo' | t }}" loading="lazy" width="150" height="200" />
+        {%- endif -%}
+      </div>
+      {%- if first_text != blank -%}
+        <h1 class="proof-hero-section__heading">{{ first_text | newline_to_br }}</h1>
+      {%- endif -%}
+      {%- if second_text != blank -%}
+        <div class="proof-hero-section__body rte">{{ second_text }}</div>
+      {%- endif -%}
+      {%- if button_label != blank -%}
+        <div class="proof-hero-section__actions">
+          {%- if button_link != blank -%}
+            <a class="{{ button_class }} button--pulse" href="{{ button_link }}">{{ button_label }}</a>
+          {%- else -%}
+            <button class="{{ button_class }}" type="button" disabled>{{ button_label }}</button>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {% schema %}
+  {
+    "name": "Custom hero",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background image"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_image",
+        "label": "Logo"
+      },
+      {
+        "type": "textarea",
+        "id": "first_text",
+        "label": "First text",
+        "default": "Proof of Impact (Coming Soon)"
+      },
+      {
+        "type": "richtext",
+        "id": "second_text",
+        "label": "Second text",
+        "default": "<p>Every Shipment. Every Delivery. Every receipt, published for the world to see.</p>"
+      },
+      {
+        "type": "text",
+        "id": "heading_font_family",
+        "label": "First text font family",
+        "default": "var(--font-heading-family)"
+      },
+      {
+        "type": "range",
+        "id": "heading_font_size",
+        "label": "First text font size",
+        "min": 28,
+        "max": 120,
+        "step": 2,
+        "unit": "px",
+        "default": 72
+      },
+      {
+        "type": "text",
+        "id": "body_font_family",
+        "label": "Second text font family",
+        "default": "var(--font-body-family)"
+      },
+      {
+        "type": "range",
+        "id": "body_font_size",
+        "label": "Second text font size",
+        "min": 14,
+        "max": 48,
+        "step": 1,
+        "unit": "px",
+        "default": 20
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "Join the movement"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_style_secondary",
+        "label": "Use outline button style",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_overlay",
+        "label": "Show gradient overlay",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Overlay intensity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "default": 65
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color scheme",
+        "default": "scheme-1"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "label": "Spacing above",
+        "min": 0,
+        "max": 80,
+        "step": 4,
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "label": "Spacing below",
+        "min": 0,
+        "max": 80,
+        "step": 4,
+        "unit": "px",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom hero"
+      }
+    ]
+  }
+  {% endschema %}
+</section>
