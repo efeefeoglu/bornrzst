@@ -44,8 +44,7 @@
 }
 
 .proof-hero-section__heading {
-  font-size: var(--hero-heading-font-size);
-  font-family: var(--hero-heading-font-family);
+  color: #E02828;
   margin-bottom: 20px;
 }
 
