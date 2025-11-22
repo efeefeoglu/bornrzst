@@ -6,14 +6,10 @@
 }
 
 .support-the-movement-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 48px;
   margin-bottom: 10px;
 }
 
 .support-the-movement-subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
   margin-bottom: 40px;
 }
 
@@ -25,7 +21,7 @@
 }
 
 .tier {
-  background-color: #8B0000;
+  background-color: #E02828;
   padding: 30px;
   border-radius: 15px;
   width: 300px;
@@ -51,7 +47,7 @@
 
 .btn {
   background-color: #ffffff;
-  color: #121212;
+  color: #000;
   padding: 15px 30px;
   text-decoration: none;
   font-family: 'Bebas Neue', sans-serif;
