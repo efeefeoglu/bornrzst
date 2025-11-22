@@ -241,9 +241,9 @@
         "subtitle1": "Compare Membership Benefits",
         "subtitle2": "Every role strengthens the resistance",
         "header_benefit": "Benefit",
-        "header_supporter": "$10 Supporter",
-        "header_builder": "$50 Builder",
-        "header_guardian": "$250 Guardian"
+        "header_supporter": "$10/mo Supporter",
+        "header_builder": "$50/mo Builder",
+        "header_guardian": "$250/mo Guardian"
       }
     }
   },
