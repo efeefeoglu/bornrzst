@@ -1,0 +1,136 @@
+{{ 'section-support-the-movement.css' | asset_url | stylesheet_tag }}
+
+<div class="support-the-movement-section">
+  <div class="page-width">
+    <h2 class="support-the-movement-title">{{ section.settings.title }}</h2>
+    <h3 class="support-the-movement-subtitle">{{ section.settings.subtitle }}</h3>
+    <div class="support-the-movement-tiers">
+      <div class="tier">
+        <h4>{{ section.settings.tier_1_price }}</h4>
+        <h4>{{ section.settings.tier_1_title }}</h4>
+        <p>{{ section.settings.tier_1_description }}</p>
+        <a href="{{ section.settings.tier_1_url }}" class="btn">{{ section.settings.button_text }}</a>
+      </div>
+      <div class="tier">
+        <h4>{{ section.settings.tier_2_price }}</h4>
+        <h5>{{ section.settings.tier_2_title }}</h5>
+        <p>{{ section.settings.tier_2_description }}</p>
+        <a href="{{ section.settings.tier_2_url }}" class="btn">{{ section.settings.button_text }}</a>
+      </div>
+      <div class="tier">
+        <h4>{{ section.settings.tier_3_price }}</h4>
+        <h5>{{ section.settings.tier_3_title }}</h5>
+        <p>{{ section.settings.tier_3_description }}</p>
+        <a href="{{ section.settings.tier_3_url }}" class="btn">{{ section.settings.button_text }}</a>
+      </div>
+    </div>
+    <p class="support-the-movement-footer">{{ section.settings.footer_text }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Support The Movement",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Support The Movement Join The RZST Cirle"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Choose your role in the movement"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_price",
+      "label": "Tier 1 Price",
+      "default": "$10/month"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_title",
+      "label": "Tier 1 Title",
+      "default": "RZST CIRCLE SUPPORTER"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_description",
+      "label": "Tier 1 Description",
+      "default": "Fuel verified aid with every drop"
+    },
+    {
+      "type": "url",
+      "id": "tier_1_url",
+      "label": "Tier 1 Button Link"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_price",
+      "label": "Tier 2 Price",
+      "default": "$50/month"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_title",
+      "label": "Tier 2 Title",
+      "default": "RZST CIRCLE BUILDER"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_description",
+      "label": "Tier 2 Description",
+      "default": "Power storytelling, operations and reach"
+    },
+    {
+      "type": "url",
+      "id": "tier_2_url",
+      "label": "Tier 2 Button Link"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_price",
+      "label": "Tier 3 Price",
+      "default": "$250/month"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_title",
+      "label": "Tier 3 Title",
+      "default": "RZST CIRCLE GUARDIAN"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_description",
+      "label": "Tier 3 Description",
+      "default": "Back the movement. Fund future drops & relief"
+    },
+    {
+      "type": "url",
+      "id": "tier_3_url",
+      "label": "Tier 3 Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "JOIN NOW"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "Your membership fuels art, aid, and the architecture of resistance."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Support The Movement",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+{% endschema %}

@@ -245,6 +245,10 @@
         "header_builder": "$50/mo Builder",
         "header_guardian": "$250/mo Guardian"
       }
+    },
+    "support_the_movement": {
+      "type": "support-the-movement",
+      "settings": {}
     }
   },
   "order": [
@@ -254,6 +258,7 @@
     "projected_fund",
     "impact_two_column",
     "how_we_fund",
-    "membership_comparison"
+    "membership_comparison",
+    "support_the_movement"
   ]
 }
