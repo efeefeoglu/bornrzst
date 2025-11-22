@@ -88,10 +88,90 @@
             "builder": true,
             "guardian": true
           }
+        },
+        "item_gQgfgU": {
+          "type": "item",
+          "settings": {
+            "benefit": "Monthly impact updates (verified photos & milestones)",
+            "supporter": true,
+            "builder": true,
+            "guardian": true
+          }
+        },
+        "item_6AaBCQ": {
+          "type": "item",
+          "settings": {
+            "benefit": "Digital supporter badge",
+            "supporter": true,
+            "builder": true,
+            "guardian": true
+          }
+        },
+        "item_fHT9Jy": {
+          "type": "item",
+          "settings": {
+            "benefit": "Early access to new drops (24-hour shopping window)",
+            "supporter": false,
+            "builder": true,
+            "guardian": true
+          }
+        },
+        "item_WCnNLD": {
+          "type": "item",
+          "settings": {
+            "benefit": "Exclusive impact stories (behind-the-scenes reports)",
+            "supporter": false,
+            "builder": true,
+            "guardian": true
+          }
+        },
+        "item_nMw4Dn": {
+          "type": "item",
+          "settings": {
+            "benefit": "Verified donation report (quarterly summary PDF)",
+            "supporter": false,
+            "builder": true,
+            "guardian": true
+          }
+        },
+        "item_P9BRmi": {
+          "type": "item",
+          "settings": {
+            "benefit": "Recognition on Transparency page (optional)",
+            "supporter": false,
+            "builder": false,
+            "guardian": true
+          }
+        },
+        "item_FdycdW": {
+          "type": "item",
+          "settings": {
+            "benefit": "Annual collector item (guardian-only)",
+            "supporter": false,
+            "builder": false,
+            "guardian": true
+          }
+        },
+        "item_wycntU": {
+          "type": "item",
+          "settings": {
+            "benefit": "Private strategy / roundtable sessions (2–3x/yr)",
+            "supporter": false,
+            "builder": false,
+            "guardian": true
+          }
         }
       },
       "block_order": [
-        "item_mqDdY9"
+        "item_mqDdY9",
+        "item_gQgfgU",
+        "item_6AaBCQ",
+        "item_fHT9Jy",
+        "item_WCnNLD",
+        "item_nMw4Dn",
+        "item_P9BRmi",
+        "item_FdycdW",
+        "item_wycntU"
       ],
       "settings": {
         "title": "Compare Membership Benefits",
