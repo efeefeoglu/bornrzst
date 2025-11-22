@@ -1,8 +1,39 @@
 {{ 'component-join-the-movement-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="join-the-movement-hero" {% if section.settings.background_image != blank %}style="background-image: url('{{ section.settings.background_image | image_url }}');"{% endif %}>
-  <div class="join-the-movement-hero__content">
-    <h1>{{ section.settings.title }}</h1>
+<div class="join-the-movement-hero">
+  <div class="container">
+    <div class="header">
+      {% if section.settings.logo != blank %}
+        <img src="{{ section.settings.logo | image_url }}" alt="{{ section.settings.logo.alt }}" class="logo">
+      {% endif %}
+    </div>
+    <div class="content">
+      <div class="left-column">
+        <h1 class="main-title">{{ section.settings.title }}</h1>
+        <div class="description">{{ section.settings.description }}</div>
+        <p class="call-to-action">{{ section.settings.call_to_action }}</p>
+      </div>
+      <div class="right-column">
+        {% if section.settings.cycle_image != blank %}
+          <img src="{{ section.settings.cycle_image | image_url }}" alt="{{ section.settings.cycle_image.alt }}" class="half-round-shape">
+        {% endif %}
+        <ul class="steps-list">
+          {% for block in section.blocks %}
+            <li class="step-item">
+              <div class="step-title">
+                <span class="action">{{ block.settings.action }}</span><span class="arrow">→</span><span class="subtitle">{{ block.settings.subtitle }}</span>
+              </div>
+              <div class="step-description">{{ block.settings.description }}</div>
+            </li>
+          {% endfor %}
+          {% if section.settings.final_thought != blank %}
+            <li class="step-item final-thought">
+              {{ section.settings.final_thought }}
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -12,19 +43,82 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "background_image",
-      "label": "Background Image"
+      "id": "logo",
+      "label": "Logo"
     },
     {
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "JOIN THE MOVEMENT"
+      "default": "Join the movement"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>You don’t have to do everything but if you do one thing, the movement continues.<br>Because resistance doesn’t end with you it passes through you.</p>"
+    },
+    {
+      "type": "text",
+      "id": "call_to_action",
+      "label": "Call to Action",
+      "default": "Every act keeps the movement alive"
+    },
+    {
+      "type": "image_picker",
+      "id": "cycle_image",
+      "label": "Cycle Image"
+    },
+    {
+      "type": "text",
+      "id": "final_thought",
+      "label": "Final Thought",
+      "default": "Then....another story begins."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "action",
+          "label": "Action",
+          "default": "TELL"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "The spark"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>A story is born pain, truth, courage. It begins with one person saying “This happened to me.”</p>"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Join the Movement Hero"
+      "name": "Join the Movement Hero",
+      "blocks": [
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        },
+        {
+          "type": "step"
+        }
+      ]
     }
   ]
 }
