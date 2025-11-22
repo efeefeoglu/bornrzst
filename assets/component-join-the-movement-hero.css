@@ -65,6 +65,16 @@
 .join-the-movement-hero .step-item {
     margin-bottom: 30px;
 }
+
+
+.join-the-movement-hero .step-item::before {
+  content: '';
+  background-color: #FFF;
+  width: 500px;
+  height: 5px;
+  line-height: 0;
+}
+
 .join-the-movement-hero .step-title {
     font-size: 3rem;
     font-weight: bold;
