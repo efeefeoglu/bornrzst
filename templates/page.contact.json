@@ -1,7 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -9,7 +19,39 @@
     },
     "form": {
       "type": "contact-page",
+      "blocks": {
+        "contact_biM9WV": {
+          "type": "contact",
+          "settings": {
+            "title": "PRESS & PARTNERSHIPS",
+            "email": "partnerships@bornrzst.com"
+          }
+        },
+        "contact_nyzNWB": {
+          "type": "contact",
+          "settings": {
+            "title": "ORDER SUPPORT",
+            "email": "support@bornrzst.com"
+          }
+        }
+      },
+      "block_order": [
+        "contact_biM9WV",
+        "contact_nyzNWB"
+      ],
       "settings": {
+        "title": "Speak to the Frontline",
+        "subtitle": "<p>Every act of resistance starts with a message. You don't have to do everything, but you do one thing, make it count. Whether you're a creator, journalist, or ally, your message keeps the movement alive.</p>",
+        "form_footer": "<p>When you write to us, it doesn't land in a void, it lands in a movement.</p>",
+        "direct_contacts_title": "Direct Contacts",
+        "join_movement_title": "Join the Movement",
+        "join_movement_url": "shopify://pages/join-the-movement",
+        "follow_resistance_title": "Follow the Resistance",
+        "follow_resistance_subtitle": "Stay connected. Wear your message.",
+        "instagram_url": "#",
+        "tiktok_url": "#",
+        "twitter_url": "#",
+        "follow_resistance_footer": "<p>Tag @BORNZST and use #WearYourResistance to be featured.</p>"
       }
     }
   },
