@@ -268,9 +268,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   background-color: rgba(var(--color-foreground), 0.2);
 }
 
-.text-body {
+.text-body, p {
   font-size: 1.5rem;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.02em;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
