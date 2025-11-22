@@ -41,18 +41,6 @@
     align-items: center;
     position: relative;
 }
-.join-the-movement-hero {
-    position: absolute;
-    top:25%;
-    z-index: 99;
-}
-.half-round-shape {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 490px;
-    z-index: 1; 
-}
 .join-the-movement-hero .steps-list {
     list-style: none;
     padding: 0;
