@@ -2449,7 +2449,7 @@ input[type='checkbox'] {
   width: 100%;
 }
 
--homepage .header-wrapper {
+.homepage .header-wrapper {
   position: absolute;
   background-color: transparent !important;
 }
