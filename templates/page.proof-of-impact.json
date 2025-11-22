@@ -140,6 +140,27 @@
         "footer_text": "We fund our activism with our art and our art funds the resistance"
       }
     },
+    "support_the_movement": {
+      "type": "support-the-movement",
+      "settings": {
+        "title": "Support The Movement<br>Join The RZST Cirle",
+        "subtitle": "Choose your role in the movement",
+        "tier_1_price": "$10/month",
+        "tier_1_title": "RZST CIRCLE SUPPORTER",
+        "tier_1_description": "Fuel verified aid with every drop",
+        "tier_1_url": "",
+        "tier_2_price": "$50/month",
+        "tier_2_title": "RZST CIRCLE BUILDER",
+        "tier_2_description": "Power storytelling, operations and reach",
+        "tier_2_url": "",
+        "tier_3_price": "$250/month",
+        "tier_3_title": "RZST CIRCLE GUARDIAN",
+        "tier_3_description": "Back the movement. Fund future drops & relief",
+        "tier_3_url": "",
+        "button_text": "JOIN NOW",
+        "footer_text": "Your membership fuels art, aid, and the architecture of resistance."
+      }
+    },
     "membership_comparison": {
       "type": "membership-comparison",
       "blocks": {
@@ -245,10 +266,6 @@
         "header_builder": "$50/mo Builder",
         "header_guardian": "$250/mo Guardian"
       }
-    },
-    "support_the_movement": {
-      "type": "support-the-movement",
-      "settings": {}
     }
   },
   "order": [
@@ -258,7 +275,7 @@
     "projected_fund",
     "impact_two_column",
     "how_we_fund",
-    "membership_comparison",
-    "support_the_movement"
+    "support_the_movement",
+    "membership_comparison"
   ]
 }
