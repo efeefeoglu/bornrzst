@@ -80,3 +80,7 @@
 .contact-page-social-links a {
   margin-right: 15px;
 }
+
+.contact-page-social-links .list-social{
+  justify-content: flex-start;
+}
