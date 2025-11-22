@@ -88,9 +88,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin: 40px;
 }
 
 .proof-hero-section__bottom-text {
   color: #fff;
   text-align: left;
+}
+
+.proof-hero-section__actions button{
+  background-color:#E02828;
 }
