@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+.contact-page-title-container {
+  width:100%;
+}
+
 .contact-page-left,
 .contact-page-right {
   width: 48%;
