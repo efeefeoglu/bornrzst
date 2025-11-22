@@ -126,6 +126,8 @@
 .how-we-fund-bottom-flow {
   margin-top: 20px;
   text-align: center;
+  font-size: 2rem;
+  color: #E02828;
 }
 
 @media (max-width: 768px) {
