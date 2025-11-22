@@ -1,30 +1,32 @@
 {{ 'section-membership-comparison.css' | asset_url | stylesheet_tag }}
 
-<div class="membership-comparison-section page-width">
-  <h2 class="membership-comparison-title">{{ section.settings.title }}</h2>
-  <h3 class="membership-comparison-subtitle">{{ section.settings.subtitle1 }}</h3>
-  <h3 class="membership-comparison-subtitle">{{ section.settings.subtitle2 }}</h3>
-  <div class="membership-comparison-table">
-    <table>
-      <thead>
-        <tr>
-          <th>{{ section.settings.header_benefit }}</th>
-          <th>{{ section.settings.header_supporter }}</th>
-          <th>{{ section.settings.header_builder }}</th>
-          <th>{{ section.settings.header_guardian }}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for block in section.blocks %}
+<div class="membership-comparison-section">
+  <div class="page-width">
+    <h1 class="membership-comparison-title">{{ section.settings.title }}</h1>
+    <h3 class="membership-comparison-subtitle">{{ section.settings.subtitle1 }}</h3>
+    <h3 class="membership-comparison-subtitle"><i></i>{{ section.settings.subtitle2 }}</i></h3>
+    <div class="membership-comparison-table">
+      <table>
+        <thead>
           <tr>
-            <td>{{ block.settings.benefit }}</td>
-            <td>{% if block.settings.supporter %}✓{% else %}-{% endif %}</td>
-            <td>{% if block.settings.builder %}✓{% else %}-{% endif %}</td>
-            <td>{% if block.settings.guardian %}✓{% else %}-{% endif %}</td>
+            <th>{{ section.settings.header_benefit }}</th>
+            <th>{{ section.settings.header_supporter }}</th>
+            <th>{{ section.settings.header_builder }}</th>
+            <th>{{ section.settings.header_guardian }}</th>
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {% for block in section.blocks %}
+            <tr>
+              <td>{{ block.settings.benefit }}</td>
+              <td>{% if block.settings.supporter %}✓{% else %}-{% endif %}</td>
+              <td>{% if block.settings.builder %}✓{% else %}-{% endif %}</td>
+              <td>{% if block.settings.guardian %}✓{% else %}-{% endif %}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
