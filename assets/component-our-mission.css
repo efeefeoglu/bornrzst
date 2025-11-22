@@ -35,11 +35,8 @@
 
 .section-tell .red-subheading {
     color: #E02828;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: normal;
-    line-height: 1.1;
 }
 
 .section-tell .body-text-list p {
@@ -50,8 +47,6 @@
 
 .section-tell .form-title {
     color: #E02828;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 2rem;
     margin-bottom: 25px;
 }
 
@@ -95,9 +90,7 @@
     border: none;
     padding: 12px 30px;
     border-radius: 50px;
-    font-size: 1.1rem;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    font-family: "Times New Roman", Times, serif;
 }
