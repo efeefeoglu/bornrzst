@@ -143,20 +143,20 @@
     "support_the_movement": {
       "type": "support-the-movement",
       "settings": {
-        "title": "Support The Movement<br>Join The RZST Cirle",
+        "title": "Support The MovementJoin The RZST Cirle",
         "subtitle": "Choose your role in the movement",
         "tier_1_price": "$10/month",
         "tier_1_title": "RZST CIRCLE SUPPORTER",
         "tier_1_description": "Fuel verified aid with every drop",
-        "tier_1_url": "",
+        "tier_1_url": "shopify://products/silver-membership",
         "tier_2_price": "$50/month",
         "tier_2_title": "RZST CIRCLE BUILDER",
         "tier_2_description": "Power storytelling, operations and reach",
-        "tier_2_url": "",
+        "tier_2_url": "shopify://products/gold-membership",
         "tier_3_price": "$250/month",
         "tier_3_title": "RZST CIRCLE GUARDIAN",
         "tier_3_description": "Back the movement. Fund future drops & relief",
-        "tier_3_url": "",
+        "tier_3_url": "shopify://products/platinum-membership",
         "button_text": "JOIN NOW",
         "footer_text": "Your membership fuels art, aid, and the architecture of resistance."
       }
