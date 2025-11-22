@@ -1,17 +1,13 @@
 {{ 'section-impact-two-column.css' | asset_url | stylesheet_tag }}
 
 <div class="impact-two-column-section page-width">
-  <h2 class="impact-two-column-title">{{ section.settings.title }}</h2>
-  <div class="impact-two-column-subtitle">{{ section.settings.subtitle }}</div>
+  <h1 class="impact-two-column-title">{{ section.settings.title }}</h1>
+  <h3 class="impact-two-column-subtitle">{{ section.settings.subtitle }}</h3>
   <div class="impact-two-column-content">
-    <div class="impact-two-column-left">
-      <div class="text-part">{{ section.settings.text }}</div>
-    </div>
-    <div class="impact-two-column-right">
-      {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}">
-      {% endif %}
-    </div>
+    <div class="text-part">{{ section.settings.text }}</div>
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}">
+    {% endif %}
   </div>
 </div>
 
