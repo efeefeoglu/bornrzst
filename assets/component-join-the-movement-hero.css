@@ -85,3 +85,8 @@
     font-style: italic;
     margin-top: 20px;
 }
+
+.join-the-movement-hero .cycle-image-container {
+    display: flex;
+    flex-direction: column;
+}
