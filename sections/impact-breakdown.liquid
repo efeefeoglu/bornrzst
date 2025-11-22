@@ -2,6 +2,12 @@
 
 <div id="impact-breakdown" class="impact-breakdown-section">
   <h2 class="impact-breakdown-title">{{ section.settings.title }}</h2>
+  <h3 class="impact-breakdown-subtitle">{{ section.settings.subtitle }}</h3>
+  <div class="impact-breakdown-text">{{ section.settings.text }}</div>
+  <div class="impact-breakdown-buttons">
+    <a href="{{ section.settings.button_1_link }}" class="button">{{ section.settings.button_1_label }}</a>
+    <a href="{{ section.settings.button_2_link }}" class="button">{{ section.settings.button_2_label }}</a>
+  </div>
   <div class="impact-breakdown-container page-width">
     {% for block in section.blocks %}
       <div class="impact-breakdown-item">
@@ -20,6 +26,36 @@
       "id": "title",
       "label": "Title",
       "default": "Impact Breakdown"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "button_1_label",
+      "label": "Button 1 Label"
+    },
+    {
+      "type": "url",
+      "id": "button_1_link",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "button_2_label",
+      "label": "Button 2 Label"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Button 2 Link"
     }
   ],
   "blocks": [

@@ -2,6 +2,8 @@
 
 <div class="membership-comparison-section page-width">
   <h2 class="membership-comparison-title">{{ section.settings.title }}</h2>
+  <h3 class="membership-comparison-subtitle">{{ section.settings.subtitle1 }}</h3>
+  <h3 class="membership-comparison-subtitle">{{ section.settings.subtitle2 }}</h3>
   <div class="membership-comparison-table">
     <table>
       <thead>
@@ -16,9 +18,9 @@
         {% for block in section.blocks %}
           <tr>
             <td>{{ block.settings.benefit }}</td>
-            <td>{{ block.settings.supporter }}</td>
-            <td>{{ block.settings.builder }}</td>
-            <td>{{ block.settings.guardian }}</td>
+            <td>{% if block.settings.supporter %}✓{% else %}-{% endif %}</td>
+            <td>{% if block.settings.builder %}✓{% else %}-{% endif %}</td>
+            <td>{% if block.settings.guardian %}✓{% else %}-{% endif %}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -35,6 +37,16 @@
       "id": "title",
       "label": "Title",
       "default": "Compare Membership Benefits"
+    },
+    {
+      "type": "text",
+      "id": "subtitle1",
+      "label": "Subtitle 1"
+    },
+    {
+      "type": "text",
+      "id": "subtitle2",
+      "label": "Subtitle 2"
     },
     {
       "type": "text",
@@ -72,19 +84,22 @@
           "label": "Benefit"
         },
         {
-          "type": "text",
+          "type": "checkbox",
           "id": "supporter",
-          "label": "Supporter"
+          "label": "Supporter",
+          "default": false
         },
         {
-          "type": "text",
+          "type": "checkbox",
           "id": "builder",
-          "label": "Builder"
+          "label": "Builder",
+          "default": false
         },
         {
-          "type": "text",
+          "type": "checkbox",
           "id": "guardian",
-          "label": "Guardian"
+          "label": "Guardian",
+          "default": false
         }
       ]
     }

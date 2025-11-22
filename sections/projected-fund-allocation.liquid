@@ -3,19 +3,19 @@
 <div class="projected-fund-allocation-section page-width">
   <h2 class="projected-fund-allocation-title">{{ section.settings.title }}</h2>
   <div class="projected-fund-allocation-content">
-    <div class="projected-fund-allocation-text">
-      <p>{{ section.settings.text }}</p>
+    <div class="projected-fund-allocation-left">
+      <div class="text-part">{{ section.settings.text_1 }}</div>
+      <hr>
+      <div class="text-part">{{ section.settings.text_2 }}</div>
+      <hr>
+      <div class="text-part">{{ section.settings.text_3 }}</div>
     </div>
-    <div class="projected-fund-allocation-details">
-      {% for block in section.blocks %}
-        <div class="projected-fund-allocation-item">
-          <p class="projected-fund-allocation-item-text">{{ block.settings.text }}</p>
-        </div>
-      {% endfor %}
+    <div class="projected-fund-allocation-right">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 400 }}" alt="Fund Allocation Image">
+      {% endif %}
+      <div class="image-caption">{{ section.settings.image_caption }}</div>
     </div>
-  </div>
-  <div class="projected-fund-allocation-footer">
-    <p>{{ section.settings.footer_text }}</p>
   </div>
 </div>
 
@@ -30,48 +30,35 @@
       "default": "Projected Fund Allocation Drop 1"
     },
     {
-      "type": "text",
-      "id": "text",
-      "label": "Text",
-      "default": "Before launch, we want you to know exactly how every dollar will work, because trust starts with transparency."
+      "type": "richtext",
+      "id": "text_1",
+      "label": "Text 1"
+    },
+    {
+      "type": "richtext",
+      "id": "text_2",
+      "label": "Text 2"
+    },
+    {
+      "type": "richtext",
+      "id": "text_3",
+      "label": "Text 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     },
     {
       "type": "text",
-      "id": "footer_text",
-      "label": "Footer Text",
-      "default": "All donations will be audited and verified once NGO partnerships are finalized post-launch."
-    }
-  ],
-  "blocks": [
-    {
-      "type": "item",
-      "name": "Item",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text",
-          "default": "Humanitarian Aid (60%): Emergency medical relief, food aid, and reconstruction in Gaza."
-        }
-      ]
+      "id": "image_caption",
+      "label": "Image Caption"
     }
   ],
   "presets": [
     {
       "name": "Projected Fund Allocation",
-      "category": "ADVANCED LAYOUT",
-      "blocks": [
-        {
-          "type": "item"
-        },
-        {
-          "type": "item"
-        },
-        {
-          "type": "item"
-        }
-      ]
+      "category": "ADVANCED LAYOUT"
     }
   ]
 }
