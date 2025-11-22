@@ -19,8 +19,6 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 40px 0;
-  top: -40px;
 }
 
 .how-we-fund-column-left {
