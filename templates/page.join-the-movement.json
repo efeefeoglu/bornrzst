@@ -40,7 +40,7 @@
           "type": "step",
           "settings": {
             "action": "WEAR",
-            "subtitle": "The messagemade visible",
+            "subtitle": "The message made visible",
             "description": "<p>The story becomes fabric, symbol, art. When people wear it, the story walks in<br/>the streets.</p>"
           }
         },
