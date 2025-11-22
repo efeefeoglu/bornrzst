@@ -58,3 +58,36 @@
 .proof-hero-section__actions .button {
   margin-top: 20px;
 }
+
+.proof-hero-section__bottom-content {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.proof-hero-section__bottom-text {
+  color: #fff;
+  max-width: 300px;
+}
+
+.proof-hero-section__image-row {
+  display: flex;
+  gap: 20px;
+}
+
+.proof-hero-section__image-col {
+  width: 150px;
+}
+
+.proof-hero-section__image-col img,
+.proof-hero-section__image-col .placeholder-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
