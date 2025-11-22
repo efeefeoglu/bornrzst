@@ -78,6 +78,42 @@
     },
     "how_we_fund": {
       "type": "how-we-fund",
+      "blocks": {
+        "channel_bfgyPt": {
+          "type": "channel",
+          "settings": {
+            "channel_title": "Collector’s Line",
+            "channel_description": "Limited artist collaborations & drops"
+          }
+        },
+        "channel_DJikch": {
+          "type": "channel",
+          "settings": {
+            "channel_title": "RZST Circle Membership",
+            "channel_description": "Monthly supporters($10–$250) fuel creative independence."
+          }
+        },
+        "channel_bDig8N": {
+          "type": "channel",
+          "settings": {
+            "channel_title": "RZST Media",
+            "channel_description": "Videos, podcasts, anddocumentaries amplifying truth and resistance."
+          }
+        },
+        "channel_fDxzex": {
+          "type": "channel",
+          "settings": {
+            "channel_title": "Allied Brand Network",
+            "channel_description": "Partnerships andsponsorship’s for social impact campaigns."
+          }
+        }
+      },
+      "block_order": [
+        "channel_bfgyPt",
+        "channel_DJikch",
+        "channel_bDig8N",
+        "channel_fDxzex"
+      ],
       "settings": {
         "main_header": "How we fund impact & growth",
         "impact_engine_title": "IMPACT ENGINE",
