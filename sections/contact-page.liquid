@@ -63,15 +63,9 @@
         <h2>{{ section.settings.follow_resistance_title }}</h2>
         <p>{{ section.settings.follow_resistance_subtitle }}</p>
         <div class="contact-page-social-links">
-          {% if section.settings.instagram_url != blank %}
-            <a href="{{ section.settings.instagram_url }}" target="_blank">{% render 'icon-instagram' %}</a>
-          {% endif %}
-          {% if section.settings.tiktok_url != blank %}
-            <a href="{{ section.settings.tiktok_url }}" target="_blank">{% render 'icon-tiktok' %}</a>
-          {% endif %}
-          {% if section.settings.twitter_url != blank %}
-            <a href="{{ section.settings.twitter_url }}" target="_blank">{% render 'icon-twitter' %}</a>
-          {% endif %}
+          <div class="bornrzst-footer__social-icons">
+            {%- render 'social-icons', class: 'bornrzst-footer__list-social' -%}
+          </div>
         </div>
         <p>{{ section.settings.follow_resistance_footer }}</p>
       </div>
