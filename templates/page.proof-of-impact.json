@@ -47,13 +47,22 @@
     "impact_breakdown": {
       "type": "impact-breakdown",
       "settings": {
-        "title": "Impact Breakdown",
-        "subtitle": "",
-        "text": "",
-        "button_1_label": "",
-        "button_1_link": "",
-        "button_2_label": "",
+        "title": "YOU ARE THE MOVEMENT",
+        "subtitle": "Wear your resistance",
+        "text": "<p>Fund survival through ethical streetwear and verified humanitarian aid.</p><p>With Drop 1, the BØRN RZST™ Transparency Dashboard goes live worldwide.<br/>Every shirt you buy becomes a traceable act of relief and solidarity.</p>",
+        "button_1_label": "JOIN THE MOVEMENT",
+        "button_1_link": "shopify://pages/join-the-movement",
+        "button_2_label": "NOTIFY ME WHEN IMPACT GOES LIVE",
         "button_2_link": ""
+      }
+    },
+    "impact_two_column": {
+      "type": "impact-two-column",
+      "settings": {
+        "title": "Trusted Humanitarian Partners",
+        "subtitle": "<p><em>(Final confirmations pending)</em></p>",
+        "text": "<p>We’re currently finalizing agreements with leading<br/>humanitarian organizations to ensure every donation is<br/>verified, tracked, and delivered with transparency.</p><p>We’re finalizing agreements with leading humanitarian<br/>organizations to ensure every donation is <strong>verified</strong>,<br/><strong>tracked</strong>, and <strong>delivered with transparency</strong>.</p><p>Our goal is to collaborate with recognized NGOs active<br/>in <strong>Gaza and Palestine</strong>, focusing on <strong>medical relief</strong>, <strong>food</strong><br/><strong>aid, and reconstruction efforts</strong> currently under<br/>review.</p>",
+        "image": "shopify://shop_images/Screenshot_2025-10-22_at_11.20.27_AM.png"
       }
     },
     "projected_fund": {
@@ -72,7 +81,7 @@
       "settings": {
         "title": "How we fund impact & growth",
         "left_column_title": "IMPACT ENGINE",
-        "left_column_text": "<p>100% OF DROP PROFITS = HUMANITARIAN RELIEF</p><p>SHOP SALES<br>↓<br>VERIFIED DONATION FUNDS<br>↓</p><ul><li>All Donations are: Verified, tracked, and released as aid in Gaza.</li><li>Transparency Guarantee: Public ledger of all funds.</li><li>Advocacy & Awareness: Campaigns amplifying Palestinian voices.</li></ul>",
+        "left_column_text": "<p>100% OF DROP PROFITS = HUMANITARIAN RELIEF</p><p>SHOP SALES<br/>↓<br/>VERIFIED DONATION FUNDS<br/>↓</p><ul><li>All Donations are: Verified, tracked, and released as aid in Gaza.</li><li>Transparency Guarantee: Public ledger of all funds.</li><li>Advocacy & Awareness: Campaigns amplifying Palestinian voices.</li></ul>",
         "right_column_title": "Growth Engine",
         "right_column_text": "<p>Creative Commerce → Sustainable Operations</p><p>We build movements not by emptying our pockets but by filling our hearts. We raise capital through separate revenue streams that fund the brand itself.</p><p>Our Growth Channels</p><ul><li>Membership: Exclusive club benefits & drops.</li><li>RZST Circle Memberships: Monthly supporters ($10-$250) who sustain operations.</li><li>External Funding: Grants, private investors, and strategic partnerships.</li></ul><p>Creative Sales → Operations & Team → Automation & Growth</p>"
       }
@@ -182,23 +191,14 @@
         "header_builder": "$50 Builder",
         "header_guardian": "$250 Guardian"
       }
-    },
-    "impact_two_column": {
-      "type": "impact-two-column",
-      "settings": {
-        "title": "Our Collective Impact",
-        "subtitle": "<p>This is where we'll show the tangible results of our community's contributions.</p>",
-        "text": "<p>Every purchase, every donation, every share helps us get closer to our goal. Here, we'll break down exactly what we've been able to accomplish together. From the number of meals provided to the number of families supported, this is the real-time measure of our shared success.</p>",
-        "image": "shopify://shop_images/impact-image.png"
-      }
     }
   },
   "order": [
     "main",
     "proof_hero",
     "impact_breakdown",
-    "impact_two_column",
     "projected_fund",
+    "impact_two_column",
     "how_we_fund",
     "membership_comparison"
   ]
