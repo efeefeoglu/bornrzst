@@ -9,46 +9,48 @@
   <div class="how-we-fund-content-wrapper">
     <!-- Left Column: Impact Engine -->
     <div class="how-we-fund-column-left">
-      <h1 class="how-we-fund-impact-title">{{ section.settings.impact_engine_title }}</h1>
-      <div class="how-we-fund-impact-subheadline">
-        <p>{{ section.settings.impact_engine_subheadline_1 }}</p>
-        <p>{{ section.settings.impact_engine_subheadline_2 }}</p>
-      </div>
-      <div class="how-we-fund-impact-body">
-        {{ section.settings.impact_engine_body }}
-      </div>
-      <div class="how-we-fund-section-divider">
-        <p>{{ section.settings.section_divider_1 }}</p>
-        <hr />
-        <p>{{ section.settings.section_divider_2 }}</p>
-      </div>
-      <div class="how-we-fund-visual-flow">
-        <div class="how-we-fund-flow-item">
-          {% if section.settings.flow_icon_1 != blank %}
-            <img src="{{ section.settings.flow_icon_1 | image_url }}" alt="Shop Sales Icon">
-          {% endif %}
-          <p>Shop Sales</p>
+        <div class="page-width">
+        <h1 class="how-we-fund-impact-title">{{ section.settings.impact_engine_title }}</h1>
+        <div class="how-we-fund-impact-subheadline">
+          <p>{{ section.settings.impact_engine_subheadline_1 }}</p>
+          <p>{{ section.settings.impact_engine_subheadline_2 }}</p>
         </div>
-        <div class="how-we-fund-flow-arrow">&rightarrow;</div>
-        <div class="how-we-fund-flow-item">
-          {% if section.settings.flow_icon_2 != blank %}
-            <img src="{{ section.settings.flow_icon_2 | image_url }}" alt="Donation Funds Icon">
-          {% endif %}
-          <p>Verified Donation Funds</p>
+        <div class="how-we-fund-impact-body">
+          {{ section.settings.impact_engine_body }}
         </div>
-        <div class="how-we-fund-flow-arrow">&rightarrow;</div>
-        <div class="how-we-fund-flow-item">
-          {% if section.settings.flow_icon_3 != blank %}
-            <img src="{{ section.settings.flow_icon_3 | image_url }}" alt="Proof Page Icon">
-          {% endif %}
-          <p>Public Proof Page</p>
+        <div class="how-we-fund-section-divider">
+          <p>{{ section.settings.section_divider_1 }}</p>
+          <hr />
+          <p>{{ section.settings.section_divider_2 }}</p>
         </div>
+        <div class="how-we-fund-visual-flow">
+          <div class="how-we-fund-flow-item">
+            {% if section.settings.flow_icon_1 != blank %}
+              <img src="{{ section.settings.flow_icon_1 | image_url }}" alt="Shop Sales Icon">
+            {% endif %}
+            <p>Shop Sales</p>
+          </div>
+          <div class="how-we-fund-flow-arrow">&rightarrow;</div>
+          <div class="how-we-fund-flow-item">
+            {% if section.settings.flow_icon_2 != blank %}
+              <img src="{{ section.settings.flow_icon_2 | image_url }}" alt="Donation Funds Icon">
+            {% endif %}
+            <p>Verified Donation Funds</p>
+          </div>
+          <div class="how-we-fund-flow-arrow">&rightarrow;</div>
+          <div class="how-we-fund-flow-item">
+            {% if section.settings.flow_icon_3 != blank %}
+              <img src="{{ section.settings.flow_icon_3 | image_url }}" alt="Proof Page Icon">
+            {% endif %}
+            <p>Public Proof Page</p>
+          </div>
+        </div>
+        <ul class="how-we-fund-percentage-breakdown">
+          <li><strong>{{ section.settings.percentage_1_bold }}</strong> {{ section.settings.percentage_1_text }}</li>
+          <li><strong>{{ section.settings.percentage_2_bold }}</strong> {{ section.settings.percentage_2_text }}</li>
+          <li><strong>{{ section.settings.percentage_3_bold }}</strong> {{ section.settings.percentage_3_text }}</li>
+        </ul>
       </div>
-      <ul class="how-we-fund-percentage-breakdown">
-        <li><strong>{{ section.settings.percentage_1_bold }}</strong> {{ section.settings.percentage_1_text }}</li>
-        <li><strong>{{ section.settings.percentage_2_bold }}</strong> {{ section.settings.percentage_2_text }}</li>
-        <li><strong>{{ section.settings.percentage_3_bold }}</strong> {{ section.settings.percentage_3_text }}</li>
-      </ul>
     </div>
 
     <!-- Center Element: Bridge -->
