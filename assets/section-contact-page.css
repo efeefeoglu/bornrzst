@@ -49,14 +49,11 @@
   padding: 15px 30px;
   border: none;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-page-direct-contacts h2,
 .contact-page-join-movement h2,
 .contact-page-follow-resistance h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 24px;
   margin-bottom: 10px;
 }
 
