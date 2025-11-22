@@ -32,13 +32,16 @@
         "enable_overlay": true,
         "overlay_opacity": 65,
         "text_alignment": "left",
-        "color_scheme": "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8",
+        "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0,
-        "bottom_text": "<p>This is the text at the bottom left.</p>",
+        "bottom_text": "<p>This gallery will display verified receipts and proof-of-delivery confirmations once aid shipments are verified.<br/>(QR proof activated post-launch)</p>",
         "image_1": "shopify://shop_images/486937176_1076934661127644_2319582988527707936_n.jpg",
         "image_2": "shopify://shop_images/363518.jpg",
-        "image_3": "shopify://shop_images/B5XKZ5XJEJLU3DKMSMEYFK2DDA.jpg"
+        "image_3": "shopify://shop_images/B5XKZ5XJEJLU3DKMSMEYFK2DDA.jpg",
+        "text_1": "CHILDREN AMID RUBBLE AWAITING RECONSTRUCTION AID",
+        "text_2": "FAMILIES RECEIVING FOOD IN GAZA RELIEF DISTRIBUTION",
+        "text_3": "CHILD RECEIVING MEDICAL AID FROM NGO TEAM"
       }
     },
     "impact_breakdown": {
