@@ -25,7 +25,7 @@
       "settings": {
       }
     },
-    "projected_fund_allocation": {
+    "projected_fund": {
       "type": "projected-fund-allocation",
       "settings": {
       }
@@ -45,7 +45,7 @@
     "main",
     "proof_hero",
     "impact_breakdown",
-    "projected_fund_allocation",
+    "projected_fund",
     "how_we_fund",
     "membership_comparison"
   ]
