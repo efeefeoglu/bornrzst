@@ -1,6 +1,6 @@
 {{ 'component-join-the-movement-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="join-the-movement-hero">
+<div class="join-the-movement-hero animate-in-scroll-trigger">
   <div class="page-width">
     <div class="header">
       {% if section.settings.logo != blank %}
@@ -9,12 +9,12 @@
     </div>
     <div class="content">
       <div class="left-column">
-        <h1 class="main-title">{{ section.settings.title }}</h1>
-        <div class="description">{{ section.settings.description }}</div>
-        <p class="call-to-action">{{ section.settings.call_to_action }}</p>
+        <h1 class="main-title animate-item animate-item-0">{{ section.settings.title }}</h1>
+        <div class="description animate-item animate-item-1">{{ section.settings.description }}</div>
+        <p class="call-to-action animate-item animate-item-2">{{ section.settings.call_to_action }}</p>
       </div>
       <div class="right-column">
-        <div class="cycle-image-container">
+        <div class="cycle-image-container animate-item animate-item-3">
           {% if section.settings.cycle_image != blank %}
             <img src="{{ section.settings.cycle_image | image_url }}" alt="{{ section.settings.cycle_image.alt }}" class="half-round-shape-1">
           {% endif %}
@@ -24,7 +24,7 @@
         </div>
         <ul class="steps-list">
           {% for block in section.blocks %}
-            <li class="step-item">
+            <li class="step-item animate-item animate-item-{{ 3 | plus: forloop.index }}">
               <div class="step-title">
                 <span class="action">{{ block.settings.action }}</span><span class="arrow">→</span><span class="subtitle">{{ block.settings.subtitle }}</span>
               </div>
