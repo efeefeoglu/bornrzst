@@ -17,8 +17,12 @@
 
 .contact-page-left,
 .contact-page-right {
-  width: 48%;
+  width: 40%;
   float:left;
+}
+
+.contact-page-left{
+  margin-right: 10%;
 }
 
 .contact-page-title {
