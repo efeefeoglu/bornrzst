@@ -41,12 +41,7 @@
     align-items: center;
     position: relative;
 }
-.join-the-movement-hero {
-    width: 300px;
-    height: auto;
-    margin-right: 30px;
-}
-.half-round-shape {
+.join-the-movement-hero .half-round-shape {
     width: 300px;
     height: auto;
     margin-right: 30px;
@@ -93,4 +88,5 @@
     width: 30%;
     margin-right:5%;
     height:400px;
+    flex-direction: column;
 }
