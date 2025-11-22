@@ -13,7 +13,7 @@
           {{ form.errors | default_errors }}
 
           <div class="contact-page-form-group">
-            <label for="ContactFormName">Name</label>
+            <label for="ContactFormName">Name *</label>
             <input type="text" id="ContactFormName" name="contact[name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
           </div>
 
