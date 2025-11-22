@@ -86,9 +86,10 @@
     background-color: #E02828;
     color: #ffffff;
     border: none;
-    padding: 12px 30px;
+    padding: 20px;
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    font-size:2rem;
 }
