@@ -88,6 +88,7 @@
 .how-we-fund-percentage-breakdown {
   list-style: none;
   padding-left: 0;
+  text-align: left;
 }
 
 .how-we-fund-percentage-breakdown li strong {
