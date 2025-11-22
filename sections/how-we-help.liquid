@@ -1,85 +1,130 @@
 {{ 'component-how-we-help.css' | asset_url | stylesheet_tag }}
 
-<div class="how-we-help">
-  <div class="how-we-help__header">
-    <h2>{{ section.settings.title }}</h2>
-    <p>{{ section.settings.text }}</p>
-  </div>
-  <div class="how-we-help__columns">
-    {% for block in section.blocks %}
-      <div class="how-we-help__column">
-        <div class="how-we-help__column-image">
-          {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}">
-          {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-          {% endif %}
+<section class="section-share-wear">
+    <div class="container">
+
+        <div class="share-wear-block">
+            <div class="header-action-row">
+                <div class="section-title-row">
+                    {% if section.settings.share_icon != blank %}
+                        <img src="{{ section.settings.share_icon | image_url }}" alt="Share Icon" class="section-icon">
+                    {% endif %}
+                    <h1 class="main-heading">{{ section.settings.share_title }}</h1>
+                </div>
+                <a href="{{ section.settings.share_button_link }}" class="btn-red">{{ section.settings.share_button_label }}</a>
+            </div>
+
+            <h2 class="red-subheading">{{ section.settings.share_subtitle }}</h2>
+            <div class="body-text-list">
+                {{ section.settings.share_text }}
+            </div>
         </div>
-        <div class="how-we-help__column-content">
-          <h3>{{ block.settings.title }}</h3>
-          <p>{{ block.settings.text }}</p>
+
+        <div class="share-wear-block">
+            <div class="header-action-row">
+                <div class="section-title-row">
+                    {% if section.settings.wear_icon != blank %}
+                        <img src="{{ section.settings.wear_icon | image_url }}" alt="Wear Icon" class="section-icon">
+                    {% endif %}
+                    <h1 class="main-heading">{{ section.settings.wear_title }}</h1>
+                </div>
+                <a href="{{ section.settings.wear_button_link }}" class="btn-red">{{ section.settings.wear_button_label }}</a>
+            </div>
+
+            <h2 class="red-subheading">{{ section.settings.wear_subtitle }}</h2>
+            <div class="body-text-list">
+                {{ section.settings.wear_text }}
+            </div>
+            <div class="footer-italic">
+                {{ section.settings.wear_footer }}
+            </div>
         </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+
+    </div>
+</section>
 
 {% schema %}
 {
-  "name": "How We Help",
+  "name": "Share & Wear Section",
   "settings": [
     {
+      "type": "image_picker",
+      "id": "share_icon",
+      "label": "Share Icon"
+    },
+    {
       "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "HOW WE HELP"
+      "id": "share_title",
+      "label": "Share Title",
+      "default": "Share"
+    },
+    {
+      "type": "text",
+      "id": "share_button_label",
+      "label": "Share Button Label",
+      "default": "Share Your Voice"
+    },
+    {
+      "type": "url",
+      "id": "share_button_link",
+      "label": "Share Button Link"
+    },
+    {
+      "type": "text",
+      "id": "share_subtitle",
+      "label": "Share Subtitle",
+      "default": "Your share could reach someone who needs to see it."
     },
     {
       "type": "richtext",
-      "id": "text",
-      "label": "Text",
-      "default": "<p>We provide a range of resources and support to help you get your ideas off the ground. From funding opportunities to mentorship programs, we're here to help you succeed.</p>"
-    }
-  ],
-  "blocks": [
+      "id": "share_text",
+      "label": "Share Text",
+      "default": "<p>A story in Gaza. A repost in New York.</p><p>A tag in Paris. A message in Cape Town.</p><p>Every share links one heart to another.</p><p>That’s how we build resistance not through walls, but through connection.</p>"
+    },
     {
-      "type": "column",
-      "name": "Column",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Funding"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>We offer grants and other funding opportunities to help you get your project off the ground.</p>"
-        }
-      ]
+      "type": "image_picker",
+      "id": "wear_icon",
+      "label": "Wear Icon"
+    },
+    {
+      "type": "text",
+      "id": "wear_title",
+      "label": "Wear Title",
+      "default": "Wear"
+    },
+    {
+      "type": "text",
+      "id": "wear_button_label",
+      "label": "Wear Button Label",
+      "default": "Wear Your Promise"
+    },
+    {
+      "type": "url",
+      "id": "wear_button_link",
+      "label": "Wear Button Link"
+    },
+    {
+      "type": "text",
+      "id": "wear_subtitle",
+      "label": "Wear Subtitle",
+      "default": "Every Shirt is a Story. Every Purchase, an Act."
+    },
+    {
+      "type": "richtext",
+      "id": "wear_text",
+      "label": "Wear Text",
+      "default": "<p>What you wear can change the world.</p><p>Every design carries a story of loss, of courage, of hope.</p><p>When you wear it, you become part of that story</p><p>You carry their names.</p><p>You amplify their voices.</p><p>This isn’t just clothing it’s a statement, a symbol, a reminder that resistance never goes out of style.</p>"
+    },
+    {
+      "type": "text",
+      "id": "wear_footer",
+      "label": "Wear Footer",
+      "default": "You're not just wearing a brand you're wearing a movement."
     }
   ],
   "presets": [
     {
-      "name": "How We Help",
-      "blocks": [
-        {
-          "type": "column"
-        },
-        {
-          "type": "column"
-        },
-        {
-          "type": "column"
-        }
-      ]
+      "name": "Share & Wear Section"
     }
   ]
 }
