@@ -10,14 +10,14 @@
                     {% endif %}
                     <h1 class="main-heading">{{ section.settings.title }}</h1>
                 </div>
-                <h2 class="red-subheading">{{ section.settings.subtitle }}</h2>
+                <h3 class="red-subheading">{{ section.settings.subtitle }}</h3>
                 <div class="body-text-list">
                     {{ section.settings.text }}
                 </div>
             </div>
 
             <div class="tell-right">
-                <div class="form-title">{{ section.settings.form_title }}</div>
+                <h3 class="form-title">{{ section.settings.form_title }}</h3>
                 {% form 'contact' %}
                     <div class="form-group">
                         <label>Your Name<span>*</span></label>
