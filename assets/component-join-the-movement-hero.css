@@ -21,7 +21,7 @@
     align-items: flex-start;
 }
 .join-the-movement-hero .left-column {
-    flex: 1 1 40%;
+    flex: 1 1 30%;
     padding-right: 40px;
 }
 .join-the-movement-hero .main-title {
@@ -36,7 +36,7 @@
     font-style: italic;
 }
 .join-the-movement-hero .right-column {
-    flex: 1 1 50%;
+    flex: 1 1 60%;
     display: flex;
     align-items: center;
 }
