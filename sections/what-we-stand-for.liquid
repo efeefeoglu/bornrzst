@@ -1,10 +1,10 @@
 {{ 'section-what-we-stand-for.css' | asset_url | stylesheet_tag }}
 
-<div id="what-we-stand-for" class="what-we-stand-for-section">
-  <h2 class="what-we-stand-for-title">{{ section.settings.title }}</h2>
+<div id="what-we-stand-for" class="what-we-stand-for-section animate-in-scroll-trigger">
+  <h2 class="what-we-stand-for-title animate-item animate-item-0">{{ section.settings.title }}</h2>
   <div class="what-we-stand-for-container page-width">
     {% for block in section.blocks %}
-      <div class="what-we-stand-for-item">
+      <div class="what-we-stand-for-item animate-item animate-item-{{ forloop.index }}">
         <div class="what-we-stand-for-icon">
           {% if block.settings.icon != blank %}
             <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="{{ block.settings.title }}" />

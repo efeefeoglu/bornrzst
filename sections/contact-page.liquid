@@ -1,46 +1,46 @@
 <link rel="stylesheet" href="{{ 'section-contact-page.css' | asset_url }}">
 
-<div class="contact-page-section">
+<div class="contact-page-section animate-in-scroll-trigger">
   <div class="contact-page-title-container page-width">
     <diV>
-      <h1 class="contact-page-title">{{ section.settings.title }}</h1>
-      <p>{{ section.settings.subtitle }}</p>
+      <h1 class="contact-page-title animate-item animate-item-0">{{ section.settings.title }}</h1>
+      <p class="animate-item animate-item-1">{{ section.settings.subtitle }}</p>
     </diV>
-    <div class="contact-page-left">
+    <div class="contact-page-left animate-item animate-item-2">
 
       <div class="contact-page-form">
         {% form 'contact' %}
           {{ form.errors | default_errors }}
 
           <div class="contact-page-form-group">
-            <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+            <label for="ContactFormName">Name *</label>
             <input type="text" id="ContactFormName" name="contact[name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
           </div>
 
           <div class="contact-page-form-group">
-            <label for="ContactFormEmail">{{ 'contact.form.email' | t }}</label>
+            <label for="ContactFormEmail">Email Address *</label>
             <input type="email" id="ContactFormEmail" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
           </div>
 
           <div class="contact-page-form-group">
-            <label for="ContactFormReason">{{ 'contact.form.reason' | t }}</label>
+            <label for="ContactFormReason">Reason for Contact *</label>
             <input type="text" id="ContactFormReason" name="contact[reason]">
           </div>
 
           <div class="contact-page-form-group">
-            <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+            <label for="ContactFormMessage">Message *</label>
             <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
           </div>
 
           <div class="contact-page-form-group">
-            <button type="submit" class="contact-page-button">{{ 'contact.form.send' | t }}</button>
+            <button type="submit" class="contact-page-button">SEND MESSAGE</button>
           </div>
         {% endform %}
       </div>
       <p>{{ section.settings.form_footer }}</p>
     </div>
 
-    <div class="contact-page-right">
+    <div class="contact-page-right animate-item animate-item-3">
       <div class="contact-page-direct-contacts">
         <h2>{{ section.settings.direct_contacts_title }}</h2>
         {% for block in section.blocks %}
@@ -63,19 +63,12 @@
         <h2>{{ section.settings.follow_resistance_title }}</h2>
         <p>{{ section.settings.follow_resistance_subtitle }}</p>
         <div class="contact-page-social-links">
-          {% if section.settings.instagram_url != blank %}
-            <a href="{{ section.settings.instagram_url }}" target="_blank">{% render 'icon-instagram' %}</a>
-          {% endif %}
-          {% if section.settings.tiktok_url != blank %}
-            <a href="{{ section.settings.tiktok_url }}" target="_blank">{% render 'icon-tiktok' %}</a>
-          {% endif %}
-          {% if section.settings.twitter_url != blank %}
-            <a href="{{ section.settings.twitter_url }}" target="_blank">{% render 'icon-twitter' %}</a>
-          {% endif %}
+            {%- render 'social-icons', class: 'bornrzst-footer__list-social' -%}
         </div>
         <p>{{ section.settings.follow_resistance_footer }}</p>
       </div>
     </div>
+    <div style="clear:both">
   </div>
 </div>
 

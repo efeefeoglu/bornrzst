@@ -17,7 +17,12 @@
 
 .contact-page-left,
 .contact-page-right {
-  width: 48%;
+  width: 40%;
+  float:left;
+}
+
+.contact-page-left{
+  margin: 50px 10% 0 0;
 }
 
 .contact-page-title {
@@ -79,4 +84,8 @@
 
 .contact-page-social-links a {
   margin-right: 15px;
+}
+
+.contact-page-social-links .list-social{
+  justify-content: flex-start;
 }
