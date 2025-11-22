@@ -17,16 +17,12 @@
 }
 
 .contact-page-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 100px;
-  color: #ff0000;
+  color: #E02828;
   margin-bottom: 20px;
 }
 
 .contact-page-left p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .contact-page-form-group {
@@ -48,7 +44,7 @@
 }
 
 .contact-page-button {
-  background-color: #ff0000;
+  background-color: #E02828;
   color: #fff;
   padding: 15px 30px;
   border: none;
