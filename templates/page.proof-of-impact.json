@@ -27,7 +27,7 @@
         "body_font_family": "var(--font-body-family)",
         "body_font_size": 20,
         "button_label": "VIEW HOW VERIFICATION WORKS",
-        "button_link": "",
+        "button_link": "shopify://pages/join-the-movement",
         "button_style_secondary": false,
         "enable_overlay": true,
         "overlay_opacity": 65,
