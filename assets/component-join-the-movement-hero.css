@@ -42,16 +42,14 @@
     position: relative;
 }
 .join-the-movement-hero {
-    position: absolute;
-    top:25%;
-    z-index: 99;
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
 }
 .half-round-shape {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 490px;
-    z-index: 1; 
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
 }
 .join-the-movement-hero .steps-list {
     list-style: none;
