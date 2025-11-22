@@ -11,6 +11,9 @@
   "sections": {
     "hero_section": {
       "type": "hero-section",
+      "custom_css": [
+        ".header-wrapper{position: absolute;background-color: transparent !important}"
+      ],
       "settings": {
         "background_image": "shopify://shop_images/photorealistic-kid-refugee-camp_1_ca6c95ab-bfbd-41b5-966b-c5764408ab7f.jpg",
         "first_text": "Resistance is not a choice  It’s Our <strong>Heritage</strong>",
