@@ -15,13 +15,13 @@
 .section-share-wear .header-action-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 10px;
 }
 
 .section-share-wear .section-title-row {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 10px;
 }
 
