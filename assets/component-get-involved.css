@@ -1,22 +1,90 @@
-.get-involved {
-  background-color: #f4f4f4;
-  padding: 4rem 2rem;
-  text-align: center;
+
+.section-give {
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.get-involved__content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+.section-give .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-.get-involved__content .button {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 1rem;
-  display: inline-block;
+.section-give .give-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.section-give .give-left {
+    flex: 1 1 400px;
+}
+
+.section-give .give-right {
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-give .section-title-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-give .section-icon {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.section-give .main-heading {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.section-give .red-subheading {
+    color: #ec1c24;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.section-give .body-text-list p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+.section-give .give-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section-give .give-btn-container {
+    width: 100%;
+    text-align: center;
+}
+
+.section-give .btn-red {
+    background-color: #ec1c24;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    width: 100%;
 }

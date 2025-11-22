@@ -1,34 +1,70 @@
 {{ 'component-get-involved.css' | asset_url | stylesheet_tag }}
 
-<div class="get-involved">
-  <div class="get-involved__content">
-    <h2>{{ section.settings.title }}</h2>
-    <p>{{ section.settings.text }}</p>
-    <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_label }}</a>
-  </div>
-</div>
+<section class="section-give">
+    <div class="container">
+        <div class="give-grid">
+            <div class="give-left">
+                <div class="section-title-row">
+                    {% if section.settings.icon != blank %}
+                        <img src="{{ section.settings.icon | image_url }}" alt="Give Icon" class="section-icon">
+                    {% endif %}
+                    <h1 class="main-heading">{{ section.settings.title }}</h1>
+                </div>
+                <h2 class="red-subheading">{{ section.settings.subtitle }}</h2>
+                <div class="body-text-list">
+                    {{ section.settings.text }}
+                </div>
+            </div>
+
+            <div class="give-right">
+                {% if section.settings.image != blank %}
+                    <img src="{{ section.settings.image | image_url }}" alt="Child in tent" class="give-image">
+                {% endif %}
+                <div class="give-btn-container">
+                    <a href="{{ section.settings.button_link }}" class="btn-red">{{ section.settings.button_label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% schema %}
 {
-  "name": "Get Involved",
+  "name": "Give Section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
     {
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "GET INVOLVED"
+      "default": "Give"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "10,000 shirts = 10,000 acts of resistance."
     },
     {
       "type": "richtext",
       "id": "text",
       "label": "Text",
-      "default": "<p>Ready to make a difference? Join our community and start making an impact today. Whether you're a seasoned activist or just getting started, there's a place for you here.</p>"
+      "default": "<p>What you wear can change the world.</p><p>Every design carries a story of loss, of courage, of hope.</p><p>When you wear it, you become part of that story.</p><p>You carry their names.</p><p>You amplify their voices.</p><p>This isn’t just clothing it’s testimony.</p><p>It's solidarity stitched in cotton and ink.</p><p>Because fashion fades.</p><p>But resistance never.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button Label",
-      "default": "Join Now"
+      "default": "Donate now"
     },
     {
       "type": "url",
@@ -38,7 +74,7 @@
   ],
   "presets": [
     {
-      "name": "Get Involved"
+      "name": "Give Section"
     }
   ]
 }

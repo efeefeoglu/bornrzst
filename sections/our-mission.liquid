@@ -1,44 +1,88 @@
 {{ 'component-our-mission.css' | asset_url | stylesheet_tag }}
 
-<div class="our-mission">
-  <div class="our-mission__content">
-    <h2>{{ section.settings.title }}</h2>
-    <p>{{ section.settings.text }}</p>
-  </div>
-  <div class="our-mission__image">
-    {% if section.settings.image != blank %}
-      <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}">
-    {% else %}
-      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-    {% endif %}
-  </div>
-</div>
+<section class="section-tell">
+    <div class="container">
+        <div class="tell-grid">
+            <div class="tell-left">
+                <div class="section-title-row">
+                    {% if section.settings.icon != blank %}
+                        <img src="{{ section.settings.icon | image_url }}" alt="Tell Icon" class="section-icon">
+                    {% endif %}
+                    <h1 class="main-heading">{{ section.settings.title }}</h1>
+                </div>
+                <h2 class="red-subheading">{{ section.settings.subtitle }}</h2>
+                <div class="body-text-list">
+                    {{ section.settings.text }}
+                </div>
+            </div>
+
+            <div class="tell-right">
+                <div class="form-title">{{ section.settings.form_title }}</div>
+                {% form 'contact' %}
+                    <div class="form-group">
+                        <label>Your Name<span>*</span></label>
+                        <input type="text" name="contact[name]" class="form-input" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email<span>*</span></label>
+                        <input type="email" name="contact[email]" class="form-input" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message<span>*</span></label>
+                        <textarea name="contact[body]" class="form-input" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="form-submit-container">
+                        <button type="submit" class="btn-red">{{ section.settings.button_label }}</button>
+                    </div>
+                {% endform %}
+            </div>
+        </div>
+    </div>
+</section>
 
 {% schema %}
 {
-  "name": "Our Mission",
+  "name": "Tell Section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
     {
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "OUR MISSION"
+      "default": "Tell"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Every act of resistance begins with a voice"
     },
     {
       "type": "richtext",
       "id": "text",
       "label": "Text",
-      "default": "<p>Our mission is to support and empower individuals who are working to make a positive impact in their communities. We provide resources, mentorship, and a platform for collaboration to help them bring their ideas to life.</p>"
+      "default": "<p>-If you’ve ever faced injustice, tell your story.</p><p>-If you’ve ever felt powerless, tell your story.</p><p>-If you’ve ever stood up when others turned away tell your story.</p><p>-You don’t have to be Palestinian to be part of the resistance.</p><p>-You just have to care.</p><p>-Let your words join the chorus of millions saying: Enough.</p>"
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
+        "type": "text",
+        "id": "form_title",
+        "label": "Form Title",
+        "default": "Tell the World your story"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "Share Your Story"
     }
   ],
   "presets": [
     {
-      "name": "Our Mission"
+      "name": "Tell Section"
     }
   ]
 }
