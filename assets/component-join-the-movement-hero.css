@@ -29,6 +29,7 @@
 }
 .join-the-movement-hero .description {
     margin-bottom: 20px;
+    max-width: 400px;
 }
 .join-the-movement-hero .call-to-action {
     color: #E02828;
@@ -44,16 +45,17 @@
 .join-the-movement-hero .half-round-shape-1 {
     position: absolute;
     top:125px;
-    width:250px;
+    width:300px;
     z-index: 99;
+    left: -140px;
 
 }
 .join-the-movement-hero .half-round-shape-2 {
     position: absolute;
     top: 0;
-    left: -100px;
-    height: 490px;
-    z-index: 1; 
+    left: 0;
+    width: 500px;
+    z-index: 1;
 }
 
 .join-the-movement-hero .steps-list {
