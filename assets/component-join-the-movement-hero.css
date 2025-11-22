@@ -68,8 +68,8 @@
 }
 
 
-.join-the-movement-hero .step-item::first-child, 
-.join-the-movement-hero .step-item::last-child {
+.join-the-movement-hero .steps-lisst::first-child, 
+.join-the-movement-hero .steps-list::last-child {
     margin-left:0;
     margin-right 100px;
 }
