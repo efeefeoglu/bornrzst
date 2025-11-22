@@ -67,6 +67,8 @@
     margin: 0 5px;
 }
 .join-the-movement-hero .step-title span.subtitle {
+    font-size: 2em;
+    letter-spacing:-0.02em;
     color: #E02828;
 }
 .join-the-movement-hero .step-description {
