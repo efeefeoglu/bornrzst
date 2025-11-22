@@ -30,13 +30,6 @@
   ></div>
   <div class="proof-hero-section__content-wrapper page-width">
     <div class="proof-hero-section__content proof-hero-section__content--{{ alignment }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <div class="proof-hero-section__logo">
-        {%- if logo_image != blank -%}
-          {{ logo_image | image_url: width: 500 | image_tag: loading: 'lazy', class: 'proof-hero-section__logo-image' }}
-        {%- else -%}
-          <img src="{{ 'bornrzst-logo.png' | asset_url }}" alt="{{ 'general.accessibility.logo' | t }}" loading="lazy" width="150" height="200" />
-        {%- endif -%}
-      </div>
       {%- if first_text != blank -%}
         <h1 class="proof-hero-section__heading">{{ first_text | newline_to_br }}</h1>
       {%- endif -%}
