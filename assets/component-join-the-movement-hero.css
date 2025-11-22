@@ -44,13 +44,15 @@
 
 .join-the-movement-hero .half-round-shape-1 {
     position: absolute;
-    top:25%;
+    top:125px;
+    width:250px;
     z-index: 99;
+
 }
 .join-the-movement-hero .half-round-shape-2 {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: -100px;
     height: 490px;
     z-index: 1; 
 }
