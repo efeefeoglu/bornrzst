@@ -43,7 +43,7 @@
           {%- assign text_setting = 'text_' | append: i -%}
           <div class="proof-hero-section__image-col">
             {%- if section.settings[image_setting] != blank -%}
-              {{ section.settings[image_setting] | image_url: width: 300 | image_tag: loading: 'lazy' }}
+              {{ section.settings[image_setting] | image_url: width: 500, height: 500 | image_tag: loading: 'lazy' }}
             {%- else -%}
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
