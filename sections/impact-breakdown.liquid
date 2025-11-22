@@ -1,19 +1,21 @@
 {{ 'section-impact-breakdown.css' | asset_url | stylesheet_tag }}
 
-<div id="impact-breakdown" class="impact-breakdown-section page-width">
-  <h1 class="impact-breakdown-title">{{ section.settings.title }}</h1>
-  <h3 class="impact-breakdown-subtitle">{{ section.settings.subtitle }}</h3>
-  <div class="impact-breakdown-text">{{ section.settings.text }}</div>
-  <div class="impact-breakdown-buttons">
-    <a href="{{ section.settings.button_1_link }}" class="button">{{ section.settings.button_1_label }}</a>
-    <a href="{{ section.settings.button_2_link }}" class="button">{{ section.settings.button_2_label }}</a>
-  </div>
-  <div class="impact-breakdown-container page-width">
-    {% for block in section.blocks %}
-      <div class="impact-breakdown-item">
-        <h3 class="impact-breakdown-item-title">{{ block.settings.title }}</h3>
-      </div>
-    {% endfor %}
+<div id="impact-breakdown" class="impact-breakdown-section">
+  <div class="page-width">
+    <h1 class="impact-breakdown-title">{{ section.settings.title }}</h1>
+    <h3 class="impact-breakdown-subtitle">{{ section.settings.subtitle }}</h3>
+    <div class="impact-breakdown-text">{{ section.settings.text }}</div>
+    <div class="impact-breakdown-buttons">
+      <a href="{{ section.settings.button_1_link }}" class="button">{{ section.settings.button_1_label }}</a>
+      <a href="{{ section.settings.button_2_link }}" class="button">{{ section.settings.button_2_label }}</a>
+    </div>
+    <div class="impact-breakdown-container page-width">
+      {% for block in section.blocks %}
+        <div class="impact-breakdown-item">
+          <h3 class="impact-breakdown-item-title">{{ block.settings.title }}</h3>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
