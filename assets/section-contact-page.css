@@ -18,6 +18,7 @@
 .contact-page-left,
 .contact-page-right {
   width: 48%;
+  float:left;
 }
 
 .contact-page-title {
