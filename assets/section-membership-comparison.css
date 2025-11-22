@@ -10,6 +10,10 @@
   margin-bottom: 20px;
 }
 
+.membership-comparison-subtitle{
+  text-align: center;
+}
+
 .membership-comparison-table {
   overflow-x: auto;
 }
