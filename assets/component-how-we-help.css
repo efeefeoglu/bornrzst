@@ -25,6 +25,10 @@
     margin-bottom: 10px;
 }
 
+.section-share-wear .section-title-row .main-heading {
+    margin: 0;
+}
+
 .section-share-wear .section-icon {
     height: 50px;
     width: auto;
