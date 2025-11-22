@@ -85,13 +85,13 @@
         "share_icon": "shopify://shop_images/join-the-movement-share.webp",
         "share_title": "Share",
         "share_button_label": "Share Your Voice",
-        "share_button_link": "",
+        "share_button_link": "shopify://pages/contact-us-page",
         "share_subtitle": "Your share could reach someone who needs to see it.",
         "share_text": "<p>A story in Gaza. A repost in New York. <br/>A tag in Paris. A message in Cape Town.<br/>Every share links one heart to another.<br/>That’s how we build resistance not through walls, but through connection.</p>",
         "wear_icon": "shopify://shop_images/join-the-movement-wear.png",
         "wear_title": "Wear",
         "wear_button_label": "Wear Your Promise",
-        "wear_button_link": "",
+        "wear_button_link": "shopify://collections/drop-1",
         "wear_subtitle": "Every Shirt is a Story. Every Purchase, an Act.",
         "wear_text": "<p>What you wear can change the world.<br/>Every design carries a story of loss, of courage, of hope.<br/>When you wear it, you become part of that story<br/>You carry their names.<br/>You amplify their voices.<br/>This isn’t just clothing it’s a statement, a symbol, a reminder that resistance never goes out of style.</p>",
         "wear_footer": "You're not just wearing a brand you're wearing a movement."
@@ -106,7 +106,7 @@
         "text": "<p>What you wear can change the world.</p><p>Every design carries a story of loss, of courage, of hope.</p><p>When you wear it, you become part of that story.</p><p>You carry their names.</p><p>You amplify their voices.</p><p>This isn’t just clothing it’s testimony.</p><p>It's solidarity stitched in cotton and ink.</p><p>Because fashion fades.</p><p>But resistance never.</p>",
         "image": "shopify://shop_images/join-the-movement-give.jpg",
         "button_label": "Donate now",
-        "button_link": ""
+        "button_link": "shopify://pages/join-the-movement"
       }
     }
   },
