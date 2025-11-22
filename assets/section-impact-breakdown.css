@@ -1,0 +1,24 @@
+.impact-breakdown-section {
+  padding: 50px 0;
+}
+
+.impact-breakdown-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.impact-breakdown-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.impact-breakdown-item {
+  text-align: center;
+}
+
+.impact-breakdown-item-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
