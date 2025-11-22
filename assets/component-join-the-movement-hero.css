@@ -41,18 +41,13 @@
     align-items: center;
     position: relative;
 }
-.join-the-movement-hero {
-    width: 300px;
-    height: auto;
-    margin-right: 30px;
-}
 
-.half-round-shape-1 {
+.join-the-movement-hero .half-round-shape-1 {
     position: absolute;
     top:25%;
     z-index: 99;
 }
-.half-round-shape-2 {
+.join-the-movement-hero .half-round-shape-2 {
     position: absolute;
     top: 0;
     right: 0;
