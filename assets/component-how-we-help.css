@@ -26,7 +26,7 @@
 }
 
 .section-share-wear .section-title-row .main-heading {
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .section-share-wear .section-icon {
@@ -37,6 +37,7 @@
 
 .section-share-wear .red-subheading {
     color: #E02828;
+    margin-top: 0;
     margin-bottom: 20px;
     font-weight: normal;
     line-height: 1.1;
