@@ -182,12 +182,22 @@
         "header_builder": "$50 Builder",
         "header_guardian": "$250 Guardian"
       }
+    },
+    "impact_two_column": {
+      "type": "impact-two-column",
+      "settings": {
+        "title": "Our Collective Impact",
+        "subtitle": "<p>This is where we'll show the tangible results of our community's contributions.</p>",
+        "text": "<p>Every purchase, every donation, every share helps us get closer to our goal. Here, we'll break down exactly what we've been able to accomplish together. From the number of meals provided to the number of families supported, this is the real-time measure of our shared success.</p>",
+        "image": "shopify://shop_images/impact-image.png"
+      }
     }
   },
   "order": [
     "main",
     "proof_hero",
     "impact_breakdown",
+    "impact_two_column",
     "projected_fund",
     "how_we_fund",
     "membership_comparison"
