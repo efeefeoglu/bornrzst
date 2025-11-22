@@ -29,6 +29,11 @@
   text-align: center;
 }
 
+.how-we-fund-column-left hr{
+  margin: 0;
+  background-color: #E02828;
+}
+
 .how-we-fund-column-right {
   background-color: #FFFFFF;
   color: #000000;
