@@ -51,7 +51,7 @@
 .section-give .body-text-list p {
     margin-bottom: 8px;
     line-height: 1.4;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .section-give .give-image {
@@ -72,10 +72,9 @@
     border: none;
     padding: 12px 30px;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    font-family: "Times New Roman", Times, serif;
     width: 100%;
 }
