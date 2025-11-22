@@ -68,7 +68,7 @@
 }
 
 
-.join-the-movement-hero .step-item:first-child, 
+.join-the-movement-hero .step-item:first-of-type, 
 .join-the-movement-hero .step-item:ntn-child(3) {
     margin-left:0;
     margin-right 100px;
