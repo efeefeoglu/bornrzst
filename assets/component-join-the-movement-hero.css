@@ -1,17 +1,87 @@
 .join-the-movement-hero {
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 500px;
-  text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px;
 }
-
-.join-the-movement-hero__content h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0;
-  text-transform: uppercase;
+.join-the-movement-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.join-the-movement-hero .header {
+    margin-bottom: 40px;
+}
+.join-the-movement-hero .logo {
+    width: 150px;
+    height: auto;
+}
+.join-the-movement-hero .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.join-the-movement-hero .left-column {
+    flex: 1 1 40%;
+    padding-right: 40px;
+}
+.join-the-movement-hero .main-title {
+    color: #d2232a;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.join-the-movement-hero .description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.join-the-movement-hero .call-to-action {
+    color: #d2232a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.join-the-movement-hero .right-column {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+}
+.join-the-movement-hero .half-round-shape {
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+}
+.join-the-movement-hero .steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.join-the-movement-hero .step-item {
+    margin-bottom: 30px;
+}
+.join-the-movement-hero .step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.join-the-movement-hero .step-title span.action {
+    color: #d2232a;
+}
+.join-the-movement-hero .step-title span.arrow {
+    color: #d2232a;
+    margin: 0 5px;
+}
+.join-the-movement-hero .step-title span.subtitle {
+    color: #d2232a;
+}
+.join-the-movement-hero .step-description {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.join-the-movement-hero .final-thought {
+    text-align: right;
+    font-style: italic;
+    margin-top: 20px;
 }
