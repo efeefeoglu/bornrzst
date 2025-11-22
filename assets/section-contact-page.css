@@ -1,0 +1,85 @@
+.contact-page-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.contact-page-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-page-left,
+.contact-page-right {
+  width: 48%;
+}
+
+.contact-page-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.contact-page-left p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-page-form-group {
+  margin-bottom: 20px;
+}
+
+.contact-page-form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-page-form-group input,
+.contact-page-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.contact-page-button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-page-direct-contacts h2,
+.contact-page-join-movement h2,
+.contact-page-follow-resistance h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-page-direct-contacts h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.contact-page-contact-item,
+.contact-page-join-movement,
+.contact-page-follow-resistance {
+  margin-bottom: 30px;
+}
+
+.contact-page-contact-item a,
+.contact-page-join-movement a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-page-social-links a {
+  margin-right: 15px;
+}

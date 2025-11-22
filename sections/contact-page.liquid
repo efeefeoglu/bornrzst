@@ -1,0 +1,177 @@
+<link rel="stylesheet" href="{{ 'section-contact-page.css' | asset_url }}">
+
+<div class="contact-page-section">
+  <div class="contact-page-container">
+    <div class="contact-page-left">
+      <h1 class="contact-page-title">{{ section.settings.title }}</h1>
+      <p>{{ section.settings.subtitle }}</p>
+
+      <div class="contact-page-form">
+        {% form 'contact' %}
+          {{ form.errors | default_errors }}
+
+          <div class="contact-page-form-group">
+            <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+            <input type="text" id="ContactFormName" name="contact[name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+          </div>
+
+          <div class="contact-page-form-group">
+            <label for="ContactFormEmail">{{ 'contact.form.email' | t }}</label>
+            <input type="email" id="ContactFormEmail" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
+          </div>
+
+          <div class="contact-page-form-group">
+            <label for="ContactFormReason">{{ 'contact.form.reason' | t }}</label>
+            <input type="text" id="ContactFormReason" name="contact[reason]">
+          </div>
+
+          <div class="contact-page-form-group">
+            <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+            <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          </div>
+
+          <div class="contact-page-form-group">
+            <button type="submit" class="contact-page-button">{{ 'contact.form.send' | t }}</button>
+          </div>
+        {% endform %}
+      </div>
+      <p>{{ section.settings.form_footer }}</p>
+    </div>
+
+    <div class="contact-page-right">
+      <div class="contact-page-direct-contacts">
+        <h2>{{ section.settings.direct_contacts_title }}</h2>
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'contact' %}
+              <div class="contact-page-contact-item">
+                <h3>{{ block.settings.title }}</h3>
+                <p><a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a></p>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+
+      <div class="contact-page-join-movement">
+        <h2>{{ section.settings.join_movement_title }}</h2>
+        <p><a href="{{ section.settings.join_movement_url }}">{{ section.settings.join_movement_url }}</a></p>
+      </div>
+
+      <div class="contact-page-follow-resistance">
+        <h2>{{ section.settings.follow_resistance_title }}</h2>
+        <p>{{ section.settings.follow_resistance_subtitle }}</p>
+        <div class="contact-page-social-links">
+          {% if section.settings.instagram_url != blank %}
+            <a href="{{ section.settings.instagram_url }}" target="_blank">{% render 'icon-instagram' %}</a>
+          {% endif %}
+          {% if section.settings.tiktok_url != blank %}
+            <a href="{{ section.settings.tiktok_url }}" target="_blank">{% render 'icon-tiktok' %}</a>
+          {% endif %}
+          {% if section.settings.twitter_url != blank %}
+            <a href="{{ section.settings.twitter_url }}" target="_blank">{% render 'icon-twitter' %}</a>
+          {% endif %}
+        </div>
+        <p>{{ section.settings.follow_resistance_footer }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact Page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Speak to the Frontline"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "<p>Every act of resistance starts with a message. You don't have to do everything, but you do one thing, make it count. Whether you're a creator, journalist, or ally, your message keeps the movement alive.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "form_footer",
+      "label": "Form Footer",
+      "default": "<p>When you write to us, it doesn't land in a void, it lands in a movement.</p>"
+    },
+    {
+      "type": "text",
+      "id": "direct_contacts_title",
+      "label": "Direct Contacts Title",
+      "default": "Direct Contacts"
+    },
+    {
+      "type": "text",
+      "id": "join_movement_title",
+      "label": "Join the Movement Title",
+      "default": "Join the Movement"
+    },
+    {
+      "type": "url",
+      "id": "join_movement_url",
+      "label": "Join the Movement URL"
+    },
+    {
+      "type": "text",
+      "id": "follow_resistance_title",
+      "label": "Follow the Resistance Title",
+      "default": "Follow the Resistance"
+    },
+    {
+      "type": "text",
+      "id": "follow_resistance_subtitle",
+      "label": "Follow the Resistance Subtitle",
+      "default": "Stay connected. Wear your message."
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram URL"
+    },
+    {
+      "type": "url",
+      "id": "tiktok_url",
+      "label": "Tiktok URL"
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "Twitter URL"
+    },
+    {
+      "type": "richtext",
+      "id": "follow_resistance_footer",
+      "label": "Follow the Resistance Footer",
+      "default": "<p>Tag @BORNZST and use #WearYourResistance to be featured.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "contact",
+      "name": "Contact",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Page"
+    }
+  ]
+}
+{% endschema %}
