@@ -18,17 +18,17 @@
           </div>
 
           <div class="contact-page-form-group">
-            <label for="ContactFormEmail">Email Address</label>
+            <label for="ContactFormEmail">Email Address *</label>
             <input type="email" id="ContactFormEmail" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
           </div>
 
           <div class="contact-page-form-group">
-            <label for="ContactFormReason">Reason for Contact</label>
+            <label for="ContactFormReason">Reason for Contact *</label>
             <input type="text" id="ContactFormReason" name="contact[reason]">
           </div>
 
           <div class="contact-page-form-group">
-            <label for="ContactFormMessage">Message</label>
+            <label for="ContactFormMessage">Message *</label>
             <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
           </div>
 
