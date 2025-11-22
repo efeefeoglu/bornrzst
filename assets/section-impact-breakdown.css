@@ -28,3 +28,9 @@
 .impact-breakdown-text{
   color:#FFF;
 }
+
+.impact-breakdown-buttons{
+  font-size: 2rem;
+  color: #000;
+  background-color: #FFF;
+}
