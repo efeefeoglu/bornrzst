@@ -54,8 +54,9 @@
     margin-bottom: 30px;
 }
 .join-the-movement-hero .step-title {
-    font-size: 1.5rem;
+    font-size: 2em;
     font-weight: bold;
+    letter-spacing:-0.02em;
     margin-bottom: 5px;
 }
 .join-the-movement-hero .step-title span.action {
