@@ -30,8 +30,8 @@
       "settings": {
       }
     },
-    "how_we_fund_impact": {
-      "type": "how-we-fund-impact",
+    "how_we_fund": {
+      "type": "how-we-fund",
       "settings": {
       }
     },
@@ -46,7 +46,7 @@
     "proof_hero",
     "impact_breakdown",
     "projected_fund_allocation",
-    "how_we_fund_impact",
+    "how_we_fund",
     "membership_comparison"
   ]
 }
