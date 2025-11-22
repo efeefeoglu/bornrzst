@@ -1,43 +1,220 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "proof_hero": {
       "type": "proof-hero",
-      "settings": {
-      }
+      "settings": {}
     },
     "impact_breakdown": {
       "type": "impact-breakdown",
-      "settings": {
-      }
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "01. MEDICAL SUPPLIES"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "02. FOOD DISTRIBUTION"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "03. EMERGENCY AID"
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3"],
+      "settings": {}
+    },
+    "you_are_the_movement": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "YOU ARE THE MOVEMENT"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wear your resistance</p><p>Total survival through ethical streetwear and verified humanitarian aid.</p><p>With Drop 1, the BØRN RZST™ Transparency Dashboard goes live worldwide. Every shirt you buy becomes a traceable act of relief and solidarity.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {}
     },
     "projected_fund_allocation": {
       "type": "projected-fund-allocation",
-      "settings": {
-      }
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "text": "Humanitarian Aid (60%): Emergency medical relief, food aid, and reconstruction in Gaza."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "text": "Operations & Logistics (30%): Verification, logistics, and public reporting."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "text": "Awareness & Advocacy (10%): Campaigns that amplify Palestinian voices and global solidarity."
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3"],
+      "settings": {}
+    },
+    "trusted_humanitarian_partners": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Trusted Humanitarian Partners"
+          }
+        },
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "(Final confirmations pending)"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We connect with boots-on-the-ground leading humanitarian organizations to ensure every donation is verified, tracked, and delivered with transparency.</p><p>We look at long-term partners working directly inside the zones to ensure every donation is verified, tracked and delivered with transparency. Our goal is to collaborate with registered NGOs across Gaza and Palestine, turning funds into medical kits, food aid, and reconstruction where humanity needs it most.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "caption", "text"],
+      "settings": {}
     },
     "how_we_fund_impact": {
       "type": "how-we-fund-impact",
-      "settings": {
-      }
+      "settings": {}
+    },
+    "rzst_circle": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Support The Movement"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choose your role in the movement.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join The RZST Circle"
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {}
     },
     "membership_comparison": {
       "type": "membership-comparison",
-      "settings": {
-      }
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "benefit": "Early Access to Drops (24h before public)",
+            "supporter": "✓",
+            "builder": "✓",
+            "guardian": "✓"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "benefit": "Monthly Transparency Reports (Detailed aid breakdown)",
+            "supporter": "✓",
+            "builder": "✓",
+            "guardian": "✓"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "benefit": "Digital Supporter Badge",
+            "supporter": "✓",
+            "builder": "✓",
+            "guardian": "✓"
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "benefit": "Exclusive Circle Merch (Limited Edition pieces)",
+            "supporter": "—",
+            "builder": "✓",
+            "guardian": "✓"
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "benefit": "Voting Rights on Future Projects (Select aid focus spots)",
+            "supporter": "—",
+            "builder": "✓",
+            "guardian": "✓"
+          }
+        },
+        "item_6": {
+          "type": "item",
+          "settings": {
+            "benefit": "Quarterly Strategy Call (With core RZST team)",
+            "supporter": "—",
+            "builder": "✓",
+            "guardian": "✓"
+          }
+        },
+        "item_7": {
+          "type": "item",
+          "settings": {
+            "benefit": "Recognition on Donor Page (Digital Wall)",
+            "supporter": "—",
+            "builder": "—",
+            "guardian": "✓"
+          }
+        },
+        "item_8": {
+          "type": "item",
+          "settings": {
+            "benefit": "Private VIP Events (Virtual/In-person)",
+            "supporter": "—",
+            "builder": "—",
+            "guardian": "✓"
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3", "item_4", "item_5", "item_6", "item_7", "item_8"],
+      "settings": {}
     }
   },
   "order": [
-    "main",
     "proof_hero",
     "impact_breakdown",
+    "you_are_the_movement",
     "projected_fund_allocation",
+    "trusted_humanitarian_partners",
     "how_we_fund_impact",
+    "rzst_circle",
     "membership_comparison"
   ]
 }

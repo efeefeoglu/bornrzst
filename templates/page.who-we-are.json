@@ -60,7 +60,7 @@
         "text": "WE WERE BORN IN THE FIRE, FORGED BY LOSS, UNITED BY HOPE. WE ARE BØRN RZST™. NOT FASHION. FREEDOM.",
         "logo_image": "shopify://shop_images/bornrzst-logo_fadadcaa-3e39-42f8-b77a-864f7fbeb782.png",
         "button_text": "JOIN THE MOVEMENT",
-        "button_link": "",
+        "button_link": "shopify://pages/join-the-movement",
         "text_animation": true
       }
     },
@@ -138,9 +138,7 @@
         "title": "Submit Your Story - Join The Resistance",
         "text": "Share your thoughts, experiences, or personal fight for justice. Your voice matters. Together, we create a living archive of resistance.",
         "message_label": "Share your resistance. Tell us what freedom means to you.",
-        "note": "Your story may be featured on our site/social media.",
-        "footer_title": "BØRN RZST™",
-        "footer_subtitle": "BORN OF RESISTANCE"
+        "note": "Your story may be featured on our site/social media."
       }
     }
   },

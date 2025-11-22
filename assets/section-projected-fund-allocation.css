@@ -1,0 +1,33 @@
+.projected-fund-allocation-section {
+  padding: 50px 0;
+}
+
+.projected-fund-allocation-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.projected-fund-allocation-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.projected-fund-allocation-text {
+  width: 40%;
+}
+
+.projected-fund-allocation-details {
+  width: 55%;
+}
+
+.projected-fund-allocation-item {
+  margin-bottom: 10px;
+}
+
+.projected-fund-allocation-footer {
+  text-align: center;
+  font-style: italic;
+}

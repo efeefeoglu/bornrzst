@@ -1,5 +1,29 @@
-<div class="membership-comparison">
-  <h2>{{ section.settings.title }}</h2>
+{{ 'section-membership-comparison.css' | asset_url | stylesheet_tag }}
+
+<div class="membership-comparison-section page-width">
+  <h2 class="membership-comparison-title">{{ section.settings.title }}</h2>
+  <div class="membership-comparison-table">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ section.settings.header_benefit }}</th>
+          <th>{{ section.settings.header_supporter }}</th>
+          <th>{{ section.settings.header_builder }}</th>
+          <th>{{ section.settings.header_guardian }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for block in section.blocks %}
+          <tr>
+            <td>{{ block.settings.benefit }}</td>
+            <td>{{ block.settings.supporter }}</td>
+            <td>{{ block.settings.builder }}</td>
+            <td>{{ block.settings.guardian }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
 
 {% schema %}
@@ -10,12 +34,65 @@
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "Membership Comparison"
+      "default": "Compare Membership Benefits"
+    },
+    {
+      "type": "text",
+      "id": "header_benefit",
+      "label": "Benefit Header",
+      "default": "Benefit"
+    },
+    {
+      "type": "text",
+      "id": "header_supporter",
+      "label": "Supporter Header",
+      "default": "$10 Supporter"
+    },
+    {
+      "type": "text",
+      "id": "header_builder",
+      "label": "Builder Header",
+      "default": "$50 Builder"
+    },
+    {
+      "type": "text",
+      "id": "header_guardian",
+      "label": "Guardian Header",
+      "default": "$250 Guardian"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "benefit",
+          "label": "Benefit"
+        },
+        {
+          "type": "text",
+          "id": "supporter",
+          "label": "Supporter"
+        },
+        {
+          "type": "text",
+          "id": "builder",
+          "label": "Builder"
+        },
+        {
+          "type": "text",
+          "id": "guardian",
+          "label": "Guardian"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Membership Comparison"
+      "name": "Membership Comparison",
+      "category": "ADVANCED LAYOUT"
     }
   ]
 }
