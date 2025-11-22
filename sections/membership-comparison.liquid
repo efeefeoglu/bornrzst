@@ -1,0 +1,22 @@
+<div class="membership-comparison">
+  <h2>{{ section.settings.title }}</h2>
+</div>
+
+{% schema %}
+{
+  "name": "Membership Comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Membership Comparison"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Membership Comparison"
+    }
+  ]
+}
+{% endschema %}

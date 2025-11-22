@@ -1,0 +1,22 @@
+<div class="proof-hero">
+  <h1>{{ section.settings.title }}</h1>
+</div>
+
+{% schema %}
+{
+  "name": "Proof Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Proof Hero"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Proof Hero"
+    }
+  ]
+}
+{% endschema %}

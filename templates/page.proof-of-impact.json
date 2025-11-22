@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "proof_hero": {
+      "type": "proof-hero",
+      "settings": {
+      }
+    },
+    "impact_breakdown": {
+      "type": "impact-breakdown",
+      "settings": {
+      }
+    },
+    "projected_fund_allocation": {
+      "type": "projected-fund-allocation",
+      "settings": {
+      }
+    },
+    "how_we_fund_impact": {
+      "type": "how-we-fund-impact",
+      "settings": {
+      }
+    },
+    "membership_comparison": {
+      "type": "membership-comparison",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "proof_hero",
+    "impact_breakdown",
+    "projected_fund_allocation",
+    "how_we_fund_impact",
+    "membership_comparison"
+  ]
+}
