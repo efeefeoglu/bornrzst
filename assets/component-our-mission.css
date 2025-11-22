@@ -56,7 +56,7 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 .section-tell .form-group label span {
@@ -65,10 +65,10 @@
 
 .section-tell .form-input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 20px;
     border-radius: 10px;
     border: none;
-    font-size: 1rem;
+    font-size: 2rem;
     background-color: #f0f0f0;
     color: #000;
 }
