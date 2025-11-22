@@ -1,7 +1,7 @@
 {{ 'component-join-the-movement-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="join-the-movement-hero">
-  <div class="container">
+  <div class="page-width">
     <div class="header">
       {% if section.settings.logo != blank %}
         <img src="{{ section.settings.logo | image_url }}" alt="{{ section.settings.logo.alt }}" class="logo">
