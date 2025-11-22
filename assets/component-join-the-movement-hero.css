@@ -50,7 +50,7 @@
 .join-the-movement-hero .half-round-shape-2 {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 100px;
     height: 490px;
     z-index: 1; 
 }
