@@ -1,58 +1,305 @@
-{{ 'section-how-we-fund-impact.css' | asset_url | stylesheet_tag }}
+{{ 'section-how-we-fund.css' | asset_url | stylesheet_tag }}
 
-<div class="how-we-fund-impact-section">
-  <h1 class="how-we-fund-impact-title">{{ section.settings.title }}</1>
-  <div class="how-we-fund-impact-container">
-    <div class="how-we-fund-impact-column">
-      <h3 class="how-we-fund-impact-subtitle">{{ section.settings.left_column_title }}</h3>
-      <div class="how-we-fund-impact-text">{{ section.settings.left_column_text }}</div>
+<div class="how-we-fund-section">
+  <!-- Top Banner -->
+  <div class="how-we-fund-top-banner">
+    <h1 class="how-we-fund-main-header">{{ section.settings.main_header }}</h1>
+  </div>
+
+  <div class="how-we-fund-content-wrapper page-width">
+    <!-- Left Column: Impact Engine -->
+    <div class="how-we-fund-column-left">
+      <h2 class="how-we-fund-impact-title">{{ section.settings.impact_engine_title }}</h2>
+      <div class="how-we-fund-impact-subheadline">
+        <p>{{ section.settings.impact_engine_subheadline_1 }}</p>
+        <p>{{ section.settings.impact_engine_subheadline_2 }}</p>
+      </div>
+      <div class="how-we-fund-impact-body">
+        {{ section.settings.impact_engine_body }}
+      </div>
+      <div class="how-we-fund-section-divider">
+        <p>{{ section.settings.section_divider_1 }}</p>
+        <hr />
+        <p>{{ section.settings.section_divider_2 }}</p>
+      </div>
+      <div class="how-we-fund-visual-flow">
+        <div class="how-we-fund-flow-item">
+          {% if section.settings.flow_icon_1 != blank %}
+            <img src="{{ section.settings.flow_icon_1 | image_url }}" alt="Shop Sales Icon">
+          {% endif %}
+          <p>Shop Sales</p>
+        </div>
+        <div class="how-we-fund-flow-arrow">&rightarrow;</div>
+        <div class="how-we-fund-flow-item">
+          {% if section.settings.flow_icon_2 != blank %}
+            <img src="{{ section.settings.flow_icon_2 | image_url }}" alt="Donation Funds Icon">
+          {% endif %}
+          <p>Verified Donation Funds</p>
+        </div>
+        <div class="how-we-fund-flow-arrow">&rightarrow;</div>
+        <div class="how-we-fund-flow-item">
+          {% if section.settings.flow_icon_3 != blank %}
+            <img src="{{ section.settings.flow_icon_3 | image_url }}" alt="Proof Page Icon">
+          {% endif %}
+          <p>Public Proof Page</p>
+        </div>
+      </div>
+      <ul class="how-we-fund-percentage-breakdown">
+        <li><strong>{{ section.settings.percentage_1_bold }}</strong> {{ section.settings.percentage_1_text }}</li>
+        <li><strong>{{ section.settings.percentage_2_bold }}</strong> {{ section.settings.percentage_2_text }}</li>
+        <li><strong>{{ section.settings.percentage_3_bold }}</strong> {{ section.settings.percentage_3_text }}</li>
+      </ul>
     </div>
-    <div class="how-we-fund-impact-column">
-      <h3 class="how-we-fund-impact-subtitle">{{ section.settings.right_column_title }}</h3>
-      <div class="how-we-fund-impact-text">{{ section.settings.right_column_text }}</div>
+
+    <!-- Center Element: Bridge -->
+    <div class="how-we-fund-bridge">
+      <div class="how-we-fund-bridge-circle">
+        <p>{{ section.settings.bridge_text }}</p>
+      </div>
     </div>
+
+    <!-- Right Column: Growth Engine -->
+    <div class="how-we-fund-column-right">
+      <h2 class="how-we-fund-growth-title">{{ section.settings.growth_engine_title }}</h2>
+      <div class="how-we-fund-growth-subheadline">
+        <p>{{ section.settings.growth_engine_subheadline }}</p>
+      </div>
+      <div class="how-we-fund-growth-body">
+        {{ section.settings.growth_engine_body }}
+      </div>
+      <div class="how-we-fund-growth-channels">
+        <h3>{{ section.settings.growth_channels_title }}</h3>
+        <ul>
+          {% for block in section.blocks %}
+            <li><strong>{{ block.settings.channel_title }}:</strong> {{ block.settings.channel_description }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="how-we-fund-bottom-flow">
+        <p>{{ section.settings.bottom_flow_text }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Banner -->
+  <div class="how-we-fund-bottom-banner">
+    <p>{{ section.settings.footer_text }}</p>
   </div>
 </div>
 
 {% schema %}
-{
-  "name": "How We Fund",
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "How we fund impact & growth"
-    },
-    {
-      "type": "text",
-      "id": "left_column_title",
-      "label": "Left Column Title",
-      "default": "IMPACT ENGINE"
-    },
-    {
-      "type": "richtext",
-      "id": "left_column_text",
-      "label": "Left Column Text",
-      "default": "<p>100% OF DROP PROFITS = HUMANITARIAN RELIEF</p><p>SHOP SALES<br>↓<br>VERIFIED DONATION FUNDS<br>↓</p><ul><li>All Donations are: Verified, tracked, and released as aid in Gaza.</li><li>Transparency Guarantee: Public ledger of all funds.</li><li>Advocacy & Awareness: Campaigns amplifying Palestinian voices.</li></ul>"
-    },
-    {
-      "type": "text",
-      "id": "right_column_title",
-      "label": "Right Column Title",
-      "default": "Growth Engine"
-    },
-    {
-      "type": "richtext",
-      "id": "right_column_text",
-      "label": "Right Column Text",
-      "default": "<p>Creative Commerce → Sustainable Operations</p><p>We build movements not by emptying our pockets but by filling our hearts. We raise capital through separate revenue streams that fund the brand itself.</p><p>Our Growth Channels</p><ul><li>Membership: Exclusive club benefits & drops.</li><li>RZST Circle Memberships: Monthly supporters ($10-$250) who sustain operations.</li><li>External Funding: Grants, private investors, and strategic partnerships.</li></ul><p>Creative Sales → Operations & Team → Automation & Growth</p>"
-    }
-  ],
-  "presets": [
-    {
-      "name": "How We Fund"
-    }
-  ]
-}
+  {
+    "name": "How We Fund",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Header"
+      },
+      {
+        "type": "text",
+        "id": "main_header",
+        "label": "Main Header",
+        "default": "How we fund impact & growth"
+      },
+      {
+        "type": "header",
+        "content": "Impact Engine (Left Column)"
+      },
+      {
+        "type": "text",
+        "id": "impact_engine_title",
+        "label": "Impact Engine Title",
+        "default": "IMPACT ENGINE"
+      },
+      {
+        "type": "text",
+        "id": "impact_engine_subheadline_1",
+        "label": "Sub-headline 1",
+        "default": "100% OF DROP PROFITS"
+      },
+      {
+        "type": "text",
+        "id": "impact_engine_subheadline_2",
+        "label": "Sub-headline 2",
+        "default": "HUMANITARIAN RELIEF"
+      },
+      {
+        "type": "richtext",
+        "id": "impact_engine_body",
+        "label": "Body Text",
+        "default": "<p>This is where activism meets art. Every shirt, hoodie, and tote sold under our Impact Drops funds <strong>verified humanitarian partners</strong> and is publicly tracked on our <strong>Transparency Dashboard.</strong></p>"
+      },
+      {
+        "type": "text",
+        "id": "section_divider_1",
+        "label": "Section Divider 1",
+        "default": "SHOP SALES"
+      },
+      {
+        "type": "text",
+        "id": "section_divider_2",
+        "label": "Section Divider 2",
+        "default": "VERIFIED DONATION FUNDS"
+      },
+      {
+        "type": "image_picker",
+        "id": "flow_icon_1",
+        "label": "Flow Icon 1 (Shopping Cart)"
+      },
+      {
+        "type": "image_picker",
+        "id": "flow_icon_2",
+        "label": "Flow Icon 2 (Donation)"
+      },
+      {
+        "type": "image_picker",
+        "id": "flow_icon_3",
+        "label": "Flow Icon 3 (Proof Page)"
+      },
+      {
+        "type": "text",
+        "id": "percentage_1_bold",
+        "label": "Percentage 1 (Bold)",
+        "default": "• 80%"
+      },
+      {
+        "type": "text",
+        "id": "percentage_1_text",
+        "label": "Percentage 1 (Text)",
+        "default": "Humanitarian Aid: Medical relief, food aid, and reconstruction in Gaza."
+      },
+      {
+        "type": "text",
+        "id": "percentage_2_bold",
+        "label": "Percentage 2 (Bold)",
+        "default": "• 15%"
+      },
+      {
+        "type": "text",
+        "id": "percentage_2_text",
+        "label": "Percentage 2 (Text)",
+        "default": "Transparency & Operations: Verification, and public reporting."
+      },
+      {
+        "type": "text",
+        "id": "percentage_3_bold",
+        "label": "Percentage 3 (Bold)",
+        "default": "• 5%"
+      },
+      {
+        "type": "text",
+        "id": "percentage_3_text",
+        "label": "Percentage 3 (Text)",
+        "default": "Advocacy & Awareness: Campaigns amplifying Palestinian voices."
+      },
+      {
+        "type": "header",
+        "content": "Center Bridge"
+      },
+      {
+        "type": "text",
+        "id": "bridge_text",
+        "label": "Bridge Text",
+        "default": "Transparency System & Impact Ledger"
+      },
+      {
+        "type": "header",
+        "content": "Growth Engine (Right Column)"
+      },
+      {
+        "type": "text",
+        "id": "growth_engine_title",
+        "label": "Growth Engine Title",
+        "default": "Growth Engine"
+      },
+      {
+        "type": "text",
+        "id": "growth_engine_subheadline",
+        "label": "Sub-headline",
+        "default": "Creative Commerce → Sustainable Operations"
+      },
+      {
+        "type": "richtext",
+        "id": "growth_engine_body",
+        "label": "Body Text",
+        "default": "<p>To keep the movement alive, we generate ethical revenue streams that fund our team, technology, and storytelling without touching aid funds.</p>"
+      },
+      {
+        "type": "text",
+        "id": "growth_channels_title",
+        "label": "Growth Channels Title",
+        "default": "Our Growth Channels:"
+      },
+      {
+        "type": "text",
+        "id": "bottom_flow_text",
+        "label": "Bottom Flow Text",
+        "default": "Creative Sales → Operations & Team → Automation & Growth"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "text",
+        "id": "footer_text",
+        "label": "Footer Text",
+        "default": "We fund our activism with our art and our art funds the resistance"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "channel",
+        "name": "Growth Channel",
+        "settings": [
+          {
+            "type": "text",
+            "id": "channel_title",
+            "label": "Channel Title"
+          },
+          {
+            "type": "text",
+            "id": "channel_description",
+            "label": "Channel Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "How We Fund",
+        "category": "Custom",
+        "blocks": [
+          {
+            "type": "channel",
+            "settings": {
+              "channel_title": "Collector’s Line",
+              "channel_description": "Limited artist collaborations & drops"
+            }
+          },
+          {
+            "type": "channel",
+            "settings": {
+              "channel_title": "RZST Circle Membership",
+              "channel_description": "Monthly supporters ($10–$250) fuel creative independence."
+            }
+          },
+          {
+            "type": "channel",
+            "settings": {
+              "channel_title": "RZST Media",
+              "channel_description": "Videos, podcasts, and documentaries amplifying truth and resistance."
+            }
+          },
+          {
+            "type": "channel",
+            "settings": {
+              "channel_title": "Allied Brand Network",
+              "channel_description": "Partnerships and sponsorship’s for social impact campaigns."
+            }
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
