@@ -21,7 +21,7 @@
 }
 
 .section-give .give-right {
-    flex: 0 0 350px;
+    flex: 0 0 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
