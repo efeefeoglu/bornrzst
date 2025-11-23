@@ -841,7 +841,7 @@
 }
 
 .bornrzst-footer__newsletter-subheading {
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -899,7 +899,7 @@
   color: #fff;
   font-size: 2.5em;
   font-family: "Bebas Neue";
-  letter-spacing: -.075em;
+  letter-spacing: -.02em;
 }
 
 .bornrzst-footer__social-handle {
@@ -907,7 +907,7 @@
   color: #fff;
   font-size: 2.5em;
   font-family: "Bebas Neue";
-  letter-spacing: -.075em;
+  letter-spacing: -.02em;
 }
 
 @media screen and (max-width: 989px) {
