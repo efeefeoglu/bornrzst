@@ -515,7 +515,7 @@
 
 .bornrzst-footer__menu-link:hover,
 .bornrzst-footer__menu-link:focus-visible {
-  color: #E02828;
+  color: #c30100;
 }
 
 .bornrzst-footer__badge {
@@ -595,7 +595,7 @@
 }
 
 .bornrzst-footer__submit {
-  background: #E02828;
+  background: #c30100;
   color: #fff;
   border: solid 1px #FFF;
   padding: 0.5em 2em;
@@ -608,7 +608,7 @@
 
 .bornrzst-footer__submit:hover,
 .bornrzst-footer__submit:focus-visible {
-  background: #E02828;
+  background: #c30100;
 }
 
 .bornrzst-footer__social-icons {
@@ -830,7 +830,7 @@
 
 .bornrzst-footer__menu-link:hover,
 .bornrzst-footer__menu-link:focus-visible {
-  color: #E02828;
+  color: #c30100;
 }
 
 .bornrzst-footer__newsletter {

@@ -36,7 +36,7 @@
 }
 
 .section-share-wear .red-subheading {
-    color: #E02828;
+    color: #c30100;
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: normal;
@@ -50,7 +50,7 @@
 }
 
 .section-share-wear .btn-red {
-    background-color: #E02828;
+    background-color: #c30100;
     color: #ffffff;
     border: none;
     padding: 12px 30px;
@@ -62,7 +62,7 @@
 }
 
 .section-share-wear .footer-italic {
-    color: #E02828;
+    color: #c30100;
     font-style: italic;
     text-align: right;
     font-size: 1.6rem;

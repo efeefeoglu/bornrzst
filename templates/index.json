@@ -199,10 +199,10 @@
         "buttons_jP6mXU"
       ],
       "custom_css": [
-        "h2 {text-align: left; margin-left: -2em; width: 90%; font-size: 7.4em; color: #e02828; letter-spacing: -0.02em; line-height: 0.9; margin-top: 30%;}",
+        "h2 {text-align: left; margin-left: -2em; width: 90%; font-size: 7.4em; color: #c30100; letter-spacing: -0.02em; line-height: 0.9; margin-top: 30%;}",
         "p {font-size: 1em; color: #fff; line-height: 1.3;}",
         "div.banner__text {margin-top: -10%; margin-left: 30%; text-align: left; width: 100%;}",
-        ".button--primary {font-size: 1em; background-color: #e02828; border-radius: 1.1em;}"
+        ".button--primary {font-size: 1em; background-color: #c30100; border-radius: 1.1em;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {

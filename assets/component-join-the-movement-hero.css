@@ -24,7 +24,7 @@
     padding-right: 40px;
 }
 .join-the-movement-hero .main-title {
-    color: #E02828;
+    color: #c30100;
     margin-bottom: 20px;
 }
 .join-the-movement-hero .description {
@@ -32,7 +32,7 @@
     max-width: 400px;
 }
 .join-the-movement-hero .call-to-action {
-    color: #E02828;
+    color: #c30100;
     font-style: italic;
 }
 .join-the-movement-hero .right-column {
@@ -91,16 +91,16 @@
     margin-bottom: 5px;
 }
 .join-the-movement-hero .step-title span.action {
-    color: #E02828;
+    color: #c30100;
 }
 .join-the-movement-hero .step-title span.arrow {
-    color: #E02828;
+    color: #c30100;
     margin: 0 5px;
 }
 .join-the-movement-hero .step-title span.subtitle {
     font-size: 3rem;
     letter-spacing:-0.02em;
-    color: #E02828;
+    color: #c30100;
     line-height: 1 !important;
 }
 .join-the-movement-hero .step-description {
