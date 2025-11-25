@@ -135,7 +135,7 @@
 
 .hero-section__heading strong,
 .hero-section__body strong {
-  color: #8a1c14;
+  color: #c30100;
   font-weight: 400;
 }
 
@@ -150,7 +150,7 @@
   text-decoration: underline;
   letter-spacing:0;
   font-size:1em;
-  background-color:#8a1c14;
+  background-color:#c30100;
 }
 
 .hero-section__actions {

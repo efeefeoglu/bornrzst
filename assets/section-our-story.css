@@ -10,13 +10,13 @@
 
 .our-story-content h1 {
   text-align: center;
-  color: #E02828;
+  color: #c30100;
   margin-bottom: 10px;
 }
 
 .our-story-content h2 {
   text-align: center;
-  color: #E02828;
+  color: #c30100;
   margin-bottom: 20px;
 }
 
@@ -28,14 +28,14 @@
 .our-story-quote {
   width: 23%;
   position: relative;
-  border: 5px solid #E02828;
+  border: 5px solid #c30100;
   border-radius: 20px;
   margin: 100px 0 50px;
 }
 
 .our-story-quote blockquote {
   background-color: #fadadd;
-  color: #e02828;
+  color: #c30100;
   position: absolute;
   font-size: 1em;
   font-weight: 400;
@@ -51,7 +51,7 @@
 .our-story-quote blockquote::before,
 .our-story-quote blockquote::after {
   content: '“';
-  color: #E02828;
+  color: #c30100;
   position: absolute;
   font-size: 4em;
   font-weight: 900;
