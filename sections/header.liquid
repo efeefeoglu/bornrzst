@@ -26,12 +26,43 @@
 
   .header__heading-logo-wrapper {
     display: inline-flex;
-    transition: transform 300ms ease;
-    transform-origin: center;
   }
 
+  .header__heading-logo {
+    transition: width 300ms ease;
+  }
+
+  .section-header.scrolled-past-header .header__heading-logo {
+    width: {{ settings.logo_width | times: 0.5 }}px !important;
+  }
+
+  /* Reset transform if it was there */
   .section-header.scrolled-past-header .header__heading-logo-wrapper {
-    transform: scale(0.5);
+    transform: none !important;
+  }
+
+  /* Sticky Header Padding Reduction */
+  .section-header.scrolled-past-header .header {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    transition: padding 300ms ease;
+  }
+  .header {
+    transition: padding 300ms ease;
+  }
+
+  /* Sticky Menu Link Reduction */
+  .section-header.scrolled-past-header .custom-nav__link {
+    font-size: 1.6rem !important;
+    padding: 0.5rem 0 !important;
+  }
+  .custom-nav__link {
+    transition: font-size 300ms ease, padding 300ms ease;
+  }
+
+  /* Text Logo Reduction */
+  .section-header.scrolled-past-header .header__heading-link .h2 {
+    font-size: 1.8rem !important;
   }
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
