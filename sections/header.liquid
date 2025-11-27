@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
+{{ 'custom-navigation.css' | asset_url | stylesheet_tag }}
+
 <style>
   header-drawer {
     justify-self: start;
@@ -185,13 +187,7 @@
     {%- endif -%}
 
     {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
-        endif
-      endif
+      render 'custom-navigation'
     %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
@@ -476,6 +472,58 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
+    {
+      "type": "header",
+      "content": "Custom Navigation Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "shop_menu_image",
+      "label": "Shop Mega Menu Image"
+    },
+    {
+      "type": "text",
+      "id": "shop_menu_cta_text",
+      "label": "Shop Menu CTA Text",
+      "default": "Explore the Latest Drop →"
+    },
+    {
+      "type": "url",
+      "id": "shop_menu_cta_link",
+      "label": "Shop Menu CTA Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "join_menu_image",
+      "label": "Join The Movement Image"
+    },
+    {
+      "type": "text",
+      "id": "join_menu_cta_text",
+      "label": "Join Menu CTA Text",
+      "default": "Join the Movement →"
+    },
+    {
+      "type": "url",
+      "id": "join_menu_cta_link",
+      "label": "Join Menu CTA Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "impact_menu_image",
+      "label": "Proof of Impact Image"
+    },
+    {
+      "type": "text",
+      "id": "impact_menu_cta_text",
+      "label": "Impact Menu CTA Text",
+      "default": "View All Receipts →"
+    },
+    {
+      "type": "url",
+      "id": "impact_menu_cta_link",
+      "label": "Impact Menu CTA Link"
+    },
     {
       "type": "select",
       "id": "logo_position",

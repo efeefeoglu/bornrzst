@@ -1,0 +1,125 @@
+<nav class="custom-nav" role="navigation" aria-label="Main">
+  <ul class="custom-nav__list">
+
+    {% comment %} SHOP (Mega Menu - 2 Columns) {% endcomment %}
+    <li class="custom-nav__item custom-nav__item--mega">
+      <a href="/collections/all" class="custom-nav__link">SHOP</a>
+      <div class="custom-nav__dropdown">
+        <div class="custom-nav__grid custom-nav__grid--2-col">
+          <div class="custom-nav__column">
+            <ul class="custom-nav__sublist">
+              <li class="custom-nav__subitem"><a href="/collections/all" class="custom-nav__sublink">All Products</a></li>
+              <li class="custom-nav__subitem"><a href="/collections/new-arrivals" class="custom-nav__sublink">New Arrivals</a></li>
+              <li class="custom-nav__subitem"><a href="/collections/t-shirts" class="custom-nav__sublink">T-Shirts</a></li>
+              <li class="custom-nav__subitem"><a href="/collections/hoodies" class="custom-nav__sublink">Hoodies</a></li>
+              <li class="custom-nav__subitem"><a href="/collections/accessories" class="custom-nav__sublink">Accessories</a></li>
+              <li class="custom-nav__subitem"><a href="/collections/best-sellers" class="custom-nav__sublink">Best Sellers</a></li>
+            </ul>
+          </div>
+          <div class="custom-nav__column">
+            {%- if section.settings.shop_menu_image != blank -%}
+              <div class="custom-nav__image-wrapper">
+                {{ section.settings.shop_menu_image | image_url: width: 600 | image_tag: loading: 'lazy', class: 'custom-nav__image' }}
+              </div>
+            {%- endif -%}
+            <a href="{{ section.settings.shop_menu_cta_link | default: '/collections/all' }}" class="custom-nav__cta">
+              {{ section.settings.shop_menu_cta_text | default: 'Explore the Latest Drop →' }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    {% comment %} OUR STORY (Simple Dropdown) {% endcomment %}
+    <li class="custom-nav__item">
+      <a href="/pages/our-story" class="custom-nav__link">OUR STORY</a>
+      <div class="custom-nav__dropdown">
+        <ul class="custom-nav__sublist">
+          <li class="custom-nav__subitem"><a href="/pages/who-we-are" class="custom-nav__sublink">Who We Are</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/what-we-stand-for" class="custom-nav__sublink">What We Stand For</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/why-we-exist" class="custom-nav__sublink">Why We Exist</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/where-were-going" class="custom-nav__sublink">Where We’re Going</a></li>
+        </ul>
+      </div>
+    </li>
+
+    {% comment %} JOIN THE MOVEMENT (Mega Menu - 3 Columns) {% endcomment %}
+    <li class="custom-nav__item custom-nav__item--mega">
+      <a href="/pages/join-the-movement" class="custom-nav__link">JOIN THE MOVEMENT</a>
+      <div class="custom-nav__dropdown">
+        <div class="custom-nav__grid custom-nav__grid--3-col">
+          <div class="custom-nav__column">
+            <ul class="custom-nav__sublist">
+              <li class="custom-nav__subitem"><a href="/pages/tell-your-story" class="custom-nav__sublink">Tell Your Story</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/share-your-voice" class="custom-nav__sublink">Share Your Voice</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/wear-your-resistance" class="custom-nav__sublink">#WearYourResistance Challenge</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/get-involved" class="custom-nav__sublink">Get Involved</a></li>
+            </ul>
+          </div>
+          <div class="custom-nav__column">
+            <ul class="custom-nav__sublist">
+              <li class="custom-nav__subitem"><a href="/pages/become-a-creator" class="custom-nav__sublink">Become a Creator</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/submit-your-story" class="custom-nav__sublink">Submit Your Story</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/creator-program" class="custom-nav__sublink">Creator Program / Affiliate</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/volunteer" class="custom-nav__sublink">Volunteer / Amplify</a></li>
+            </ul>
+          </div>
+          <div class="custom-nav__column">
+            {%- if section.settings.join_menu_image != blank -%}
+              <div class="custom-nav__image-wrapper">
+                {{ section.settings.join_menu_image | image_url: width: 600 | image_tag: loading: 'lazy', class: 'custom-nav__image' }}
+              </div>
+            {%- endif -%}
+            <a href="{{ section.settings.join_menu_cta_link | default: '/pages/join-the-movement' }}" class="custom-nav__cta">
+              {{ section.settings.join_menu_cta_text | default: 'Join the Movement →' }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    {% comment %} PROOF OF IMPACT (Mega Menu - 2 Columns) {% endcomment %}
+    <li class="custom-nav__item custom-nav__item--mega">
+      <a href="/pages/proof-of-impact" class="custom-nav__link">PROOF OF IMPACT</a>
+      <div class="custom-nav__dropdown">
+        <div class="custom-nav__grid custom-nav__grid--2-col">
+          <div class="custom-nav__column">
+            <ul class="custom-nav__sublist">
+              <li class="custom-nav__subitem"><a href="/pages/donation-receipts" class="custom-nav__sublink">Donation Receipts</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/impact-stories" class="custom-nav__sublink">Impact Stories</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/where-we-donate" class="custom-nav__sublink">Where We Donate</a></li>
+              <li class="custom-nav__subitem"><a href="/pages/impact-breakdown" class="custom-nav__sublink">Impact Breakdown</a></li>
+            </ul>
+          </div>
+          <div class="custom-nav__column">
+            {%- if section.settings.impact_menu_image != blank -%}
+              <div class="custom-nav__image-wrapper">
+                {{ section.settings.impact_menu_image | image_url: width: 600 | image_tag: loading: 'lazy', class: 'custom-nav__image' }}
+              </div>
+            {%- endif -%}
+            <a href="{{ section.settings.impact_menu_cta_link | default: '/pages/proof-of-impact' }}" class="custom-nav__cta">
+              {{ section.settings.impact_menu_cta_text | default: 'View All Receipts →' }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    {% comment %} SUPPORT (Simple Dropdown) {% endcomment %}
+    <li class="custom-nav__item">
+      <a href="/pages/support" class="custom-nav__link">SUPPORT</a>
+      <div class="custom-nav__dropdown">
+        <ul class="custom-nav__sublist">
+          <li class="custom-nav__subitem"><a href="/pages/contact-us" class="custom-nav__sublink">Contact Us</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/order-support" class="custom-nav__sublink">Order Support</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/track-your-order" class="custom-nav__sublink">Track Your Order</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/returns-exchanges" class="custom-nav__sublink">Returns & Exchanges</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/faq" class="custom-nav__sublink">FAQ</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/press-partnerships" class="custom-nav__sublink">Press & Partnerships</a></li>
+          <li class="custom-nav__subitem"><a href="/pages/sizing-guide" class="custom-nav__sublink">Sizing Guide</a></li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</nav>

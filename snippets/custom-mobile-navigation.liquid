@@ -1,0 +1,111 @@
+<nav class="custom-mobile-nav">
+
+  {% comment %} SHOP {% endcomment %}
+  <div class="custom-mobile-nav__item">
+    <details>
+      <summary class="custom-mobile-nav__summary">
+        SHOP
+        <span class="custom-mobile-nav__icon">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
+      </summary>
+      <div class="custom-mobile-nav__content">
+        <a href="/collections/all" class="custom-mobile-nav__link">All Products</a>
+        <a href="/collections/new-arrivals" class="custom-mobile-nav__link">New Arrivals</a>
+        <a href="/collections/t-shirts" class="custom-mobile-nav__link">T-Shirts</a>
+        <a href="/collections/hoodies" class="custom-mobile-nav__link">Hoodies</a>
+        <a href="/collections/accessories" class="custom-mobile-nav__link">Accessories</a>
+        <a href="/collections/best-sellers" class="custom-mobile-nav__link">Best Sellers</a>
+        <a href="{{ section.settings.shop_menu_cta_link | default: '/collections/all' }}" class="custom-mobile-nav__link" style="font-weight: 700;">
+          {{ section.settings.shop_menu_cta_text | default: 'Explore the Latest Drop →' }}
+        </a>
+      </div>
+    </details>
+  </div>
+
+  {% comment %} OUR STORY {% endcomment %}
+  <div class="custom-mobile-nav__item">
+    <details>
+      <summary class="custom-mobile-nav__summary">
+        OUR STORY
+        <span class="custom-mobile-nav__icon">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
+      </summary>
+      <div class="custom-mobile-nav__content">
+        <a href="/pages/who-we-are" class="custom-mobile-nav__link">Who We Are</a>
+        <a href="/pages/what-we-stand-for" class="custom-mobile-nav__link">What We Stand For</a>
+        <a href="/pages/why-we-exist" class="custom-mobile-nav__link">Why We Exist</a>
+        <a href="/pages/where-were-going" class="custom-mobile-nav__link">Where We’re Going</a>
+      </div>
+    </details>
+  </div>
+
+  {% comment %} JOIN THE MOVEMENT {% endcomment %}
+  <div class="custom-mobile-nav__item">
+    <details>
+      <summary class="custom-mobile-nav__summary">
+        JOIN THE MOVEMENT
+        <span class="custom-mobile-nav__icon">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
+      </summary>
+      <div class="custom-mobile-nav__content">
+        <a href="/pages/tell-your-story" class="custom-mobile-nav__link">Tell Your Story</a>
+        <a href="/pages/share-your-voice" class="custom-mobile-nav__link">Share Your Voice</a>
+        <a href="/pages/wear-your-resistance" class="custom-mobile-nav__link">#WearYourResistance Challenge</a>
+        <a href="/pages/get-involved" class="custom-mobile-nav__link">Get Involved</a>
+        <a href="/pages/become-a-creator" class="custom-mobile-nav__link">Become a Creator</a>
+        <a href="/pages/submit-your-story" class="custom-mobile-nav__link">Submit Your Story</a>
+        <a href="/pages/creator-program" class="custom-mobile-nav__link">Creator Program / Affiliate</a>
+        <a href="/pages/volunteer" class="custom-mobile-nav__link">Volunteer / Amplify</a>
+        <a href="{{ section.settings.join_menu_cta_link | default: '/pages/join-the-movement' }}" class="custom-mobile-nav__link" style="font-weight: 700;">
+          {{ section.settings.join_menu_cta_text | default: 'Join the Movement →' }}
+        </a>
+      </div>
+    </details>
+  </div>
+
+  {% comment %} PROOF OF IMPACT {% endcomment %}
+  <div class="custom-mobile-nav__item">
+    <details>
+      <summary class="custom-mobile-nav__summary">
+        PROOF OF IMPACT
+        <span class="custom-mobile-nav__icon">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
+      </summary>
+      <div class="custom-mobile-nav__content">
+        <a href="/pages/donation-receipts" class="custom-mobile-nav__link">Donation Receipts</a>
+        <a href="/pages/impact-stories" class="custom-mobile-nav__link">Impact Stories</a>
+        <a href="/pages/where-we-donate" class="custom-mobile-nav__link">Where We Donate</a>
+        <a href="/pages/impact-breakdown" class="custom-mobile-nav__link">Impact Breakdown</a>
+        <a href="{{ section.settings.impact_menu_cta_link | default: '/pages/proof-of-impact' }}" class="custom-mobile-nav__link" style="font-weight: 700;">
+          {{ section.settings.impact_menu_cta_text | default: 'View All Receipts →' }}
+        </a>
+      </div>
+    </details>
+  </div>
+
+  {% comment %} SUPPORT {% endcomment %}
+  <div class="custom-mobile-nav__item">
+    <details>
+      <summary class="custom-mobile-nav__summary">
+        SUPPORT
+        <span class="custom-mobile-nav__icon">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
+      </summary>
+      <div class="custom-mobile-nav__content">
+        <a href="/pages/contact-us" class="custom-mobile-nav__link">Contact Us</a>
+        <a href="/pages/order-support" class="custom-mobile-nav__link">Order Support</a>
+        <a href="/pages/track-your-order" class="custom-mobile-nav__link">Track Your Order</a>
+        <a href="/pages/returns-exchanges" class="custom-mobile-nav__link">Returns & Exchanges</a>
+        <a href="/pages/faq" class="custom-mobile-nav__link">FAQ</a>
+        <a href="/pages/press-partnerships" class="custom-mobile-nav__link">Press & Partnerships</a>
+        <a href="/pages/sizing-guide" class="custom-mobile-nav__link">Sizing Guide</a>
+      </div>
+    </details>
+  </div>
+
+</nav>
