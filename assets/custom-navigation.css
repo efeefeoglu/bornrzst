@@ -7,8 +7,10 @@
 }
 
 /* Force vertical alignment on the main header container */
-.header {
-  align-items: center !important;
+@media screen and (min-width: 990px) {
+  .header {
+    align-items: center !important;
+  }
 }
 
 /* Sticky Header Background */
