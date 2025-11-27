@@ -15,7 +15,7 @@
 
 /* Sticky Header Background */
 .shopify-section-header-sticky .header,
-.scrolled-past-header .header {
+.scrolled-past-header {
   background-color: #c30100 !important; /* Brand Red */
   transition: background-color 0.3s ease;
 }
@@ -63,7 +63,7 @@
 .custom-nav__dropdown {
   position: absolute;
   top: 100%;
-  background: var(--color-background);
+  background: #c30100;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   opacity: 0;
   visibility: hidden;
