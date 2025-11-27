@@ -6,6 +6,18 @@
   position: relative; /* Context for mega menus */
 }
 
+/* Force vertical alignment on the main header container */
+.header {
+  align-items: center !important;
+}
+
+/* Sticky Header Background */
+.shopify-section-header-sticky .header,
+.scrolled-past-header .header {
+  background-color: #c30100 !important; /* Brand Red */
+  transition: background-color 0.3s ease;
+}
+
 .custom-nav__list {
   display: flex;
   list-style: none;
