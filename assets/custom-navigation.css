@@ -14,8 +14,8 @@
 }
 
 /* Sticky Header Background */
-.shopify-section-header-sticky .header,
-.scrolled-past-header .header {
+.shopify-section-header-sticky,
+.scrolled-past-header {
   background-color: #c30100 !important; /* Brand Red */
   transition: background-color 0.3s ease;
 }
