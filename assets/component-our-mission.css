@@ -1,7 +1,7 @@
 
 .section-tell {
     background-color: #000000;
-    color: #ffffff;
+    color: #f7f7f7;
 }
 
 .section-tell .container {
@@ -87,7 +87,7 @@
 
 .section-tell .btn-red {
     background-color: #c30100;
-    color: #ffffff;
+    color: #f7f7f7;
     border: none;
     padding: 1.2rem;
     cursor: pointer;

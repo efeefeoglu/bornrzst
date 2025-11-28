@@ -1,6 +1,6 @@
 .where-we-are-going-section {
   background-color: #000000;
-  color: #ffffff;
+  color: #f7f7f7;
   padding: 50px 0;
   text-align: center;
 }
@@ -33,7 +33,7 @@
 
 .where-we-are-going-button {
   background-color: #c30100;
-  color: #ffffff;
+  color: #f7f7f7;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: bold;
