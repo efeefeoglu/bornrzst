@@ -443,8 +443,8 @@
 }
 
 .bornrzst-footer {
-  background: #000;
-  color: #fff;
+  background: #050505;
+  color: #f7f7f7;
   border-radius: 1.5rem;
   padding: 3rem;
   display: flex;
@@ -596,7 +596,7 @@
 
 .bornrzst-footer__submit {
   background: #c30100;
-  color: #fff;
+  color: #f7f7f7;
   border: solid 1px #FFF;
   padding: 0.5em 2em;
   font-weight: 400;
@@ -753,8 +753,8 @@
 
 /* Born RZST footer v2 layout */
 .bornrzst-footer {
-  background: #000;
-  color: #fff;
+  background: #050505;
+  color: #f7f7f7;
   border-radius: 1.5rem;
   padding: clamp(2rem, 3vw, 3.5rem);
   display: flex;
@@ -884,7 +884,7 @@
 .bornrzst-footer__copyright {
   margin: 0;
   font-size: 1.4em;
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .bornrzst-footer__col--follow {
@@ -896,7 +896,7 @@
 
 .bornrzst-footer__follow-text {
   margin: 0;
-  color: #fff;
+  color: #f7f7f7;
   font-size: 2.5em;
   font-family: "Bebas Neue";
   letter-spacing: -.02em;
@@ -904,7 +904,7 @@
 
 .bornrzst-footer__social-handle {
   text-decoration: none;
-  color: #fff;
+  color: #f7f7f7;
   font-size: 2.5em;
   font-family: "Bebas Neue";
   letter-spacing: -.02em;

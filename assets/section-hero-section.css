@@ -55,7 +55,7 @@
 }
 
 .hero-section__content {
-  color: #fff;
+  color: #f7f7f7;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: clamp(2rem, 4vw, 4rem);
