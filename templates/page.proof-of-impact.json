@@ -56,6 +56,18 @@
         "button_2_link": ""
       }
     },
+    "impact_breakdown_FiN4xx": {
+      "type": "impact-breakdown",
+      "settings": {
+        "title": "100% IMPACT, ZERO COMPROMISE",
+        "subtitle": "",
+        "text": "<p>Every donation we make is documented, verified, and publicly shared.<br/>We believe in full transparency — not vague claims, not empty promises.<br/>You deserve to see exactly where your impact goes and how it saves lives.</p>",
+        "button_1_label": "",
+        "button_1_link": "shopify://pages/join-the-movement",
+        "button_2_label": "",
+        "button_2_link": ""
+      }
+    },
     "projected_fund": {
       "type": "projected-fund-allocation",
       "settings": {
@@ -272,6 +284,7 @@
     "main",
     "proof_hero",
     "impact_breakdown",
+    "impact_breakdown_FiN4xx",
     "projected_fund",
     "impact_two_column",
     "how_we_fund",
