@@ -443,7 +443,7 @@
 }
 
 .bornrzst-footer {
-  background: #000;
+  background: #050505;
   color: #f7f7f7;
   border-radius: 1.5rem;
   padding: 3rem;
@@ -753,7 +753,7 @@
 
 /* Born RZST footer v2 layout */
 .bornrzst-footer {
-  background: #000;
+  background: #050505;
   color: #f7f7f7;
   border-radius: 1.5rem;
   padding: clamp(2rem, 3vw, 3.5rem);
