@@ -65,14 +65,14 @@
 }
 .join-the-movement-hero .step-item {
     margin-bottom: 30px;
-    margin-left: 125px;
+    margin-left: 100px;
 }
 
 
 .join-the-movement-hero .step-item:first-child, 
 .join-the-movement-hero .step-item:nth-child(4) {
     margin-left:0;
-    margin-right:125px;
+    margin-right:100px;
 }
 
 
