@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
   min-height: 600px;
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .proof-hero-section__content {
@@ -81,7 +81,7 @@
 
 .proof-hero-section__image-caption {
   font-size: 16px;
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .proof-hero-section__footer {
@@ -91,13 +91,13 @@
 }
 
 .proof-hero-section__bottom-text {
-  color: #fff;
+  color: #f7f7f7;
   text-align: center;
 }
 
 .proof-hero-section__actions .button{
   background-color:#c30100;
   border: none;
-  color: #FFF;
+  color: #F7F7F7;
   box-shadow: none;
 }

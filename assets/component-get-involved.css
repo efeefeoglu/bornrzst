@@ -1,7 +1,7 @@
 
 .section-give {
     background-color: #000000;
-    color: #ffffff;
+    color: #f7f7f7;
 }
 
 .section-give .container {
@@ -68,7 +68,7 @@
 
 .section-give .btn-red {
     background-color: #c30100;
-    color: #ffffff;
+    color: #f7f7f7;
     border: none;
     padding: 12px 30px;
     border-radius: 50px;
