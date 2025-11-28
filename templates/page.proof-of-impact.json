@@ -312,12 +312,23 @@
             "link": "",
             "column_class": ""
           }
+        },
+        "column_fihGf8": {
+          "type": "column",
+          "settings": {
+            "title": "4. You See the Proof",
+            "text": "<p>Receipts published publicly. Zero guesswork.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
         }
       },
       "block_order": [
         "column_Mx6DJe",
         "column_qtnrDQ",
-        "column_gRQFDz"
+        "column_gRQFDz",
+        "column_fihGf8"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
