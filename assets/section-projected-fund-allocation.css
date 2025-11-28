@@ -43,3 +43,15 @@
   background-color: #FFF;
   margin: 1rem 0;
 }
+@media (max-width: 768px) {
+  .projected-fund-allocation-content {
+    flex-direction: column;
+  }
+  .projected-fund-allocation-text,
+  .projected-fund-allocation-details {
+    width: 100%;
+  }
+  .projected-fund-allocation-text {
+    margin-bottom: 20px;
+  }
+}

@@ -37,3 +37,15 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
+
+@media (max-width: 768px) {
+  .what-we-stand-for-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .what-we-stand-for-item {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
