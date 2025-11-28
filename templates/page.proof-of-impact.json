@@ -46,6 +46,7 @@
     },
     "impact_breakdown": {
       "type": "impact-breakdown",
+      "disabled": true,
       "settings": {
         "title": "YOU ARE THE MOVEMENT",
         "subtitle": "Wear your resistance",
@@ -61,7 +62,7 @@
       "settings": {
         "title": "100% IMPACT, ZERO COMPROMISE",
         "subtitle": "",
-        "text": "<p>Every donation we make is documented, verified, and publicly shared.<br/>We believe in full transparency — not vague claims, not empty promises.<br/>You deserve to see exactly where your impact goes and how it saves lives.</p>",
+        "text": "<p>Every donation we make is documented, verified, and publicly shared.<br/>We believe in full transparency not vague claims, not empty promises.<br/>You deserve to see exactly where your impact goes and how it saves lives.</p>",
         "button_1_label": "",
         "button_1_link": "shopify://pages/join-the-movement",
         "button_2_label": "",
