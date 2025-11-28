@@ -386,6 +386,7 @@
     },
     "unshakable_roots_cnYR3M": {
       "type": "unshakable-roots",
+      "disabled": true,
       "name": "Unshakable roots",
       "settings": {
         "color_scheme": "scheme-1",
