@@ -107,6 +107,9 @@
     font-size: 1em;
     line-height: 1.4;
 }
+.join-the-movement-hero .step-description p{
+    margin-top: 0;
+}
 .join-the-movement-hero .final-thought {
     text-align: right;
     font-style: italic;
