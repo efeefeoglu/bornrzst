@@ -158,7 +158,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -214,14 +214,291 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
+        "section_color_scheme": "scheme-4",
+        "row_color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_pYV4Va": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kjdHUA": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHERE WE DONATE",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kjdHUA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_CHxEmr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UXmCdP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_Pkc7LD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_pQmnDU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UXmCdP",
+        "column_Pkc7LD",
+        "column_pQmnDU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Gaza aid organizations",
+        "heading_class": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "button_class": "",
+        "enable_pulse_effect": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_3tzLhB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_A49hEM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_eRBdJL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_cHhMdK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_A49hEM",
+        "column_eRBdJL",
+        "column_cHhMdK"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Medical relief partners",
+        "heading_class": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "button_class": "",
+        "enable_pulse_effect": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_rfFP6j": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_eYnrYh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_c8hhDp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_PMXiUX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_eYnrYh",
+        "column_c8hhDp",
+        "column_PMXiUX"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Food distribution groups",
+        "heading_class": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "button_class": "",
+        "enable_pulse_effect": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_V8Pyfq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NdBhM8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_nWYtJJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_kpQpb8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_1000005000_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NdBhM8",
+        "column_nWYtJJ",
+        "column_kpQpb8"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Verified NGOs",
+        "heading_class": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "button_class": "",
+        "enable_pulse_effect": false,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
     "projected_fund": {
       "type": "projected-fund-allocation",
+      "disabled": true,
       "settings": {
         "title": "Projected Fund Allocation  Drop 1",
         "text_1": "<p>Before launch, we want you to know exactly how every dollar will work, because trust starts with transparency.</p><p><strong>Humanitarian Aid 80% </strong> Emergency medical relief, food aid, and reconstruction in Gaza.</p>",
@@ -233,6 +510,7 @@
     },
     "impact_two_column": {
       "type": "impact-two-column",
+      "disabled": true,
       "settings": {
         "title": "Trusted Humanitarian Partners",
         "subtitle": "<p><em>(Final confirmations pending)</em></p>",
@@ -278,6 +556,7 @@
         "channel_bDig8N",
         "channel_fDxzex"
       ],
+      "disabled": true,
       "settings": {
         "main_header": "How we fund impact & growth",
         "impact_engine_title": "IMPACT ENGINE",
@@ -306,6 +585,7 @@
     },
     "support_the_movement": {
       "type": "support-the-movement",
+      "disabled": true,
       "settings": {
         "title": "Support The MovementJoin The RZST Cirle",
         "subtitle": "Choose your role in the movement",
@@ -421,6 +701,7 @@
         "item_FdycdW",
         "item_wycntU"
       ],
+      "disabled": true,
       "settings": {
         "title": "Join The RZST Circle",
         "subtitle1": "Compare Membership Benefits",
@@ -429,6 +710,73 @@
         "header_supporter": "$10/mo Supporter",
         "header_builder": "$50/mo Builder",
         "header_guardian": "$250/mo Guardian"
+      }
+    },
+    "rich_text_GCQeDX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CKmcyq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>WHY TRANSPARENCY MATTERS</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_TyXGtc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every movement demands honesty.<br/>Publishing receipts protects our integrity, honors donors, and ensures the people of Gaza receive real support not excuses.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CKmcyq",
+        "text_TyXGtc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_Yjnbp9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FKc6JU": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>JOIN THE MOVEMENT THAT MAKES AN IMPACT</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "button_bAK73i": {
+          "type": "button",
+          "settings": {
+            "button_label": "JOIN THE MOVEMENT",
+            "button_link": "shopify://pages/join-the-movement",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FKc6JU",
+        "button_bAK73i"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -440,10 +788,17 @@
     "multicolumn_zmgVAK",
     "rich_text_yGT7yN",
     "multirow_rimPXP",
+    "rich_text_pYV4Va",
+    "multicolumn_CHxEmr",
+    "multicolumn_3tzLhB",
+    "multicolumn_rfFP6j",
+    "multicolumn_V8Pyfq",
     "projected_fund",
     "impact_two_column",
     "how_we_fund",
     "support_the_movement",
-    "membership_comparison"
+    "membership_comparison",
+    "rich_text_GCQeDX",
+    "rich_text_Yjnbp9"
   ]
 }
