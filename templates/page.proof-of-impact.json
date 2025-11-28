@@ -296,8 +296,8 @@
         "column_qtnrDQ": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "2. We Allocate",
+            "text": "<p>Profits are sent directly to verified humanitarian partners.</p>",
             "link_label": "",
             "link": "",
             "column_class": ""
@@ -306,8 +306,8 @@
         "column_gRQFDz": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "3. Aid Delivered",
+            "text": "<p>Food, medicine, shelter, and emergency relief.</p>",
             "link_label": "",
             "link": "",
             "column_class": ""
@@ -326,7 +326,7 @@
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "button_class": "",
         "enable_pulse_effect": false,
