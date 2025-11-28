@@ -322,7 +322,7 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "<strong>HOW YOUR PURCHASE BECOMES IMPACT</strong>",
-        "heading_class": "",
+        "heading_class": "textAlignCenter",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
