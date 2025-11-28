@@ -71,7 +71,7 @@
 .who-we-are-menu-item a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   transition: color 0.3s ease;
@@ -79,12 +79,12 @@
   color: #fff;
 }
 .who-we-are-menu-item a:hover {
-  color: #780000;
+  color: #c30100;
 }
 .who-we-are-menu-icon {
   width: 2em;
   height: 2em;
-  background: #780000;
+  background: #c30100;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -100,10 +100,10 @@
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #780000;
+  border-left: 5px solid #c30100;
 }
 .who-we-are-button {
-  background-color: #780000;
+  background-color: #c30100;
   color: #ffffff;
   padding: 15px 30px;
   text-decoration: none;
@@ -116,7 +116,7 @@
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+  0% { box-shadow: 0 0 0 0 #c30100; }
   70% { box-shadow: 0 0 0 20px rgba(255, 0, 0, 0); }
   100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
 }
