@@ -221,7 +221,7 @@
   font-family: var(--font-body-family);
   font-size: 1.6rem;
   text-decoration: none;
-  color: var(--color-foreground);
+  color: #050505;
 }
 
 /* Mobile Icon rotation */
