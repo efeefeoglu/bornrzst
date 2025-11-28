@@ -79,7 +79,7 @@
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -96,23 +96,23 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .utility-bar__grid.page-width {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0;
   }
 
   .header.page-width,
   .utility-bar__grid.page-width {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .page-width--narrow {
-    padding: 0 9rem;
+    padding: 0;
   }
 
   .page-width-desktop {
@@ -120,14 +120,14 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .page-width-tablet {
-    padding: 0 5rem;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .page-width--narrow {
@@ -137,7 +137,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
+    padding: 0;
   }
 }
 
