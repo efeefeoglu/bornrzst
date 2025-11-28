@@ -279,6 +279,66 @@
         "header_builder": "$50/mo Builder",
         "header_guardian": "$250/mo Guardian"
       }
+    },
+    "multicolumn_zmgVAK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Mx6DJe": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>1. You Purchase</strong>",
+            "text": "<p>You choose to wear your resistance.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_qtnrDQ": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_gRQFDz": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Mx6DJe",
+        "column_qtnrDQ",
+        "column_gRQFDz"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_class": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_class": "",
+        "enable_pulse_effect": false,
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -290,6 +350,7 @@
     "impact_two_column",
     "how_we_fund",
     "support_the_movement",
-    "membership_comparison"
+    "membership_comparison",
+    "multicolumn_zmgVAK"
   ]
 }
