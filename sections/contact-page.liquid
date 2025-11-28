@@ -47,7 +47,7 @@
           {% case block.type %}
             {% when 'contact' %}
               <div class="contact-page-contact-item">
-                <h3>{{ block.settings.title }}</h3>
+                <b>{{ block.settings.title }}</b>
                 <p><a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a></p>
               </div>
           {% endcase %}
