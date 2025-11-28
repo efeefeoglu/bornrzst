@@ -140,6 +140,86 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_yGT7yN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mUTz8L": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>FEATURED IMPACT STORIES</strong>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mUTz8L"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_rimPXP": {
+      "type": "multirow",
+      "blocks": {
+        "row_DCq9JW": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_tEe6Li": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_rqWDgJ": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_DCq9JW",
+        "row_tEe6Li",
+        "row_rqWDgJ"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "projected_fund": {
       "type": "projected-fund-allocation",
       "settings": {
@@ -358,6 +438,8 @@
     "impact_breakdown",
     "impact_breakdown_FiN4xx",
     "multicolumn_zmgVAK",
+    "rich_text_yGT7yN",
+    "multirow_rimPXP",
     "projected_fund",
     "impact_two_column",
     "how_we_fund",
