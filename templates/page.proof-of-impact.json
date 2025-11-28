@@ -69,6 +69,77 @@
         "button_2_link": ""
       }
     },
+    "multicolumn_zmgVAK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Mx6DJe": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>1. You Purchase</strong>",
+            "text": "<p>You choose to wear your resistance.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_qtnrDQ": {
+          "type": "column",
+          "settings": {
+            "title": "2. We Allocate",
+            "text": "<p>Profits are sent directly to verified humanitarian partners.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_gRQFDz": {
+          "type": "column",
+          "settings": {
+            "title": "3. Aid Delivered",
+            "text": "<p>Food, medicine, shelter, and emergency relief.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        },
+        "column_fihGf8": {
+          "type": "column",
+          "settings": {
+            "title": "4. You See the Proof",
+            "text": "<p>Receipts published publicly. Zero guesswork.</p>",
+            "link_label": "",
+            "link": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Mx6DJe",
+        "column_qtnrDQ",
+        "column_gRQFDz",
+        "column_fihGf8"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "<strong>HOW YOUR PURCHASE BECOMES IMPACT</strong>",
+        "heading_class": "textAlignCenter",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "button_class": "",
+        "enable_pulse_effect": false,
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "projected_fund": {
       "type": "projected-fund-allocation",
       "settings": {
@@ -279,77 +350,6 @@
         "header_builder": "$50/mo Builder",
         "header_guardian": "$250/mo Guardian"
       }
-    },
-    "multicolumn_zmgVAK": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_Mx6DJe": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>1. You Purchase</strong>",
-            "text": "<p>You choose to wear your resistance.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        },
-        "column_qtnrDQ": {
-          "type": "column",
-          "settings": {
-            "title": "2. We Allocate",
-            "text": "<p>Profits are sent directly to verified humanitarian partners.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        },
-        "column_gRQFDz": {
-          "type": "column",
-          "settings": {
-            "title": "3. Aid Delivered",
-            "text": "<p>Food, medicine, shelter, and emergency relief.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        },
-        "column_fihGf8": {
-          "type": "column",
-          "settings": {
-            "title": "4. You See the Proof",
-            "text": "<p>Receipts published publicly. Zero guesswork.</p>",
-            "link_label": "",
-            "link": "",
-            "column_class": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_Mx6DJe",
-        "column_qtnrDQ",
-        "column_gRQFDz",
-        "column_fihGf8"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "<strong>HOW YOUR PURCHASE BECOMES IMPACT</strong>",
-        "heading_class": "textAlignCenter",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "button_class": "",
-        "enable_pulse_effect": false,
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -357,11 +357,11 @@
     "proof_hero",
     "impact_breakdown",
     "impact_breakdown_FiN4xx",
+    "multicolumn_zmgVAK",
     "projected_fund",
     "impact_two_column",
     "how_we_fund",
     "support_the_movement",
-    "membership_comparison",
-    "multicolumn_zmgVAK"
+    "membership_comparison"
   ]
 }
