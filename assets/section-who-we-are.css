@@ -82,8 +82,8 @@
   color: #c30100;
 }
 .who-we-are-menu-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   background: #c30100;
   border-radius: 50%;
   display: flex;
@@ -91,6 +91,10 @@
   align-items: center;
   margin-right: 15px;
   transition: transform 0.3s ease;
+}
+.who-we-are-menu-icon img {
+  width: 2rem;
+  height: 2rem;
 }
 .who-we-are-menu-item a:hover .who-we-are-menu-icon {
   transform: rotate(360deg);
