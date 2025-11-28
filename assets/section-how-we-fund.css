@@ -147,3 +147,13 @@
     margin: 20px auto;
   }
 }
+
+@media (max-width: 768px) {
+  .how-we-fund-visual-flow {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .how-we-fund-flow-arrow {
+    transform: rotate(90deg);
+  }
+}
