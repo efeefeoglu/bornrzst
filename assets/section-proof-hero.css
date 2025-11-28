@@ -85,7 +85,6 @@
 }
 
 .proof-hero-section__footer {
-  text-align: center;
   justify-content: space-between;
   align-items: flex-end;
   margin: 40px;
@@ -93,7 +92,7 @@
 
 .proof-hero-section__bottom-text {
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
 .proof-hero-section__actions .button{
