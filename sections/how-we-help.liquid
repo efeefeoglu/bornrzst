@@ -9,7 +9,7 @@
                     {% if section.settings.share_icon != blank %}
                         <img src="{{ section.settings.share_icon | image_url }}" alt="Share Icon" class="section-icon">
                     {% endif %}
-                    <h1 class="main-heading">{{ section.settings.share_title }}</h1>
+                    <h2 class="main-heading">{{ section.settings.share_title }}</h2>
                 </div>
                 <a href="{{ section.settings.share_button_link }}" class="btn-red animate-item animate-item-1">{{ section.settings.share_button_label }}</a>
             </div>
@@ -26,7 +26,7 @@
                     {% if section.settings.wear_icon != blank %}
                         <img src="{{ section.settings.wear_icon | image_url }}" alt="Wear Icon" class="section-icon">
                     {% endif %}
-                    <h1 class="main-heading">{{ section.settings.wear_title }}</h1>
+                    <h2 class="main-heading">{{ section.settings.wear_title }}</h2>
                 </div>
                 <a href="{{ section.settings.wear_button_link }}" class="btn-red animate-item animate-item-5">{{ section.settings.wear_button_label }}</a>
             </div>
