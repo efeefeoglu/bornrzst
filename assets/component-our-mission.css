@@ -69,8 +69,8 @@
 
 .section-tell .form-input {
     width: 100%;
-    padding: 20px;
-    border: none;
+    padding: 1.2rem;
+    border: solid 1px #c30100;
     font-size: 1.2rem;
     background-color: #fff;
     color: #000;
@@ -89,7 +89,7 @@
     background-color: #c30100;
     color: #ffffff;
     border: none;
-    padding: 20px;
+    padding: 1.2rem;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
