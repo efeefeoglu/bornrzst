@@ -321,9 +321,9 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "<strong>HOW YOUR PURCHASE BECOMES IMPACT</strong>",
         "heading_class": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "Button label",
