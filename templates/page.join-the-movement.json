@@ -25,7 +25,7 @@
           "settings": {
             "action": "TELL",
             "subtitle": "The spark",
-            "description": "<p>A story is born pain, truth, courage. It begins with one person saying “This happened to me.”</p>"
+            "description": "<p>A story is born: pain, truth, courage. It begins with one person saying, “This happened to me.”</p>"
           }
         },
         "step_YerMBC": {
@@ -33,7 +33,7 @@
           "settings": {
             "action": "SHARE",
             "subtitle": "The echo",
-            "description": "<p>Someone hears that story, feels it,and passes it on.It moves from onevoice to another across borders.</p>"
+            "description": "<p>Someone hears that story, feels it, and passes it on. It moves from one voice to another, across borders.</p>"
           }
         },
         "step_nTjLpz": {
@@ -41,7 +41,7 @@
           "settings": {
             "action": "WEAR",
             "subtitle": "The message made visible",
-            "description": "<p>The story becomes fabric, symbol, art. When people wear it, the story walks in<br/>the streets.</p>"
+            "description": "<p>The story becomes fabric, symbol, art. When people wear it, the story walks in the streets.</p>"
           }
         },
         "step_eKR7hF": {
@@ -49,7 +49,7 @@
           "settings": {
             "action": "GIVE",
             "subtitle": "The return",
-            "description": "<p>What started as a story now becomes real help food, medicine, hope. Giving completes the circle turning  words into life.</p>"
+            "description": "<p>What started as a story now becomes real help — food, medicine, hope. Giving completes the circle, turning words into life.</p>"
           }
         }
       },
