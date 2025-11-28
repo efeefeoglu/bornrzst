@@ -33,11 +33,19 @@
             "title": "ORDER SUPPORT",
             "email": "support@bornrzst.com"
           }
+        },
+        "contact_N8mBV3": {
+          "type": "contact",
+          "settings": {
+            "title": "",
+            "email": ""
+          }
         }
       },
       "block_order": [
         "contact_biM9WV",
-        "contact_nyzNWB"
+        "contact_nyzNWB",
+        "contact_N8mBV3"
       ],
       "settings": {
         "title": "Speak to the Frontline",
@@ -73,6 +81,24 @@
         "share_button_label": "Share Your Voice",
         "share_button_link": "shopify://pages/contact-us-page",
         "share_subtitle": "Your share could reach someone who needs to see it.",
+        "share_text": "",
+        "wear_icon": "shopify://shop_images/join-the-movement-wear.png",
+        "wear_title": "Wear",
+        "wear_button_label": "Wear Your Promise",
+        "wear_button_link": "shopify://collections/drop-1",
+        "wear_subtitle": "Every Shirt is a Story. Every Purchase, an Act.",
+        "wear_text": "",
+        "wear_footer": ""
+      }
+    },
+    "how_we_help_PTqLze": {
+      "type": "how-we-help",
+      "settings": {
+        "share_icon": "shopify://shop_images/join-the-movement-share.webp",
+        "share_title": "Share",
+        "share_button_label": "Share Your Voice",
+        "share_button_link": "shopify://pages/contact-us-page",
+        "share_subtitle": "Your share could reach someone who needs to see it.",
         "share_text": "<p>A story in Gaza. A repost in New York.<br/>A tag in Paris. A message in Cape Town.<br/>Every share links one heart to another.<br/>That’s how we build resistance not through walls, but through connection.</p>",
         "wear_icon": "shopify://shop_images/join-the-movement-wear.png",
         "wear_title": "Wear",
@@ -88,6 +114,7 @@
     "main",
     "form",
     "our_mission",
-    "how_we_help"
+    "how_we_help",
+    "how_we_help_PTqLze"
   ]
 }
