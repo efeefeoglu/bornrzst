@@ -85,7 +85,7 @@
 }
 
 .proof-hero-section__footer {
-  display: flex;
+  text-align: center;
   justify-content: space-between;
   align-items: flex-end;
   margin: 40px;
