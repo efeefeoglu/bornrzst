@@ -65,6 +65,7 @@
     "how_we_help": {
       "type": "how-we-help",
       "settings": {
+        "icon_brightness": 0,
         "share_icon": "shopify://shop_images/join-the-movement-tell.png",
         "share_title": "TELL",
         "share_button_label": "Share Your Story",
@@ -83,6 +84,7 @@
     "how_we_help_PTqLze": {
       "type": "how-we-help",
       "settings": {
+        "icon_brightness": 1,
         "share_icon": "shopify://shop_images/join-the-movement-wear.png",
         "share_title": "Wear",
         "share_button_label": "Wear Your Promise",
