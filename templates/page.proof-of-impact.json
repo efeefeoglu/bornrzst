@@ -773,7 +773,7 @@
         "button_bAK73i"
       ],
       "custom_css": [
-        ".color-scheme-5, .color-scheme-5 h2, .color-scheme-5 h3, .color-scheme-5 p{color:#F7F7F7;}"
+        ".color-scheme-6,.color-scheme-6 h2,.color-scheme-6 h3,.color-scheme-6 p {color: #f7f7f7;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
