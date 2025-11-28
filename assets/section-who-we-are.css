@@ -36,6 +36,7 @@
   font-weight: 700;
   letter-spacing: -0.04em;
 }
+
 .who-we-are-text {
   font-size: 2em;
   font-family: 'Bebas Neue';
@@ -129,5 +130,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .who-we-are-title{
+    font-size: 7rem;
+  }
+  
+  .who-we-are-menu{
+    display: none;
   }
 }
