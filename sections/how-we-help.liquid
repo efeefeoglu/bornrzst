@@ -7,7 +7,7 @@
             <div class="header-action-row">
                 <div class="section-title-row animate-item animate-item-0">
                     {% if section.settings.share_icon != blank %}
-                        <img src="{{ section.settings.share_icon | image_url }}" alt="Share Icon" class="section-icon" style="filter: brightness({{ section.settings.icon_brightness }});">
+                        <img src="{{ section.settings.share_icon | image_url }}" alt="Share Icon" class="section-icon" style="filter: brightness({{ section.settings.share_icon_brightness }});">
                     {% endif %}
                     <h2 class="main-heading">{{ section.settings.share_title }}</h2>
                 </div>
@@ -24,7 +24,7 @@
             <div class="header-action-row">
                 <div class="section-title-row animate-item animate-item-4">
                     {% if section.settings.wear_icon != blank %}
-                        <img src="{{ section.settings.wear_icon | image_url }}" alt="Wear Icon" class="section-icon" style="filter: brightness({{ section.settings.icon_brightness }});">
+                        <img src="{{ section.settings.wear_icon | image_url }}" alt="Wear Icon" class="section-icon" style="filter: brightness({{ section.settings.wear_icon_brightness }});">
                     {% endif %}
                     <h2 class="main-heading">{{ section.settings.wear_title }}</h2>
                 </div>
