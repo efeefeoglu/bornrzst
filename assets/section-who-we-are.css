@@ -29,12 +29,12 @@
   font-family: 'Bebas Neue';
   color: #FFF;
   font-size: 20rem;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   line-height: 0.8;
 }
 .who-we-are-title.who-we-are-animated-text:hover {
   font-weight: 700;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.04em;
 }
 .who-we-are-text {
   font-size: 2em;
