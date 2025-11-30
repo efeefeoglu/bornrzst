@@ -154,6 +154,7 @@
       "block_order": [
         "heading_mUTz8L"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -237,6 +238,7 @@
       "block_order": [
         "heading_kjdHUA"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -289,6 +291,7 @@
         "column_Pkc7LD",
         "column_pQmnDU"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Gaza aid organizations",
@@ -415,6 +418,7 @@
         "column_c8hhDp",
         "column_PMXiUX"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Food distribution groups",
@@ -478,6 +482,7 @@
         "column_nWYtJJ",
         "column_kpQpb8"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Verified NGOs",
@@ -501,7 +506,6 @@
     },
     "projected_fund": {
       "type": "projected-fund-allocation",
-      "disabled": true,
       "settings": {
         "title": "Projected Fund Allocation  Drop 1",
         "text_1": "<p>Before launch, we want you to know exactly how every dollar will work, because trust starts with transparency.</p><p><strong>Humanitarian Aid 80% </strong> Emergency medical relief, food aid, and reconstruction in Gaza.</p>",
@@ -513,7 +517,6 @@
     },
     "impact_two_column": {
       "type": "impact-two-column",
-      "disabled": true,
       "settings": {
         "title": "Trusted Humanitarian Partners",
         "subtitle": "<p><em>(Final confirmations pending)</em></p>",
@@ -559,7 +562,6 @@
         "channel_bDig8N",
         "channel_fDxzex"
       ],
-      "disabled": true,
       "settings": {
         "main_header": "How we fund impact & growth",
         "impact_engine_title": "IMPACT ENGINE",
@@ -588,7 +590,6 @@
     },
     "support_the_movement": {
       "type": "support-the-movement",
-      "disabled": true,
       "settings": {
         "title": "Support The MovementJoin The RZST Cirle",
         "subtitle": "Choose your role in the movement",
@@ -704,7 +705,6 @@
         "item_FdycdW",
         "item_wycntU"
       ],
-      "disabled": true,
       "settings": {
         "title": "Join The RZST Circle",
         "subtitle1": "Compare Membership Benefits",
@@ -736,6 +736,7 @@
         "heading_CKmcyq",
         "text_TyXGtc"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
