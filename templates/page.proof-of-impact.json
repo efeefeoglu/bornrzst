@@ -59,6 +59,7 @@
     },
     "impact_breakdown_FiN4xx": {
       "type": "impact-breakdown",
+      "disabled": true,
       "settings": {
         "title": "100% IMPACT, ZERO COMPROMISE",
         "subtitle": "",
@@ -119,6 +120,7 @@
         "column_gRQFDz",
         "column_fihGf8"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "<strong>HOW YOUR PURCHASE BECOMES IMPACT</strong>",
@@ -204,6 +206,7 @@
         "row_tEe6Li",
         "row_rqWDgJ"
       ],
+      "disabled": true,
       "custom_css": [
         ".color-scheme-4,.color-scheme-4 h2,.color-scheme-4 h3,.color-scheme-4 p {color: #f7f7f7;}"
       ],
@@ -355,6 +358,7 @@
         "column_eRBdJL",
         "column_cHhMdK"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Medical relief partners",
