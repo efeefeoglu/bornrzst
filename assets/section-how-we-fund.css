@@ -156,12 +156,12 @@
 
   .how-we-fund-column-left .page-width {
     max-width: 600px;
-    margin: 0 0 0 auto;
+    margin: 0 0 100px auto;
   }
 
   .how-we-fund-column-right .page-width {
     max-width: 600px;
-    margin: 0 auto 0 0;
+    margin: 100px auto 0 0;
   }
 
   .how-we-fund-bridge {
