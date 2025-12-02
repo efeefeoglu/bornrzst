@@ -46,7 +46,6 @@
     },
     "impact_breakdown": {
       "type": "impact-breakdown",
-      "disabled": true,
       "settings": {
         "title": "YOU ARE THE MOVEMENT",
         "subtitle": "Wear your resistance",
