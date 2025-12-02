@@ -61,52 +61,10 @@
         "twitter_url": "#",
         "follow_resistance_footer": "<p>Tag @BORNZST and use #WearYourResistance to be featured.</p>"
       }
-    },
-    "how_we_help": {
-      "type": "how-we-help",
-      "settings": {
-        "share_icon_brightness": 0,
-        "share_icon": "shopify://shop_images/join-the-movement-tell.png",
-        "share_title": "TELL",
-        "share_button_label": "Share Your Story",
-        "share_button_link": "shopify://pages/contact-us-page",
-        "share_subtitle": "Every act of resistance begins with a voice",
-        "share_text": "",
-        "wear_icon_brightness": 1,
-        "wear_icon": "shopify://shop_images/join-the-movement-share.webp",
-        "wear_title": "Share",
-        "wear_button_label": "Share Your Voice",
-        "wear_button_link": "shopify://pages/contact-us-page",
-        "wear_subtitle": "Every Shirt is a Story. Every Purchase, an Act.",
-        "wear_text": "",
-        "wear_footer": ""
-      }
-    },
-    "how_we_help_PTqLze": {
-      "type": "how-we-help",
-      "settings": {
-        "share_icon_brightness": 1,
-        "share_icon": "shopify://shop_images/join-the-movement-wear.png",
-        "share_title": "Wear",
-        "share_button_label": "Wear Your Promise",
-        "share_button_link": "shopify://collections/drop-1",
-        "share_subtitle": "Every Shirt is a Story. Every Purchase, an Act.",
-        "share_text": "",
-        "wear_icon_brightness": 0,
-        "wear_icon": "shopify://shop_images/join-the-movement-give.png",
-        "wear_title": "Give",
-        "wear_button_label": "Donate Now",
-        "wear_button_link": "shopify://pages/proof-of-impact",
-        "wear_subtitle": "10,000 shirts = 10,000 acts of resistance.",
-        "wear_text": "",
-        "wear_footer": ""
-      }
     }
   },
   "order": [
     "main",
-    "form",
-    "how_we_help",
-    "how_we_help_PTqLze"
+    "form"
   ]
 }
