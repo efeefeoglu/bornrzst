@@ -115,6 +115,7 @@
     },
     "why_we_exist": {
       "type": "why-we-exist",
+      "disabled": true,
       "settings": {
         "title": "WHY WE EXIST",
         "text": "<p>Because silence became the norm.<br/>Because the world watched and forgot.<br/>Because stories of loss were buried under propaganda and politics.<br/>We exist to remember. To resist. To rebuild what was destroyed with truth, art, and action.</p><p>BØRN RZST™ exists to prove that fashion can be more than fabric. It can be a weapon of awareness, a tool for change, and a symbol of hope.</p><p>Every piece we release funds real humanitarian aid in Gaza and supports voices that refuse to be silenced.<br/>We are not a brand.<br/>We are a rebellion stitched in thread.</p><p>A collective of dreamers, designers, and activists who believe that resistance can be worn and that wearing it changes everything.</p>",
