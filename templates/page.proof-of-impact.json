@@ -522,7 +522,7 @@
       "type": "impact-two-column",
       "settings": {
         "title": "Trusted Humanitarian Partners",
-        "subtitle": "<p><em>(Final confirmations pending)</em></p>",
+        "subtitle": "",
         "text": "<p>We’re currently finalizing agreements with leading<br/>humanitarian organizations to ensure every donation is<br/>verified, tracked, and delivered with transparency.</p><p>We’re finalizing agreements with leading humanitarian<br/>organizations to ensure every donation is <strong>verified</strong>,<br/><strong>tracked</strong>, and <strong>delivered with transparency</strong>.</p><p>Our goal is to collaborate with recognized NGOs active<br/>in <strong>Gaza and Palestine</strong>, focusing on <strong>medical relief</strong>, <strong>food</strong><br/><strong>aid, and reconstruction efforts</strong> currently under<br/>review.</p>",
         "image": "shopify://shop_images/Screenshot_2025-10-22_at_11.20.27_AM.png"
       }
@@ -594,7 +594,7 @@
     "support_the_movement": {
       "type": "support-the-movement",
       "settings": {
-        "title": "Support The MovementJoin The RZST Cirle",
+        "title": "Support The Movement",
         "subtitle": "Choose your role in the movement",
         "tier_1_price": "$10/month",
         "tier_1_title": "RZST CIRCLE SUPPORTER",
