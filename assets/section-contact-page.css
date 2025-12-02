@@ -17,10 +17,10 @@
 
 @media screen and (min-width: 750px) {
   .contact-page-left,
-  .contact-page-right {
-    width: 40%;
-    float:left;
-  }
+    .contact-page-right {
+        width: 40%;
+            float:left;
+              }
 }
 .contact-page-left{
   margin: 50px 10% 0 0;
