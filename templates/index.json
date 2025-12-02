@@ -359,8 +359,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Reminder.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
+        "height": "large",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "overlap",
