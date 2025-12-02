@@ -1,42 +1,17 @@
 {{ 'component-how-we-help.css' | asset_url | stylesheet_tag }}
 
-<style>
-    .header-action-row--vertical {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center;
-    }
-    .section-title-row--vertical {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        margin-bottom: 15px !important;
-    }
-    .section-icon--vertical {
-        margin-right: 0 !important;
-        margin-bottom: 10px !important;
-    }
-    .main-heading--vertical {
-        margin-bottom: 15px !important;
-    }
-    .btn-red--vertical {
-        margin-top: 10px;
-    }
-</style>
-
 <section class="section-share-wear animate-in-scroll-trigger">
     <div class="container page-width">
 
         <div class="share-wear-block">
-            <div class="header-action-row header-action-row--vertical">
-                <div class="section-title-row section-title-row--vertical animate-item animate-item-0">
+            <div class="header-action-row">
+                <div class="section-title-row animate-item animate-item-0">
                     {% if section.settings.share_icon != blank %}
-                        <img src="{{ section.settings.share_icon | image_url }}" alt="Share Icon" class="section-icon section-icon--vertical" style="filter: brightness({{ section.settings.share_icon_brightness }});">
+                        <img src="{{ section.settings.share_icon | image_url }}" alt="Share Icon" class="section-icon" style="filter: brightness({{ section.settings.share_icon_brightness }});">
                     {% endif %}
-                    <h2 class="main-heading main-heading--vertical">{{ section.settings.share_title }}</h2>
+                    <h2 class="main-heading">{{ section.settings.share_title }}</h2>
                 </div>
-                <a href="{{ section.settings.share_button_link }}" class="btn-red btn-red--vertical animate-item animate-item-1">{{ section.settings.share_button_label }}</a>
+                <a href="{{ section.settings.share_button_link }}" class="btn-red animate-item animate-item-1">{{ section.settings.share_button_label }}</a>
             </div>
 
             <h3 class="red-subheading animate-item animate-item-2">{{ section.settings.share_subtitle }}</h3>
@@ -46,14 +21,14 @@
         </div>
 
         <div class="share-wear-block">
-            <div class="header-action-row header-action-row--vertical">
-                <div class="section-title-row section-title-row--vertical animate-item animate-item-4">
+            <div class="header-action-row">
+                <div class="section-title-row animate-item animate-item-4">
                     {% if section.settings.wear_icon != blank %}
-                        <img src="{{ section.settings.wear_icon | image_url }}" alt="Wear Icon" class="section-icon section-icon--vertical" style="filter: brightness({{ section.settings.wear_icon_brightness }});">
+                        <img src="{{ section.settings.wear_icon | image_url }}" alt="Wear Icon" class="section-icon" style="filter: brightness({{ section.settings.wear_icon_brightness }});">
                     {% endif %}
-                    <h2 class="main-heading main-heading--vertical">{{ section.settings.wear_title }}</h2>
+                    <h2 class="main-heading">{{ section.settings.wear_title }}</h2>
                 </div>
-                <a href="{{ section.settings.wear_button_link }}" class="btn-red btn-red--vertical animate-item animate-item-5">{{ section.settings.wear_button_label }}</a>
+                <a href="{{ section.settings.wear_button_link }}" class="btn-red animate-item animate-item-5">{{ section.settings.wear_button_label }}</a>
             </div>
 
             <h3 class="red-subheading animate-item animate-item-6">{{ section.settings.wear_subtitle }}</h3>
