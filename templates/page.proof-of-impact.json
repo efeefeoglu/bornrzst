@@ -776,6 +776,7 @@
         "heading_FKc6JU",
         "button_bAK73i"
       ],
+      "disabled": true,
       "custom_css": [
         ".color-scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8,.color-scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8 h2,.color-scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8 h3,.color-scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8 p {color: #f7f7f7;}"
       ],
