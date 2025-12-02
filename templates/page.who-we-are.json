@@ -122,6 +122,47 @@
         "right_text_2": ""
       }
     },
+    "rich_text_advanced_e846KA": {
+      "type": "rich-text-advanced",
+      "blocks": {
+        "heading_rN7qjp": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHY WE EXIST",
+            "heading_tag": "h2",
+            "heading_size": "h2"
+          }
+        },
+        "heading_jMx7gb": {
+          "type": "heading",
+          "settings": {
+            "heading": "We exist because they tried to erase us We exist because they failed",
+            "heading_tag": "h3",
+            "heading_size": "h2"
+          }
+        },
+        "text_yXX8tL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Because silence became the norm.<br/>Because the world watched and forgot.<br/>Because stories of loss were buried under propaganda and politics.<br/>We exist to remember. To resist. To rebuild what was destroyed with truth, art, and action.</p><p>BØRN RZST™ exists to prove that fashion can be more than fabric. It can be a weapon of awareness, a tool for change, and a symbol of hope.</p><p>Every piece we release funds real humanitarian aid in Gaza and supports voices that refuse to be silenced.<br/>We are not a brand.<br/>We are a rebellion stitched in thread.</p><p>A collective of dreamers, designers, and activists who believe that resistance can be worn and that wearing it changes everything.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rN7qjp",
+        "heading_jMx7gb",
+        "text_yXX8tL"
+      ],
+      "name": "Rich text (Advanced)",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "where_we_are_going": {
       "type": "where-we-are-going",
       "settings": {
@@ -149,6 +190,7 @@
     "our_story_HFD7rU",
     "what_we_stand_for",
     "why_we_exist",
+    "rich_text_advanced_e846KA",
     "where_we_are_going",
     "submit_your_story"
   ]
