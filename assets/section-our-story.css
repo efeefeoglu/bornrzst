@@ -8,16 +8,10 @@
   width: 60%;
 }
 
-.our-story-section-wrapper h1 {
+.our-story-section-wrapper h2 {
   text-align: center;
   color: #c30100;
   margin-bottom: 10px;
-}
-
-.our-story-content h2 {
-  text-align: center;
-  color: #c30100;
-  margin-bottom: 20px;
 }
 
 .our-story-content p {
