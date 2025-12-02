@@ -256,7 +256,7 @@
       "settings": {
         "image": "shopify://shop_images/Join_the_Resistance_Club.jpg",
         "height": "small",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
