@@ -166,7 +166,8 @@
 
   .how-we-fund-bridge {
     position: static;
-    transform: -75px auto;
+    transform: none;
+    margin: -75px auto;
   }
 
   .how-we-fund-visual-flow {
