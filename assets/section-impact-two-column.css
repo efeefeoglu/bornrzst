@@ -27,6 +27,10 @@
   width: 48%;
 }
 
+.impact-two-column-right img{
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   .impact-two-column-content {
     flex-direction: column;
