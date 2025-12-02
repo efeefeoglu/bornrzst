@@ -21,6 +21,10 @@
   position: relative;
 }
 
+.how-we-fund-content-wrapper .page-width {
+  max-width: 600px;
+}
+
 .how-we-fund-column-left {
   background-color: #050505;
   color: #F7F7F7;
