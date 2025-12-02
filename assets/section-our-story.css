@@ -1,15 +1,20 @@
 .our-story-section {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 0;
 }
 
 .our-story-content {
   width: 60%;
 }
 
+.our-story-section-wrapper {
+  padding: 50px 0;
+}
+
 .our-story-section-wrapper h2 {
   color: #c30100;
+  margin-bottom: 10px;
 }
 
 .our-story-content p {
@@ -22,7 +27,8 @@
   position: relative;
   border: 5px solid #c30100;
   border-radius: 20px;
-  margin: 100px 0 50px;
+  margin: 40px 0 50px;
+  height: 350px;
 }
 
 .our-story-quote blockquote {
