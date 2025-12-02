@@ -19,6 +19,17 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .animate--fade-in-out {
+    animation: fadeInOut {{ section.settings.fade_in_out_delay | default: 5 }}s infinite ease-in-out;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -202,10 +213,24 @@
         {
           "value": "zoom-in",
           "label": "t:sections.all.animation.image_behavior.options__4.label"
+        },
+        {
+          "value": "fade-in-out",
+          "label": "Fade In/Out"
         }
       ],
       "default": "none",
       "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "range",
+      "id": "fade_in_out_delay",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "unit": "s",
+      "label": "Fade In/Out Cycle Duration",
+      "default": 5
     },
     {
       "type": "header",
