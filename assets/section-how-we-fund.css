@@ -177,4 +177,10 @@
   .how-we-fund-flow-arrow {
     transform: rotate(90deg);
   }
+  .proof-hero-section__image-row {
+    flex-direction: column;
+  }
+  .proof-hero-section__image-col{
+    width:100%;
+  }
 }
