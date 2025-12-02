@@ -15,6 +15,14 @@
   if button_style_secondary
     assign button_class = 'button button--secondary'
   endif
+
+  assign button_label_2 = section.settings.button_label_2
+  assign button_link_2 = section.settings.button_link_2
+  assign button_style_secondary_2 = section.settings.button_style_secondary_2
+  assign button_class_2 = 'button button--primary'
+  if button_style_secondary_2
+    assign button_class_2 = 'button button--secondary'
+  endif
 -%}
 
 <section
@@ -43,12 +51,21 @@
       {%- if second_text != blank -%}
         <div class="hero-section__body rte">{{ second_text }}</div>
       {%- endif -%}
-      {%- if button_label != blank -%}
+      {%- if button_label != blank or button_label_2 != blank -%}
         <div class="hero-section__actions">
-          {%- if button_link != blank -%}
-            <a class="{{ button_class }} button--pulse" href="{{ button_link }}">{{ button_label }}</a>
-          {%- else -%}
-            <button class="{{ button_class }}" type="button" disabled>{{ button_label }}</button>
+          {%- if button_label != blank -%}
+            {%- if button_link != blank -%}
+              <a class="{{ button_class }} button--pulse" href="{{ button_link }}">{{ button_label }}</a>
+            {%- else -%}
+              <button class="{{ button_class }}" type="button" disabled>{{ button_label }}</button>
+            {%- endif -%}
+          {%- endif -%}
+          {%- if button_label_2 != blank -%}
+            {%- if button_link_2 != blank -%}
+              <a class="{{ button_class_2 }} button--pulse" href="{{ button_link_2 }}">{{ button_label_2 }}</a>
+            {%- else -%}
+              <button class="{{ button_class_2 }}" type="button" disabled>{{ button_label_2 }}</button>
+            {%- endif -%}
           {%- endif -%}
         </div>
       {%- endif -%}
@@ -128,6 +145,23 @@
         "type": "checkbox",
         "id": "button_style_secondary",
         "label": "Use outline button style",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "button_label_2",
+        "label": "Second Button label",
+        "default": "Shop Now"
+      },
+      {
+        "type": "url",
+        "id": "button_link_2",
+        "label": "Second Button link"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_style_secondary_2",
+        "label": "Use outline button style for second button",
         "default": false
       },
       {
