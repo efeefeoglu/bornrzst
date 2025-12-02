@@ -1,19 +1,5 @@
 {{ 'section-our-story.css' | asset_url | stylesheet_tag }}
 
-<style>
-  .our-story-title {
-    width: 100%;
-    text-align: left;
-    font-size: 4.5rem;
-    margin-bottom: 2rem;
-  }
-  @media screen and (min-width: 750px) {
-    .our-story-title {
-       font-size: 6rem;
-    }
-  }
-</style>
-
 <div class="our-story-section page-width animate-in-scroll-trigger">
   <h2 class="animate-item animate-item-0 our-story-title">{{ section.settings.title }}</h2>
   <div class="our-story-content">
