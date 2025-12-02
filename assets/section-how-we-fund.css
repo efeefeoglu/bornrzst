@@ -104,10 +104,12 @@
 
 .how-we-fund-bridge {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
   transform: translate(-50%, -50%);
   z-index: 1;
+  width: 150px;
+  height: 150px;
 }
 
 .how-we-fund-bridge-circle {
