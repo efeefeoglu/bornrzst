@@ -21,8 +21,14 @@
   position: relative;
 }
 
-.how-we-fund-content-wrapper .page-width {
+.how-we-fund-column-left .page-width {
   max-width: 600px;
+  margin: 0 0 0 auto;
+}
+
+.how-we-fund-column-right .page-width {
+  max-width: 600px;
+  margin: 0 auto 0 0;
 }
 
 .how-we-fund-column-left {
