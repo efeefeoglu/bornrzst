@@ -151,6 +151,7 @@
   .how-we-fund-column-left,
   .how-we-fund-column-right {
     width: 100%;
+    padding: 20px;
   }
 
   .how-we-fund-column-left .page-width {
