@@ -51,7 +51,8 @@
   min-height: 100vh;
   padding-block: clamp(4rem, 10vw, 8rem);
   display: flex;
-  align-items: center;
+  align-items: end;
+  padding-bottom:10%;
 }
 
 .hero-section__content {
