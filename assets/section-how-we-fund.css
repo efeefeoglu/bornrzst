@@ -5,7 +5,7 @@
 
 .how-we-fund-top-banner,
 .how-we-fund-bottom-banner {
-  background-color: #CC0000;
+  background-color: #c30100;
   color: #F7F7F7;
   text-align: center;
   padding: 20px;
@@ -52,7 +52,7 @@
 
 .how-we-fund-impact-subheadline p,
 .how-we-fund-growth-subheadline p {
-  color: #CC0000;
+  color: #c30100;
 }
 
 .how-we-fund-section-divider {
@@ -62,7 +62,7 @@
 }
 
 .how-we-fund-section-divider hr {
-  border-top: 1px solid #CC0000;
+  border-top: 1px solid #c30100;
 }
 
 .how-we-fund-visual-flow {
@@ -78,7 +78,7 @@
 }
 
 .how-we-fund-flow-arrow {
-  color: #CC0000;
+  color: #c30100;
   font-size: 2em;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .how-we-fund-percentage-breakdown li strong {
-  color: #CC0000;
+  color: #c30100;
 }
 
 .how-we-fund-bridge {
@@ -103,7 +103,7 @@
 .how-we-fund-bridge-circle {
   background-color: #FFFFFF;
   color: #000000;
-  border: 2px solid #CC0000;
+  border: 2px solid #c30100;
   border-radius: 50%;
   width: 150px;
   height: 150px;
