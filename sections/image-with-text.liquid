@@ -30,6 +30,19 @@
   .animate--fade-in-out {
     animation: fadeInOut {{ section.settings.fade_in_out_delay | default: 5 }}s infinite ease-in-out;
   }
+
+  {% if section.settings.custom_image_width != blank %}
+    .section-{{ section.id }}-padding .image-with-text__media {
+      width: {{ section.settings.custom_image_width }}px !important;
+      max-width: 100%;
+    }
+  {% endif %}
+  {% if section.settings.custom_image_height != blank %}
+    .section-{{ section.id }}-padding .image-with-text__media {
+      height: {{ section.settings.custom_image_height }}px !important;
+      padding-bottom: 0 !important;
+    }
+  {% endif %}
 {%- endstyle -%}
 
 {%- liquid
@@ -137,6 +150,16 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "number",
+      "id": "custom_image_width",
+      "label": "Custom image width (px)"
+    },
+    {
+      "type": "number",
+      "id": "custom_image_height",
+      "label": "Custom image height (px)"
     },
     {
       "type": "select",
