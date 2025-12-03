@@ -3721,8 +3721,8 @@ details-disclosure > details {
 .blackText18{font-size: 1em;color:#000;line-height: 1;}
 .whiteText18{font-size: 1em;color:#FFF;line-height: 1;}
 .homeFearlessCollection img{border-radius:50% 50% 0 0}
-.homeFearlessCollection h3{font-size:3em;letter-spacing:-0.02em;text-align:left;color:#FFF;}
-.homeFearlessCollection .rte{font-size:1em;color:#FFF;text-align:left;}
+.homeFearlessCollection h3{text-align:left;color:#FFF;}
+.homeFearlessCollection .rte{color:#FFF;text-align:left;}
 
 .redButton18{font-size: 1em;color:#c30100;line-height: 2.5;background:transparent;border:solid 1px #c30100;}
 .blackButton18{font-size: 1em;color:#000;line-height: 2.5;background:transparent;border:solid 1px #000;}
