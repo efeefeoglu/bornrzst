@@ -76,7 +76,7 @@
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "fade-in-out",
-        "fade_in_out_delay": 5,
+        "fade_in_out_delay": 2,
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
