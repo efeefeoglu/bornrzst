@@ -59,6 +59,7 @@
         "step_nTjLpz",
         "step_eKR7hF"
       ],
+      "disabled": true,
       "settings": {
         "title": "Join the movement",
         "description": "<p>You don’t have to do everything but if you do one thing, the movement continues. </p><p>Because resistance doesn’t end with you it passes through you.</p>",
@@ -66,6 +67,17 @@
         "cycle_image": "shopify://shop_images/circle.gif",
         "cycle_image_2": "shopify://shop_images/carth_01878531-cc35-4297-baef-021623b9d18b.png",
         "final_thought": "Then....another story begins."
+      }
+    },
+    "join_the_movement_hero_qxGEeJ": {
+      "type": "join-the-movement-hero",
+      "settings": {
+        "title": "Join the movement",
+        "description": "<p>You don’t have to do everything but if you do one thing, the movement continues. </p><p>Because resistance doesn’t end with you it passes through you.</p>",
+        "call_to_action": "Every act keeps the movement alive",
+        "cycle_image": "shopify://shop_images/circle.gif",
+        "cycle_image_2": "shopify://shop_images/carth_01878531-cc35-4297-baef-021623b9d18b.png",
+        "final_thought": ""
       }
     },
     "our_mission": {
@@ -115,6 +127,7 @@
   "order": [
     "main",
     "join_the_movement_hero",
+    "join_the_movement_hero_qxGEeJ",
     "our_mission",
     "how_we_help",
     "get_involved"
