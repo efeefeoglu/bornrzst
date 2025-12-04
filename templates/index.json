@@ -307,7 +307,7 @@
       "settings": {
         "image": "shopify://shop_images/Voices_of_Truth.jpg",
         "custom_image_width": 600,
-        "custom_image_height": 600,
+        "custom_image_height": 550,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
