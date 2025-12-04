@@ -156,8 +156,8 @@
       ],
       "name": "Rich text (Advanced)",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
