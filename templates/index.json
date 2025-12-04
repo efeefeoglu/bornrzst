@@ -370,7 +370,7 @@
       "settings": {
         "image": "shopify://shop_images/Reminder.jpg",
         "height": "medium",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
         "fade_in_out_delay": 5,
@@ -407,63 +407,6 @@
         "badge_image": "shopify://shop_images/unshakeable-roots.png",
         "badge_aria_label": "Unshakable roots resistance emblem"
       }
-    },
-    "image_with_text_clean_GTJLGJ": {
-      "type": "image-with-text-clean",
-      "blocks": {
-        "heading_pqjXC7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1",
-            "custom_class": ""
-          }
-        },
-        "text_cFfUjt": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body",
-            "custom_class": ""
-          }
-        },
-        "button_7mLUFy": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "enable_pulse_effect": false,
-            "custom_class": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_pqjXC7",
-        "text_cFfUjt",
-        "button_7mLUFy"
-      ],
-      "name": "Image with text Clean",
-      "settings": {
-        "image": "shopify://shop_images/Join_the_Resistance_Club_1.jpg",
-        "layout": "text_first",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_custom_class": "",
-        "page_width_custom_class": "",
-        "wrapper_custom_class": "",
-        "grid_custom_class": "",
-        "media_item_custom_class": "",
-        "media_custom_class": "",
-        "text_item_custom_class": "",
-        "content_custom_class": "",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -475,7 +418,6 @@
     "image_with_text_4akVQM",
     "image_with_text_wQ9CxK",
     "image_with_text_6haLRb",
-    "unshakable_roots_cnYR3M",
-    "image_with_text_clean_GTJLGJ"
+    "unshakable_roots_cnYR3M"
   ]
 }
