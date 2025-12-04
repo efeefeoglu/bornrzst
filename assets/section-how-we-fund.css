@@ -106,7 +106,7 @@
 .how-we-fund-bridge {
   position: absolute;
   left: calc(50% - 75px);
-  top: calc(50% - 75px);
+  top: calc(50% - 100px);
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 150px;
