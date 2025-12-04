@@ -54,31 +54,27 @@
               style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
             {% endif %}
           >
-            {% if section.settings.custom_image_width != blank and section.settings.custom_image_height != blank %}
-              <img stc="{{ section.settings.image | image_url: width: section.settings.custom_image_width, height: section.settings.custom_image_height }}" />
-            {% else %}
-              {%- if section.settings.image != blank -%}
-                {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
-                  {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-                  {%- capture sizes -%}
-                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-                (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-              {%- endcapture -%}
-                {%- else -%}
-                  {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-                  {%- capture sizes -%}
-                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-                (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-              {%- endcapture -%}
-                {%- endif -%}
-                {{
-                  section.settings.image
-                  | image_url: width: 1500
-                  | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                }}
+            {%- if section.settings.image != blank -%}
+              {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
+                {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+              (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+            {%- endcapture -%}
               {%- else -%}
-                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                {%- capture sizes -%}
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {%- endcapture -%}
               {%- endif -%}
+              {{
+                section.settings.image
+                | image_url: width: 1500
+                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+              }}
+            {%- else -%}
+              {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
           </div>
         </div>
@@ -142,16 +138,6 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
-    },
-    {
-      "type": "number",
-      "id": "custom_image_width",
-      "label": "Custom image width (px)"
-    },
-    {
-      "type": "number",
-      "id": "custom_image_height",
-      "label": "Custom image height (px)"
     },
     {
       "type": "select",
