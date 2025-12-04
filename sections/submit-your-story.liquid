@@ -28,7 +28,7 @@
               <textarea id="ContactFormMessage" name="contact[body]" placeholder="{{ section.settings.message_label }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
             </div>
             <div class="submit-your-story-form-submit">
-              <input type="submit" class="button" value="{{ 'templates.contact.form.send' | t }}">
+              <input type="submit" class="button button--pulse" value="{{ 'templates.contact.form.send' | t }}">
             </div>
           {% endform %}
         </div>
