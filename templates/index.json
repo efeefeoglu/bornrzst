@@ -315,7 +315,7 @@
         "fade_in_out_delay": 5,
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "mobile_content_alignment": "left",
         "section_custom_class": "",
         "page_width_custom_class": "",
