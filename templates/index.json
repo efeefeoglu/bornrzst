@@ -259,6 +259,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Join_the_Resistance_Club_1.jpg",
+        "custom_image_width": 600,
+        "custom_image_height": 350,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
