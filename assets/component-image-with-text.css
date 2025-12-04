@@ -1,5 +1,6 @@
 .image-with-text .grid {
   margin-bottom: 0;
+  align-items: center;
 }
 
 .image-with-text .grid__item {
