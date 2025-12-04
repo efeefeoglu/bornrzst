@@ -15,8 +15,9 @@
 .section-share-wear .header-action-row {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .section-share-wear .section-title-row {
