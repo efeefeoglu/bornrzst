@@ -49,7 +49,7 @@
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}{% if section.settings.grid_custom_class != blank %} {{ section.settings.grid_custom_class }}{% endif %}">
         <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item{% if section.settings.media_item_custom_class != blank %} {{ section.settings.media_item_custom_class }}{% endif %}">
           {% if section.settings.custom_image_width != blank and section.settings.custom_image_height != blank%}
-            <img border=0 src="{{ section.settings.image | image_url }}" />
+            <img border=0 src="{{ section.settings.image | image_url: width: section.settings.custom_image_width }}" />
           {% else %}
             <div
               class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} animate-item animate-item-0{% if section.settings.media_custom_class != blank %} {{ section.settings.media_custom_class }}{% endif %}"
