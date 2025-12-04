@@ -50,8 +50,7 @@
               {%- endcapture -%}
               {{
                 section.settings.image
-                | image_url: width: 600
-                | image_tag: sizes: 350
+                | image_url
               }}
             {%- else -%}
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
