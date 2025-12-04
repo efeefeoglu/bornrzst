@@ -55,7 +55,7 @@
             {% endif %}
           >
             {% if section.settings.custom_image_width != blank and section.settings.custom_image_height != blank %}
-              {{ section.settings.image | image_url: width: section.settings.custom_image_width }}
+              <img stc="{{ section.settings.image | image_url: width: section.settings.custom_image_width, height: section.settings.custom_image_height }}" />
             {% else %}
               {%- if section.settings.image != blank -%}
                 {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
