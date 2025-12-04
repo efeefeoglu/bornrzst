@@ -71,6 +71,10 @@
     },
     "join_the_movement_hero_qxGEeJ": {
       "type": "join-the-movement-hero",
+      "custom_css": [
+        ".join-the-movement-hero .half-round-shape-1 {top: 92px;}",
+        ".join-the-movement-hero .half-round-shape-2{width: 780px; position: relative; top:0; left: 0;}"
+      ],
       "settings": {
         "title": "Join the movement",
         "description": "<p>You don’t have to do everything but if you do one thing, the movement continues. </p><p>Because resistance doesn’t end with you it passes through you.</p>",
