@@ -21,12 +21,13 @@
 
 .section-share-wear .section-title-row {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .section-share-wear .section-title-row .main-heading {
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .section-share-wear .section-icon {
