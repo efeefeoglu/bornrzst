@@ -31,18 +31,6 @@
     animation: fadeInOut {{ section.settings.fade_in_out_delay | default: 5 }}s infinite ease-in-out;
   }
 
-  {% if section.settings.custom_image_width != blank %}
-    .section-{{ section.id }}-padding .image-with-text__media {
-      width: {{ section.settings.custom_image_width }}px !important;
-      max-width: 100%;
-    }
-  {% endif %}
-  {% if section.settings.custom_image_height != blank %}
-    .section-{{ section.id }}-padding .image-with-text__media {
-      height: {{ section.settings.custom_image_height }}px !important;
-      padding-bottom: 0 !important;
-    }
-  {% endif %}
 {%- endstyle -%}
 
 {%- liquid
@@ -62,27 +50,44 @@
         <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item{% if section.settings.media_item_custom_class != blank %} {{ section.settings.media_item_custom_class }}{% endif %}">
           <div
             class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %} animate-item animate-item-0{% if section.settings.media_custom_class != blank %} {{ section.settings.media_custom_class }}{% endif %}"
-            {% if section.settings.height == 'adapt' and section.settings.image != blank %}
-              style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
-            {% endif %}
+            style="
+              {%- if section.settings.custom_image_width != blank -%}
+                width: {{ section.settings.custom_image_width }}px; max-width: 100%; flex-grow: 0;
+              {%- endif -%}
+              {%- if section.settings.custom_image_height != blank -%}
+                height: {{ section.settings.custom_image_height }}px;
+              {%- endif -%}
+              {%- if section.settings.height == 'adapt' and section.settings.image != blank and section.settings.custom_image_height == blank -%}
+                padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+              {%- endif -%}
+            "
           >
             {%- if section.settings.image != blank -%}
               {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
                 {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
                 {%- capture sizes -%}
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-              (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-            {%- endcapture -%}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                  (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                {%- endcapture -%}
               {%- else -%}
                 {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
                 {%- capture sizes -%}
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-            {%- endcapture -%}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                  (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                {%- endcapture -%}
               {%- endif -%}
+              
+              {%- comment -%} Determine Fetch Width: Use custom width if set, otherwise default to 1500 {%- endcomment -%}
+              {%- liquid 
+                assign fetch_width = 1500
+                if section.settings.custom_image_width != blank
+                  assign fetch_width = section.settings.custom_image_width
+                endif
+              -%}
+
               {{
                 section.settings.image
-                | image_url: width: 1500
+                | image_url: width: fetch_width
                 | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
               }}
             {%- else -%}
