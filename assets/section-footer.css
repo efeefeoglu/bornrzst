@@ -582,12 +582,11 @@
   flex: 1;
   border: 0;
   color: #000;
-  font-size: 2em;
+  font-size: 2rem;
   padding: 0.5em 1em;
   background: #fff;
   width: 100%;
   border-radius: 1.3em;
-  font-family: Crimson Pro;
 }
 
 .bornrzst-footer__input::placeholder {
