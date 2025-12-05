@@ -290,7 +290,7 @@
         "text_ieAKtL": {
           "type": "text",
           "settings": {
-            "text": "<h1>Voices of Truth</h1><p>They tried to silence us, but our stories live on.<br/>This collection shines a light on the power of resistance and the courage to keep speaking out.</p><p></p><p></p><h1>Wear the Message</h1><p>Every piece is a protest, every design a declaration.<br/>Fashion is not just style  it’s truth stitched into fabric, worn by a fearless generation.<br/></p>",
+            "text": "<h2>Voices of Truth</h2><p>They tried to silence us, but our stories live on.<br/>This collection shines a light on the power of resistance and the courage to keep speaking out.</p><p></p><p></p><h2>Wear the Message</h2><p>Every piece is a protest, every design a declaration.<br/>Fashion is not just style  it’s truth stitched into fabric, worn by a fearless generation.<br/></p>",
             "text_style": "body",
             "custom_class": ""
           }
