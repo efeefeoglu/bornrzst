@@ -18,7 +18,7 @@
 -%}
 
 <section
-  id="section-{{ section.id }}"
+  id="{{ section.settings.html_id | default: 'section-' | append: section.id }}"
   class="proof-hero-section color-{{ section.settings.color_scheme }} gradient animate-in-scroll-trigger"
   style="--hero-section-overlay: {%- if overlay_enabled -%}{{ overlay_opacity }}{%- else -%}0{%- endif -%}; padding-top: {{ section.settings.padding_top | default: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | default: 0 }}px; --hero-heading-font-size: {{ section.settings.heading_font_size | default: 64 }}px; --hero-body-font-size: {{ section.settings.body_font_size | default: 18 }}px; --hero-heading-font-family: {{ section.settings.heading_font_family | default: 'var(--font-heading-family)' }}; --hero-body-font-family: {{ section.settings.body_font_family | default: 'var(--font-body-family)' }};"
 >
@@ -77,6 +77,12 @@
   {
     "name": "Custom hero",
     "settings": [
+      {
+        "type": "text",
+        "id": "html_id",
+        "label": "Section ID",
+        "info": "The ID is used for anchor links."
+      },
       {
         "type": "image_picker",
         "id": "background_image",
