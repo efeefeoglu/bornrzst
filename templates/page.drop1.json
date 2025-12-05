@@ -79,10 +79,72 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_M6p843": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dkb38g": {
+          "type": "heading",
+          "settings": {
+            "heading": "WANTED: Humanity’s Criminals",
+            "heading_size": "h2",
+            "custom_class": ""
+          }
+        },
+        "text_4tCFDJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Storytelling<br/></h3><p>This design doesn’t target the oppressed it calls out the Architects of Oppression: the hands that build walls, erase homes, and trade fear for hope.</p><p>Styled like an outlaw poster, the puppet and blood-red strings expose the hidden pullers of violence the ones dragging the world toward dust while futures are cut short.</p><p>Unlike old bounty posters, our reward isn’t gold. It’s justice. Humanity wins when truth is named, seen, and resisted.</p>",
+            "text_style": "body",
+            "custom_class": ""
+          }
+        },
+        "button_FezVfq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "shopify://products/unisex-hoodie",
+            "button_style_secondary": false,
+            "enable_pulse_effect": false,
+            "custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_dkb38g",
+        "text_4tCFDJ",
+        "button_FezVfq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/unisex-staple-t-shirt-white-front-690c824d8364f.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "fade_in_out_delay": 5,
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_custom_class": "",
+        "page_width_custom_class": "",
+        "wrapper_custom_class": "",
+        "grid_custom_class": "",
+        "media_item_custom_class": "",
+        "media_custom_class": "",
+        "text_item_custom_class": "",
+        "content_custom_class": "",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "image_with_text_pEdKdp"
+    "image_with_text_pEdKdp",
+    "image_with_text_M6p843"
   ]
 }
