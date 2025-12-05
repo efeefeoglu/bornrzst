@@ -3696,3 +3696,6 @@ details-disclosure > details {
 
 .list-social__item .icon{width:5rem !important;height:5rem !important;}
 .list-social__link .svg-wrapper{width:5rem;height:5rem;}
+
+.drop1hero strong{color:#c30100;}
+.drop1hero .button{background-color:#c30100;}
