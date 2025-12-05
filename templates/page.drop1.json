@@ -142,11 +142,73 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_R9HPeQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_F8wk7W": {
+          "type": "heading",
+          "settings": {
+            "heading": "Silenced Truth",
+            "heading_size": "h2",
+            "custom_class": ""
+          }
+        },
+        "text_gxXzyN": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Storytelling</h3><p>They tried to bury the story  but truth bleeds through.</p><p>This design confronts censorship head-on. The shrouded figure symbolizes the buried truth, suffocated by fear and silence.</p><p>The fractured red word TRUTH reminds us that no power, no propaganda, can hide reality forever.</p><p>This piece is for the journalists silenced, the voices erased, and the stories the world wasn’t meant to see.</p><p>To silence truth is to side with oppression.</p>",
+            "text_style": "body",
+            "custom_class": ""
+          }
+        },
+        "button_AJiXGr": {
+          "type": "button",
+          "settings": {
+            "button_label": "buy now",
+            "button_link": "shopify://products/wanted-humanity-s-criminals-unisex-t-shirt-1",
+            "button_style_secondary": false,
+            "enable_pulse_effect": false,
+            "custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_F8wk7W",
+        "text_gxXzyN",
+        "button_AJiXGr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "fade_in_out_delay": 5,
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_custom_class": "",
+        "page_width_custom_class": "",
+        "wrapper_custom_class": "",
+        "grid_custom_class": "",
+        "media_item_custom_class": "",
+        "media_custom_class": "",
+        "text_item_custom_class": "",
+        "content_custom_class": "",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_pEdKdp",
-    "image_with_text_M6p843"
+    "image_with_text_M6p843",
+    "image_with_text_R9HPeQ"
   ]
 }
