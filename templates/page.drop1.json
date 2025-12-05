@@ -245,7 +245,7 @@
       "settings": {
         "image": "shopify://shop_images/Untitled_design_3.png",
         "custom_image_width": 900,
-        "custom_image_height": 900,
+        "custom_image_height": 1200,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
