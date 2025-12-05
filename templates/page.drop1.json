@@ -115,6 +115,9 @@
         "text_4tCFDJ",
         "button_FezVfq"
       ],
+      "custom_css": [
+        "h2{color:#c30100;}"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Untitled_design_1.png",
