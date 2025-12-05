@@ -244,8 +244,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Untitled_design_3.png",
-        "custom_image_width": 600,
-        "custom_image_height": 772,
+        "custom_image_width": 700,
+        "custom_image_height": 900,
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
