@@ -49,13 +49,14 @@
 }
 
 .multicolumn.color-scheme-7507a6b6-44e9-4ef0-8106-d4181e2178b8 .button {
-  background: #050505;
+  background: #F7F7F7;
   color:#F7F7F7;
 }
 
 @media screen and (min-width: 750px) {
   .multicolumn .button {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 }
 
