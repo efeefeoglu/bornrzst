@@ -104,7 +104,7 @@
           "settings": {
             "button_label": "Buy Now",
             "button_link": "shopify://products/wanted-humanity-s-criminals-unisex-sweatshirt",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "enable_pulse_effect": true,
             "custom_class": ""
           }
@@ -116,7 +116,7 @@
         "button_FezVfq"
       ],
       "custom_css": [
-        "h2{color:#c30100;}"
+        "h2,h3 {color: #c30100;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
