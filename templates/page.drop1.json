@@ -42,7 +42,7 @@
             "button_label": "100% OF PROFITS TO GAZA",
             "button_link": "shopify://collections/drop-1",
             "button_style_secondary": false,
-            "enable_pulse_effect": false,
+            "enable_pulse_effect": true,
             "custom_class": ""
           }
         }
@@ -58,7 +58,7 @@
         "custom_image_width": 200,
         "custom_image_height": 400,
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
         "fade_in_out_delay": 5,
@@ -105,7 +105,7 @@
             "button_label": "Buy Now",
             "button_link": "shopify://products/wanted-humanity-s-criminals-unisex-sweatshirt",
             "button_style_secondary": false,
-            "enable_pulse_effect": false,
+            "enable_pulse_effect": true,
             "custom_class": ""
           }
         }
@@ -168,7 +168,7 @@
             "button_label": "buy now",
             "button_link": "shopify://products/wanted-humanity-s-criminals-unisex-t-shirt-1",
             "button_style_secondary": false,
-            "enable_pulse_effect": false,
+            "enable_pulse_effect": true,
             "custom_class": ""
           }
         }
