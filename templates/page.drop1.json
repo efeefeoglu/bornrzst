@@ -244,10 +244,10 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Untitled_design_3.png",
-        "custom_image_width": 900,
-        "custom_image_height": 1200,
+        "custom_image_width": 600,
+        "custom_image_height": 722,
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
         "fade_in_out_delay": 5,
