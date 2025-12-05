@@ -33,7 +33,7 @@
           "settings": {
             "text": "<p><strong>Root of Resistance:</strong><br/>From outrage → relief. From silence → solidarity. Every drop fuels impact.</p><p><strong>Voice Rise Worldwide:</strong><br/>From fashion → freedom. From wear → awareness. Every stitch amplifies a cause.</p><p><strong>Fashion as freedom</strong><br/>From streets → screens → souls. Building a global movement of resistance in motion.<br/></p><h3>Limited Edition<br/></h3><p><strong>Every Shirt Funds Relief Efforts</strong></p>",
             "text_style": "body",
-            "custom_class": "drop1hero"
+            "custom_class": ""
           }
         },
         "button_Fi3Nbt": {
@@ -66,7 +66,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_custom_class": "",
+        "section_custom_class": "drop1hero",
         "page_width_custom_class": "",
         "wrapper_custom_class": "",
         "grid_custom_class": "",
