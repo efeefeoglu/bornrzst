@@ -116,7 +116,8 @@
         "button_FezVfq"
       ],
       "custom_css": [
-        "h2,h3 {color: #c30100;}"
+        "h2,h3 {color: #c30100;}",
+        ".button{border: solid 1px #f7f7f7}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
