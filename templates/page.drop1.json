@@ -55,8 +55,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/tree_1.svg",
-        "custom_image_width": 200,
-        "custom_image_height": 400,
+        "custom_image_width": 240,
+        "custom_image_height": 420,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
