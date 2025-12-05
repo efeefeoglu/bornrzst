@@ -184,7 +184,7 @@
       ],
       "custom_css": [
         "h2,h3 {color: #c30100;}",
-        ".button{background-color: #c30100;color: #f7f7f7;}"
+        ".button {background-color: #c30100; color: #f7f7f7;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -248,6 +248,9 @@
         "heading_tFkK6X",
         "text_Mh8KkG",
         "button_Kfwdp8"
+      ],
+      "custom_css": [
+        "h2, h3{color: #c30100;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
