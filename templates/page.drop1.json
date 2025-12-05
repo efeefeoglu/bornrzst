@@ -247,7 +247,7 @@
         "custom_image_width": 700,
         "custom_image_height": 900,
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
         "fade_in_out_delay": 5,
