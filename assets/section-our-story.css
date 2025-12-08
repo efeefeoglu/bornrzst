@@ -17,6 +17,12 @@
   margin: 0;
 }
 
+.our-story-section-wrapper h3 {
+  color: #c30100;
+  margin: 0;
+  font-size: 4rem;
+}
+
 .our-story-content p {
   font-size: 16px;
   line-height: 1.6;
