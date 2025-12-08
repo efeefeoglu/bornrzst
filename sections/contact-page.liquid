@@ -25,7 +25,16 @@
 
           <div class="contact-page-form-group">
             <label for="ContactFormReason">Reason for Contact *</label>
-            <input type="text" id="ContactFormReason" name="contact[reason]">
+            <select id="ContactFormReason" name="contact[reason]" required>
+              <option value="" disabled selected>Select a reason...</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Order Support">Order Support</option>
+              <option value="Press & Partnerships">Press & Partnerships</option>
+              <option value="Join the Movement">Join the Movement</option>
+              <option value="Feedback & Suggestions">Feedback & Suggestions</option>
+              <option value="Collaboration Requests">Collaboration Requests</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
 
           <div class="contact-page-form-group">
