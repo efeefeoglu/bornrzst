@@ -61,15 +61,14 @@
   margin-bottom: 0;
 }
 
-.how-we-fund-impact-subheadline p {
+.how-we-fund-impact-subheadline {
   color: #c30100;
   font-weight: 600;
 }
 
-.how-we-fund-growth-subheadline p {
+.how-we-fund-growth-subheadline {
   color: #c30100;
   font-weight: 600;
-  font-size: 2rem;
 }
 
 .how-we-fund-section-divider {
