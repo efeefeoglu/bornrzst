@@ -55,9 +55,6 @@
       <div class="bornrzst-footer__col bornrzst-footer__col--menu">
         {%- if section.settings.about_menu != blank -%}
           <div class="bornrzst-footer__menu">
-            {%- if section.settings.about_menu_heading != blank -%}
-              <p class="bornrzst-footer__menu-title">{{ section.settings.about_menu_heading }}</p>
-            {%- endif -%}
             <ul class="bornrzst-footer__menu-list" role="list">
               {%- for link in linklists[section.settings.about_menu].links -%}
                 <li>
@@ -65,14 +62,6 @@
                 </li>
               {%- endfor -%}
             </ul>
-          </div>
-        {%- endif -%}
-
-        {%- if section.settings.policies_menu != blank -%}
-          <div class="bornrzst-footer__menu">
-            {%- if section.settings.policies_menu_heading != blank -%}
-              <p class="bornrzst-footer__menu-title">{{ section.settings.policies_menu_heading }}</p>
-            {%- endif -%}
             <ul class="bornrzst-footer__menu-list" role="list">
               {%- for link in linklists[section.settings.policies_menu].links -%}
                 <li>
