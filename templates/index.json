@@ -193,7 +193,7 @@
             "button_link_2": "shopify://collections/drop-1",
             "button_style_secondary_2": false,
             "button_custom_class": "",
-            "enable_pulse_effect": true
+            "enable_pulse_effect": false
           }
         }
       },
@@ -202,7 +202,9 @@
         "text_W9jNtP",
         "buttons_jP6mXU"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {h2 {color: #c30100; } .button--primary {color: #c30100; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/mockup_20250917-130506_velvet_tangerine.jpg",
