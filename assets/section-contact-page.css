@@ -45,6 +45,7 @@
 }
 
 .contact-page-form-group input,
+.contact-page-form-group select,
 .contact-page-form-group textarea {
   width: 100%;
   padding: 10px;
