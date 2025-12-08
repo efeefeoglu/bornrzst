@@ -760,7 +760,7 @@
 
 .bornrzst-footer__row--top {
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  align-items: flex-start;
+  align-items: center;
 }
 
 .bornrzst-footer__row--bottom {
