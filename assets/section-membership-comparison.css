@@ -27,11 +27,13 @@
   border-bottom: 5px solid #ccc !important;
   padding: 15px;
   text-align: left;
+  font-size: 2rem;
 }
 
 .membership-comparison-table td {
   border-bottom: 1px solid #ccc !important;
   padding: 15px;
   text-align: left;
+  font-size:1.75rem;
 }
 
