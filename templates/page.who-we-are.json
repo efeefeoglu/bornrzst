@@ -67,7 +67,7 @@
     "our_story_HFD7rU": {
       "type": "our-story",
       "custom_css": [
-        "h3{font-size: 3rem;margin:0}"
+        "h3 {font-size: 4rem; margin: 0;}"
       ],
       "name": "Our Story",
       "settings": {
