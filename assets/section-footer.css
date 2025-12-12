@@ -773,7 +773,7 @@
   grid-column: span 4;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 7rem;
 }
 
 .bornrzst-footer__logo-image {
