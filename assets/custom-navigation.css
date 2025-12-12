@@ -84,7 +84,7 @@
 .custom-nav__item--mega .custom-nav__dropdown {
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  min-width: 200px;
   max-width: 1200px; /* Global Rule */
   padding: 3rem;
   box-sizing: border-box;
