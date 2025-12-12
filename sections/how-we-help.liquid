@@ -1,6 +1,6 @@
 {{ 'component-how-we-help.css' | asset_url | stylesheet_tag }}
 
-<section class="section-share-wear animate-in-scroll-trigger">
+<section id="share-your-voice" class="section-share-wear animate-in-scroll-trigger">
     <div class="container page-width">
 
         <div class="share-wear-block">
@@ -20,7 +20,7 @@
             <a href="{{ section.settings.share_button_link }}" class="btn-red button--pulse animate-item animate-item-1">{{ section.settings.share_button_label }}</a>
         </div>
 
-        <div class="share-wear-block">
+        <div class="share-wear-block" id="wear-your-resistance">
             <div class="header-action-row">
                 <div class="section-title-row animate-item animate-item-4">
                     {% if section.settings.wear_icon != blank %}
