@@ -88,10 +88,4 @@
 .section-tell .btn-red {
     background-color: #c30100;
     color: #f7f7f7;
-    border: none;
-    padding: 1.2rem;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2rem;
 }
