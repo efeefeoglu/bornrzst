@@ -62,6 +62,9 @@
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .section-share-wear .footer-italic {
