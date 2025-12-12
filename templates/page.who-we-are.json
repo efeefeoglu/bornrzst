@@ -157,15 +157,16 @@
         "heading_jMx7gb",
         "text_yXX8tL"
       ],
+      "custom_css": [],
       "name": "Rich text (Advanced)",
       "settings": {
-        "section_id": "",
+        "section_id": "why-we-exist",
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "where_we_are_going": {
