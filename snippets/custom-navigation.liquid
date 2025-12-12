@@ -91,7 +91,7 @@
               <li class="custom-nav__subitem"><a href="/pages/proof-of-impact#impact-breakdown" class="custom-nav__sublink">Impact Breakdown</a></li>
             </ul>
           </div>
-          <div class="custom-nav__column">
+          <div class="custom-nav__column" style="display: none;">
             {%- if section.settings.impact_menu_image != blank -%}
               <div class="custom-nav__image-wrapper">
                 {{ section.settings.impact_menu_image | image_url: width: 600 | image_tag: loading: 'lazy', class: 'custom-nav__image' }}
