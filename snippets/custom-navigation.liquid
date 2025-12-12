@@ -56,7 +56,7 @@
               <li class="custom-nav__subitem"><a href="/pages/join-the-movement#get-involved" class="custom-nav__sublink">Get Involved</a></li>
             </ul>
           </div>
-          <div class="custom-nav__column">
+          <div class="custom-nav__column" style="display:none">
             <ul class="custom-nav__sublist">
               <li class="custom-nav__subitem"><a href="/pages/join-the-movement#become-a-creator" class="custom-nav__sublink">Become a Creator</a></li>
               <li class="custom-nav__subitem"><a href="/pages/join-the-movement#submit-your-story" class="custom-nav__sublink">Submit Your Story</a></li>
@@ -64,7 +64,7 @@
               <li class="custom-nav__subitem"><a href="/pages/join-the-movement#volunteer" class="custom-nav__sublink">Volunteer / Amplify</a></li>
             </ul>
           </div>
-          <div class="custom-nav__column">
+          <div class="custom-nav__column" style="display:none">
             {%- if section.settings.join_menu_image != blank -%}
               <div class="custom-nav__image-wrapper">
                 {{ section.settings.join_menu_image | image_url: width: 600 | image_tag: loading: 'lazy', class: 'custom-nav__image' }}
