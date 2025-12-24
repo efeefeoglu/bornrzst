@@ -170,7 +170,7 @@
           "type": "button",
           "settings": {
             "button_label": "buy now",
-            "button_link": "shopify://products/wanted-humanity-s-criminals-unisex-t-shirt-1",
+            "button_link": "shopify://collections/silenced-truth",
             "button_style_secondary": false,
             "enable_pulse_effect": true,
             "custom_class": ""
