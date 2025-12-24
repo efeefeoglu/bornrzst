@@ -39,7 +39,7 @@
         "button_Fi3Nbt": {
           "type": "button",
           "settings": {
-            "button_label": "100% OF PROFITS TO GAZA",
+            "button_label": "SHOP",
             "button_link": "shopify://collections/drop-1",
             "button_style_secondary": false,
             "enable_pulse_effect": true,
@@ -237,7 +237,7 @@
           "type": "button",
           "settings": {
             "button_label": "buy now",
-            "button_link": "shopify://products/wanted-humanity-s-criminals-unisex-t-shirt",
+            "button_link": "shopify://collections/they-healed-they-bombed",
             "button_style_secondary": false,
             "enable_pulse_effect": true,
             "custom_class": ""
