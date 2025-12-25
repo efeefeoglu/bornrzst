@@ -312,7 +312,7 @@ h5,
   color: rgb(var(--color-foreground));
   line-height: 1.0;
   text-transform: uppercase;
-  word-break: break-word;
+  word-break: keep-all;
 }
 
 .hxxl {
