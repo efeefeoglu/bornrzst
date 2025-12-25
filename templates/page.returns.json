@@ -1,0 +1,110 @@
+{
+  "sections": {
+    "main": {
+      "type": "return-policy",
+      "settings": {
+        "title": "BØRN RZST™ – RETURNS & EXCHANGES POLICY",
+        "effective_date": "Effective Date: September 2025",
+        "footer_text": "BØRN RZST™ - THE UNIFORM OF GLOBAL RESISTANCE · © BØRN RZST™ 2025",
+        "background_color": "#F3F0E6",
+        "text_color": "#000000",
+        "accent_color": "#c30100"
+      },
+      "blocks": {
+        "block_1": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "1. OVERVIEW",
+            "content": "<p>At BØRN RZST™, every piece carries the spirit of resistance. We stand behind the quality of our products, but if a return is necessary, this policy explains how we handle it.</p>"
+          }
+        },
+        "block_2": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "2. ELIGIBILITY FOR RETURNS",
+            "content": "<ul><li>Items must be returned within 14 days of delivery.</li><li>Products must be unworn, unwashed, and in original packaging.</li><li>Proof of purchase (order confirmation or receipt) is required.</li></ul>"
+          }
+        },
+        "block_3": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "3. NON-RETURNABLE ITEMS",
+            "content": "<ul><li>The following items cannot be returned: sale items, gift cards, and limited-edition capsule releases (unless defective or damaged).</li></ul>"
+          }
+        },
+        "block_4": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "4. EXCHANGES",
+            "content": "<ul><li>Exchanges are available for sizing issues if stock permits.</li><li>If the requested size is unavailable, a refund or store credit will be issued.</li></ul>"
+          }
+        },
+        "block_5": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "5. REFUND PROCESS",
+            "content": "<ul><li>Refunds will be issued to the original payment method within 7–10 business days after the returned item is received and inspected.</li></ul>"
+          }
+        },
+        "block_6": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "6. SHIPPING COSTS",
+            "content": "<ul><li>Return shipping costs are the responsibility of the customer, unless the return is due to an error on our part (e.g., defective or incorrect item).</li></ul>"
+          }
+        },
+        "block_7": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "7. DAMAGED OR DEFECTIVE ITEMS",
+            "content": "<ul><li>If you receive a damaged or defective item, contact us immediately at <a href=\"mailto:support@bornrzst.com\">support@bornrzst.com</a> with your order number and photos. We will arrange a replacement or full refund.</li></ul>"
+          }
+        },
+        "block_8": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "8. HOW TO START A RETURN",
+            "content": "<ul><li>Email <a href=\"mailto:support@bornrzst.com\">support@bornrzst.com</a> with your order number, reason for return, and photos if applicable.</li><li>Our team will guide you through the next steps.</li></ul>"
+          }
+        },
+        "block_9": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "9. POLICY UPDATES",
+            "content": "<ul><li>We may update this Returns & Exchanges Policy periodically. Updates will be posted on this page with a revised effective date.</li></ul>"
+          }
+        },
+        "block_10": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "10. LOST OR DELAYED RETURNS",
+            "content": "<ul><li>BØRN RZST™ is not responsible for lost or delayed return packages. We recommend using a trackable shipping method.</li></ul>"
+          }
+        },
+        "block_11": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "11. INTERNATIONAL RETURNS",
+            "content": "<ul><li>International customers are responsible for return shipping costs, customs duties, and taxes. Please clearly mark the package as 'Returned Goods' to avoid additional fees.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "block_6",
+        "block_7",
+        "block_8",
+        "block_9",
+        "block_10",
+        "block_11"
+      ]
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
