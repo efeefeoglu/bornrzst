@@ -10,10 +10,106 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "return-policy",
+      "blocks": {
+        "block_1": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "1. PROCESSING TIME",
+            "content": "<ul><li>Orders are typically processed within 2–4 business days.</li><li>During peak campaigns or limited drops, processing may take longer due to high demand.</li></ul>"
+          }
+        },
+        "block_2": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "2. SHIPPING RATES & METHODS",
+            "content": "<p>Shipping costs are displayed at checkout. For returns/exchanges, customers are responsible for shipping costs unless the return is due to an error on our part (see <a href=\"/pages/returns-policy\">Returns & Exchanges Policy</a>).</p>"
+          }
+        },
+        "block_3": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "3. DELIVERY ESTIMATES",
+            "content": "<ul><li>Standard Shipping: 7–14 business days (varies by region).</li><li>Expedited Shipping: 3–7 business days.</li><li>International orders may require additional processing time due to customs clearance and regional carrier delays. Please allow extra time during drops and global campaigns.</li></ul>"
+          }
+        },
+        "block_4": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "4. CUSTOMS & IMPORT TAXES",
+            "content": "<ul><li>International customers are responsible for any customs duties, VAT, or import fees.</li><li>These charges are not included in our product prices or shipping rates.</li></ul>"
+          }
+        },
+        "block_5": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "5. TRACKING YOUR ORDER",
+            "content": "<ul><li>Once your order is shipped, you will receive a confirmation email with a tracking number.</li><li>Tracking updates depend on the carrier and your location.</li></ul>"
+          }
+        },
+        "block_6": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "6. DELAYS & FORCE MAJEURE",
+            "content": "<ul><li>BØRN RZST™ is not responsible for shipping delays caused by carriers, customs, natural disasters, strikes, or political unrest.</li><li>We will notify customers of significant delays where possible.</li></ul>"
+          }
+        },
+        "block_7": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "7. LOST OR STOLEN PACKAGES",
+            "content": "<p>If your package is lost or stolen after delivery, BØRN RZST™ is not liable. However, we will support you in filing a claim with the carrier and may, at our discretion, offer store credit or a replacement.</p>"
+          }
+        },
+        "block_8": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "8. INCORRECT ADDRESSES",
+            "content": "<ul><li>Customers are responsible for providing accurate shipping details.</li><li>Orders shipped to incorrect addresses due to customer error are not eligible for free replacement or refund.</li></ul>"
+          }
+        },
+        "block_9": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "9. CONTACT US",
+            "content": "<p>For any shipping questions or issues, please reach out to us at <a href=\"mailto:support@bornrzst.com\">support@bornrzst.com</a>.</p>"
+          }
+        },
+        "block_10": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "10. PO BOXES / MILITARY ADDRESSES",
+            "content": "<p>We currently do not ship to PO Boxes or military addresses (APO/FPO).</p>"
+          }
+        },
+        "block_11": {
+          "type": "policy_item",
+          "settings": {
+            "heading": "11. CARRIER INFORMATION",
+            "content": "<p>We partner with leading carriers, including DHL, FedEx, UPS, and USPS, to deliver orders reliably and securely.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "block_6",
+        "block_7",
+        "block_8",
+        "block_9",
+        "block_10",
+        "block_11"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "title": "BØRN RZST™ – SHIPPING POLICY",
+        "effective_date": "Effective Date: September 2025",
+        "footer_text": "BØRN RZST™ - THE UNIFORM OF GLOBAL RESISTANCE · © BØRN RZST™ 2025",
+        "background_color": "#f3f0e6",
+        "text_color": "#050505",
+        "accent_color": "#c30100"
       }
     }
   },
