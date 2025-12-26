@@ -1,0 +1,156 @@
+{
+  "sections": {
+    "main": {
+      "type": "faq-content",
+      "blocks": {
+        "cat1": {
+          "type": "category",
+          "settings": {
+            "title": "Orders & Shipping"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take to arrive?",
+            "answer": "<p>Most orders ship within 2–5 business days and arrive in 7–10 business days depending on your location. We move fast — but global resistance takes time to reach every corner. See our <a href=\"https://bornrzst.com/pages/shipping-policy\" target=\"_blank\">Shipping Policy</a> for more details.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes. BØRN RZST™ is a global movement. We ship worldwide so anyone can wear resistance.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "How can I track my order?",
+            "answer": "<p>As soon as your order ships, you’ll receive a confirmation email with a tracking link. Updates may take 24–48 hours to reflect.</p>"
+          }
+        },
+        "cat2": {
+          "type": "category",
+          "settings": {
+            "title": "Returns & Exchanges"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>You can return unworn, unwashed items within 14 days of delivery. Please check our full <a href=\"https://bornrzst.com/pages/returns-exchanges-policy\" target=\"_blank\">Returns & Exchanges Policy</a> for details.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Can I exchange for a different size?",
+            "answer": "<p>Absolutely. If your item doesn’t fit, you can request a size exchange within 14 days. Just make sure it’s in original condition.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "What do I do if my item arrives damaged?",
+            "answer": "<p>Contact us immediately with your order number and a photo of the issue. We’ll make it right — no one should carry resistance with flaws.</p>"
+          }
+        },
+        "cat3": {
+          "type": "category",
+          "settings": {
+            "title": "Payments & Security"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept major credit cards, PayPal, and secure online payment methods supported in your country.</p>"
+          }
+        },
+        "q8": {
+          "type": "question",
+          "settings": {
+            "question": "Is my payment information secure?",
+            "answer": "<p>Yes. Payments are encrypted and processed through trusted providers. Your data is protected — always. Review our <a href=\"https://bornrzst.com/policies/privacy-policy\" target=\"_blank\">Privacy Policy</a>.</p>"
+          }
+        },
+        "cat4": {
+          "type": "category",
+          "settings": {
+            "title": "BØRN RZST Movement"
+          }
+        },
+        "q9": {
+          "type": "question",
+          "settings": {
+            "question": "Where do the donations go?",
+            "answer": "<p>For Drop 1, 100% of profits are directed to verified humanitarian aid for Gaza. Ongoing drops will donate 50% of profits. We publish transparency updates so you see exactly where the impact lands.</p>"
+          }
+        },
+        "q10": {
+          "type": "question",
+          "settings": {
+            "question": "How can I verify donations?",
+            "answer": "<p>Each campaign includes QR codes linking to receipts and verification pages. Resistance thrives on transparency.</p>"
+          }
+        },
+        "q11": {
+          "type": "question",
+          "settings": {
+            "question": "How can I get involved beyond buying?",
+            "answer": "<p>You can join the #WearYourResistance Challenge, submit your story, or sign up to become a creator in our movement hub.</p>"
+          }
+        },
+        "cat5": {
+          "type": "category",
+          "settings": {
+            "title": "Product Care"
+          }
+        },
+        "q12": {
+          "type": "question",
+          "settings": {
+            "question": "How do I wash my shirt/hoodie without damaging the print?",
+            "answer": "<p>Turn garments inside-out, wash cold, and hang dry for longest life. Iron inside-out if needed — but avoid the print area.</p>"
+          }
+        },
+        "q13": {
+          "type": "question",
+          "settings": {
+            "question": "Are your products sustainable or ethically made?",
+            "answer": "<p>Yes. We work with print-on-demand partners who meet global sustainability standards. Each piece is made to order — no overproduction, no waste.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "cat1",
+        "q1",
+        "q2",
+        "q3",
+        "cat2",
+        "q4",
+        "q5",
+        "q6",
+        "cat3",
+        "q7",
+        "q8",
+        "cat4",
+        "q9",
+        "q10",
+        "q11",
+        "cat5",
+        "q12",
+        "q13"
+      ],
+      "settings": {
+        "search_placeholder": "Search for answers..."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

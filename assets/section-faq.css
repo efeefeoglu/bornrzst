@@ -1,0 +1,49 @@
+.faq-search-container {
+  max-width: 80rem;
+  margin: 0 auto 4rem auto;
+  position: relative;
+}
+
+.faq-search-input {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  background-color: transparent;
+  color: rgb(var(--color-foreground));
+  font-size: 1.6rem;
+  border-radius: var(--inputs-radius);
+}
+
+.faq-search-input:focus {
+  outline: none;
+  border-color: rgb(var(--color-foreground));
+  box-shadow: 0 0 0 1px rgb(var(--color-foreground));
+}
+
+.faq-category-header {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading-family);
+  font-size: calc(var(--font-heading-scale) * 2.4rem);
+  text-transform: uppercase;
+}
+
+.faq-category-header:first-of-type {
+  margin-top: 0;
+}
+
+.faq-hidden {
+  display: none !important;
+}
+
+.faq-no-results {
+  text-align: center;
+  margin-top: 3rem;
+  display: none;
+}
+
+/* Ensure accordions fit within the centered layout */
+.faq-content-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
