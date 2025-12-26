@@ -159,11 +159,6 @@
         "padding_bottom": 60
       }
     },
-    "pagefly-home": {
-      "type": "pagefly-home",
-      "disabled": true,
-      "settings": {}
-    },
     "image_banner_GmzjbB": {
       "type": "image-banner",
       "blocks": {
@@ -397,7 +392,6 @@
     },
     "unshakable_roots_cnYR3M": {
       "type": "unshakable-roots",
-      "disabled": true,
       "name": "Unshakable roots",
       "settings": {
         "color_scheme": "scheme-1",
@@ -416,7 +410,6 @@
     "hero_section",
     "image_with_text_xgVYmC",
     "multicolumn_h8DKGd",
-    "pagefly-home",
     "image_banner_GmzjbB",
     "image_with_text_4akVQM",
     "image_with_text_wQ9CxK",
