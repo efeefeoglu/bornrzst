@@ -404,10 +404,6 @@
         "badge_image": "shopify://shop_images/unshakeable-roots.png",
         "badge_aria_label": "Unshakable roots resistance emblem"
       }
-    },
-    "pagefly-home": {
-      "type": "pagefly-home",
-      "settings": {}
     }
   },
   "order": [
@@ -418,7 +414,6 @@
     "image_with_text_4akVQM",
     "image_with_text_wQ9CxK",
     "image_with_text_6haLRb",
-    "unshakable_roots_cnYR3M",
-    "pagefly-home"
+    "unshakable_roots_cnYR3M"
   ]
 }
