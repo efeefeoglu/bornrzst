@@ -162,6 +162,7 @@
         "column_3MNNGy",
         "column_XiDXfp"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -277,6 +278,7 @@
         "text_Ni7bQt",
         "button_XLaEjz"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Join_the_Resistance_Club_1.jpg",
@@ -320,6 +322,7 @@
       "block_order": [
         "text_ieAKtL"
       ],
+      "disabled": true,
       "custom_css": [
         "p {text-align: center; font-size: 1.6rem; color: #000; margin: 20px auto !important; max-width: 70%;}",
         "h2 {font-size: 5.4em; font-weight: 400; color: #c30100; letter-spacing: -0.02em; line-height: 0.9; margin: 30px 0;}",
@@ -388,6 +391,7 @@
         "text_DbTRXN",
         "button_yhtEQw"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Reminder.jpg",
