@@ -3701,6 +3701,7 @@ details-disclosure > details {
 .drop1hero .button{background-color:#c30100;}
 
 section, .shopify-section{overflow:hidden;}
+.section-header.shopify-section{overflow:visible;}
 
 @media(max-width: 600px) {
   .list-social__link .svg-wrapper{width:4rem;height:4rem;}
