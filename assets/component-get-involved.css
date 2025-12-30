@@ -21,10 +21,15 @@
 }
 
 .section-give .give-right {
-    flex: 0 0 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media(min-width: 600px) {
+    .section-give .give-right {
+        flex: 0 0 500px;
+    }
 }
 
 .section-give .section-title-row {
