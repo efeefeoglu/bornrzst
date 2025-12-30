@@ -255,7 +255,7 @@ hero-section__actions .button::before,
   }
 }
 
-#MainContent .shopify-section{display:none;}
+#MainContent .shopify-section:first-child{display:none;}
 
 
 @media screen and (max-width: 990px) {
