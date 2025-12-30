@@ -565,7 +565,6 @@
         "channel_bDig8N",
         "channel_fDxzex"
       ],
-      "disabled": true,
       "settings": {
         "main_header": "How we fund impact & growth",
         "impact_engine_title": "IMPACT ENGINE",
@@ -594,6 +593,7 @@
     },
     "support_the_movement": {
       "type": "support-the-movement",
+      "disabled": true,
       "settings": {
         "title": "Support The Movement",
         "subtitle": "Choose your role in the movement",
@@ -709,6 +709,7 @@
         "item_FdycdW",
         "item_wycntU"
       ],
+      "disabled": true,
       "settings": {
         "title": "Join The RZST Circle",
         "subtitle1": "Compare Membership Benefits",
