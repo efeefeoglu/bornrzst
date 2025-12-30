@@ -19,6 +19,7 @@
     },
     "proof_hero": {
       "type": "proof-hero",
+      "disabled": true,
       "settings": {
         "first_text": "Proof of Impact",
         "second_text": "<p>Real aid. Real numbers. Real change.<br/>See how every purchase fuels resistance and delivers humanitarian support.</p>",
@@ -593,7 +594,6 @@
     },
     "support_the_movement": {
       "type": "support-the-movement",
-      "disabled": true,
       "settings": {
         "title": "Support The Movement",
         "subtitle": "Choose your role in the movement",
@@ -709,7 +709,6 @@
         "item_FdycdW",
         "item_wycntU"
       ],
-      "disabled": true,
       "settings": {
         "title": "Join The RZST Circle",
         "subtitle1": "Compare Membership Benefits",
