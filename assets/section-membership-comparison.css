@@ -37,7 +37,9 @@
   font-size:1.75rem;
 }
 
-.membership-comparison-table th{
-  font-size: 1.3rem;
-  letter-spacing: -0.05rem;
+@media(max-width: 600px) {
+  .membership-comparison-table th{
+    font-size: 1.3rem;
+    letter-spacing: -0.05rem;
+  }
 }
