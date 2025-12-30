@@ -17,7 +17,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width section-{{ section.id }}-padding">
-
+    <h1>F.A.Q.</h1>
     <div class="faq-search-container">
       <input
         type="text"
@@ -29,7 +29,6 @@
     </div>
 
     <div class="faq-content-container" id="faq-content-{{ section.id }}">
-      <h1>F.A.Q.</h1>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'category' -%}
@@ -41,7 +40,7 @@
               <details>
                 <summary>
                   <div class="summary__title">
-                    <h3 class="accordion__title h4 inline-richtext">
+                    <h3 class="accordion__title inline-richtext">
                       {{ block.settings.question | escape }}
                     </h3>
                   </div>
