@@ -62,9 +62,16 @@
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+}
+
+@media(min-width: 600px) {
+
+    .section-share-wear .btn-red {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
 }
 
 .section-share-wear .footer-italic {
