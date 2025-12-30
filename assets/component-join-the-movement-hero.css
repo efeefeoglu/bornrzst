@@ -41,6 +41,11 @@
     align-items: center;
     position: relative;
 }
+@media(max-width: 600px) {
+    .join-the-movement-hero .right-column{
+        display: none;
+    }
+}
 
 .join-the-movement-hero .half-round-shape-1 {
     position: absolute;
