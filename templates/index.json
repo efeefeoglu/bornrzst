@@ -34,6 +34,31 @@
         "padding_bottom": 0
       }
     },
+    "hero_section_V7dgVj": {
+      "type": "hero-section",
+      "custom_css": [],
+      "settings": {
+        "background_image": "shopify://shop_images/bornrzst-hero_5486494a-61e3-40c3-b62d-715a9d9d2e22.jpg",
+        "first_text": "RESISTANCE IS OUR HERITAGE",
+        "second_text": "<p>Every purchase supports humanitarian aid for Palestine.</p>",
+        "heading_font_family": "",
+        "heading_font_size": 90,
+        "body_font_family": "",
+        "body_font_size": 18,
+        "button_label": "JOIN THE MOVEMENT",
+        "button_link": "shopify://pages/join-the-movement",
+        "button_style_secondary": false,
+        "button_label_2": "Shop Now",
+        "button_link_2": "shopify://collections/drop-1",
+        "button_style_secondary_2": false,
+        "enable_overlay": false,
+        "overlay_opacity": 0,
+        "text_alignment": "left",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_with_text_xgVYmC": {
       "type": "image-with-text",
       "blocks": {
@@ -408,6 +433,7 @@
   },
   "order": [
     "hero_section",
+    "hero_section_V7dgVj",
     "image_with_text_xgVYmC",
     "multicolumn_h8DKGd",
     "image_banner_GmzjbB",
