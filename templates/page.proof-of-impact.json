@@ -565,6 +565,7 @@
         "channel_bDig8N",
         "channel_fDxzex"
       ],
+      "disabled": true,
       "settings": {
         "main_header": "How we fund impact & growth",
         "impact_engine_title": "IMPACT ENGINE",
