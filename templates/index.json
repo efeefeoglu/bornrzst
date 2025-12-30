@@ -414,21 +414,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "unshakable_roots_cnYR3M": {
-      "type": "unshakable-roots",
-      "name": "Unshakable roots",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "logo_image": "shopify://shop_images/bornrzst-logo_fadadcaa-3e39-42f8-b77a-864f7fbeb782.png",
-        "logo_text": "BØRNRZST",
-        "tagline": "",
-        "company_heading": "Company Info",
-        "company_info": "<p>BØRN RZST LLC<br/>Sheridan, Wyoming 82801<br/>USA<br/>info@bornrzst.com</p>",
-        "follow_heading": "Follow the Movement",
-        "badge_image": "shopify://shop_images/unshakeable-roots.png",
-        "badge_aria_label": "Unshakable roots resistance emblem"
-      }
     }
   },
   "order": [
@@ -439,7 +424,6 @@
     "image_banner_GmzjbB",
     "image_with_text_4akVQM",
     "image_with_text_wQ9CxK",
-    "image_with_text_6haLRb",
-    "unshakable_roots_cnYR3M"
+    "image_with_text_6haLRb"
   ]
 }
