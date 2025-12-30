@@ -83,3 +83,6 @@
   margin-top: 20px;
   color:#000;
 }
+@media(max-width: 600px) {
+  .our-story-section{flex-direction: column;}
+}
