@@ -19,7 +19,6 @@
     },
     "proof_hero": {
       "type": "proof-hero",
-      "disabled": true,
       "settings": {
         "first_text": "Proof of Impact",
         "second_text": "<p>Real aid. Real numbers. Real change.<br/>See how every purchase fuels resistance and delivers humanitarian support.</p>",
