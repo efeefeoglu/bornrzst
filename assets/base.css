@@ -3702,5 +3702,5 @@ details-disclosure > details {
 
 @media(max-width: 600px) {
   .list-social__link .svg-wrapper{width:4rem;height:4rem;}
-  .bornrzst-footer__menu-list{width: 100%;}
+  .bornrzst-footer__menu-list{width: 100% !important;}
 }
