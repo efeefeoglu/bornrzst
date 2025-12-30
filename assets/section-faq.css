@@ -1,5 +1,4 @@
 .faq-search-container {
-  max-width: 80rem;
   margin: 0 auto 4rem auto;
   position: relative;
 }
@@ -43,7 +42,6 @@
 
 /* Ensure accordions fit within the centered layout */
 .faq-content-container {
-  max-width: 80rem;
   margin: 0 auto;
 }
 
