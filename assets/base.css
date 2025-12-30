@@ -3699,3 +3699,7 @@ details-disclosure > details {
 
 .drop1hero strong{color:#c30100;}
 .drop1hero .button{background-color:#c30100;}
+
+@media(max-width: 600px) {
+  .list-social__link .svg-wrapper{width:4rem;height:4rem;}
+}
