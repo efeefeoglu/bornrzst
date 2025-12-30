@@ -3703,4 +3703,5 @@ details-disclosure > details {
 @media(max-width: 600px) {
   .list-social__link .svg-wrapper{width:4rem;height:4rem;}
   .bornrzst-footer__menu-list{width: 100% !important;}
+  .bornrzst-footer__brand-description{margin-bottom: 1.5rem;}
 }
