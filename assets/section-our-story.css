@@ -85,6 +85,6 @@
 }
 @media(max-width: 768px) {
   .our-story-section{flex-direction: column;}
-  .our-story-content{width:100%;}
-  
+  .our-story-content, .our-story-quote{width:100%;}
+  .our-story-quote blockquote{position:relative;}
 }
