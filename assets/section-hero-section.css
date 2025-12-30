@@ -155,7 +155,7 @@
   opacity: 0;
   animation: hero-content-fade 0.5s ease forwards;
   animation-delay: 3s;
-  line-height:2em;
+  padding:1rem 3rem;
   letter-spacing:0;
   font-size:1em;
   background-color:#c30100;
