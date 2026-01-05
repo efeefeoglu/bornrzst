@@ -11,40 +11,48 @@
       <div class="contact-page-form">
         <h3>SEND YOUR MESSAGE</h3>
         {% form 'contact' %}
-          {{ form.errors | default_errors }}
+          {% if form.posted_successfully? %}
+            <div class="contact-page-form-group">
+              <p class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                Thank you for your message! We will get back to you shortly.
+              </p>
+            </div>
+          {% else %}
+            {{ form.errors | default_errors }}
 
-          <div class="contact-page-form-group">
-            <label for="ContactFormName">Name *</label>
-            <input type="text" id="ContactFormName" name="contact[name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
-          </div>
+            <div class="contact-page-form-group">
+              <label for="ContactFormName">Name *</label>
+              <input type="text" id="ContactFormName" name="contact[name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
 
-          <div class="contact-page-form-group">
-            <label for="ContactFormEmail">Email Address *</label>
-            <input type="email" id="ContactFormEmail" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
-          </div>
+            <div class="contact-page-form-group">
+              <label for="ContactFormEmail">Email Address *</label>
+              <input type="email" id="ContactFormEmail" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
+            </div>
 
-          <div class="contact-page-form-group">
-            <label for="ContactFormReason">Reason for Contact *</label>
-            <select id="ContactFormReason" name="contact[reason]" required>
-              <option value="" disabled selected>Select a reason...</option>
-              <option value="General Inquiry">General Inquiry</option>
-              <option value="Order Support">Order Support</option>
-              <option value="Press & Partnerships">Press & Partnerships</option>
-              <option value="Join the Movement">Join the Movement</option>
-              <option value="Feedback & Suggestions">Feedback & Suggestions</option>
-              <option value="Collaboration Requests">Collaboration Requests</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
+            <div class="contact-page-form-group">
+              <label for="ContactFormReason">Reason for Contact *</label>
+              <select id="ContactFormReason" name="contact[reason]" required>
+                <option value="" disabled selected>Select a reason...</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Order Support">Order Support</option>
+                <option value="Press & Partnerships">Press & Partnerships</option>
+                <option value="Join the Movement">Join the Movement</option>
+                <option value="Feedback & Suggestions">Feedback & Suggestions</option>
+                <option value="Collaboration Requests">Collaboration Requests</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
 
-          <div class="contact-page-form-group">
-            <label for="ContactFormMessage">Message *</label>
-            <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
-          </div>
+            <div class="contact-page-form-group">
+              <label for="ContactFormMessage">Message *</label>
+              <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            </div>
 
-          <div class="contact-page-form-group">
-            <button type="submit" class="contact-page-button">SEND MESSAGE</button>
-          </div>
+            <div class="contact-page-form-group">
+              <button type="submit" class="contact-page-button">SEND MESSAGE</button>
+            </div>
+          {% endif %}
         {% endform %}
       </div>
       <p>{{ section.settings.form_footer }}</p>
