@@ -14,22 +14,30 @@
       <div class="submit-your-story-right">
         <div class="submit-your-story-form-container animate-item animate-item-3">
           {% form 'contact' %}
-            {{ form.errors | default_errors }}
-            <div class="submit-your-story-form-group">
-              <label for="ContactFormName">{{ 'templates.contact.form.name' | t }}</label>
-              <input type="text" id="ContactFormName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
-            </div>
-            <div class="submit-your-story-form-group">
-              <label for="ContactFormEmail">{{ 'templates.contact.form.email' | t }}</label>
-              <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
-            </div>
-            <div class="submit-your-story-form-group">
-              <label for="ContactFormMessage">{{ section.settings.message_label }}</label>
-              <textarea id="ContactFormMessage" name="contact[body]" placeholder="{{ section.settings.message_label }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
-            </div>
-            <div class="submit-your-story-form-submit">
-              <input type="submit" class="button button--pulse" value="{{ 'templates.contact.form.send' | t }}">
-            </div>
+            {% if form.posted_successfully? %}
+              <div class="submit-your-story-form-group">
+                <p class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                  Thank you for sharing your story!
+                </p>
+              </div>
+            {% else %}
+              {{ form.errors | default_errors }}
+              <div class="submit-your-story-form-group">
+                <label for="ContactFormName">{{ 'templates.contact.form.name' | t }}</label>
+                <input type="text" id="ContactFormName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+              </div>
+              <div class="submit-your-story-form-group">
+                <label for="ContactFormEmail">{{ 'templates.contact.form.email' | t }}</label>
+                <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+              </div>
+              <div class="submit-your-story-form-group">
+                <label for="ContactFormMessage">{{ section.settings.message_label }}</label>
+                <textarea id="ContactFormMessage" name="contact[body]" placeholder="{{ section.settings.message_label }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+              </div>
+              <div class="submit-your-story-form-submit">
+                <input type="submit" class="button button--pulse" value="{{ 'templates.contact.form.send' | t }}">
+              </div>
+            {% endif %}
           {% endform %}
         </div>
         <p class="submit-your-story-note animate-item animate-item-4">{{ section.settings.note }}</p>
