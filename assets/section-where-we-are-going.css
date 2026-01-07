@@ -36,3 +36,8 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+.where-we-are-going-button{
+  display: inline-block;
+}
