@@ -37,7 +37,8 @@
   text-transform: uppercase;
 }
 
-
-.where-we-are-going-button{
-  display: inline-block;
+@media screen and (max-width: 749px) {
+  .where-we-are-going-button{
+    display: inline-block;
+  }
 }
