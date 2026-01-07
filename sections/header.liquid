@@ -49,6 +49,17 @@
     padding-bottom: 5px !important;
     transition: padding 300ms ease;
   }
+
+  /* Mobile Sticky Header Reduction (Additional 25%) */
+  @media screen and (max-width: 749px) {
+    .section-header.scrolled-past-header .header__heading-logo {
+      width: {{ settings.logo_width | times: 0.375 }}px !important;
+    }
+    .section-header.scrolled-past-header .header {
+      padding-top: 3.75px !important;
+      padding-bottom: 3.75px !important;
+    }
+  }
   .header {
     transition: padding 300ms ease;
   }
