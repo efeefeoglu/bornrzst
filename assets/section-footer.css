@@ -942,6 +942,6 @@
   }
 }
 
-.bornrzst-footer__menu ul:last-child{
+.bornrzst-footer__menu ul:last-child li:nth-child(4){
   display:none;
 }
