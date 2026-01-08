@@ -941,3 +941,7 @@
     justify-content: flex-start;
   }
 }
+
+.bornrzst-footer__menu ul:last-child{
+  display:none;
+}
