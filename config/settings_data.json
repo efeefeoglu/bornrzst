@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/bornrzst-logo_fadadcaa-3e39-42f8-b77a-864f7fbeb782.png",
     "logo_width": 150,
+    "favicon": "shopify://shop_images/bornrzst-logo-black.png",
     "type_header_font": "bebas_neue_n4",
     "heading_scale": 100,
     "type_body_font": "montserrat_n4",
@@ -146,11 +147,6 @@
       "3138269044488530766": {
         "type": "shopify://apps/uppromote-affiliate/blocks/core-script/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
         "disabled": true,
-        "settings": {}
-      },
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
         "settings": {}
       },
       "11532412952436166569": {
