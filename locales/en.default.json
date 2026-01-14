@@ -68,7 +68,7 @@
   },
   "newsletter": {
     "label": "Email",
-    "success": "Thanks for subscribing",
+    "success": "You’re in. We’ll notify you when impact receipts are published.",
     "button_label": "Subscribe"
   },
   "accessibility": {
