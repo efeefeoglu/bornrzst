@@ -415,5 +415,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".main-blog .article-card__image img {object-fit: contain !important; object-position: center !important; transform: none !important; background: #fff;}"
+    ]
   }
 }
