@@ -23,14 +23,14 @@
           "type": "policy_item",
           "settings": {
             "heading": "2. SHIPPING RATES & METHODS",
-            "content": "<p>Shipping costs are displayed at checkout. For returns/exchanges, customers are responsible for shipping costs unless the return is due to an error on our part (see <a href=\"/pages/returns-policy\">Returns & Exchanges Policy</a>).</p>"
+            "content": "<p>Shipping costs are displayed at checkout. For returns/exchanges, customers are responsible for shipping costs unless the return is due to an error on our part (see <a href=\"/pages/returns-exchanges-policy\" title=\"/pages/returns-exchanges-policy\">Returns & Exchanges Policy</a>).</p>"
           }
         },
         "block_3": {
           "type": "policy_item",
           "settings": {
             "heading": "3. DELIVERY ESTIMATES",
-            "content": "<ul><li>Standard Shipping: 7–14 business days (varies by region).</li><li>Expedited Shipping: 3–7 business days.</li><li>International orders may require additional processing time due to customs clearance and regional carrier delays. Please allow extra time during drops and global campaigns.</li></ul>"
+            "content": "<ul><li>Standard shipping is typically estimated at 7–14 business days after fulfillment, depending on your destination. Products are made to order; production time is additional. Available shipping services and charges are shown at checkout. Delivery estimates are not guarantees. International deliveries may take longer because of customs clearance or carrier delays.</li></ul>"
           }
         },
         "block_4": {
