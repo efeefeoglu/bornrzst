@@ -23,7 +23,7 @@
           "type": "policy_item",
           "settings": {
             "heading": "2. MISSION STATEMENT",
-            "content": "<p>BØRN RZST™ is more than a streetwear brand — it is the uniform of global resistance. Each product combines style with purpose; fashion as defiance, fashion as freedom.</p>"
+            "content": "<p>BØRN RZST™ is more than a streetwear brand — it is the uniform of global resistance. Each product combines style with purpose; fashion as defiance, fashion as freedom.BØRN RZST™ is more than a streetwear brand. It is the uniform of global resistance. Each product combines style with purpose; fashion as defiance, fashion as freedom.</p>"
           }
         },
         "block_3": {
@@ -112,9 +112,9 @@
         "block_12"
       ],
       "settings": {
-        "title": "BØRN RZST™ – TERMS OF SERVICE",
+        "title": "BØRN RZST™: TERMS OF SERVICE",
         "effective_date": "Effective Date: December 2025",
-        "footer_text": "BØRN RZST™ - THE UNIFORM OF GLOBAL RESISTANCE · © BØRN RZST™ 2025",
+        "footer_text": "BØRN RZST™ - THE UNIFORM OF GLOBAL RESISTANCE · © BØRN RZST™ 2025BØRN RZST™: THE UNIFORM OF GLOBAL RESISTANCE · © BØRN RZST™ 2025",
         "background_color": "#f3f0e6",
         "text_color": "#050505",
         "accent_color": "#c30100"
