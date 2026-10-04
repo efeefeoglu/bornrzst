@@ -173,7 +173,7 @@
       "type": "where-we-are-going",
       "settings": {
         "title": "WHERE WE'RE GOING",
-        "text": "<p>This is just the beginning.</p><p>Every shirt, every story, every act of resistance fuels the next wave of change.</p><p>We’re building more than a brand we’re building an ecosystem of impact: verified aid, transparent funding, and a global network of creators and activists wearing their convictions.</p><p>Together, we’re turning outrage into organized power one Drop, one story, one act of truth at a time.</p>",
+        "text": "<p>This is just the beginning.<br/><br/>Every shirt, every story, every act of resistance fuels the next wave of change.<br/><br/>We’re building more than a brand. We’re building an ecosystem of impact: verified aid, transparent funding, and a global network of creators and activists wearing their convictions.<br/><br/>Together, we’re turning outrage into organized power: one Drop, one story, one act of truth at a time.</p>",
         "highlight_text": "The next chapter begins with you.",
         "button_text": "JOIN THE MOVEMENT",
         "button_link": "/pages/proof-of-impact#where-we-donate"
